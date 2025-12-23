@@ -20,7 +20,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Billing Toggle (for pricing section)
   initBillingToggle();
+
+  // Scroll Animations
+  initScrollAnimations();
 });
+
+/* --------------------------------------------------------------------------
+   Scroll Animations
+   -------------------------------------------------------------------------- */
+function initScrollAnimations() {
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-fade-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Target elements to animate
+  const elementsToAnimate = document.querySelectorAll(
+    '.benefit-card, .pricing-card, .step, .faq-item, .section h2, .section p.text-center'
+  );
+
+  elementsToAnimate.forEach(function(el, index) {
+    // Add delay based on index for grid items
+    if (el.classList.contains('benefit-card') || el.classList.contains('step') || el.classList.contains('pricing-card')) {
+       // Reset animation delay for each row if we could detect rows, but simple stagger is okay
+       // We'll just rely on CSS or natural stagger if we added classes, but here we'll just let them fade in
+       // optionally add a style for delay
+       el.style.animationDelay = (index % 3) * 0.1 + 's';
+    }
+    observer.observe(el);
+  });
+}
 
 /* --------------------------------------------------------------------------
    Mobile Navigation
