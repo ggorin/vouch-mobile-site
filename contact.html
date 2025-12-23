@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Vouch Mobile for support, questions, or feedback. We're here to help with your wireless needs.">
+  <meta name="keywords" content="contact vouch mobile, vouch mobile support, phone plan help">
+
+  <meta property="og:title" content="Contact Us | Vouch Mobile">
+  <meta property="og:description" content="Get in touch with our support team. We're here to help!">
+
+  <title>Contact Us | Vouch Mobile</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Vouch Mobile">
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="plans.html" class="nav-link">Plans</a></li>
+          <li><a href="coverage.html" class="nav-link">Coverage</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+        </ul>
+        <a href="https://vouchmobile.com" class="btn btn-primary">Get Started</a>
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We're here to help with any questions</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-lg">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto;">
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-2xl mb-6">Send Us a Message</h2>
+          <form action="https://formspree.io/f/your-form-id" method="POST" data-validate>
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <select id="subject" name="subject" class="form-input" required>
+                <option value="">Select a topic...</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="billing">Billing Question</option>
+                <option value="activation">Activation Help</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h2 class="text-2xl mb-6">Other Ways to Reach Us</h2>
+
+          <div class="mb-8">
+            <h3 class="font-semibold mb-2">Help Center</h3>
+            <p class="text-light mb-2">Find answers to common questions and step-by-step guides.</p>
+            <a href="https://vouchmobile.com/help" class="text-primary">Visit Help Center &rarr;</a>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="font-semibold mb-2">Email Support</h3>
+            <p class="text-light mb-2">Send us an email and we'll respond within 24 hours.</p>
+            <a href="mailto:support@vouchmobile.com" class="text-primary">support@vouchmobile.com</a>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="font-semibold mb-2">Live Chat</h3>
+            <p class="text-light mb-2">Chat with our support team directly from your account.</p>
+            <a href="https://vouchmobile.com" class="text-primary">Log in to Chat &rarr;</a>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-4">Follow Us</h3>
+            <div class="flex gap-4">
+              <a href="https://facebook.com/vouchmobile" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: var(--color-primary-light); border-radius: 50%;">
+                <img src="images/icons/facebook.svg" alt="Facebook" style="width: 20px; filter: brightness(0);">
+              </a>
+              <a href="https://instagram.com/vouchmobile" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: var(--color-primary-light); border-radius: 50%;">
+                <img src="images/icons/instagram.svg" alt="Instagram" style="width: 20px; filter: brightness(0);">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ CTA -->
+  <section class="section" style="background-color: var(--color-bg-alt);">
+    <div class="container text-center">
+      <h2 class="text-3xl mb-4">Check Our FAQ First</h2>
+      <p class="text-light mb-6" style="max-width: 500px; margin: 0 auto;">Many common questions are already answered in our FAQ. You might find your answer instantly!</p>
+      <a href="faq.html" class="btn btn-outline">Browse FAQs</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Vouch Mobile">
+          <p>Affordable unlimited wireless on America's most reliable network. No credit check. No contracts. Just simple, honest service.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com/vouchmobile" aria-label="Facebook">
+              <img src="images/icons/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com/vouchmobile" aria-label="Instagram">
+              <img src="images/icons/instagram.svg" alt="Instagram">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="coverage.html">Coverage Map</a></li>
+            <li><a href="https://vouchmobile.com/help">Help Center</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="https://vouchmobile.com/terms">Terms of Service</a></li>
+            <li><a href="https://vouchmobile.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://vouchmobile.com/broadband-facts">Broadband Facts</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Vouch Mobile. This mobile service is provided by Reach Mobile.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
