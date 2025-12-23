@@ -342,16 +342,17 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   height: var(--header-height);
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(10, 22, 40, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all var(--transition);
 }
 
 .header.scrolled {
-  box-shadow: var(--shadow-md);
+  background-color: rgba(10, 22, 40, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .header-inner {
@@ -386,19 +387,19 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link {
   padding: var(--spacing-2) var(--spacing-4);
   font-weight: 500;
-  color: var(--color-text-light);
+  color: rgba(255, 255, 255, 0.75);
   border-radius: var(--radius-full);
   transition: all var(--transition);
 }
 
 .nav-link:hover {
-  color: var(--color-text);
-  background-color: var(--color-bg-alt);
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav-link.active {
   color: var(--color-primary);
-  background-color: var(--color-primary-light);
+  background-color: rgba(0, 229, 199, 0.15);
 }
 
 .mobile-menu-btn {
@@ -411,14 +412,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-menu-btn:hover {
-  background-color: var(--color-bg-alt);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .mobile-menu-btn span {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: var(--color-text);
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 6px 0;
   transition: var(--transition);
   border-radius: 2px;
@@ -789,6 +790,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-xl);
   overflow: hidden;
   border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .pricing-card::before {
@@ -880,6 +884,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .pricing-features {
   padding: var(--spacing-8);
+  flex: 1;
 }
 
 .pricing-features ul {
@@ -935,6 +940,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: var(--spacing-8);
   max-width: 900px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .pricing-grid .pricing-card {
@@ -963,7 +969,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Featured Card */
 .pricing-card-featured {
-  transform: scale(1.02);
   box-shadow: var(--shadow-2xl), 0 0 60px rgba(0, 229, 199, 0.15);
 }
 
