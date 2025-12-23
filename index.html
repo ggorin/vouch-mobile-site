@@ -66,33 +66,18 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <!-- Floating orbs for atmosphere -->
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-orb hero-orb-3"></div>
-
+  <section class="hero hero-clean">
     <div class="container">
       <div class="hero-content">
-        <div class="hero-badge">
-          Powered by AT&T's Network
-        </div>
-        <h1>Unlimited Everything.<br><span class="highlight">Zero Credit Checks.</span></h1>
-        <p>Switch to Vouch Mobile and get unlimited talk, text & data on America's most reliable network.</p>
+        <div class="hero-badge">On AT&T's Network</div>
+        <h1>Unlimited Talk, Text & Data.<br><span class="highlight">No Credit Check.</span></h1>
+        <p class="hero-subtitle">Save up to $120/year when you pay annually. Premium 5G coverage, no contracts.</p>
         <div class="hero-cta">
-          <a href="https://vouchmobile.com" class="btn btn-primary btn-lg">Get Started</a>
-          <a href="plans.html" class="btn btn-outline btn-lg" style="border-color: rgba(255,255,255,0.3); color: #fff;">View Plans</a>
-        </div>
-        <div class="hero-price">
-          <div class="hero-price-tag">
-            <span class="hero-price-amount">$30</span>
-            <span class="hero-price-period">/month</span>
-          </div>
+          <a href="https://vouchmobile.com" class="btn btn-primary btn-lg">Choose Your Plan</a>
+          <a href="#pricing" class="btn btn-ghost btn-lg">See Pricing</a>
         </div>
       </div>
     </div>
-
-    <div class="scroll-indicator">Scroll</div>
   </section>
 
   <!-- Benefits Section -->
@@ -146,36 +131,81 @@
   <!-- Pricing Section -->
   <section class="pricing section-lg" id="pricing">
     <div class="container">
-      <h2 class="text-center text-3xl mb-4">Simple, Transparent Pricing</h2>
-      <p class="text-center text-light mb-12">One plan. Everything you need. No surprises.</p>
+      <h2 class="text-center text-3xl mb-4">Choose Your Plan</h2>
+      <p class="text-center text-light mb-8">Save more when you pay annually. No credit check required.</p>
 
-      <div class="pricing-card">
-        <div class="pricing-header">
-          <span class="pricing-label">Most Popular</span>
-          <h3>Premium Unlimited</h3>
-          <div class="price">
-            <span class="price-currency">$</span>
-            <span class="price-amount">30</span>
-            <span class="price-period">/month</span>
+      <!-- Billing Toggle -->
+      <div class="billing-toggle">
+        <span class="billing-option">Monthly</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="billing-toggle" checked>
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="billing-option billing-option-active">Annual <span class="save-badge">Save $120</span></span>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <p class="plan-tagline">Great value for everyday use</p>
+            <div class="price">
+              <span class="price-amount" data-monthly="30" data-annual="25">$25</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="price-note annual-note">Billed $300/year</p>
+            <p class="price-note monthly-note" style="display: none;">Billed monthly</p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li>Unlimited Talk & Text</li>
+              <li>Unlimited Data</li>
+              <li>5G Access</li>
+              <li>5GB Mobile Hotspot</li>
+              <li>eSIM Support</li>
+              <li>WiFi Calling</li>
+              <li>No Credit Check</li>
+            </ul>
+          </div>
+          <div class="pricing-cta">
+            <a href="https://vouchmobile.com" class="btn btn-outline btn-lg">Get Premium</a>
           </div>
         </div>
-        <div class="pricing-features">
-          <ul>
-            <li>Unlimited Talk</li>
-            <li>Unlimited Text</li>
-            <li>Unlimited Data</li>
-            <li>5G Access (AT&T Network)</li>
-            <li>Mobile Hotspot Included</li>
-            <li>eSIM Support</li>
-            <li>WiFi Calling</li>
-            <li>No Contract</li>
-            <li>No Credit Check</li>
-          </ul>
-        </div>
-        <div class="pricing-cta">
-          <a href="https://vouchmobile.com" class="btn btn-primary btn-lg">Get Started Now</a>
+
+        <!-- Elite Plan -->
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-header">
+            <span class="pricing-label">Most Popular</span>
+            <h3>Elite</h3>
+            <p class="plan-tagline">Maximum features & priority data</p>
+            <div class="price">
+              <span class="price-amount" data-monthly="40" data-annual="35">$35</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="price-note annual-note">Billed $420/year</p>
+            <p class="price-note monthly-note" style="display: none;">Billed monthly</p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li>Unlimited Talk & Text</li>
+              <li>Unlimited Premium Data</li>
+              <li>5G+ Priority Access</li>
+              <li>20GB Mobile Hotspot</li>
+              <li>eSIM Support</li>
+              <li>WiFi Calling</li>
+              <li>HD Video Streaming</li>
+              <li>International Texting</li>
+              <li>No Credit Check</li>
+            </ul>
+          </div>
+          <div class="pricing-cta">
+            <a href="https://vouchmobile.com" class="btn btn-primary btn-lg">Get Elite</a>
+          </div>
         </div>
       </div>
+
+      <p class="text-center text-light mt-8" style="font-size: 0.875rem;">All plans include taxes & fees. Cancel anytime.</p>
     </div>
   </section>
 

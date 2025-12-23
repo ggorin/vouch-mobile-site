@@ -19,14 +19,24 @@
   {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Vouch Mobile Premium Unlimited",
+    "name": "Vouch Mobile Plans",
     "description": "Unlimited talk, text, and data on AT&T's network",
-    "offers": {
-      "@type": "Offer",
-      "price": "30.00",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock"
-    }
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Premium Annual",
+        "price": "300.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Elite Annual",
+        "price": "420.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    ]
   }
   </script>
 </head>
@@ -60,41 +70,88 @@
   <!-- Page Header -->
   <section class="page-header">
     <div class="container">
-      <h1>Simple, Affordable Plans</h1>
-      <p>One plan with everything you need. No hidden fees. No surprises.</p>
+      <h1>Choose Your Plan</h1>
+      <p>Save more when you pay annually. No credit check required.</p>
     </div>
   </section>
 
   <!-- Pricing Section -->
   <section class="section-lg">
     <div class="container">
-      <div class="pricing-card" style="max-width: 600px;">
-        <div class="pricing-header">
-          <h3>Premium Unlimited</h3>
-          <div class="price">
-            <span class="price-amount">$30</span>
-            <span class="price-period">/month</span>
+      <!-- Billing Toggle -->
+      <div class="billing-toggle">
+        <span class="billing-option">Monthly</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="billing-toggle" checked>
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="billing-option billing-option-active">Annual <span class="save-badge">Save $120</span></span>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <p class="plan-tagline">Great value for everyday use</p>
+            <div class="price">
+              <span class="price-amount" data-monthly="30" data-annual="25">$25</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="price-note annual-note">Billed $300/year</p>
+            <p class="price-note monthly-note" style="display: none;">Billed monthly</p>
           </div>
-          <p style="opacity: 0.9; margin-top: 0.5rem;">+ taxes & fees</p>
+          <div class="pricing-features">
+            <ul>
+              <li><strong>Unlimited Talk & Text</strong> - Call & text anywhere in the US</li>
+              <li><strong>Unlimited Data</strong> - No overage charges ever</li>
+              <li><strong>5G Access</strong> - Fast speeds on AT&T's network</li>
+              <li><strong>5GB Mobile Hotspot</strong> - Share your connection</li>
+              <li><strong>eSIM Support</strong> - Activate instantly</li>
+              <li><strong>WiFi Calling</strong> - Call over WiFi when needed</li>
+              <li><strong>No Contract</strong> - Cancel anytime</li>
+              <li><strong>No Credit Check</strong> - Everyone approved</li>
+            </ul>
+          </div>
+          <div class="pricing-cta">
+            <a href="https://vouchmobile.com" class="btn btn-outline btn-lg">Get Premium</a>
+          </div>
         </div>
-        <div class="pricing-features">
-          <h4 style="margin-bottom: 1rem; color: var(--color-text);">Everything included:</h4>
-          <ul>
-            <li><strong>Unlimited Talk</strong> - Call anywhere in the US</li>
-            <li><strong>Unlimited Text</strong> - SMS & MMS messaging</li>
-            <li><strong>Unlimited Data</strong> - No overage charges ever</li>
-            <li><strong>5G Access</strong> - Fast speeds on AT&T's network</li>
-            <li><strong>Mobile Hotspot</strong> - Share your connection</li>
-            <li><strong>eSIM Support</strong> - Activate instantly</li>
-            <li><strong>WiFi Calling</strong> - Call over WiFi when needed</li>
-            <li><strong>No Contract</strong> - Cancel anytime</li>
-            <li><strong>No Credit Check</strong> - Everyone approved</li>
-          </ul>
-        </div>
-        <div class="pricing-cta">
-          <a href="https://vouchmobile.com" class="btn btn-primary btn-lg">Get Started Now</a>
+
+        <!-- Elite Plan -->
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-header">
+            <span class="pricing-label">Most Popular</span>
+            <h3>Elite</h3>
+            <p class="plan-tagline">Maximum features & priority data</p>
+            <div class="price">
+              <span class="price-amount" data-monthly="40" data-annual="35">$35</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="price-note annual-note">Billed $420/year</p>
+            <p class="price-note monthly-note" style="display: none;">Billed monthly</p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><strong>Unlimited Talk & Text</strong> - Call & text anywhere in the US</li>
+              <li><strong>Unlimited Premium Data</strong> - Priority speeds, no throttling</li>
+              <li><strong>5G+ Priority Access</strong> - Fastest available speeds</li>
+              <li><strong>20GB Mobile Hotspot</strong> - Share with more devices</li>
+              <li><strong>eSIM Support</strong> - Activate instantly</li>
+              <li><strong>WiFi Calling</strong> - Call over WiFi when needed</li>
+              <li><strong>HD Video Streaming</strong> - 1080p quality included</li>
+              <li><strong>International Texting</strong> - Text to 200+ countries</li>
+              <li><strong>No Contract</strong> - Cancel anytime</li>
+              <li><strong>No Credit Check</strong> - Everyone approved</li>
+            </ul>
+          </div>
+          <div class="pricing-cta">
+            <a href="https://vouchmobile.com" class="btn btn-primary btn-lg">Get Elite</a>
+          </div>
         </div>
       </div>
+
+      <p class="text-center text-light mt-8" style="font-size: 0.875rem;">All plans include taxes & fees. Cancel anytime.</p>
     </div>
   </section>
 
@@ -116,8 +173,14 @@
           </thead>
           <tbody>
             <tr style="background: var(--color-primary-light);">
-              <td style="padding: 1rem; font-weight: 600;">Vouch Mobile</td>
-              <td style="padding: 1rem; text-align: center; font-weight: 700; color: var(--color-primary);">$30/mo</td>
+              <td style="padding: 1rem; font-weight: 600;">Vouch Premium</td>
+              <td style="padding: 1rem; text-align: center; font-weight: 700; color: var(--color-primary);">$25/mo*</td>
+              <td style="padding: 1rem; text-align: center; color: var(--color-success);">No</td>
+              <td style="padding: 1rem; text-align: center; color: var(--color-success);">No</td>
+            </tr>
+            <tr style="background: rgba(0, 229, 199, 0.15);">
+              <td style="padding: 1rem; font-weight: 600;">Vouch Elite</td>
+              <td style="padding: 1rem; text-align: center; font-weight: 700; color: var(--color-primary);">$35/mo*</td>
               <td style="padding: 1rem; text-align: center; color: var(--color-success);">No</td>
               <td style="padding: 1rem; text-align: center; color: var(--color-success);">No</td>
             </tr>
@@ -143,7 +206,7 @@
         </table>
       </div>
 
-      <p class="text-center text-light mt-8">*Prices based on single-line unlimited plans as of 2025. Actual prices may vary.</p>
+      <p class="text-center text-light mt-8">*Vouch Mobile prices shown with annual billing. Prices based on single-line unlimited plans as of 2025.</p>
     </div>
   </section>
 

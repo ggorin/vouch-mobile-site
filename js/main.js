@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Form Validation (for contact page)
   initFormValidation();
+
+  // Billing Toggle (for pricing section)
+  initBillingToggle();
 });
 
 /* --------------------------------------------------------------------------
@@ -230,4 +233,48 @@ function isInViewport(element) {
     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
+}
+
+/* --------------------------------------------------------------------------
+   Billing Toggle (Annual/Monthly)
+   -------------------------------------------------------------------------- */
+function initBillingToggle() {
+  const toggle = document.getElementById('billing-toggle');
+  if (!toggle) return;
+
+  const billingOptions = document.querySelectorAll('.billing-option');
+  const priceAmounts = document.querySelectorAll('.price-amount[data-monthly][data-annual]');
+  const annualNotes = document.querySelectorAll('.annual-note');
+  const monthlyNotes = document.querySelectorAll('.monthly-note');
+
+  function updatePrices(isAnnual) {
+    priceAmounts.forEach(function(el) {
+      const price = isAnnual ? el.dataset.annual : el.dataset.monthly;
+      el.textContent = '$' + price;
+    });
+
+    annualNotes.forEach(function(el) {
+      el.style.display = isAnnual ? 'block' : 'none';
+    });
+
+    monthlyNotes.forEach(function(el) {
+      el.style.display = isAnnual ? 'none' : 'block';
+    });
+
+    // Update active state on billing options
+    billingOptions.forEach(function(option, index) {
+      if ((isAnnual && index === 1) || (!isAnnual && index === 0)) {
+        option.classList.add('billing-option-active');
+      } else {
+        option.classList.remove('billing-option-active');
+      }
+    });
+  }
+
+  // Initial state (annual is default)
+  updatePrices(toggle.checked);
+
+  toggle.addEventListener('change', function() {
+    updatePrices(this.checked);
+  });
 }
