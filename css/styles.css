@@ -12,42 +12,42 @@
    CSS Variables
    -------------------------------------------------------------------------- */
 :root {
-  /* Colors - Vibrant & Premium */
-  --color-primary: #00E5C7;
-  --color-primary-hover: #00CDB3;
-  --color-primary-glow: rgba(0, 229, 199, 0.5);
-  --color-primary-light: rgba(0, 229, 199, 0.08);
+  /* Colors - Clean & Professional Light Theme */
+  --color-primary: #00B5A0;
+  --color-primary-hover: #009D8B;
+  --color-primary-glow: rgba(0, 181, 160, 0.3);
+  --color-primary-light: rgba(0, 181, 160, 0.08);
 
   --color-accent: #FF6B4A;
   --color-accent-light: rgba(255, 107, 74, 0.1);
-  --color-accent-glow: rgba(255, 107, 74, 0.4);
+  --color-accent-glow: rgba(255, 107, 74, 0.2);
 
-  --color-dark: #050B14;
-  --color-dark-light: #0F1A29;
-  --color-dark-lighter: #1A283C;
+  --color-dark: #1F2937;
+  --color-dark-light: #F8FAFC;
+  --color-dark-lighter: #F1F5F9;
 
-  --color-text: #FFFFFF;
-  --color-text-light: #9CA3AF;
-  --color-text-muted: #6B7280;
+  --color-text: #1F2937;
+  --color-text-light: #64748B;
+  --color-text-muted: #94A3B8;
 
   --color-white: #FFFFFF;
-  --color-off-white: #F9FAFB;
+  --color-off-white: #F8FAFC;
 
-  --color-bg: #050B14;
-  --color-bg-alt: #0F1A29;
-  --color-bg-dark: #050B14;
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #F8FAFC;
+  --color-bg-dark: #1F2937;
 
-  --color-border: #1F2937;
-  --color-border-dark: rgba(255, 255, 255, 0.1);
+  --color-border: #E2E8F0;
+  --color-border-dark: rgba(0, 0, 0, 0.08);
 
   --color-success: #10B981;
   --color-danger: #EF4444;
 
-  /* Glassmorphism */
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-dark-bg: rgba(15, 26, 41, 0.7);
-  --glass-dark-border: rgba(255, 255, 255, 0.08);
+  /* Glassmorphism - Light Theme */
+  --glass-bg: rgba(255, 255, 255, 0.9);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-dark-bg: rgba(255, 255, 255, 0.95);
+  --glass-dark-border: rgba(0, 0, 0, 0.08);
 
   /* Typography */
   --font-display: 'Clash Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -498,17 +498,17 @@ h6 {
   left: 0;
   right: 0;
   height: var(--header-height);
-  background-color: var(--glass-dark-bg);
+  background-color: var(--glass-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--color-border);
   transition: all var(--transition);
 }
 
 .header.scrolled {
-  background-color: var(--glass-dark-bg);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background-color: var(--glass-bg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .header-inner {
@@ -543,19 +543,19 @@ h6 {
 .nav-link {
   padding: var(--spacing-2) var(--spacing-4);
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--color-text-light);
   border-radius: var(--radius-full);
   transition: all var(--transition);
 }
 
 .nav-link:hover {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text);
+  background-color: var(--color-bg-alt);
 }
 
 .nav-link.active {
   color: var(--color-primary);
-  background-color: rgba(0, 229, 199, 0.15);
+  background-color: var(--color-primary-light);
 }
 
 .mobile-menu-btn {
@@ -568,14 +568,14 @@ h6 {
 }
 
 .mobile-menu-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--color-bg-alt);
 }
 
 .mobile-menu-btn span {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--color-text);
   margin: 6px 0;
   transition: var(--transition);
   border-radius: 2px;
@@ -592,7 +592,7 @@ h6 {
   padding-top: var(--header-height);
   position: relative;
   overflow: hidden;
-  background-color: var(--color-dark);
+  background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 50%, #F1F5F9 100%);
 }
 
 .hero::before {
@@ -603,11 +603,9 @@ h6 {
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 15% 50%, rgba(0, 229, 199, 0.15) 0%, transparent 25%),
-    radial-gradient(circle at 85% 30%, rgba(255, 107, 74, 0.08) 0%, transparent 25%);
-  filter: blur(80px);
+    radial-gradient(circle at 15% 50%, rgba(0, 181, 160, 0.12) 0%, transparent 35%),
+    radial-gradient(circle at 85% 30%, rgba(255, 107, 74, 0.08) 0%, transparent 35%);
   z-index: 0;
-  animation: pulse-glow 8s ease-in-out infinite alternate;
 }
 
 /* Mesh Gradient Effect */
@@ -633,7 +631,7 @@ h6 {
   left: -10%;
   width: 50%;
   height: 50%;
-  background: radial-gradient(circle, var(--color-primary-glow), transparent);
+  background: radial-gradient(circle, rgba(0, 181, 160, 0.15), transparent);
   animation: float 10s ease-in-out infinite;
 }
 
@@ -642,7 +640,7 @@ h6 {
   right: -5%;
   width: 40%;
   height: 40%;
-  background: radial-gradient(circle, var(--color-accent-glow), transparent);
+  background: radial-gradient(circle, rgba(255, 107, 74, 0.1), transparent);
   animation: float 12s ease-in-out infinite reverse;
 }
 
@@ -651,7 +649,7 @@ h6 {
   left: 40%;
   width: 30%;
   height: 30%;
-  background: radial-gradient(circle, rgba(100, 100, 255, 0.15), transparent);
+  background: radial-gradient(circle, rgba(100, 100, 255, 0.08), transparent);
   animation: float 8s ease-in-out infinite 2s;
 }
 
@@ -669,13 +667,12 @@ h6 {
   /* More dramatic size */
   line-height: 1.1;
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-text);
   margin-bottom: var(--spacing-6);
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 .highlight {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #7DFFD4 50%, var(--color-white) 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #00D4B8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -734,8 +731,8 @@ h6 {
   align-items: center;
   gap: var(--spacing-2);
   padding: var(--spacing-2) var(--spacing-4);
-  background: rgba(0, 229, 199, 0.1);
-  border: 1px solid rgba(0, 229, 199, 0.3);
+  background: var(--color-primary-light);
+  border: 1px solid rgba(0, 181, 160, 0.3);
   border-radius: var(--radius-full);
   color: var(--color-primary);
   font-size: var(--font-size-sm);
@@ -756,14 +753,14 @@ h6 {
 .hero h1 {
   font-size: var(--font-size-6xl);
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-text);
   margin-bottom: var(--spacing-6);
   animation: fadeInUp 0.8s ease 0.1s forwards;
   opacity: 0;
 }
 
 .hero h1 .highlight {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #7DFFD4 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #00D4B8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -771,7 +768,7 @@ h6 {
 
 .hero p {
   font-size: var(--font-size-xl);
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text-light);
   margin-bottom: var(--spacing-10);
   max-width: 600px;
   margin-left: auto;
@@ -800,22 +797,22 @@ h6 {
   align-items: baseline;
   gap: var(--spacing-1);
   padding: var(--spacing-4) var(--spacing-8);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
-  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-lg);
 }
 
 .hero-price-amount {
   font-family: var(--font-display);
   font-size: var(--font-size-5xl);
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-text);
 }
 
 .hero-price-period {
   font-size: var(--font-size-lg);
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-text-muted);
 }
 
 /* Scroll indicator */
@@ -828,7 +825,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-2);
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--color-text-muted);
   font-size: var(--font-size-sm);
   animation: fadeIn 1s ease 1s forwards;
   opacity: 0;
@@ -838,7 +835,7 @@ h6 {
   content: '';
   width: 24px;
   height: 40px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--color-border);
   border-radius: 12px;
   position: relative;
 }
@@ -869,7 +866,7 @@ h6 {
   left: 0;
   right: 0;
   height: 200px;
-  background: linear-gradient(to bottom, var(--color-dark) 0%, transparent 100%);
+  background: linear-gradient(to bottom, var(--color-bg-alt) 0%, transparent 100%);
   pointer-events: none;
 }
 
@@ -899,9 +896,9 @@ h6 {
 .benefit-card {
   position: relative;
   padding: var(--spacing-8);
-  background: var(--color-dark-light);
+  background: var(--color-white);
   border-radius: var(--radius-xl);
-  border: 1px solid var(--color-border-dark);
+  border: 1px solid var(--color-border);
   transition: all var(--transition);
   overflow: hidden;
 }
@@ -996,11 +993,11 @@ h6 {
   position: relative;
   max-width: 480px;
   margin: 0 auto;
-  background: var(--color-dark-light);
+  background: var(--color-white);
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-xl);
   overflow: hidden;
-  border: 1px solid var(--color-border-dark);
+  border: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1009,16 +1006,16 @@ h6 {
 /* Featured Card */
 .pricing-card-featured {
   transform: scale(1.02);
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   background:
-    linear-gradient(var(--color-dark-light), var(--color-dark-light)) padding-box,
+    linear-gradient(var(--color-white), var(--color-white)) padding-box,
     linear-gradient(135deg, var(--color-primary), var(--color-accent)) border-box;
-  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 229, 199, 0.1);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 181, 160, 0.1);
 }
 
 .pricing-card-featured:hover {
   transform: scale(1.05) translateY(-8px);
-  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 229, 199, 0.2);
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.15), 0 0 50px rgba(0, 181, 160, 0.15);
 }
 
 .pricing-card-featured::before {
@@ -1036,8 +1033,8 @@ h6 {
 .pricing-header {
   padding: var(--spacing-10) var(--spacing-8);
   text-align: center;
-  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-light) 100%);
-  color: var(--color-white);
+  background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-white) 100%);
+  color: var(--color-text);
   position: relative;
   overflow: hidden;
 }
@@ -1050,8 +1047,8 @@ h6 {
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(ellipse 50% 80% at 20% 80%, rgba(0, 229, 199, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse 40% 60% at 80% 20%, rgba(255, 107, 74, 0.1) 0%, transparent 50%);
+    radial-gradient(ellipse 50% 80% at 20% 80%, rgba(0, 181, 160, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 60% at 80% 20%, rgba(255, 107, 74, 0.05) 0%, transparent 50%);
 }
 
 .pricing-header>* {
@@ -1062,7 +1059,7 @@ h6 {
 .pricing-label {
   display: inline-block;
   padding: var(--spacing-1) var(--spacing-3);
-  background: rgba(0, 229, 199, 0.2);
+  background: var(--color-primary-light);
   border-radius: var(--radius-full);
   font-size: var(--font-size-sm);
   font-weight: 600;
@@ -1097,7 +1094,7 @@ h6 {
   font-size: var(--font-size-7xl);
   font-weight: 700;
   line-height: 1;
-  background: linear-gradient(135deg, var(--color-white) 0%, var(--color-primary) 100%);
+  background: linear-gradient(135deg, var(--color-text) 0%, var(--color-primary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1286,7 +1283,7 @@ h6 {
   align-items: center;
   padding-top: calc(var(--header-height) + var(--spacing-8));
   padding-bottom: var(--spacing-12);
-  background: linear-gradient(135deg, var(--color-dark) 0%, #0F2140 50%, var(--color-dark-light) 100%);
+  background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 50%, #F1F5F9 100%);
   overflow: hidden;
 }
 
@@ -1295,8 +1292,8 @@ h6 {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 10% 90%, rgba(0, 229, 199, 0.12) 0%, transparent 50%),
-    radial-gradient(ellipse 40% 40% at 90% 10%, rgba(255, 107, 74, 0.08) 0%, transparent 50%);
+    radial-gradient(ellipse 60% 50% at 10% 90%, rgba(0, 181, 160, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 40% at 90% 10%, rgba(255, 107, 74, 0.06) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -1315,11 +1312,12 @@ h6 {
 .hero-split h1 {
   font-size: var(--font-size-5xl);
   margin-bottom: var(--spacing-6);
+  color: var(--color-text);
 }
 
 .hero-subtitle {
   font-size: var(--font-size-xl);
-  opacity: 0.85;
+  color: var(--color-text-light);
   line-height: 1.6;
   margin-bottom: var(--spacing-8);
 }
@@ -1338,7 +1336,7 @@ h6 {
   width: 100%;
   height: auto;
   border-radius: var(--radius-2xl);
-  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4), 0 0 60px rgba(0, 229, 199, 0.15);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15), 0 0 60px rgba(0, 181, 160, 0.1);
 }
 
 .hero-image::before {
@@ -1353,13 +1351,14 @@ h6 {
 
 .btn-ghost {
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.25);
-  color: var(--color-white);
+  border: 2px solid var(--color-border);
+  color: var(--color-text);
 }
 
 .btn-ghost:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: var(--color-bg-alt);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 /* --------------------------------------------------------------------------
@@ -1397,7 +1396,7 @@ h6 {
 .step-number {
   width: 80px;
   height: 80px;
-  background: var(--color-dark-light);
+  background: var(--color-white);
   border: 3px solid var(--color-primary);
   color: var(--color-primary);
   border-radius: var(--radius-full);
@@ -1436,8 +1435,8 @@ h6 {
    Coverage Section
    -------------------------------------------------------------------------- */
 .coverage {
-  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-light) 100%);
-  color: var(--color-white);
+  background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+  color: var(--color-text);
   position: relative;
   overflow: hidden;
 }
@@ -1450,8 +1449,8 @@ h6 {
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(0, 229, 199, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse 40% 30% at 20% 80%, rgba(255, 107, 74, 0.08) 0%, transparent 40%);
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(0, 181, 160, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 30% at 20% 80%, rgba(255, 107, 74, 0.05) 0%, transparent 40%);
 }
 
 .coverage-content {
@@ -1467,7 +1466,7 @@ h6 {
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-xl);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-border);
 }
 
 .coverage-map img {
@@ -1482,7 +1481,7 @@ h6 {
 
 .coverage-info p {
   font-size: var(--font-size-lg);
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text-light);
   margin-bottom: var(--spacing-8);
 }
 
@@ -1507,7 +1506,7 @@ h6 {
 
 .stat-label {
   font-size: var(--font-size-sm);
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -1547,7 +1546,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing-5) var(--spacing-6);
-  background: var(--color-dark-light);
+  background: var(--color-white);
   border: none;
   cursor: pointer;
   text-align: left;
@@ -1641,7 +1640,7 @@ h6 {
    Footer
    -------------------------------------------------------------------------- */
 .footer {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-dark);
   color: var(--color-white);
   padding: var(--spacing-20) 0 var(--spacing-8);
 }
@@ -1736,9 +1735,9 @@ h6 {
 .page-header {
   padding-top: calc(var(--header-height) + var(--spacing-16));
   padding-bottom: var(--spacing-16);
-  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-light) 100%);
+  background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
   text-align: center;
-  color: var(--color-white);
+  color: var(--color-text);
   position: relative;
   overflow: hidden;
 }
@@ -1750,7 +1749,7 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse 50% 50% at 50% 100%, rgba(0, 229, 199, 0.1) 0%, transparent 50%);
+  background: radial-gradient(ellipse 50% 50% at 50% 100%, rgba(0, 181, 160, 0.08) 0%, transparent 50%);
 }
 
 .page-header h1 {
@@ -1761,7 +1760,7 @@ h6 {
 
 .page-header p {
   font-size: var(--font-size-xl);
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text-light);
   position: relative;
 }
 
@@ -1769,7 +1768,7 @@ h6 {
    Cards
    -------------------------------------------------------------------------- */
 .card {
-  background-color: var(--color-dark-light);
+  background-color: var(--color-white);
   border-radius: var(--radius-xl);
   border: 1px solid var(--color-border);
   overflow: hidden;
@@ -2044,7 +2043,7 @@ h6 {
     top: var(--header-height);
     left: 0;
     right: 0;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     flex-direction: column;
     padding: var(--spacing-4);
     box-shadow: var(--shadow-lg);
