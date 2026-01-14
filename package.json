@@ -1,7 +1,7 @@
 {
   "name": "vouch",
   "version": "1.0.0",
-  "description": "",
+  "description": "Marketing website for Vouch Mobile, built with Eleventy.",
   "main": "index.js",
   "directories": {
     "doc": "docs"
