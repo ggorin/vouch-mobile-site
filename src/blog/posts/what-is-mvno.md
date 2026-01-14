@@ -4,6 +4,7 @@ excerpt: "Learn what an MVNO is, how they work, and why they can save you money 
 date: 2024-12-01
 readTime: 6
 tags: posts
+image: /images/blog/mvno.png
 layout: post.njk
 ---
 

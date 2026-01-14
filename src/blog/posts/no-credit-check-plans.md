@@ -4,6 +4,7 @@ excerpt: "Everything you need to know about getting a phone plan without a credi
 date: 2024-12-10
 readTime: 7
 tags: posts
+image: /images/blog/no-credit-check.png
 layout: post.njk
 ---
 

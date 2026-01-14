@@ -4,6 +4,7 @@ excerpt: "A step-by-step guide to keeping your phone number when switching to a 
 date: 2024-12-05
 readTime: 5
 tags: posts
+image: /images/blog/switch-carriers.png
 layout: post.njk
 ---
 

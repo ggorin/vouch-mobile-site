@@ -4,6 +4,7 @@ excerpt: "Understanding the differences between eSIM and traditional SIM cards t
 date: 2024-12-15
 readTime: 4
 tags: posts
+image: /images/blog/mvno.png
 layout: post.njk
 ---
 
