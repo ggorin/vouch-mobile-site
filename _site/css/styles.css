@@ -776,31 +776,6 @@ h6 {
   animation: float 8s ease-in-out infinite 2s;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 10;
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: var(--spacing-8);
-}
-
-.hero h1 {
-  font-size: var(--font-size-6xl);
-  /* More dramatic size */
-  line-height: 1.1;
-  font-weight: 700;
-  color: var(--color-text);
-  margin-bottom: var(--spacing-6);
-}
-
-.hero h1 .highlight {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #00D4B8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 /* Floating orbs */
 .hero-orb {
   position: absolute;
@@ -887,6 +862,7 @@ h6 {
 
 .hero h1 {
   font-size: var(--font-size-6xl);
+  line-height: 1.1;
   font-weight: 700;
   color: var(--color-text);
   margin-bottom: var(--spacing-6);
@@ -1492,12 +1468,12 @@ h6 {
   margin-top: var(--spacing-2);
 }
 
-/* Featured Card */
-.pricing-card-featured {
+/* Featured Card - Grid variant */
+.pricing-grid .pricing-card-featured {
   box-shadow: var(--shadow-2xl), 0 0 60px rgba(0, 229, 199, 0.15);
 }
 
-.pricing-card-featured::before {
+.pricing-grid .pricing-card-featured::before {
   height: 8px;
 }
 
@@ -1617,14 +1593,12 @@ h6 {
   color: var(--color-text);
 }
 
-.hero-subtitle {
-  font-size: var(--font-size-xl);
-  color: var(--color-text-light);
+.hero-split .hero-subtitle {
   line-height: 1.6;
   margin-bottom: var(--spacing-8);
 }
 
-.hero-subtitle strong {
+.hero-split .hero-subtitle strong {
   color: var(--color-primary);
   font-weight: 700;
 }
@@ -3081,10 +3055,11 @@ h6 {
   margin-bottom: var(--spacing-2);
 }
 
-.stat-label {
-  font-size: var(--font-size-sm);
+.stats-grid .stat-label {
   color: var(--color-text-light);
   font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 /* City Grid */
@@ -3347,7 +3322,7 @@ h6 {
 }
 
 /* Hero Image for Coverage Pages */
-.hero-image {
+.content-main .hero-image {
   width: 100%;
   max-width: 600px;
   height: auto;
