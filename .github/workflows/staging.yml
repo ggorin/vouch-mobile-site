@@ -1,0 +1,58 @@
+# Staging Deployment Workflow
+# Deploys to staging environment for PR previews (optional)
+
+name: Deploy to Staging
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
+
+env:
+  NODE_VERSION: '20.x'
+
+jobs:
+  deploy-staging:
+    name: Deploy PR to Staging
+    runs-on: ubuntu-latest
+    # Only run if staging is configured
+    if: vars.SEVALLA_STAGING_ENABLED == 'true'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Deploy to Staging
+        uses: sevalla-hosting/sevalla-deploy@v1.0.1
+        env:
+          PR_BRANCH: ${{ github.head_ref }}
+        with:
+          action: deploy-static-site
+          sevalla-token: ${{ secrets.SEVALLA_TOKEN }}
+          static-site-id: ${{ secrets.SEVALLA_STAGING_SITE_ID }}
+          branch: ${{ env.PR_BRANCH }}
+          wait-for-finish: true
+
+      - name: Comment PR with staging URL
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '🚀 **Staging deployment complete!**\n\nPreview your changes at your Sevalla staging URL.'
+            })
