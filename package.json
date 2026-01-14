@@ -28,6 +28,6 @@
     "@11ty/eleventy-plugin-rss": "^2.0.4"
   },
   "engines": {
-    "node": ">=20"
+    "node": "20.x"
   }
 }
