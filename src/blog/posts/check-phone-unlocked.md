@@ -4,7 +4,7 @@ excerpt: "Simple methods to verify if your phone is carrier unlocked and ready t
 date: 2024-12-20
 readTime: 3
 tags: posts
-image: /images/blog/switch-carriers.png
+image: /images/blog/phone-unlocked-new.png
 layout: post.njk
 ---
 

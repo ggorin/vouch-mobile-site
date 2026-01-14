@@ -19,7 +19,7 @@ layout: base.njk
     <div class="content-grid">
       <div class="content-main">
         {% if state.hasImage %}
-        <img src="/images/coverage/{{ state.slug }}.jpg" alt="Vouch Mobile coverage map in {{ state.name }}" class="hero-image">
+        <img src="/images/coverage/{{ state.slug }}.{{ state.imageExtension | default('jpg') }}" alt="Vouch Mobile coverage map in {{ state.name }}" class="hero-image">
         {% endif %}
 
         <h2>AT&T Network Coverage in {{ state.name }}</h2>

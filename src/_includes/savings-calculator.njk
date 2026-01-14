@@ -1,0 +1,26 @@
+<div class="calculator-card">
+  <div class="calculator-header">
+    <h3>Calculate Your Savings</h3>
+    <p>See how much you could save by switching to Vouch Mobile.</p>
+  </div>
+  <div class="calculator-body">
+    <div class="input-group">
+      <label for="current-bill">What is your current monthly bill?</label>
+      <div class="input-wrapper">
+        <span class="currency-symbol">$</span>
+        <input type="number" id="current-bill" placeholder="e.g. 85" min="0">
+      </div>
+    </div>
+    
+    <div class="result-display" id="savings-result" style="display: none;">
+      <p class="result-label">You could save</p>
+      <div class="result-amount">$<span id="savings-amount">0</span><span class="result-period">/year</span></div>
+      <p class="result-note">Based on our $30/mo unlimited plan</p>
+    </div>
+    
+    <div class="calculator-cta">
+      <button id="calculate-btn" class="btn btn-primary btn-full">Calculate Savings</button>
+      <a href="https://vouchmobile.com" id="switch-btn" class="btn btn-primary btn-full" style="display: none;">Switch & Save</a>
+    </div>
+  </div>
+</div>

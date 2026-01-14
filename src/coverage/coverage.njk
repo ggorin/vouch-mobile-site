@@ -4,41 +4,88 @@ title: Network Coverage
 description: Check Vouch Mobile's nationwide coverage on AT&T's network. 99% population coverage with 5G access in major cities.
 ---
 
-<section class="page-header">
+<!-- Premium Hero -->
+<section class="hero hero-sm">
   <div class="container">
-    <h1>Network Coverage</h1>
-    <p>Powered by AT&T's award-winning network with 99% population coverage</p>
+     <div class="hero-mesh">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Nationwide 5G</div>
+      <h1>Coverage You Can <span class="highlight">Count On</span></h1>
+      <p class="hero-subtitle">Powered by AT&T's award-winning network. 99% population coverage.</p>
+      
+      <!-- Search Component -->
+      <div class="coverage-search-wrapper animate-fade-in animate-delay-2">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="search" id="state-search" class="search-input" placeholder="Find your state..." aria-label="Search for a state">
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- Stats & Benefits -->
 <section class="section">
   <div class="container">
-    <div class="coverage-hero">
-      <img src="/images/coverage/coverage-hero.jpg" alt="Vouch Mobile nationwide coverage map" class="hero-image">
-    </div>
-
-    <div class="coverage-stats">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-number">99%</div>
-          <div class="stat-label">Population Coverage</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">5G</div>
-          <div class="stat-label">Network Access</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">50</div>
-          <div class="stat-label">States Covered</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">$30</div>
-          <div class="stat-label">Per Month</div>
-        </div>
+    <div class="stats-grid animate-fade-in animate-delay-3">
+      <div class="stat-card glass-panel">
+        <div class="stat-number">99%</div>
+        <div class="stat-label">Population Coverage</div>
+      </div>
+      <div class="stat-card glass-panel">
+        <div class="stat-number">5G</div>
+        <div class="stat-label">Network Access</div>
+      </div>
+      <div class="stat-card glass-panel">
+        <div class="stat-number">#1</div>
+        <div class="stat-label">Reliability</div>
+      </div>
+      <div class="stat-card glass-panel">
+        <div class="stat-number">$30</div>
+        <div class="stat-label">Per Month</div>
       </div>
     </div>
 
-    <h2 class="section-title">AT&T Network Benefits</h2>
+    <div class="coverage-map-container mt-12 animate-fade-in animate-delay-4">
+      <div class="map-frame">
+        <img src="/images/coverage/coverage-hero.jpg" alt="Vouch Mobile nationwide coverage map" class="map-image">
+        <div class="map-overlay">
+          <div class="map-badge">
+            <span class="status-dot"></span> Live Network Status
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- State List -->
+<section class="section section-alt" id="states">
+  <div class="container">
+    <div class="section-header text-center mb-12">
+      <h2 class="section-title">Coverage by State</h2>
+      <p class="section-subtitle">Select your state to see local coverage details</p>
+    </div>
+
+    <div class="state-grid" id="state-grid">
+      {% for state in states %}
+      <a href="/coverage/{{ state.slug }}/" class="state-link glass-panel-sm" data-state="{{ state.name | lower }}">
+        <span class="state-name">{{ state.name }}</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+      {% endfor %}
+    </div>
+    <div id="no-results" class="text-center text-muted mt-8" style="display: none;">
+      <p>No states found matching your search.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title text-center mb-12">Network Features</h2>
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon">
@@ -56,13 +103,6 @@ description: Check Vouch Mobile's nationwide coverage on AT&T's network. 99% pop
       </div>
       <div class="feature-card">
         <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-        </div>
-        <h3>Rural Coverage</h3>
-        <p>AT&T has excellent rural coverage compared to other carriers.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
         </div>
         <h3>Device Compatibility</h3>
@@ -72,69 +112,3 @@ description: Check Vouch Mobile's nationwide coverage on AT&T's network. 99% pop
   </div>
 </section>
 
-<section class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">Coverage by State</h2>
-    <p class="section-subtitle">Click your state for detailed coverage information</p>
-
-    <div class="state-grid">
-      {% for state in states %}
-      <a href="/coverage/{{ state.slug }}/" class="state-link">
-        <span class="state-name">{{ state.name }}</span>
-        <span class="state-coverage">{{ state.coverage }}</span>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">Coverage FAQ</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-question">
-          What network does Vouch Mobile use?
-          <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div class="faq-answer">
-          <p>Vouch Mobile operates on AT&T's network, providing access to the same towers and coverage as AT&T customers at a fraction of the price.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">
-          Is 5G included with Vouch Mobile?
-          <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div class="faq-answer">
-          <p>Yes! 5G access is included at no extra cost on all Vouch Mobile plans. You just need a 5G-capable phone.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">
-          How do I check coverage in my area?
-          <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div class="faq-answer">
-          <p>Since Vouch Mobile uses AT&T's network, you can check coverage at AT&T's coverage map. If AT&T works in your area, Vouch Mobile will too.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-section section">
-  <div class="container">
-    <div class="cta-content">
-      <h2>Ready to Get Connected?</h2>
-      <p>Join thousands of customers enjoying AT&T's network at a fraction of the price.</p>
-      <a href="https://vouchmobile.com" class="btn btn-primary btn-large">Get Started Today</a>
-    </div>
-  </div>
-</section>

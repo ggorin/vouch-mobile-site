@@ -5,7 +5,8 @@
     "abbr": "AZ",
     "nickname": "Grand Canyon State",
     "coverage": "99%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Phoenix", "description": "Full 5G coverage throughout the Valley of the Sun" },
       { "name": "Tucson", "description": "Comprehensive coverage in Southern Arizona" },
@@ -20,6 +21,7 @@
     "nickname": "Golden State",
     "coverage": "99%",
     "hasImage": true,
+    "imageExtension": "jpg",
     "cities": [
       { "name": "Los Angeles", "description": "Full 5G coverage across LA County and surrounding areas" },
       { "name": "San Francisco", "description": "Comprehensive coverage in the Bay Area" },
@@ -35,7 +37,8 @@
     "abbr": "CO",
     "nickname": "Centennial State",
     "coverage": "98%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Denver", "description": "Full 5G coverage in the Mile High City" },
       { "name": "Colorado Springs", "description": "Comprehensive coverage in the Pikes Peak region" },
@@ -50,6 +53,7 @@
     "nickname": "Sunshine State",
     "coverage": "99%",
     "hasImage": true,
+    "imageExtension": "jpg",
     "cities": [
       { "name": "Miami", "description": "Full 5G coverage throughout Miami-Dade County and South Florida" },
       { "name": "Orlando", "description": "Comprehensive coverage including theme park areas" },
@@ -65,7 +69,8 @@
     "abbr": "GA",
     "nickname": "Peach State",
     "coverage": "99%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Atlanta", "description": "Full 5G coverage throughout Metro Atlanta" },
       { "name": "Augusta", "description": "Comprehensive coverage in the CSRA" },
@@ -79,7 +84,8 @@
     "abbr": "IL",
     "nickname": "Prairie State",
     "coverage": "99%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Chicago", "description": "Full 5G coverage throughout Chicagoland" },
       { "name": "Aurora", "description": "Comprehensive coverage in the western suburbs" },
@@ -93,7 +99,8 @@
     "abbr": "MA",
     "nickname": "Bay State",
     "coverage": "99%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Boston", "description": "Full 5G coverage throughout Greater Boston" },
       { "name": "Worcester", "description": "Comprehensive coverage in Central Massachusetts" },
@@ -107,7 +114,8 @@
     "abbr": "MI",
     "nickname": "Great Lakes State",
     "coverage": "98%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Detroit", "description": "Full 5G coverage throughout Metro Detroit" },
       { "name": "Grand Rapids", "description": "Comprehensive coverage in West Michigan" },
@@ -121,7 +129,8 @@
     "abbr": "NJ",
     "nickname": "Garden State",
     "coverage": "99%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Newark", "description": "Full 5G coverage in North Jersey" },
       { "name": "Jersey City", "description": "Comprehensive coverage along the Hudson waterfront" },
@@ -136,6 +145,7 @@
     "nickname": "Empire State",
     "coverage": "99%",
     "hasImage": true,
+    "imageExtension": "jpg",
     "cities": [
       { "name": "New York City", "description": "Full 5G coverage across all five boroughs" },
       { "name": "Buffalo", "description": "Comprehensive coverage in Western New York" },
@@ -151,7 +161,8 @@
     "abbr": "NC",
     "nickname": "Tar Heel State",
     "coverage": "99%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Charlotte", "description": "Full 5G coverage in the Queen City" },
       { "name": "Raleigh", "description": "Comprehensive coverage in the Triangle" },
@@ -165,7 +176,8 @@
     "abbr": "OH",
     "nickname": "Buckeye State",
     "coverage": "99%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Columbus", "description": "Full 5G coverage in the state capital" },
       { "name": "Cleveland", "description": "Comprehensive coverage in Northeast Ohio" },
@@ -179,7 +191,8 @@
     "abbr": "PA",
     "nickname": "Keystone State",
     "coverage": "99%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Philadelphia", "description": "Full 5G coverage throughout Greater Philadelphia" },
       { "name": "Pittsburgh", "description": "Comprehensive coverage in Western Pennsylvania" },
@@ -194,6 +207,7 @@
     "nickname": "Lone Star State",
     "coverage": "99%",
     "hasImage": true,
+    "imageExtension": "jpg",
     "cities": [
       { "name": "Houston", "description": "Full 5G coverage throughout the Greater Houston area and Harris County" },
       { "name": "Dallas-Fort Worth", "description": "Comprehensive coverage across the Metroplex, AT&T's home territory" },
@@ -209,7 +223,8 @@
     "abbr": "VA",
     "nickname": "Old Dominion",
     "coverage": "99%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Virginia Beach", "description": "Full 5G coverage in Hampton Roads" },
       { "name": "Norfolk", "description": "Comprehensive coverage in the Tidewater region" },
@@ -223,7 +238,8 @@
     "abbr": "WA",
     "nickname": "Evergreen State",
     "coverage": "98%",
-    "hasImage": false,
+    "hasImage": true,
+    "imageExtension": "png",
     "cities": [
       { "name": "Seattle", "description": "Full 5G coverage throughout the Seattle metro" },
       { "name": "Tacoma", "description": "Comprehensive coverage in Pierce County" },
