@@ -66,3 +66,33 @@ The CI builds locally in GitHub Actions and pushes pre-built `_site/` to the rep
 1. Run `npm run build` locally
 2. Commit both source changes AND `_site/` changes
 3. Push to `main` - CI will deploy automatically
+
+## Content Guidelines
+
+**IMPORTANT:** All new content must follow the SEO guidelines documented in:
+
+📄 **[docs/seo-content-guidelines.md](docs/seo-content-guidelines.md)**
+
+This document covers:
+- Page structure (inverted pyramid for AI citations)
+- Content length by page type
+- Heading hierarchy (H1-H6 rules)
+- Keyword placement and density
+- Image SEO (alt text, file naming, srcset)
+- FAQ implementation with schema
+- Listicle formatting
+- Schema markup requirements by page type
+- Internal linking strategy
+- Topic cluster architecture
+- AI Overviews optimization
+- E-E-A-T signals
+- Pre-publish checklist
+
+### Schema Validation
+
+```bash
+npm run validate:schema    # Validate all page schemas
+npm run build:validate     # Build + validate in one step
+```
+
+Schema is implemented via `{% block schema %}` in templates. See existing pages for examples.
