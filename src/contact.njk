@@ -4,6 +4,40 @@ title: Contact Us
 description: Contact Vouch Mobile for support, questions, or feedback. We're here to help with your wireless needs.
 ---
 
+{% block schema %}
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Vouch Mobile",
+  "description": description,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": site.url + "/contact/"
+  },
+  "mainEntity": {
+    "@type": "Organization",
+    "@id": site.url + "/#organization",
+    "name": site.name,
+    "url": site.url,
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@vouchmobile.com",
+        "availableLanguage": "English",
+        "areaServed": "United States"
+      }
+    ],
+    "sameAs": [
+      "https://facebook.com/vouchmobile",
+      "https://instagram.com/vouchmobile"
+    ]
+  }
+} | dump | safe }}
+</script>
+{% endblock %}
+
 <section class="page-header">
   <div class="container">
     <h1>Contact Us</h1>

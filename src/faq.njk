@@ -7,6 +7,20 @@ eleventyNavigation:
   order: 4
 ---
 
+{% block schema %}
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs | flattenFaqs,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": site.url + "/faq/"
+  }
+} | dump | safe }}
+</script>
+{% endblock %}
+
 <section class="page-header">
   <div class="container">
     <h1>Frequently Asked Questions</h1>

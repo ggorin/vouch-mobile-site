@@ -40,6 +40,10 @@ jobs:
         id: build
         run: npm run build
 
+      - name: Validate schema markup
+        id: schema
+        run: npm run validate:schema
+
       - name: Verify build output
         run: |
           if [ ! -d "_site" ]; then

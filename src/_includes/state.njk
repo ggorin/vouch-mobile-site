@@ -2,6 +2,81 @@
 layout: base.njk
 ---
 
+{% block schema %}
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": site.url + "/#organization",
+      "name": site.name,
+      "url": site.url,
+      "areaServed": {
+        "@type": "State",
+        "name": state.name,
+        "containedInPlace": {
+          "@type": "Country",
+          "name": "United States"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Vouch Mobile work in " + state.name + "?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Vouch Mobile uses AT&T's network which provides excellent coverage across " + state.name + " with " + state.coverage + " population coverage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Vouch Mobile require a credit check in " + state.name + "?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No! Vouch Mobile never requires a credit check. " + state.name + " residents can sign up regardless of credit history."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Vouch Mobile have 5G in " + state.name + "?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! 5G coverage is available in major " + state.name + " cities including " + state.cities[0].name + "."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": site.url
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Coverage",
+          "item": site.url + "/coverage/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": state.name
+        }
+      ]
+    }
+  ]
+} | dump | safe }}
+</script>
+{% endblock %}
+
 <section class="page-header">
   <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb">

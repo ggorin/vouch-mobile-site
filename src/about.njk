@@ -7,6 +7,34 @@ eleventyNavigation:
   order: 5
 ---
 
+{% block schema %}
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Vouch Mobile",
+  "description": description,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": site.url + "/about/"
+  },
+  "mainEntity": {
+    "@type": "Organization",
+    "@id": site.url + "/#organization",
+    "name": site.name,
+    "url": site.url,
+    "description": "We believe everyone deserves access to reliable, affordable wireless service.",
+    "slogan": "Making quality wireless affordable for everyone",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Reach Mobile"
+    },
+    "knowsAbout": ["MVNO", "Mobile Virtual Network Operator", "Wireless Service", "AT&T Network"]
+  }
+} | dump | safe }}
+</script>
+{% endblock %}
+
 <section class="page-header">
   <div class="container">
     <h1>About Vouch Mobile</h1>

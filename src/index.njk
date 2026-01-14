@@ -7,6 +7,99 @@ eleventyNavigation:
   order: 1
 ---
 
+{% block schema %}
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": site.url + "/#organization",
+      "name": site.name,
+      "url": site.url,
+      "logo": {
+        "@type": "ImageObject",
+        "url": site.url + "/images/logo.png"
+      },
+      "image": site.url + "/images/og-image.png",
+      "description": site.description,
+      "email": "support@vouchmobile.com",
+      "sameAs": [
+        "https://facebook.com/vouchmobile",
+        "https://instagram.com/vouchmobile"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "priceRange": "$25-$40",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Reach Mobile"
+      },
+      "knowsAbout": ["MVNO", "Mobile Virtual Network Operator", "Wireless Service", "AT&T Network", "Prepaid Phone Plans"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Vouch Mobile Plans",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Premium Unlimited Plan",
+              "description": "Unlimited talk, text, and data with 5G access and 5GB hotspot"
+            },
+            "price": "25.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "25.00",
+              "priceCurrency": "USD",
+              "billingDuration": "P1M",
+              "billingIncrement": 12,
+              "unitText": "month (annual billing)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Elite Unlimited Plan",
+              "description": "Premium unlimited with priority data and 20GB hotspot"
+            },
+            "price": "35.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "35.00",
+              "priceCurrency": "USD",
+              "billingDuration": "P1M",
+              "billingIncrement": 12,
+              "unitText": "month (annual billing)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": site.url + "/#website",
+      "name": site.name,
+      "url": site.url,
+      "publisher": {
+        "@id": site.url + "/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": site.url + "/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+} | dump | safe }}
+</script>
+{% endblock %}
+
 <!-- Hero Section -->
 <section class="hero hero-split">
   <div class="container">

@@ -107,7 +107,9 @@ Research compiled for 130+ page SEO content plan. Use these files as reference w
 
 See **[SOURCES.md](SOURCES.md)** for authoritative external links to use in content.
 
-See **[IMAGE-DESIGN-STRATEGY.md](IMAGE-DESIGN-STRATEGY.md)** for visual design guidelines, image specifications, and **comprehensive Gemini/Nanobanana prompting best practices**.
+See **[IMAGE-DESIGN-STRATEGY.md](IMAGE-DESIGN-STRATEGY.md)** for visual design guidelines, image specifications, and **comprehensive Gemini 3 Pro (Nano Banana) prompting best practices**.
+
+See **[INFINITE-ZOOM-TECHNIQUE.md](INFINITE-ZOOM-TECHNIQUE.md)** for creating scrolling/zoom animations from AI-generated images (infinite zoom, pan, parallax effects).
 
 **Use these sources for backlinks:**
 - WhistleOut, Tom's Guide, Clark Howard (neutral comparisons)

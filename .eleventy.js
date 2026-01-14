@@ -99,6 +99,27 @@ module.exports = async function(eleventyConfig) {
     return str.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
   });
 
+  // Word count filter for schema markup
+  eleventyConfig.addFilter("wordcount", (str) => {
+    if (!str) return 0;
+    return str.replace(/<[^>]*>/g, '').split(/\s+/).filter(Boolean).length;
+  });
+
+  // Flatten FAQs for schema markup
+  eleventyConfig.addFilter("flattenFaqs", (faqs) => {
+    const allFaqs = [];
+    for (const category of Object.values(faqs)) {
+      for (const faq of category) {
+        allFaqs.push({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+        });
+      }
+    }
+    return allFaqs;
+  });
+
   // Current year shortcode
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 

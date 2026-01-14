@@ -9,7 +9,9 @@
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
-    "clean": "rm -rf _site"
+    "clean": "rm -rf _site",
+    "validate:schema": "node scripts/validate-schema.js",
+    "build:validate": "npm run build && npm run validate:schema"
   },
   "repository": {
     "type": "git",

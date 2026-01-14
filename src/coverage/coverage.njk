@@ -7,6 +7,36 @@ eleventyNavigation:
   order: 3
 ---
 
+{% set stateList = [] %}
+{% for state in states %}
+  {% set stateList = (stateList.push({"@type": "State", "name": state.name}), stateList) %}
+{% endfor %}
+
+{% block schema %}
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Vouch Mobile Nationwide Coverage",
+      "description": description,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": site.url + "/coverage/"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": site.url + "/#organization",
+      "name": site.name,
+      "areaServed": stateList
+    }
+  ]
+} | dump | safe }}
+</script>
+{% endblock %}
+
 <!-- Premium Hero -->
 <section class="hero hero-sm">
   <div class="container">

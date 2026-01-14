@@ -24,11 +24,7 @@
   {# Bundle CSS #}
   <style>{% getBundle "css" %}</style>
 
-  {% if schema %}
-  <script type="application/ld+json">
-  {{ schema | dump | safe }}
-  </script>
-  {% endif %}
+  {% block schema %}{% endblock %}
 
   {% block head %}{% endblock %}
 </head>

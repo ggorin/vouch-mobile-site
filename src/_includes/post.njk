@@ -2,6 +2,67 @@
 layout: base.njk
 ---
 
+{% block schema %}
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": site.url + page.url + "#article",
+      "headline": title,
+      "description": excerpt,
+      "image": (site.url + image) if image else (site.url + "/images/og-image.png"),
+      "datePublished": date | isoDate,
+      "dateModified": date | isoDate,
+      "timeRequired": "PT" + readTime + "M",
+      "author": {
+        "@type": "Organization",
+        "@id": site.url + "/#organization",
+        "name": site.name,
+        "url": site.url
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": site.url + "/#organization",
+        "name": site.name,
+        "logo": {
+          "@type": "ImageObject",
+          "url": site.url + "/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": site.url + page.url
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": site.url
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": site.url + "/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": title
+        }
+      ]
+    }
+  ]
+} | dump | safe }}
+</script>
+{% endblock %}
+
 <article class="article">
   <header class="article-header">
     <nav class="breadcrumb" aria-label="Breadcrumb">

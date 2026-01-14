@@ -140,7 +140,7 @@ URL Pattern: `/alternatives/[carrier]-alternatives/`
 | 68 | Best AT&T Alternatives | /alternatives/att-alternatives/ | att alternatives, switch from att |
 | 69 | Best Verizon Alternatives | /alternatives/verizon-alternatives/ | verizon alternatives, switch from verizon |
 | 70 | Best T-Mobile Alternatives | /alternatives/tmobile-alternatives/ | tmobile alternatives, switch from tmobile |
-| 71 | Best Cricket Alternatives | /alternatives/cricket-alternatives/ | cricket alternatives 2025 |
+| 71 | Best Cricket Alternatives | /alternatives/cricket-alternatives/ | cricket alternatives 2026 |
 | 72 | Best Mint Mobile Alternatives | /alternatives/mint-mobile-alternatives/ | mint mobile alternatives |
 | 73 | Best Metro Alternatives | /alternatives/metro-alternatives/ | metro by tmobile alternatives |
 | 74 | Best Visible Alternatives | /alternatives/visible-alternatives/ | visible alternatives |
@@ -237,7 +237,7 @@ URL Pattern: `/blog/[topic]/`
 | 122 | Tax Refund Phone Upgrade | /blog/tax-refund-phone/ | tax refund phone, phone with tax return |
 | 123 | Summer Travel Phone Tips | /blog/summer-travel-phone/ | summer travel phone plan |
 | 124 | Holiday Gift: Phone Plan | /blog/gift-phone-plan/ | gift phone plan, phone plan gift |
-| 125 | 2025 Phone Plan Trends | /blog/2025-phone-plan-trends/ | phone plans 2025, best carrier 2025 |
+| 125 | 2026 Phone Plan Trends | /blog/2026-phone-plan-trends/ | phone plans 2026, best carrier 2026 |
 
 ---
 
@@ -297,7 +297,7 @@ Sections:
 
 ### Comparison Page Template
 ```
-H1: Vouch Mobile vs [Competitor]: Which is Better in 2025?
+H1: Vouch Mobile vs [Competitor]: Which is Better in 2026?
 Meta: Compare Vouch Mobile and [Competitor] side by side. See pricing, coverage, features & find the best value.
 
 Sections:
@@ -312,7 +312,7 @@ Sections:
 
 ### Guide Page Template
 ```
-H1: [Topic]: Complete Guide for 2025
+H1: [Topic]: Complete Guide for 2026
 Meta: Learn everything about [topic]. Step-by-step instructions, tips, and expert advice.
 
 Sections:
