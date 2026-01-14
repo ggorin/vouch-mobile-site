@@ -794,6 +794,17 @@ h6 {
   /* Better blending on dark bg */
 }
 
+/* Dark mode hero section */
+.dark .hero-split {
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 50%, var(--color-bg-dark) 100%);
+}
+
+.dark .hero-split::before {
+  background:
+    radial-gradient(ellipse 60% 50% at 10% 90%, rgba(45, 212, 191, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 40% at 90% 10%, rgba(255, 107, 74, 0.08) 0%, transparent 50%);
+}
+
 .hero-orb-1 {
   width: 400px;
   height: 400px;
@@ -1635,6 +1646,67 @@ h6 {
   background: var(--color-bg-alt);
   border-color: var(--color-primary);
   color: var(--color-primary);
+}
+
+/* Dark mode button fixes */
+.dark .btn-ghost {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+}
+
+.dark .btn-ghost:hover {
+  border-color: var(--color-primary);
+  background: rgba(45, 212, 191, 0.1);
+}
+
+.dark .btn-outline {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+}
+
+.dark .btn-outline:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: rgba(45, 212, 191, 0.1);
+}
+
+/* Dark mode benefit cards */
+.dark .benefit-card {
+  background: var(--color-bg-alt);
+  border-color: var(--color-border);
+}
+
+.dark .benefit-card:hover {
+  border-color: var(--color-primary);
+}
+
+.dark .benefit-icon {
+  background: rgba(45, 212, 191, 0.15);
+}
+
+/* Dark mode pricing cards */
+.dark .pricing-card {
+  background: var(--color-bg-alt);
+  border-color: var(--color-border);
+}
+
+.dark .pricing-card-featured {
+  background:
+    linear-gradient(var(--color-bg-alt), var(--color-bg-alt)) padding-box,
+    linear-gradient(135deg, var(--color-primary), var(--color-accent)) border-box;
+}
+
+.dark .pricing-header {
+  background: transparent;
+}
+
+.dark .pricing-features li {
+  border-color: var(--color-border);
+}
+
+/* Dark mode step numbers */
+.dark .step-number {
+  background: var(--color-bg-alt);
 }
 
 /* --------------------------------------------------------------------------
