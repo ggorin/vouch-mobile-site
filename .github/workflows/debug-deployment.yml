@@ -20,34 +20,20 @@ jobs:
           SEVALLA_TOKEN: ${{ secrets.SEVALLA_TOKEN }}
           STATIC_SITE_ID: ${{ secrets.SEVALLA_STATIC_SITE_ID }}
         run: |
-          echo "## Static Site Configuration" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          RESPONSE=$(curl -s \
+          echo "=== STATIC SITE INFO ==="
+          curl -s \
             -H "Authorization: Bearer $SEVALLA_TOKEN" \
-            "https://api.sevalla.com/v2/static-sites/$STATIC_SITE_ID")
-
-          echo "### Site Details" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`json" >> $GITHUB_STEP_SUMMARY
-          echo "$RESPONSE" | jq '.' >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            "https://api.sevalla.com/v2/static-sites/$STATIC_SITE_ID" | jq '.'
 
       - name: Get recent deployments
         env:
           SEVALLA_TOKEN: ${{ secrets.SEVALLA_TOKEN }}
           STATIC_SITE_ID: ${{ secrets.SEVALLA_STATIC_SITE_ID }}
         run: |
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "## Recent Deployments" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          RESPONSE=$(curl -s \
+          echo "=== RECENT DEPLOYMENTS ==="
+          curl -s \
             -H "Authorization: Bearer $SEVALLA_TOKEN" \
-            "https://api.sevalla.com/v2/static-sites/$STATIC_SITE_ID/deployments")
-
-          echo "\`\`\`json" >> $GITHUB_STEP_SUMMARY
-          echo "$RESPONSE" | jq '.' >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            "https://api.sevalla.com/v2/static-sites/$STATIC_SITE_ID/deployments" | jq '.'
 
       - name: Get specific deployment details
         env:
@@ -55,15 +41,8 @@ jobs:
           DEPLOYMENT_ID: ${{ inputs.deployment_id }}
         run: |
           if [ -n "$DEPLOYMENT_ID" ]; then
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "## Deployment Details" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-
-            RESPONSE=$(curl -s \
+            echo "=== DEPLOYMENT DETAILS: $DEPLOYMENT_ID ==="
+            curl -s \
               -H "Authorization: Bearer $SEVALLA_TOKEN" \
-              "https://api.sevalla.com/v2/static-sites/deployments/$DEPLOYMENT_ID")
-
-            echo "\`\`\`json" >> $GITHUB_STEP_SUMMARY
-            echo "$RESPONSE" | jq '.' >> $GITHUB_STEP_SUMMARY
-            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+              "https://api.sevalla.com/v2/static-sites/deployments/$DEPLOYMENT_ID" | jq '.'
           fi
