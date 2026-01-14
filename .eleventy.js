@@ -1,8 +1,18 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const htmlMinifier = require("html-minifier");
 
-module.exports = function(eleventyConfig) {
+module.exports = async function(eleventyConfig) {
+  const { default: pluginBundle } = await import("@11ty/eleventy-plugin-bundle");
+  const { default: metagen } = await import("eleventy-plugin-metagen");
+
+  // Plugins
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(pluginBundle);
+  eleventyConfig.addPlugin(metagen);
+
   // Image Shortcode
   eleventyConfig.addNunjucksAsyncShortcode("image", async function(src, alt, widths = [300, 600, 1200], sizes = "100vw", attrs = {}) {
     if (!src) {
@@ -42,6 +52,23 @@ module.exports = function(eleventyConfig) {
 
   // Add RSS plugin
   eleventyConfig.addPlugin(pluginRss);
+
+  // HTML Minifier Transform
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if(outputPath && outputPath.endsWith(".html")) {
+      let minified = htmlMinifier.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+        minifyCSS: true,
+        minifyJS: true
+      });
+      return minified;
+    }
+    return content;
+  });
+
+  // Pass through static assets
 
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("src/css");

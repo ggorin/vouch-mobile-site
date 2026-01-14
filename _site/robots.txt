@@ -15,4 +15,3 @@ Crawl-delay: 1
 Disallow: /admin/
 Disallow: /.git/
 Disallow: /node_modules/
-# CI test
