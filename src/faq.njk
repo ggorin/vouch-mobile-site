@@ -21,108 +21,369 @@ eleventyNavigation:
 </script>
 {% endblock %}
 
-<section class="page-header">
+<section class="faq-hero">
   <div class="container">
-    <h1>Frequently Asked Questions</h1>
-    <p>Find answers to common questions about Vouch Mobile</p>
+    <div class="faq-hero-content">
+      <span class="faq-hero-label">Help Center</span>
+      <h1>How can we help?</h1>
+      <p>Find answers to common questions about Vouch Mobile</p>
+      <div class="faq-search-wrapper">
+        <div class="faq-search">
+          <svg class="faq-search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <path stroke-linecap="round" d="m21 21-4.35-4.35"/>
+          </svg>
+          <input type="text" id="faq-search-input" placeholder="Search questions..." autocomplete="off">
+          <kbd class="faq-search-kbd">/</kbd>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="faq-hero-bg"></div>
 </section>
 
-<section class="section-lg">
+<section class="faq-main">
   <div class="container">
-    <div style="max-width: 800px; margin: 0 auto;">
-      <h2 class="text-2xl mb-6">Plans & Pricing</h2>
-      <div class="faq-list mb-12">
-        {% for faq in faqs.plans %}
-        <div class="faq-item">
-          <button class="faq-question">
-            {{ faq.question }}
-            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <p>{{ faq.answer }}</p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
+    <div class="faq-layout">
+      {# Sidebar Navigation #}
+      <aside class="faq-sidebar">
+        <nav class="faq-nav" aria-label="FAQ Categories">
+          <span class="faq-nav-label">Categories</span>
+          <a href="#plans" class="faq-nav-item active" data-category="plans">
+            <span class="faq-nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+              </svg>
+            </span>
+            <span class="faq-nav-text">Plans & Pricing</span>
+            <span class="faq-nav-count">{{ faqs.plans | length }}</span>
+          </a>
+          <a href="#coverage" class="faq-nav-item" data-category="coverage">
+            <span class="faq-nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
+              </svg>
+            </span>
+            <span class="faq-nav-text">Coverage & Network</span>
+            <span class="faq-nav-count">{{ faqs.coverage | length }}</span>
+          </a>
+          <a href="#activation" class="faq-nav-item" data-category="activation">
+            <span class="faq-nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+              </svg>
+            </span>
+            <span class="faq-nav-text">Activation & Compatibility</span>
+            <span class="faq-nav-count">{{ faqs.activation | length }}</span>
+          </a>
+          <a href="#billing" class="faq-nav-item" data-category="billing">
+            <span class="faq-nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0c1.1.128 1.907 1.077 1.907 2.185zM9.75 9h.008v.008H9.75V9zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm4.125 4.5h.008v.008h-.008V13.5zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+              </svg>
+            </span>
+            <span class="faq-nav-text">Billing & Account</span>
+            <span class="faq-nav-count">{{ faqs.billing | length }}</span>
+          </a>
+          <a href="#support" class="faq-nav-item" data-category="support">
+            <span class="faq-nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+              </svg>
+            </span>
+            <span class="faq-nav-text">Support</span>
+            <span class="faq-nav-count">{{ faqs.support | length }}</span>
+          </a>
+        </nav>
+      </aside>
 
-      <h2 class="text-2xl mb-6">Coverage & Network</h2>
-      <div class="faq-list mb-12">
-        {% for faq in faqs.coverage %}
-        <div class="faq-item">
-          <button class="faq-question">
-            {{ faq.question }}
-            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      {# Main Content #}
+      <div class="faq-content">
+        {# Search Results Empty State #}
+        <div class="faq-no-results" id="faq-no-results" hidden>
+          <div class="faq-no-results-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
             </svg>
-          </button>
-          <div class="faq-answer">
-            <p>{{ faq.answer }}</p>
           </div>
+          <h3>No results found</h3>
+          <p>Try different keywords or browse by category</p>
+          <button type="button" class="btn btn-outline" id="faq-clear-search">Clear search</button>
         </div>
-        {% endfor %}
-      </div>
 
-      <h2 class="text-2xl mb-6">Activation & Compatibility</h2>
-      <div class="faq-list mb-12">
-        {% for faq in faqs.activation %}
-        <div class="faq-item">
-          <button class="faq-question">
-            {{ faq.question }}
-            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <p>{{ faq.answer }}</p>
+        {# Plans & Pricing #}
+        <div class="faq-category" id="plans" data-category="plans">
+          <div class="faq-category-header">
+            <div class="faq-category-icon faq-category-icon--plans">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+              </svg>
+            </div>
+            <div>
+              <h2>Plans & Pricing</h2>
+              <p>Everything about our plans and what's included</p>
+            </div>
+          </div>
+          <div class="faq-list">
+            {% for faq in faqs.plans %}
+            <div class="faq-item" data-question="{{ faq.question | lower }}" data-answer="{{ faq.answer | lower }}">
+              <button class="faq-question" aria-expanded="false">
+                <span class="faq-question-text">{{ faq.question }}</span>
+                <span class="faq-question-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <p>{{ faq.answer }}</p>
+              </div>
+            </div>
+            {% endfor %}
           </div>
         </div>
-        {% endfor %}
-      </div>
 
-      <h2 class="text-2xl mb-6">Billing & Account</h2>
-      <div class="faq-list mb-12">
-        {% for faq in faqs.billing %}
-        <div class="faq-item">
-          <button class="faq-question">
-            {{ faq.question }}
-            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <p>{{ faq.answer }}</p>
+        {# Coverage & Network #}
+        <div class="faq-category" id="coverage" data-category="coverage">
+          <div class="faq-category-header">
+            <div class="faq-category-icon faq-category-icon--coverage">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
+              </svg>
+            </div>
+            <div>
+              <h2>Coverage & Network</h2>
+              <p>Learn about our network and where we have coverage</p>
+            </div>
+          </div>
+          <div class="faq-list">
+            {% for faq in faqs.coverage %}
+            <div class="faq-item" data-question="{{ faq.question | lower }}" data-answer="{{ faq.answer | lower }}">
+              <button class="faq-question" aria-expanded="false">
+                <span class="faq-question-text">{{ faq.question }}</span>
+                <span class="faq-question-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <p>{{ faq.answer }}</p>
+              </div>
+            </div>
+            {% endfor %}
           </div>
         </div>
-        {% endfor %}
-      </div>
 
-      <h2 class="text-2xl mb-6">Support</h2>
-      <div class="faq-list">
-        {% for faq in faqs.support %}
-        <div class="faq-item">
-          <button class="faq-question">
-            {{ faq.question }}
-            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <p>{{ faq.answer }}</p>
+        {# Activation & Compatibility #}
+        <div class="faq-category" id="activation" data-category="activation">
+          <div class="faq-category-header">
+            <div class="faq-category-icon faq-category-icon--activation">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+              </svg>
+            </div>
+            <div>
+              <h2>Activation & Compatibility</h2>
+              <p>Getting started and device compatibility info</p>
+            </div>
+          </div>
+          <div class="faq-list">
+            {% for faq in faqs.activation %}
+            <div class="faq-item" data-question="{{ faq.question | lower }}" data-answer="{{ faq.answer | lower }}">
+              <button class="faq-question" aria-expanded="false">
+                <span class="faq-question-text">{{ faq.question }}</span>
+                <span class="faq-question-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <p>{{ faq.answer }}</p>
+              </div>
+            </div>
+            {% endfor %}
           </div>
         </div>
-        {% endfor %}
+
+        {# Billing & Account #}
+        <div class="faq-category" id="billing" data-category="billing">
+          <div class="faq-category-header">
+            <div class="faq-category-icon faq-category-icon--billing">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0c1.1.128 1.907 1.077 1.907 2.185zM9.75 9h.008v.008H9.75V9zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm4.125 4.5h.008v.008h-.008V13.5zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+              </svg>
+            </div>
+            <div>
+              <h2>Billing & Account</h2>
+              <p>Payment, contracts, and account management</p>
+            </div>
+          </div>
+          <div class="faq-list">
+            {% for faq in faqs.billing %}
+            <div class="faq-item" data-question="{{ faq.question | lower }}" data-answer="{{ faq.answer | lower }}">
+              <button class="faq-question" aria-expanded="false">
+                <span class="faq-question-text">{{ faq.question }}</span>
+                <span class="faq-question-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <p>{{ faq.answer }}</p>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        {# Support #}
+        <div class="faq-category" id="support" data-category="support">
+          <div class="faq-category-header">
+            <div class="faq-category-icon faq-category-icon--support">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+              </svg>
+            </div>
+            <div>
+              <h2>Support</h2>
+              <p>How to get help when you need it</p>
+            </div>
+          </div>
+          <div class="faq-list">
+            {% for faq in faqs.support %}
+            <div class="faq-item" data-question="{{ faq.question | lower }}" data-answer="{{ faq.answer | lower }}">
+              <button class="faq-question" aria-expanded="false">
+                <span class="faq-question-text">{{ faq.question }}</span>
+                <span class="faq-question-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <p>{{ faq.answer }}</p>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cta-section section-lg">
+<section class="faq-cta">
   <div class="container">
-    <h2>Still Have Questions?</h2>
-    <p>Our support team is here to help you.</p>
-    <a href="/contact/" class="btn btn-primary btn-lg">Contact Us</a>
+    <div class="faq-cta-card">
+      <div class="faq-cta-content">
+        <h2>Still have questions?</h2>
+        <p>Our support team is here to help you get started.</p>
+      </div>
+      <div class="faq-cta-actions">
+        <a href="/contact/" class="btn btn-primary">Contact Support</a>
+        <a href="https://vouchmobile.com" class="btn btn-outline">Get Started</a>
+      </div>
+    </div>
   </div>
 </section>
+
+<script>
+(function() {
+  // Sidebar Navigation - Active State on Scroll
+  const categories = document.querySelectorAll('.faq-category');
+  const navItems = document.querySelectorAll('.faq-nav-item');
+
+  if (categories.length && navItems.length) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -60% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const categoryId = entry.target.id;
+          navItems.forEach(navItem => {
+            navItem.classList.toggle('active', navItem.dataset.category === categoryId);
+          });
+        }
+      });
+    }, observerOptions);
+
+    categories.forEach(category => observer.observe(category));
+
+    // Smooth scroll for nav links
+    navItems.forEach(navItem => {
+      navItem.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = navItem.getAttribute('href').slice(1);
+        const target = document.getElementById(targetId);
+        const headerOffset = 100;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      });
+    });
+  }
+
+  // Search Functionality
+  const searchInput = document.getElementById('faq-search-input');
+  const noResults = document.getElementById('faq-no-results');
+  const clearSearch = document.getElementById('faq-clear-search');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      let hasResults = false;
+
+      categories.forEach(category => {
+        const items = category.querySelectorAll('.faq-item');
+        let categoryHasResults = false;
+
+        items.forEach(item => {
+          const questionText = item.dataset.question;
+          const answerText = item.dataset.answer;
+          const matches = questionText.includes(query) || answerText.includes(query);
+
+          item.style.display = matches || !query ? '' : 'none';
+          if (matches || !query) {
+            categoryHasResults = true;
+            hasResults = true;
+          }
+        });
+
+        category.style.display = categoryHasResults || !query ? '' : 'none';
+      });
+
+      if (noResults) noResults.hidden = hasResults || !query;
+    });
+
+    if (clearSearch) {
+      clearSearch.addEventListener('click', () => {
+        searchInput.value = '';
+        searchInput.dispatchEvent(new Event('input'));
+        searchInput.focus();
+      });
+    }
+
+    // Keyboard shortcut: "/" to focus search
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/' && document.activeElement !== searchInput) {
+        e.preventDefault();
+        searchInput.focus();
+      }
+      if (e.key === 'Escape' && document.activeElement === searchInput) {
+        searchInput.blur();
+      }
+    });
+  }
+})();
+</script>
