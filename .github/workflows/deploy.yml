@@ -1,7 +1,7 @@
 # CI/CD Pipeline for Vouch Mobile Site
-# Integrates GitHub with Sevalla for automated deployments
+# Validates builds and monitors Sevalla automatic deployments
 
-name: Build & Deploy to Sevalla
+name: Build & Monitor Sevalla Deployment
 
 on:
   push:
@@ -16,10 +16,12 @@ env:
   NODE_VERSION: '20.x'
 
 jobs:
-  # Build and validate the site
+  # Build and validate the site locally before Sevalla deploys
   build:
     name: Build & Validate
     runs-on: ubuntu-latest
+    outputs:
+      build_status: ${{ steps.build.outcome }}
 
     steps:
       - name: Checkout repository
@@ -35,40 +37,168 @@ jobs:
         run: npm ci
 
       - name: Build site
+        id: build
         run: npm run build
 
       - name: Verify build output
         run: |
           if [ ! -d "_site" ]; then
-            echo "Build failed: _site directory not found"
+            echo "::error::Build failed - _site directory not found"
             exit 1
           fi
-          echo "Build successful! Files in _site:"
-          ls -la _site/
+          echo "## Build Summary" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Build successful" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Output files:" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          find _site -type f | head -20 >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          FILE_COUNT=$(find _site -type f | wc -l)
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Total files:** $FILE_COUNT" >> $GITHUB_STEP_SUMMARY
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: site-build
           path: _site/
-          retention-days: 1
+          retention-days: 7
 
-  # Deploy to Sevalla (only on push to main)
-  deploy:
-    name: Deploy to Sevalla
+  # Monitor Sevalla's automatic deployment (only on push to main)
+  monitor-deployment:
+    name: Monitor Sevalla Deployment
     runs-on: ubuntu-latest
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     steps:
-      - name: Deploy to Sevalla
-        uses: sevalla-hosting/sevalla-deploy@v1.0.1
-        with:
-          action: deploy-static-site
-          sevalla-token: ${{ secrets.SEVALLA_TOKEN }}
-          static-site-id: ${{ secrets.SEVALLA_STATIC_SITE_ID }}
-          branch: main
-          wait-for-finish: true
+      - name: Wait for Sevalla to detect commit
+        run: |
+          echo "Waiting 10s for Sevalla to detect the commit..."
+          sleep 10
 
-      - name: Deployment complete
-        run: echo "Site deployed successfully to Sevalla!"
+      - name: Check deployment status
+        id: check-deploy
+        env:
+          SEVALLA_TOKEN: ${{ secrets.SEVALLA_TOKEN }}
+          STATIC_SITE_ID: ${{ secrets.SEVALLA_STATIC_SITE_ID }}
+        run: |
+          echo "Polling Sevalla for deployment status..."
+
+          MAX_ATTEMPTS=30
+          ATTEMPT=0
+          DEPLOY_STATUS="pending"
+
+          while [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do
+            ATTEMPT=$((ATTEMPT + 1))
+            echo "Check $ATTEMPT/$MAX_ATTEMPTS..."
+
+            RESPONSE=$(curl -s -w "\n%{http_code}" \
+              -H "Authorization: Bearer $SEVALLA_TOKEN" \
+              "https://api.sevalla.com/v2/static-sites/$STATIC_SITE_ID")
+
+            HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+            BODY=$(echo "$RESPONSE" | sed '$d')
+
+            if [ "$HTTP_CODE" != "200" ]; then
+              echo "API returned $HTTP_CODE, retrying..."
+              sleep 10
+              continue
+            fi
+
+            # Parse deployment status from response
+            DEPLOY_STATUS=$(echo "$BODY" | jq -r '.status // "unknown"')
+            DEPLOY_URL=$(echo "$BODY" | jq -r '.primary_domain // "N/A"')
+
+            echo "Current status: $DEPLOY_STATUS"
+
+            if [ "$DEPLOY_STATUS" = "active" ] || [ "$DEPLOY_STATUS" = "live" ]; then
+              echo "deployment_status=success" >> $GITHUB_OUTPUT
+              echo "deployment_url=$DEPLOY_URL" >> $GITHUB_OUTPUT
+              break
+            elif [ "$DEPLOY_STATUS" = "failed" ] || [ "$DEPLOY_STATUS" = "error" ]; then
+              echo "deployment_status=failed" >> $GITHUB_OUTPUT
+              exit 1
+            fi
+
+            sleep 10
+          done
+
+          if [ $ATTEMPT -eq $MAX_ATTEMPTS ]; then
+            echo "deployment_status=timeout" >> $GITHUB_OUTPUT
+            echo "::warning::Deployment monitoring timed out"
+          fi
+
+      - name: Write deployment summary
+        if: always()
+        env:
+          DEPLOY_STATUS: ${{ steps.check-deploy.outputs.deployment_status }}
+          DEPLOY_URL: ${{ steps.check-deploy.outputs.deployment_url }}
+        run: |
+          echo "## Sevalla Deployment Status" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ "$DEPLOY_STATUS" = "success" ]; then
+            echo "✅ **Deployment successful**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "🌐 **Live URL:** https://$DEPLOY_URL" >> $GITHUB_STEP_SUMMARY
+          elif [ "$DEPLOY_STATUS" = "failed" ]; then
+            echo "❌ **Deployment failed**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Check [Sevalla Dashboard](https://my.sevalla.com) for logs." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⏳ **Deployment status:** $DEPLOY_STATUS" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "**Commit:** \`$GITHUB_SHA\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** \`$GITHUB_REF_NAME\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Triggered by:** $GITHUB_ACTOR" >> $GITHUB_STEP_SUMMARY
+
+  # Optional: Send notification on deployment
+  notify:
+    name: Send Notifications
+    runs-on: ubuntu-latest
+    needs: [build, monitor-deployment]
+    if: always() && github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Determine status
+        id: status
+        env:
+          BUILD_RESULT: ${{ needs.build.result }}
+          DEPLOY_RESULT: ${{ needs.monitor-deployment.result }}
+        run: |
+          if [ "$BUILD_RESULT" = "success" ] && [ "$DEPLOY_RESULT" = "success" ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+            echo "message=✅ Vouch Mobile site deployed successfully" >> $GITHUB_OUTPUT
+          elif [ "$BUILD_RESULT" = "failure" ]; then
+            echo "status=failure" >> $GITHUB_OUTPUT
+            echo "message=❌ Build failed - deployment blocked" >> $GITHUB_OUTPUT
+          else
+            echo "status=warning" >> $GITHUB_OUTPUT
+            echo "message=⚠️ Deployment completed with warnings" >> $GITHUB_OUTPUT
+          fi
+
+      # Slack notification (optional - requires SLACK_WEBHOOK_URL secret)
+      - name: Notify Slack
+        if: vars.SLACK_NOTIFICATIONS_ENABLED == 'true'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          STATUS_MESSAGE: ${{ steps.status.outputs.message }}
+        run: |
+          curl -X POST "$SLACK_WEBHOOK_URL" \
+            -H 'Content-type: application/json' \
+            --data "{\"text\": \"$STATUS_MESSAGE\nCommit: $GITHUB_SHA\nBy: $GITHUB_ACTOR\"}"
+
+      # Discord notification (optional - requires DISCORD_WEBHOOK_URL secret)
+      - name: Notify Discord
+        if: vars.DISCORD_NOTIFICATIONS_ENABLED == 'true'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          STATUS_MESSAGE: ${{ steps.status.outputs.message }}
+        run: |
+          curl -X POST "$DISCORD_WEBHOOK_URL" \
+            -H 'Content-type: application/json' \
+            --data "{\"content\": \"$STATUS_MESSAGE\n\`\`\`Commit: $GITHUB_SHA\nBy: $GITHUB_ACTOR\`\`\`\"}"
