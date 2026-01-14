@@ -9,6 +9,7 @@
       "monthlyPrice": 30,
       "annualPrice": 25,
       "annualTotal": 300,
+      "tagline": "Great value for everyday use",
       "features": [
         "Unlimited Talk & Text",
         "Unlimited Data",
@@ -25,6 +26,7 @@
       "monthlyPrice": 40,
       "annualPrice": 35,
       "annualTotal": 420,
+      "tagline": "Maximum features & priority data",
       "popular": true,
       "features": [
         "Unlimited Talk & Text",
