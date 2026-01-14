@@ -1,8 +1,8 @@
 # Dependencies
 node_modules/
 
-# Build output
-_site/
+# Build output - now tracked for Sevalla static hosting
+# _site/
 
 # OS files
 .DS_Store

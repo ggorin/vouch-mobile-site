@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Vouch Mobile Blog</title>
+  <subtitle>Affordable unlimited wireless on AT&amp;T&#39;s network. No credit check, no contracts. Just $30/month for unlimited talk, text, and data.</subtitle>
+  <link href="https://vouchmobile.com/feed.xml" rel="self"/>
+  <link href="https://vouchmobile.com/blog/"/>
+  <updated>2024-12-20T00:00:00.000Z</updated>
+  <id>https://vouchmobile.com/</id>
+  <author>
+    <name>Vouch Mobile</name>
+  </author>
+  <entry>
+    <title>How to Check if Your Phone is Unlocked</title>
+    <link href="https://vouchmobile.com/blog/posts/check-phone-unlocked/"/>
+    <updated>2024-12-20T00:00:00.000Z</updated>
+    <id>https://vouchmobile.com/blog/posts/check-phone-unlocked/</id>
+    <content type="html">Simple methods to verify if your phone is carrier unlocked and ready to switch carriers.</content>
+  </entry>
+  <entry>
+    <title>eSIM vs Physical SIM: Which is Right for You?</title>
+    <link href="https://vouchmobile.com/blog/posts/esim-vs-sim/"/>
+    <updated>2024-12-15T00:00:00.000Z</updated>
+    <id>https://vouchmobile.com/blog/posts/esim-vs-sim/</id>
+    <content type="html">Understanding the differences between eSIM and traditional SIM cards to help you choose the right option.</content>
+  </entry>
+  <entry>
+    <title>No Credit Check Phone Plans: Your Complete Guide</title>
+    <link href="https://vouchmobile.com/blog/posts/no-credit-check-plans/"/>
+    <updated>2024-12-10T00:00:00.000Z</updated>
+    <id>https://vouchmobile.com/blog/posts/no-credit-check-plans/</id>
+    <content type="html">Everything you need to know about getting a phone plan without a credit check, regardless of your credit history.</content>
+  </entry>
+  <entry>
+    <title>How to Switch Phone Carriers Without Losing Your Number</title>
+    <link href="https://vouchmobile.com/blog/posts/switch-carriers/"/>
+    <updated>2024-12-05T00:00:00.000Z</updated>
+    <id>https://vouchmobile.com/blog/posts/switch-carriers/</id>
+    <content type="html">A step-by-step guide to keeping your phone number when switching to a new carrier.</content>
+  </entry>
+  <entry>
+    <title>What is an MVNO? Everything You Need to Know</title>
+    <link href="https://vouchmobile.com/blog/posts/what-is-mvno/"/>
+    <updated>2024-12-01T00:00:00.000Z</updated>
+    <id>https://vouchmobile.com/blog/posts/what-is-mvno/</id>
+    <content type="html">Learn what an MVNO is, how they work, and why they can save you money on your phone bill.</content>
+  </entry>
+</feed>
