@@ -2,7 +2,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const htmlMinifier = require("html-minifier");
+const htmlMinifier = require("html-minifier-terser");
 
 module.exports = async function(eleventyConfig) {
   const { default: pluginBundle } = await import("@11ty/eleventy-plugin-bundle");
