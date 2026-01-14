@@ -3058,6 +3058,88 @@ h6 {
 }
 
 /* --------------------------------------------------------------------------
+   Comparison Hero Section
+   -------------------------------------------------------------------------- */
+.compare-hero {
+  padding: calc(var(--header-height) + var(--spacing-12)) 0 var(--spacing-12);
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+}
+
+.compare-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-12);
+  align-items: center;
+}
+
+.compare-content h1 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-4);
+  color: var(--color-text);
+}
+
+.compare-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-6);
+}
+
+.compare-image {
+  position: relative;
+}
+
+.compare-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Pros & Cons Lists */
+.pros-list,
+.cons-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-4) 0 var(--spacing-6);
+}
+
+.pros-list li,
+.cons-list li {
+  position: relative;
+  padding-left: var(--spacing-8);
+  margin-bottom: var(--spacing-3);
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.pros-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-success, #10B981);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+}
+
+.cons-list li::before {
+  content: '✗';
+  position: absolute;
+  left: 0;
+  color: var(--color-error, #EF4444);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+}
+
+/* Dark mode comparison hero */
+.dark .compare-hero {
+  background: linear-gradient(135deg, var(--color-bg-dark) 0%, var(--color-bg) 100%);
+}
+
+/* --------------------------------------------------------------------------
    Content Pages (Coverage & Compare)
    -------------------------------------------------------------------------- */
 .content-grid {
@@ -3253,18 +3335,14 @@ h6 {
 }
 
 /* Comparison Table */
-.comparison-table {
-  margin: var(--spacing-6) 0;
-  overflow-x: auto;
-}
-
-.comparison-table table {
+table.comparison-table {
   width: 100%;
   border-collapse: collapse;
   background: var(--color-white);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
+  margin: var(--spacing-6) 0;
 }
 
 .comparison-table th,
@@ -3296,6 +3374,20 @@ h6 {
   background: var(--color-bg-alt);
 }
 
+/* Dark mode comparison table */
+.dark table.comparison-table {
+  background: var(--color-bg-alt);
+  box-shadow: var(--shadow-lg);
+}
+
+.dark .comparison-table td {
+  border-color: var(--color-border);
+}
+
+.dark .comparison-table tr:nth-child(even) {
+  background: var(--color-bg);
+}
+
 /* Callout Box */
 .callout {
   background: var(--color-primary-light);
@@ -3305,17 +3397,38 @@ h6 {
   margin: var(--spacing-6) 0;
 }
 
+.callout h3,
 .callout h4 {
   font-family: var(--font-display);
   font-size: var(--font-size-lg);
   font-weight: 600;
-  margin: 0 0 var(--spacing-2);
+  margin: 0 0 var(--spacing-3);
   color: var(--color-text);
 }
 
 .callout p {
   margin: 0;
   color: var(--color-text-light);
+}
+
+.callout ul {
+  margin: 0;
+  padding-left: var(--spacing-5);
+}
+
+.callout li {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-2);
+  line-height: 1.6;
+}
+
+.callout li:last-child {
+  margin-bottom: 0;
+}
+
+/* Dark mode callout */
+.dark .callout {
+  background: rgba(45, 212, 191, 0.1);
 }
 
 /* Section Alt Background */
@@ -3406,6 +3519,22 @@ h6 {
 
 /* Responsive adjustments for content pages */
 @media (max-width: 992px) {
+  .compare-hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+    text-align: center;
+  }
+
+  .compare-image {
+    order: -1;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .compare-content h1 {
+    font-size: var(--font-size-3xl);
+  }
+
   .content-grid {
     grid-template-columns: 1fr;
   }
