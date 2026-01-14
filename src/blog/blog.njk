@@ -21,7 +21,7 @@ permalink: /blog/
         <a href="{{ post.url }}" class="blog-card-image-link" aria-label="Read {{ post.data.title }}">
           <div class="blog-card-image">
             {% if post.data.image %}
-            <img src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            {% image post.data.image, post.data.title, [300, 600], "(min-width: 768px) 50vw, 100vw", { style: "width: 100%; height: 100%; object-fit: cover;" } %}
             {% endif %}
           </div>
         </a>

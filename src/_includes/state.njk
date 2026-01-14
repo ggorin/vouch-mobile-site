@@ -19,7 +19,8 @@ layout: base.njk
     <div class="content-grid">
       <div class="content-main">
         {% if state.hasImage %}
-        <img src="/images/coverage/{{ state.slug }}.{{ state.imageExtension | default('jpg') }}" alt="Vouch Mobile coverage map in {{ state.name }}" class="hero-image">
+        {% set imgPath = "/images/coverage/" + state.slug + "." + (state.imageExtension | default('jpg')) %}
+        {% image imgPath, "Vouch Mobile coverage map in " + state.name, [400, 800, 1000], "(min-width: 1024px) 66vw, 100vw", { class: "hero-image", loading: "eager" } %}
         {% endif %}
 
         <h2>AT&T Network Coverage in {{ state.name }}</h2>

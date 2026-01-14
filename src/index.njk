@@ -30,7 +30,7 @@ description: Get unlimited talk, text, and data for just $30/month on AT&T's net
         </div>
       </div>
       <div class="hero-image">
-        <img src="/images/hero-person.png" alt="Happy person using smartphone" loading="eager">
+        {% image "/images/hero-person.png", "Happy person using smartphone", [400, 800, 1080], "(min-width: 1024px) 50vw, 100vw", { loading: "eager", decoding: "sync" } %}
       </div>
     </div>
   </div>
@@ -130,7 +130,7 @@ description: Get unlimited talk, text, and data for just $30/month on AT&T's net
         <a href="/coverage/" class="btn btn-primary mt-8">Check Coverage</a>
       </div>
       <div class="coverage-map">
-        <img src="/images/coverage-map.png" alt="AT&T Coverage Map" loading="lazy">
+        {% image "/images/coverage-map.png", "AT&T Coverage Map", [400, 800, 1200], "(min-width: 1024px) 50vw, 100vw" %}
       </div>
     </div>
   </div>

@@ -1,6 +1,45 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const Image = require("@11ty/eleventy-img");
+const path = require("path");
 
 module.exports = function(eleventyConfig) {
+  // Image Shortcode
+  eleventyConfig.addNunjucksAsyncShortcode("image", async function(src, alt, widths = [300, 600, 1200], sizes = "100vw", attrs = {}) {
+    if (!src) {
+      return "";
+    }
+    
+    // prepend src/ if it's not there, assuming src is relative to project root or src/ folder
+    let inputPath = src;
+    if(src.startsWith("/images/")) {
+        inputPath = "src" + src;
+    } else if (!src.startsWith("src/")) {
+        inputPath = "src/" + src;
+    }
+
+    let metadata = await Image(inputPath, {
+      widths: widths,
+      formats: ["avif", "webp", "auto"],
+      outputDir: "./_site/images/",
+      urlPath: "/images/",
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension);
+        return `${name}-${width}w.${format}`;
+      }
+    });
+
+    let imageAttributes = {
+      alt,
+      sizes,
+      loading: "lazy",
+      decoding: "async",
+      ...attrs
+    };
+
+    return Image.generateHTML(metadata, imageAttributes);
+  });
+
   // Add RSS plugin
   eleventyConfig.addPlugin(pluginRss);
 

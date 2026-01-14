@@ -13,7 +13,7 @@ layout: base.njk
     <div class="article-meta">{{ date | readableDate }} &bull; {{ readTime }} min read</div>
     {% if image %}
     <div class="article-image mt-8 mb-8">
-      <img src="{{ image }}" alt="{{ title }}" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+      {% image image, title, [400, 800, 1000], "(min-width: 768px) 80vw, 100vw", { style: "width: 100%; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);", loading: "eager" } %}
     </div>
     {% endif %}
   </header>
@@ -36,7 +36,7 @@ layout: base.njk
         <a href="{{ post.url }}" class="blog-card-image-link" aria-label="Read {{ post.data.title }}">
           <div class="blog-card-image">
              {% if post.data.image %}
-            <img src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            {% image post.data.image, post.data.title, [300, 600], "(min-width: 768px) 30vw, 100vw", { style: "width: 100%; height: 100%; object-fit: cover;" } %}
             {% endif %}
           </div>
         </a>

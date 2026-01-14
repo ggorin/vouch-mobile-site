@@ -2,15 +2,16 @@
 layout: base.njk
 ---
 
-<section class="page-header">
-  <div class="container">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a> &rsaquo;
-      <a href="/compare/">Compare</a> &rsaquo;
-      <span>{{ competitor.name }}</span>
-    </nav>
-    <h1>Vouch Mobile vs {{ competitor.name }}</h1>
-    <p>See how Vouch Mobile compares to {{ competitor.name }} on price, coverage, and features</p>
+    <div class="compare-hero-grid">
+      <div class="compare-content">
+        <h1>{{ title }}</h1>
+        <p class="compare-subtitle">{{ description }}</p>
+        <a href="#verdict" class="btn btn-primary">See the Verdict</a>
+      </div>
+      <div class="compare-image">
+        {% image "/images/compare/comparison-hero.jpg", "Vouch Mobile vs " + competitor.name + " comparison", [400, 800], "(min-width: 1024px) 50vw, 100vw", { class: "hero-image", loading: "eager" } %}
+      </div>
+    </div>
   </div>
 </section>
 
