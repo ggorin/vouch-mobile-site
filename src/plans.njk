@@ -1,0 +1,149 @@
+---
+layout: base.njk
+title: Plans & Pricing
+description: Vouch Mobile offers unlimited talk, text, and data for just $30/month. No credit check, no contracts. See our simple pricing.
+---
+
+<section class="page-header">
+  <div class="container">
+    <h1>Choose Your Plan</h1>
+    <p>Save more when you pay annually. No credit check required.</p>
+  </div>
+</section>
+
+<section class="section-lg">
+  <div class="container">
+    <!-- Billing Toggle -->
+    <div class="billing-toggle">
+      <span class="billing-option">Monthly</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="billing-toggle" checked>
+        <span class="toggle-slider"></span>
+      </label>
+      <span class="billing-option billing-option-active">Annual <span class="save-badge">Save $120</span></span>
+    </div>
+
+    <div class="pricing-grid">
+      {% for planKey, plan in site.plans %}
+      <div class="pricing-card{% if plan.popular %} pricing-card-featured{% endif %}">
+        <div class="pricing-header">
+          {% if plan.popular %}<span class="pricing-label">Most Popular</span>{% endif %}
+          <h3>{{ plan.name }}</h3>
+          <p class="plan-tagline">{% if plan.popular %}Maximum features & priority data{% else %}Great value for everyday use{% endif %}</p>
+          <div class="price">
+            <span class="price-amount" data-monthly="{{ plan.monthlyPrice }}" data-annual="{{ plan.annualPrice }}">${{ plan.annualPrice }}</span>
+            <span class="price-period">/month</span>
+          </div>
+          <p class="price-note annual-note">Billed ${{ plan.annualTotal }}/year</p>
+          <p class="price-note monthly-note" style="display: none;">Billed monthly</p>
+        </div>
+        <div class="pricing-features">
+          <ul>
+            {% for feature in plan.features %}
+            <li>{{ feature }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="pricing-cta">
+          <a href="https://vouchmobile.com" class="btn {% if plan.popular %}btn-primary{% else %}btn-outline{% endif %} btn-lg">Get {{ plan.name }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="text-center text-light mt-8" style="font-size: 0.875rem;">All plans include taxes & fees. Cancel anytime.</p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="text-center text-3xl mb-4">Compare & Save</h2>
+    <p class="text-center text-light mb-12">See how much you could save switching to Vouch Mobile</p>
+
+    <div class="table-responsive">
+      <table class="comparison-table comparison-table-full">
+        <thead>
+          <tr>
+            <th>Carrier</th>
+            <th>Unlimited Plan</th>
+            <th>Credit Check</th>
+            <th>Contract</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="highlight-row">
+            <td><strong>Vouch Premium</strong></td>
+            <td><strong>$25/mo*</strong></td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>Vouch Elite</strong></td>
+            <td><strong>$35/mo*</strong></td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Verizon</td>
+            <td>$65+/mo</td>
+            <td>Yes</td>
+            <td>Often</td>
+          </tr>
+          <tr>
+            <td>AT&T</td>
+            <td>$65+/mo</td>
+            <td>Yes</td>
+            <td>Often</td>
+          </tr>
+          <tr>
+            <td>T-Mobile</td>
+            <td>$60+/mo</td>
+            <td>Yes</td>
+            <td>Sometimes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-center text-light mt-8">*Vouch Mobile prices shown with annual billing. Prices based on single-line unlimited plans as of 2025.</p>
+
+    <div class="text-center mt-8">
+      <p class="text-light mb-4">See detailed comparisons:</p>
+      <div class="compare-buttons">
+        {% for competitor in competitors %}
+        <a href="/compare/{{ competitor.slug }}/" class="btn btn-outline">Vouch vs {{ competitor.name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="text-center text-3xl mb-12">Plan Questions</h2>
+
+    <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+      {% for faq in faqs.plans %}
+      <div class="faq-item">
+        <button class="faq-question">
+          {{ faq.question }}
+          <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <p>{{ faq.answer }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-section section-lg">
+  <div class="container">
+    <h2>Ready to Start Saving?</h2>
+    <p>Switch to Vouch Mobile today and keep more money in your pocket.</p>
+    <a href="https://vouchmobile.com" class="btn btn-primary btn-lg">Get Started Now</a>
+  </div>
+</section>

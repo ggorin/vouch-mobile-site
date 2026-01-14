@@ -1,0 +1,72 @@
+{
+  "plans": [
+    {
+      "question": "How much does Vouch Mobile cost?",
+      "answer": "Our Premium Unlimited plan is $30/month plus applicable taxes and regulatory fees. This includes unlimited talk, text, data, and mobile hotspot."
+    },
+    {
+      "question": "Are there any hidden fees?",
+      "answer": "No hidden fees! Your monthly cost is the plan price ($30) plus any applicable taxes and regulatory fees, which vary by location. There are no activation fees, no line access fees, and no surprise charges."
+    },
+    {
+      "question": "What does \"unlimited data\" mean?",
+      "answer": "Unlimited means no overage charges and no hard data caps. During times of network congestion, data speeds may be temporarily reduced. Video streaming may be optimized to standard definition to ensure a good experience for all users."
+    },
+    {
+      "question": "Can I add multiple lines?",
+      "answer": "Yes! You can add additional lines to your account. Each line is $30/month with the same unlimited features. Manage all lines from a single account."
+    }
+  ],
+  "coverage": [
+    {
+      "question": "What network does Vouch Mobile use?",
+      "answer": "Vouch Mobile operates on AT&T's nationwide network, providing access to 5G and LTE coverage across the United States. This means you get the same great coverage as AT&T customers."
+    },
+    {
+      "question": "Do I get 5G access?",
+      "answer": "Yes! 5G access is included at no extra cost. You'll automatically connect to 5G where available with a compatible device."
+    },
+    {
+      "question": "Is WiFi calling included?",
+      "answer": "Yes, WiFi calling is included free with your plan. This allows you to make and receive calls over a WiFi connection when cellular coverage is limited."
+    }
+  ],
+  "activation": [
+    {
+      "question": "Do you require a credit check?",
+      "answer": "No! Vouch Mobile is a prepaid service, so we never run credit checks. Everyone is approved regardless of credit history. Sign up in minutes."
+    },
+    {
+      "question": "Can I keep my current phone number?",
+      "answer": "Absolutely! You can transfer your existing phone number to Vouch Mobile for free. The process is simple and usually completes within minutes to a few hours."
+    },
+    {
+      "question": "What phones are compatible?",
+      "answer": "Most unlocked GSM phones are compatible, including recent iPhones (6s and newer) and most Android devices. Your phone must be unlocked and support AT&T's network bands. Use our compatibility checker to verify."
+    },
+    {
+      "question": "Do you support eSIM?",
+      "answer": "Yes! We support eSIM activation for compatible devices. This means you can activate your service instantly without waiting for a physical SIM card."
+    }
+  ],
+  "billing": [
+    {
+      "question": "Is there a contract?",
+      "answer": "No contracts, ever! Vouch Mobile is month-to-month. You can cancel anytime without any cancellation fees or penalties."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept all major credit and debit cards (Visa, Mastercard, American Express, Discover). You can set up autopay for convenient monthly billing."
+    },
+    {
+      "question": "What is your refund policy?",
+      "answer": "We offer refunds within the first 7 days of service if you're not satisfied. Contact our support team to request a refund. After 7 days, unused service is non-refundable but you can cancel anytime."
+    }
+  ],
+  "support": [
+    {
+      "question": "How do I contact support?",
+      "answer": "You can reach our support team through the Help Center on our website, by email, or through the chat feature in your account. We're here to help!"
+    }
+  ]
+}

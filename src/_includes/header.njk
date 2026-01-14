@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <img src="/images/logo.png" alt="{{ site.name }}">
+    </a>
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="/" class="nav-link{% if page.url == '/' %} active{% endif %}">Home</a></li>
+        <li><a href="/plans/" class="nav-link{% if page.url == '/plans/' %} active{% endif %}">Plans</a></li>
+        <li><a href="/coverage/" class="nav-link{% if '/coverage' in page.url %} active{% endif %}">Coverage</a></li>
+        <li><a href="/faq/" class="nav-link{% if page.url == '/faq/' %} active{% endif %}">FAQ</a></li>
+        <li><a href="/about/" class="nav-link{% if page.url == '/about/' %} active{% endif %}">About</a></li>
+        <li><a href="/blog/" class="nav-link{% if '/blog' in page.url %} active{% endif %}">Blog</a></li>
+      </ul>
+      <a href="https://vouchmobile.com" class="btn btn-primary">Get Started</a>
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+</header>

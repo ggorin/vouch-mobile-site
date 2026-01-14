@@ -1,0 +1,47 @@
+---
+layout: base.njk
+title: Blog
+description: Tips, guides, and news about wireless service, phone plans, and saving money on your mobile bill.
+permalink: /blog/
+---
+
+<section class="page-header">
+  <div class="container">
+    <h1>Vouch Mobile Blog</h1>
+    <p>Tips, guides, and insights to help you save money on wireless</p>
+  </div>
+</section>
+
+<section class="section-lg">
+  <div class="container">
+    <div class="blog-grid">
+      {% set posts = collections.posts | reverse %}
+      {% for post in posts %}
+      <article class="blog-card">
+        <div class="blog-card-image"></div>
+        <div class="blog-card-content">
+          <h3 class="blog-card-title">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </h3>
+          <p class="blog-card-excerpt">{{ post.data.excerpt }}</p>
+          <div class="blog-card-meta">
+            <span>{{ post.data.date | readableDate }}</span>
+            <span>&bull;</span>
+            <span>{{ post.data.readTime }} min read</span>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-section section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Save on Wireless?</h2>
+      <p>Get unlimited talk, text, and data for just $30/month on AT&T's network.</p>
+      <a href="https://vouchmobile.com" class="btn btn-primary btn-large">Get Started Today</a>
+    </div>
+  </div>
+</section>

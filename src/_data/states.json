@@ -1,0 +1,234 @@
+[
+  {
+    "name": "Arizona",
+    "slug": "arizona",
+    "abbr": "AZ",
+    "nickname": "Grand Canyon State",
+    "coverage": "99%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Phoenix", "description": "Full 5G coverage throughout the Valley of the Sun" },
+      { "name": "Tucson", "description": "Comprehensive coverage in Southern Arizona" },
+      { "name": "Mesa", "description": "Strong coverage across the East Valley" },
+      { "name": "Scottsdale", "description": "Excellent coverage in the Scottsdale area" }
+    ]
+  },
+  {
+    "name": "California",
+    "slug": "california",
+    "abbr": "CA",
+    "nickname": "Golden State",
+    "coverage": "99%",
+    "hasImage": true,
+    "cities": [
+      { "name": "Los Angeles", "description": "Full 5G coverage across LA County and surrounding areas" },
+      { "name": "San Francisco", "description": "Comprehensive coverage in the Bay Area" },
+      { "name": "San Diego", "description": "Strong coverage from downtown to the beaches" },
+      { "name": "Sacramento", "description": "Excellent coverage in the state capital" },
+      { "name": "San Jose", "description": "Full coverage in Silicon Valley" },
+      { "name": "Fresno", "description": "Reliable service in the Central Valley" }
+    ]
+  },
+  {
+    "name": "Colorado",
+    "slug": "colorado",
+    "abbr": "CO",
+    "nickname": "Centennial State",
+    "coverage": "98%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Denver", "description": "Full 5G coverage in the Mile High City" },
+      { "name": "Colorado Springs", "description": "Comprehensive coverage in the Pikes Peak region" },
+      { "name": "Aurora", "description": "Strong coverage across the Denver metro" },
+      { "name": "Boulder", "description": "Excellent coverage along the Front Range" }
+    ]
+  },
+  {
+    "name": "Florida",
+    "slug": "florida",
+    "abbr": "FL",
+    "nickname": "Sunshine State",
+    "coverage": "99%",
+    "hasImage": true,
+    "cities": [
+      { "name": "Miami", "description": "Full 5G coverage throughout Miami-Dade County and South Florida" },
+      { "name": "Orlando", "description": "Comprehensive coverage including theme park areas" },
+      { "name": "Tampa Bay", "description": "Strong coverage across Tampa, St. Petersburg, and Clearwater" },
+      { "name": "Jacksonville", "description": "Excellent coverage in Florida's largest city" },
+      { "name": "Fort Lauderdale", "description": "Full coverage in Broward County" },
+      { "name": "West Palm Beach", "description": "Reliable service throughout Palm Beach County" }
+    ]
+  },
+  {
+    "name": "Georgia",
+    "slug": "georgia",
+    "abbr": "GA",
+    "nickname": "Peach State",
+    "coverage": "99%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Atlanta", "description": "Full 5G coverage throughout Metro Atlanta" },
+      { "name": "Augusta", "description": "Comprehensive coverage in the CSRA" },
+      { "name": "Savannah", "description": "Strong coverage in coastal Georgia" },
+      { "name": "Columbus", "description": "Excellent coverage in West Georgia" }
+    ]
+  },
+  {
+    "name": "Illinois",
+    "slug": "illinois",
+    "abbr": "IL",
+    "nickname": "Prairie State",
+    "coverage": "99%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Chicago", "description": "Full 5G coverage throughout Chicagoland" },
+      { "name": "Aurora", "description": "Comprehensive coverage in the western suburbs" },
+      { "name": "Naperville", "description": "Strong coverage in DuPage County" },
+      { "name": "Springfield", "description": "Excellent coverage in the state capital" }
+    ]
+  },
+  {
+    "name": "Massachusetts",
+    "slug": "massachusetts",
+    "abbr": "MA",
+    "nickname": "Bay State",
+    "coverage": "99%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Boston", "description": "Full 5G coverage throughout Greater Boston" },
+      { "name": "Worcester", "description": "Comprehensive coverage in Central Massachusetts" },
+      { "name": "Cambridge", "description": "Strong coverage in the Cambridge/Somerville area" },
+      { "name": "Springfield", "description": "Excellent coverage in Western Massachusetts" }
+    ]
+  },
+  {
+    "name": "Michigan",
+    "slug": "michigan",
+    "abbr": "MI",
+    "nickname": "Great Lakes State",
+    "coverage": "98%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Detroit", "description": "Full 5G coverage throughout Metro Detroit" },
+      { "name": "Grand Rapids", "description": "Comprehensive coverage in West Michigan" },
+      { "name": "Ann Arbor", "description": "Strong coverage in Washtenaw County" },
+      { "name": "Lansing", "description": "Excellent coverage in the state capital" }
+    ]
+  },
+  {
+    "name": "New Jersey",
+    "slug": "new-jersey",
+    "abbr": "NJ",
+    "nickname": "Garden State",
+    "coverage": "99%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Newark", "description": "Full 5G coverage in North Jersey" },
+      { "name": "Jersey City", "description": "Comprehensive coverage along the Hudson waterfront" },
+      { "name": "Trenton", "description": "Strong coverage in the state capital" },
+      { "name": "Atlantic City", "description": "Excellent coverage at the Shore" }
+    ]
+  },
+  {
+    "name": "New York",
+    "slug": "new-york",
+    "abbr": "NY",
+    "nickname": "Empire State",
+    "coverage": "99%",
+    "hasImage": true,
+    "cities": [
+      { "name": "New York City", "description": "Full 5G coverage across all five boroughs" },
+      { "name": "Buffalo", "description": "Comprehensive coverage in Western New York" },
+      { "name": "Rochester", "description": "Strong coverage throughout the Rochester metro area" },
+      { "name": "Albany", "description": "Excellent coverage in the Capital District" },
+      { "name": "Syracuse", "description": "Full coverage in Central New York" },
+      { "name": "Long Island", "description": "Comprehensive coverage across Nassau and Suffolk" }
+    ]
+  },
+  {
+    "name": "North Carolina",
+    "slug": "north-carolina",
+    "abbr": "NC",
+    "nickname": "Tar Heel State",
+    "coverage": "99%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Charlotte", "description": "Full 5G coverage in the Queen City" },
+      { "name": "Raleigh", "description": "Comprehensive coverage in the Triangle" },
+      { "name": "Durham", "description": "Strong coverage in the Research Triangle" },
+      { "name": "Greensboro", "description": "Excellent coverage in the Triad" }
+    ]
+  },
+  {
+    "name": "Ohio",
+    "slug": "ohio",
+    "abbr": "OH",
+    "nickname": "Buckeye State",
+    "coverage": "99%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Columbus", "description": "Full 5G coverage in the state capital" },
+      { "name": "Cleveland", "description": "Comprehensive coverage in Northeast Ohio" },
+      { "name": "Cincinnati", "description": "Strong coverage in the Tri-State area" },
+      { "name": "Toledo", "description": "Excellent coverage in Northwest Ohio" }
+    ]
+  },
+  {
+    "name": "Pennsylvania",
+    "slug": "pennsylvania",
+    "abbr": "PA",
+    "nickname": "Keystone State",
+    "coverage": "99%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Philadelphia", "description": "Full 5G coverage throughout Greater Philadelphia" },
+      { "name": "Pittsburgh", "description": "Comprehensive coverage in Western Pennsylvania" },
+      { "name": "Allentown", "description": "Strong coverage in the Lehigh Valley" },
+      { "name": "Harrisburg", "description": "Excellent coverage in the state capital" }
+    ]
+  },
+  {
+    "name": "Texas",
+    "slug": "texas",
+    "abbr": "TX",
+    "nickname": "Lone Star State",
+    "coverage": "99%",
+    "hasImage": true,
+    "cities": [
+      { "name": "Houston", "description": "Full 5G coverage throughout the Greater Houston area and Harris County" },
+      { "name": "Dallas-Fort Worth", "description": "Comprehensive coverage across the Metroplex, AT&T's home territory" },
+      { "name": "San Antonio", "description": "Strong coverage from downtown to the surrounding Hill Country" },
+      { "name": "Austin", "description": "Excellent coverage in the state capital and tech hub" },
+      { "name": "El Paso", "description": "Reliable service in West Texas and the border region" },
+      { "name": "Fort Worth", "description": "Full coverage across Tarrant County" }
+    ]
+  },
+  {
+    "name": "Virginia",
+    "slug": "virginia",
+    "abbr": "VA",
+    "nickname": "Old Dominion",
+    "coverage": "99%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Virginia Beach", "description": "Full 5G coverage in Hampton Roads" },
+      { "name": "Norfolk", "description": "Comprehensive coverage in the Tidewater region" },
+      { "name": "Richmond", "description": "Strong coverage in the state capital" },
+      { "name": "Arlington", "description": "Excellent coverage in Northern Virginia" }
+    ]
+  },
+  {
+    "name": "Washington",
+    "slug": "washington",
+    "abbr": "WA",
+    "nickname": "Evergreen State",
+    "coverage": "98%",
+    "hasImage": false,
+    "cities": [
+      { "name": "Seattle", "description": "Full 5G coverage throughout the Seattle metro" },
+      { "name": "Tacoma", "description": "Comprehensive coverage in Pierce County" },
+      { "name": "Spokane", "description": "Strong coverage in Eastern Washington" },
+      { "name": "Bellevue", "description": "Excellent coverage on the Eastside" }
+    ]
+  }
+]

@@ -1,0 +1,111 @@
+---
+layout: base.njk
+title: Frequently Asked Questions
+description: Find answers to common questions about Vouch Mobile plans, coverage, activation, billing, and more.
+---
+
+<section class="page-header">
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <p>Find answers to common questions about Vouch Mobile</p>
+  </div>
+</section>
+
+<section class="section-lg">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2 class="text-2xl mb-6">Plans & Pricing</h2>
+      <div class="faq-list mb-12">
+        {% for faq in faqs.plans %}
+        <div class="faq-item">
+          <button class="faq-question">
+            {{ faq.question }}
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>{{ faq.answer }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <h2 class="text-2xl mb-6">Coverage & Network</h2>
+      <div class="faq-list mb-12">
+        {% for faq in faqs.coverage %}
+        <div class="faq-item">
+          <button class="faq-question">
+            {{ faq.question }}
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>{{ faq.answer }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <h2 class="text-2xl mb-6">Activation & Compatibility</h2>
+      <div class="faq-list mb-12">
+        {% for faq in faqs.activation %}
+        <div class="faq-item">
+          <button class="faq-question">
+            {{ faq.question }}
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>{{ faq.answer }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <h2 class="text-2xl mb-6">Billing & Account</h2>
+      <div class="faq-list mb-12">
+        {% for faq in faqs.billing %}
+        <div class="faq-item">
+          <button class="faq-question">
+            {{ faq.question }}
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>{{ faq.answer }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <h2 class="text-2xl mb-6">Support</h2>
+      <div class="faq-list">
+        {% for faq in faqs.support %}
+        <div class="faq-item">
+          <button class="faq-question">
+            {{ faq.question }}
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>{{ faq.answer }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section section-lg">
+  <div class="container">
+    <h2>Still Have Questions?</h2>
+    <p>Our support team is here to help you.</p>
+    <a href="/contact/" class="btn btn-primary btn-lg">Contact Us</a>
+  </div>
+</section>

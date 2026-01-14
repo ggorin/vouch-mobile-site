@@ -1,0 +1,11 @@
+---
+layout: state.njk
+pagination:
+  data: states
+  size: 1
+  alias: state
+permalink: "/coverage/{{ state.slug }}/"
+eleventyComputed:
+  title: "Vouch Mobile in {{ state.name }} - Coverage & Plans"
+  description: "Get unlimited talk, text, and data in {{ state.name }} for just $30/month. {{ state.coverage }} population coverage on AT&T's network. No credit check required."
+---

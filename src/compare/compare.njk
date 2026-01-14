@@ -1,0 +1,131 @@
+---
+layout: base.njk
+title: Compare Wireless Carriers
+description: See how Vouch Mobile compares to Mint Mobile, Visible, Cricket, Metro, and Boost Mobile. Find the best prepaid wireless plan for your needs.
+permalink: /compare/
+---
+
+<section class="page-header">
+  <div class="container">
+    <h1>Compare Wireless Carriers</h1>
+    <p>See how Vouch Mobile stacks up against the competition</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Vouch Mobile vs Competitors</h2>
+    <p class="section-subtitle">Click any competitor to see a detailed comparison</p>
+
+    <div class="compare-grid">
+      {% for competitor in competitors %}
+      <a href="/compare/{{ competitor.slug }}/" class="compare-card">
+        <h3>Vouch vs {{ competitor.name }}</h3>
+        <div class="compare-summary">
+          <div class="compare-item">
+            <span class="label">Network:</span>
+            <span class="value">{{ competitor.network }}</span>
+          </div>
+          <div class="compare-item">
+            <span class="label">Starting:</span>
+            <span class="value">{{ competitor.startingPrice }}</span>
+          </div>
+          <div class="compare-item">
+            <span class="label">Contract:</span>
+            <span class="value">{{ competitor.contract }}</span>
+          </div>
+        </div>
+        <span class="compare-cta">Compare Now &rarr;</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Quick Comparison Chart</h2>
+
+    <div class="table-responsive">
+      <table class="comparison-table comparison-table-full">
+        <thead>
+          <tr>
+            <th>Carrier</th>
+            <th>Network</th>
+            <th>Starting Price</th>
+            <th>Contract</th>
+            <th>Credit Check</th>
+            <th>5G</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="highlight-row">
+            <td><strong>Vouch Mobile</strong></td>
+            <td>AT&T</td>
+            <td><strong>$30/mo</strong></td>
+            <td>No</td>
+            <td>No</td>
+            <td>Included</td>
+          </tr>
+          {% for competitor in competitors %}
+          <tr>
+            <td>{{ competitor.name }}</td>
+            <td>{{ competitor.network }}</td>
+            <td>{{ competitor.startingPrice }}</td>
+            <td>{{ competitor.contract }}</td>
+            <td>{{ competitor.creditCheck }}</td>
+            <td>{{ competitor.fiveG }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Why Choose Vouch Mobile?</h2>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+        </div>
+        <h3>Simple Pricing</h3>
+        <p>No introductory gimmicks or confusing tiers. Just $30/month for unlimited everything.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        </div>
+        <h3>AT&T Network</h3>
+        <p>Better rural coverage and consistent performance compared to T-Mobile MVNOs.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <h3>No Credit Check</h3>
+        <p>Everyone is approved regardless of credit history. No deposits or fees.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        </div>
+        <h3>Month-to-Month</h3>
+        <p>No contracts or commitments. Cancel anytime with no penalties.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Make the Switch?</h2>
+      <p>Join thousands of happy customers who chose Vouch Mobile over the competition.</p>
+      <a href="https://vouchmobile.com" class="btn btn-primary btn-large">Get Started Today</a>
+    </div>
+  </div>
+</section>

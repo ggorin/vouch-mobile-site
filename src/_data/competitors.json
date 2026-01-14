@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Mint Mobile",
+    "shortName": "Mint",
+    "slug": "mint-mobile",
+    "network": "T-Mobile",
+    "startingPrice": "$15/month (3-mo intro)",
+    "regularPrice": "$30/month",
+    "contract": "3, 6, or 12 months",
+    "creditCheck": "No",
+    "fiveG": "Yes",
+    "hotspot": "Included",
+    "dataPriority": "40GB priority",
+    "pros": [
+      "Low intro pricing for first 3 months",
+      "Good T-Mobile coverage in urban areas",
+      "Family plans available"
+    ],
+    "cons": [
+      "Must prepay for 3-12 months upfront",
+      "Price increases after intro period",
+      "T-Mobile has weaker rural coverage"
+    ],
+    "vouchAdvantages": [
+      "Month-to-month flexibility with no commitment",
+      "Better rural coverage on AT&T network",
+      "Straightforward pricing without intro gimmicks",
+      "No large upfront payment required"
+    ]
+  },
+  {
+    "name": "Visible",
+    "shortName": "Visible",
+    "slug": "visible",
+    "network": "Verizon",
+    "startingPrice": "$25/month",
+    "regularPrice": "$45/month (plus)",
+    "contract": "No",
+    "creditCheck": "No",
+    "fiveG": "Yes",
+    "hotspot": "5GB (basic) / Unlimited (plus)",
+    "dataPriority": "Deprioritized (basic)",
+    "pros": [
+      "Low base price at $25/month",
+      "Verizon network reliability",
+      "No contract required"
+    ],
+    "cons": [
+      "Heavy data deprioritization on basic plan",
+      "Premium plan costs $45/month",
+      "Limited hotspot on basic plan"
+    ],
+    "vouchAdvantages": [
+      "Better value at $30/month with more features",
+      "AT&T network has better rural coverage",
+      "No deprioritization concerns",
+      "Consistent pricing without tier confusion"
+    ]
+  },
+  {
+    "name": "Cricket Wireless",
+    "shortName": "Cricket",
+    "slug": "cricket",
+    "network": "AT&T",
+    "startingPrice": "$30/month",
+    "regularPrice": "$55/month (unlimited)",
+    "contract": "No",
+    "creditCheck": "No",
+    "fiveG": "Yes (extra cost)",
+    "hotspot": "15GB",
+    "dataPriority": "Deprioritized",
+    "pros": [
+      "Same AT&T network coverage",
+      "Physical stores for support",
+      "Multi-line discounts"
+    ],
+    "cons": [
+      "5G costs extra",
+      "Data always deprioritized vs AT&T postpaid",
+      "Higher unlimited plan prices"
+    ],
+    "vouchAdvantages": [
+      "5G included at no extra cost",
+      "Lower price for comparable unlimited plan",
+      "Same AT&T coverage for less money",
+      "Simpler pricing structure"
+    ]
+  },
+  {
+    "name": "Metro by T-Mobile",
+    "shortName": "Metro",
+    "slug": "metro",
+    "network": "T-Mobile",
+    "startingPrice": "$30/month",
+    "regularPrice": "$60/month (unlimited)",
+    "contract": "No",
+    "creditCheck": "No",
+    "fiveG": "Yes",
+    "hotspot": "5GB-15GB",
+    "dataPriority": "Deprioritized",
+    "pros": [
+      "Wide retail presence",
+      "Phone deals with activation",
+      "T-Mobile 5G coverage in cities"
+    ],
+    "cons": [
+      "T-Mobile has weaker rural coverage",
+      "Data deprioritization on all plans",
+      "Unlimited plans cost more"
+    ],
+    "vouchAdvantages": [
+      "Better AT&T rural coverage",
+      "Lower price for unlimited data",
+      "Month-to-month without store visits",
+      "No deprioritization hassles"
+    ]
+  },
+  {
+    "name": "Boost Mobile",
+    "shortName": "Boost",
+    "slug": "boost",
+    "network": "T-Mobile/AT&T",
+    "startingPrice": "$25/month",
+    "regularPrice": "$50/month (unlimited)",
+    "contract": "No",
+    "creditCheck": "No",
+    "fiveG": "Yes",
+    "hotspot": "Varies by plan",
+    "dataPriority": "Deprioritized",
+    "pros": [
+      "Low starting prices",
+      "Access to multiple networks",
+      "Physical store support"
+    ],
+    "cons": [
+      "Confusing plan structure",
+      "Network depends on location",
+      "Data deprioritization"
+    ],
+    "vouchAdvantages": [
+      "Consistent AT&T network everywhere",
+      "Clearer, simpler pricing",
+      "Better value at the unlimited tier",
+      "Online-first convenience"
+    ]
+  }
+]

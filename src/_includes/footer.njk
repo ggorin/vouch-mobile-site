@@ -1,0 +1,58 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="/images/logo.png" alt="{{ site.name }}">
+        <p>Affordable unlimited wireless on America's most reliable network. No credit check. No contracts. Just simple, honest service.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com/vouchmobile" aria-label="Facebook">
+            <img src="/images/icons/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://instagram.com/vouchmobile" aria-label="Instagram">
+            <img src="/images/icons/instagram.svg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/coverage/">Coverage Map</a></li>
+          <li><a href="https://vouchmobile.com/help">Help Center</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Compare</h4>
+        <ul>
+          {% for competitor in competitors %}
+          <li><a href="/compare/vouch-vs-{{ competitor.slug }}/">Vouch vs {{ competitor.shortName }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="https://vouchmobile.com/terms">Terms of Service</a></li>
+          <li><a href="https://vouchmobile.com/privacy">Privacy Policy</a></li>
+          <li><a href="https://vouchmobile.com/broadband-facts">Broadband Facts</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {% year %} {{ site.name }}. This mobile service is provided by Reach Mobile.</p>
+    </div>
+  </div>
+</footer>

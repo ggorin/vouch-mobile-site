@@ -1,0 +1,43 @@
+{
+  "name": "Vouch Mobile",
+  "url": "https://vouchmobile.com",
+  "description": "Affordable unlimited wireless on AT&T's network. No credit check, no contracts. Just $30/month for unlimited talk, text, and data.",
+  "keywords": "unlimited phone plans, cheap cell phone plans, no credit check phone plans, prepaid wireless, AT&T MVNO",
+  "plans": {
+    "premium": {
+      "name": "Premium",
+      "monthlyPrice": 30,
+      "annualPrice": 25,
+      "annualTotal": 300,
+      "features": [
+        "Unlimited Talk & Text",
+        "Unlimited Data",
+        "5G Access",
+        "5GB Mobile Hotspot",
+        "eSIM Support",
+        "WiFi Calling",
+        "No Contract",
+        "No Credit Check"
+      ]
+    },
+    "elite": {
+      "name": "Elite",
+      "monthlyPrice": 40,
+      "annualPrice": 35,
+      "annualTotal": 420,
+      "popular": true,
+      "features": [
+        "Unlimited Talk & Text",
+        "Unlimited Premium Data",
+        "5G+ Priority Access",
+        "20GB Mobile Hotspot",
+        "eSIM Support",
+        "WiFi Calling",
+        "HD Video Streaming",
+        "International Texting",
+        "No Contract",
+        "No Credit Check"
+      ]
+    }
+  }
+}

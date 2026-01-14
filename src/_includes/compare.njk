@@ -1,0 +1,151 @@
+---
+layout: base.njk
+---
+
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo;
+      <a href="/compare/">Compare</a> &rsaquo;
+      <span>{{ competitor.name }}</span>
+    </nav>
+    <h1>Vouch Mobile vs {{ competitor.name }}</h1>
+    <p>See how Vouch Mobile compares to {{ competitor.name }} on price, coverage, and features</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="content-grid">
+      <div class="content-main">
+        <img src="/images/compare/comparison-hero.jpg" alt="Vouch Mobile vs {{ competitor.name }} comparison" class="hero-image">
+
+        <h2>Quick Comparison</h2>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Vouch Mobile</th>
+              <th>{{ competitor.name }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Network</td>
+              <td><strong>AT&T</strong></td>
+              <td>{{ competitor.network }}</td>
+            </tr>
+            <tr>
+              <td>Starting Price</td>
+              <td><strong>$30/month</strong></td>
+              <td>{{ competitor.startingPrice }}</td>
+            </tr>
+            <tr>
+              <td>Unlimited Price</td>
+              <td><strong>$30/month</strong></td>
+              <td>{{ competitor.regularPrice }}</td>
+            </tr>
+            <tr>
+              <td>Contract Required</td>
+              <td><strong>No</strong></td>
+              <td>{{ competitor.contract }}</td>
+            </tr>
+            <tr>
+              <td>Credit Check</td>
+              <td><strong>No</strong></td>
+              <td>{{ competitor.creditCheck }}</td>
+            </tr>
+            <tr>
+              <td>5G Access</td>
+              <td><strong>Included</strong></td>
+              <td>{{ competitor.fiveG }}</td>
+            </tr>
+            <tr>
+              <td>Hotspot</td>
+              <td><strong>5GB-20GB</strong></td>
+              <td>{{ competitor.hotspot }}</td>
+            </tr>
+            <tr>
+              <td>Data Priority</td>
+              <td><strong>Standard</strong></td>
+              <td>{{ competitor.dataPriority }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>{{ competitor.name }} Pros</h2>
+        <ul class="pros-list">
+          {% for pro in competitor.pros %}
+          <li>{{ pro }}</li>
+          {% endfor %}
+        </ul>
+
+        <h2>{{ competitor.name }} Cons</h2>
+        <ul class="cons-list">
+          {% for con in competitor.cons %}
+          <li>{{ con }}</li>
+          {% endfor %}
+        </ul>
+
+        <div class="callout callout-primary">
+          <h3>Why Choose Vouch Mobile Over {{ competitor.name }}?</h3>
+          <ul>
+            {% for advantage in competitor.vouchAdvantages %}
+            <li>{{ advantage }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <h2>The Verdict</h2>
+        <p>While {{ competitor.name }} has its strengths, Vouch Mobile offers a compelling alternative with straightforward $30/month pricing on AT&T's reliable network. With no credit check required, no contracts, and 5G included at no extra cost, Vouch Mobile is the smarter choice for budget-conscious consumers who don't want to sacrifice network quality.</p>
+
+        <h2>Ready to Switch from {{ competitor.name }}?</h2>
+        <ol class="steps-list">
+          <li><strong>Keep Your Number:</strong> Port your existing number from {{ competitor.name }} for free.</li>
+          <li><strong>Order Your SIM:</strong> Get a free SIM card or instant eSIM activation.</li>
+          <li><strong>Activate & Save:</strong> Start enjoying AT&T's network for just $30/month.</li>
+        </ol>
+      </div>
+
+      <aside class="content-sidebar">
+        <div class="sidebar-card">
+          <h3>Vouch Mobile Plan</h3>
+          <div class="price-display">
+            <span class="price">$30</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="plan-features">
+            <li>Unlimited Talk</li>
+            <li>Unlimited Text</li>
+            <li>Unlimited Data</li>
+            <li>5G Access</li>
+            <li>Mobile Hotspot</li>
+            <li>No Credit Check</li>
+          </ul>
+          <a href="https://vouchmobile.com" class="btn btn-primary btn-block">Switch Now</a>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Compare Others</h3>
+          <ul class="compare-links">
+            {% for c in competitors %}
+            {% if c.slug != competitor.slug %}
+            <li><a href="/compare/{{ c.slug }}/">vs {{ c.name }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Switch from {{ competitor.name }}?</h2>
+      <p>Join thousands who've made the smart switch to Vouch Mobile. No credit check, no contracts.</p>
+      <a href="https://vouchmobile.com" class="btn btn-primary btn-large">Get Started Today</a>
+    </div>
+  </div>
+</section>
