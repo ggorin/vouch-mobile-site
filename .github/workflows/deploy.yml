@@ -70,84 +70,41 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    outputs:
+      deployment_id: ${{ steps.deploy.outputs.deployment-id }}
 
     steps:
-      - name: Wait for Sevalla to detect commit
-        run: |
-          echo "Waiting 10s for Sevalla to detect the commit..."
-          sleep 10
-
-      - name: Check deployment status
-        id: check-deploy
-        env:
-          SEVALLA_TOKEN: ${{ secrets.SEVALLA_TOKEN }}
-          STATIC_SITE_ID: ${{ secrets.SEVALLA_STATIC_SITE_ID }}
-        run: |
-          echo "Polling Sevalla for deployment status..."
-
-          MAX_ATTEMPTS=30
-          ATTEMPT=0
-          DEPLOY_STATUS="pending"
-
-          while [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do
-            ATTEMPT=$((ATTEMPT + 1))
-            echo "Check $ATTEMPT/$MAX_ATTEMPTS..."
-
-            RESPONSE=$(curl -s -w "\n%{http_code}" \
-              -H "Authorization: Bearer $SEVALLA_TOKEN" \
-              "https://api.sevalla.com/v2/static-sites/$STATIC_SITE_ID")
-
-            HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
-            BODY=$(echo "$RESPONSE" | sed '$d')
-
-            if [ "$HTTP_CODE" != "200" ]; then
-              echo "API returned $HTTP_CODE, retrying..."
-              sleep 10
-              continue
-            fi
-
-            # Parse deployment status from response
-            DEPLOY_STATUS=$(echo "$BODY" | jq -r '.status // "unknown"')
-            DEPLOY_URL=$(echo "$BODY" | jq -r '.primary_domain // "N/A"')
-
-            echo "Current status: $DEPLOY_STATUS"
-
-            if [ "$DEPLOY_STATUS" = "active" ] || [ "$DEPLOY_STATUS" = "live" ]; then
-              echo "deployment_status=success" >> $GITHUB_OUTPUT
-              echo "deployment_url=$DEPLOY_URL" >> $GITHUB_OUTPUT
-              break
-            elif [ "$DEPLOY_STATUS" = "failed" ] || [ "$DEPLOY_STATUS" = "error" ]; then
-              echo "deployment_status=failed" >> $GITHUB_OUTPUT
-              exit 1
-            fi
-
-            sleep 10
-          done
-
-          if [ $ATTEMPT -eq $MAX_ATTEMPTS ]; then
-            echo "deployment_status=timeout" >> $GITHUB_OUTPUT
-            echo "::warning::Deployment monitoring timed out"
-          fi
+      - name: Wait for and monitor Sevalla deployment
+        id: deploy
+        uses: sevalla-hosting/sevalla-deploy@v1.0.1
+        with:
+          action: deploy-static-site
+          sevalla-token: ${{ secrets.SEVALLA_TOKEN }}
+          static-site-id: ${{ secrets.SEVALLA_STATIC_SITE_ID }}
+          branch: main
+          wait-for-finish: true
 
       - name: Write deployment summary
         if: always()
         env:
-          DEPLOY_STATUS: ${{ steps.check-deploy.outputs.deployment_status }}
-          DEPLOY_URL: ${{ steps.check-deploy.outputs.deployment_url }}
+          DEPLOYMENT_ID: ${{ steps.deploy.outputs.deployment-id }}
+          DEPLOY_ERROR: ${{ steps.deploy.outputs.error }}
         run: |
           echo "## Sevalla Deployment Status" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
 
-          if [ "$DEPLOY_STATUS" = "success" ]; then
+          if [ -n "$DEPLOYMENT_ID" ] && [ -z "$DEPLOY_ERROR" ]; then
             echo "✅ **Deployment successful**" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
-            echo "🌐 **Live URL:** https://$DEPLOY_URL" >> $GITHUB_STEP_SUMMARY
-          elif [ "$DEPLOY_STATUS" = "failed" ]; then
+            echo "**Deployment ID:** \`$DEPLOYMENT_ID\`" >> $GITHUB_STEP_SUMMARY
+          else
             echo "❌ **Deployment failed**" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
+            if [ -n "$DEPLOY_ERROR" ]; then
+              echo "**Error:** $DEPLOY_ERROR" >> $GITHUB_STEP_SUMMARY
+            fi
+            echo "" >> $GITHUB_STEP_SUMMARY
             echo "Check [Sevalla Dashboard](https://my.sevalla.com) for logs." >> $GITHUB_STEP_SUMMARY
-          else
-            echo "⏳ **Deployment status:** $DEPLOY_STATUS" >> $GITHUB_STEP_SUMMARY
           fi
 
           echo "" >> $GITHUB_STEP_SUMMARY
