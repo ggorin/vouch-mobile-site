@@ -43,12 +43,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vouchmobile.com/compare/</loc>
-    <lastmod>2026-01-14T02:25:36.980Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://vouchmobile.com/blog/</loc>
     <lastmod>2026-01-14T02:27:47.829Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -131,6 +125,12 @@
     <lastmod>2026-01-16T16:40:55.378Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://vouchmobile.com/compare/</loc>
+    <lastmod>2026-01-16T20:46:32.498Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vouchmobile.com/blog/phone-plan-trends-2026-whats-changing-in-wireless/</loc>
