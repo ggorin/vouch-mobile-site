@@ -31,6 +31,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://vouchmobile.com/coverage/</loc>
+    <lastmod>2026-01-14T02:24:57.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://vouchmobile.com/coverage/arizona/</loc>
     <lastmod>2026-01-14T02:24:57.194Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -55,6 +61,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://vouchmobile.com/faq/</loc>
+    <lastmod>2026-01-14T15:08:04.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://vouchmobile.com/</loc>
     <lastmod>2026-01-14T15:08:43.959Z</lastmod>
     <changefreq>daily</changefreq>
@@ -73,20 +85,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://vouchmobile.com/coverage/</loc>
-    <lastmod>2026-01-14T15:10:28.635Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://vouchmobile.com/contact/</loc>
     <lastmod>2026-01-14T15:14:39.754Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://vouchmobile.com/faq/</loc>
-    <lastmod>2026-01-14T15:47:18.910Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

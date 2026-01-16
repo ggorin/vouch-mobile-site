@@ -7,11 +7,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "7.4 million",
+    "avgPhoneBill": "$114",
+    "annualSavings": "$1,008",
+    "costOfLivingIndex": "103",
+    "majorIndustries": ["Technology", "Healthcare", "Tourism", "Aerospace"],
+    "uniqueHook": "Arizona's population has grown 12% in the last decade, with thousands of new residents arriving monthly from California and other high-cost states. Vouch Mobile helps newcomers and longtime Arizonans alike stretch their dollars further in the desert heat.",
+    "whyVouch": [
+      "Arizona's average phone bill of $114/month ranks among the highest in the Southwest—Vouch cuts that by 74%.",
+      "Whether you're commuting on the I-10, hiking Camelback Mountain, or working at one of Phoenix's tech campuses, you need reliable coverage.",
+      "No credit check means snowbirds, ASU students, and new Arizona transplants can sign up instantly.",
+      "AT&T's network covers Arizona from Flagstaff to Yuma, including coverage in popular destinations like Sedona and the Grand Canyon."
+    ],
+    "externalLinks": [
+      { "text": "Arizona Census Data", "url": "https://www.census.gov/quickfacts/AZ", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "Arizona Commerce Authority", "url": "https://www.azcommerce.com/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Arizona?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across Arizona using AT&T's network. From Phoenix to Tucson, Flagstaff to Yuma, you'll have reliable 5G and LTE service throughout the Grand Canyon State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Arizona?",
+        "answer": "Vouch Mobile operates on AT&T's network in Arizona. AT&T has invested heavily in Arizona infrastructure, providing extensive 5G coverage in Phoenix, Tucson, and other metros, plus reliable LTE across rural areas."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Arizona?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Arizona. The average Arizonan pays $114/month for phone service, so you could save over $1,008 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Arizona?",
+        "answer": "No credit check required. Whether you're an ASU student, a new Arizona resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly. We believe everyone deserves affordable wireless."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Arizona?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Arizona address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Arizona cities?",
+        "answer": "Yes! 5G is available in Phoenix, Tucson, Mesa, Scottsdale, Tempe, Chandler, and many other Arizona cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work for Arizona snowbirds?",
+        "answer": "Absolutely. Seasonal residents love Vouch's no-contract service. Use it when you're in Arizona, and since there's no commitment, you have flexibility for your travel schedule."
+      },
+      {
+        "question": "Does Vouch work in rural Arizona?",
+        "answer": "Yes. AT&T's network covers rural areas across Arizona, including smaller towns and highways. While coverage may vary in remote desert or mountain areas, most populated areas have strong service."
+      }
+    ],
     "cities": [
-      { "name": "Phoenix", "description": "Full 5G coverage throughout the Valley of the Sun" },
-      { "name": "Tucson", "description": "Comprehensive coverage in Southern Arizona" },
-      { "name": "Mesa", "description": "Strong coverage across the East Valley" },
-      { "name": "Scottsdale", "description": "Excellent coverage in the Scottsdale area" }
+      { "name": "Phoenix", "description": "Full 5G coverage throughout the Valley of the Sun, from downtown to the suburbs" },
+      { "name": "Tucson", "description": "Comprehensive coverage in Southern Arizona, including the University of Arizona campus" },
+      { "name": "Mesa", "description": "Strong coverage across the East Valley, from downtown Mesa to Gilbert" },
+      { "name": "Scottsdale", "description": "Excellent coverage from Old Town to North Scottsdale's resorts" },
+      { "name": "Tempe", "description": "Full coverage around ASU and the Mill Avenue District" },
+      { "name": "Chandler", "description": "Reliable service in the Southeast Valley tech corridor" }
     ]
   },
   {
@@ -22,13 +75,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "jpg",
+    "population": "39.5 million",
+    "avgPhoneBill": "$127",
+    "annualSavings": "$1,164",
+    "costOfLivingIndex": "142",
+    "majorIndustries": ["Technology", "Entertainment", "Agriculture", "Tourism"],
+    "uniqueHook": "In California, where the cost of living is 42% higher than the national average, every dollar counts. Vouch Mobile helps Californians keep more of their hard-earned money without sacrificing network quality.",
+    "whyVouch": [
+      "California has some of the highest phone bills in the nation—averaging $127/month. Vouch cuts that by 76%.",
+      "Whether you're commuting on BART, driving the 405, or working remotely from a coffee shop in Silver Lake, you need reliable coverage.",
+      "No credit check means new California residents, students at UC schools, and gig workers can sign up instantly.",
+      "AT&T's network blankets California from the Oregon border to San Diego, including rural areas in the Central Valley."
+    ],
+    "externalLinks": [
+      { "text": "California Census Data", "url": "https://www.census.gov/quickfacts/CA", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "MIT Living Wage Calculator", "url": "https://livingwage.mit.edu/states/06", "context": "cost of living data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in California?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across California using AT&T's network. From San Francisco to San Diego, Los Angeles to Sacramento, you'll have reliable 5G and LTE service throughout the Golden State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in California?",
+        "answer": "Vouch Mobile operates on AT&T's network in California. AT&T has invested heavily in California infrastructure, providing extensive 5G coverage in major metros and reliable LTE throughout the state, including the Central Valley and rural areas."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in California?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in California. The average Californian pays $127/month for phone service, so you could save over $1,164 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in California?",
+        "answer": "No credit check required. Whether you're a UCLA student, a new California resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly. We believe everyone deserves affordable wireless."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in California?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your California address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in California cities?",
+        "answer": "Yes! 5G is available in Los Angeles, San Francisco, San Diego, San Jose, Sacramento, Oakland, and many other California cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Is Vouch Mobile good for California gig workers?",
+        "answer": "Absolutely. Uber drivers, DoorDash delivery partners, and freelancers throughout California rely on Vouch for affordable unlimited data. No contracts mean you can cancel anytime—perfect for flexible work."
+      },
+      {
+        "question": "Does Vouch work in rural California?",
+        "answer": "Yes. AT&T's network covers rural areas across California, including the Central Valley, Sierra Nevada foothills, and Northern California. While coverage may vary in remote wilderness areas, most populated areas have strong service."
+      }
+    ],
     "cities": [
-      { "name": "Los Angeles", "description": "Full 5G coverage across LA County and surrounding areas" },
-      { "name": "San Francisco", "description": "Comprehensive coverage in the Bay Area" },
-      { "name": "San Diego", "description": "Strong coverage from downtown to the beaches" },
-      { "name": "Sacramento", "description": "Excellent coverage in the state capital" },
-      { "name": "San Jose", "description": "Full coverage in Silicon Valley" },
-      { "name": "Fresno", "description": "Reliable service in the Central Valley" }
+      { "name": "Los Angeles", "description": "Full 5G coverage across LA County and surrounding areas, from Santa Monica to Pasadena" },
+      { "name": "San Francisco", "description": "Comprehensive coverage throughout the Bay Area, including Oakland, Berkeley, and the Peninsula" },
+      { "name": "San Diego", "description": "Strong coverage from downtown to the beaches, La Jolla to Chula Vista" },
+      { "name": "Sacramento", "description": "Excellent coverage in the state capital and surrounding communities" },
+      { "name": "San Jose", "description": "Full coverage across Silicon Valley, including Palo Alto, Mountain View, and Sunnyvale" },
+      { "name": "Fresno", "description": "Reliable service throughout the Central Valley agricultural hub" }
     ]
   },
   {
@@ -39,11 +143,64 @@
     "coverage": "98%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "5.9 million",
+    "avgPhoneBill": "$112",
+    "annualSavings": "$984",
+    "costOfLivingIndex": "105",
+    "majorIndustries": ["Technology", "Aerospace", "Tourism", "Energy"],
+    "uniqueHook": "Colorado's outdoor lifestyle demands connectivity that works from the ski slopes to the city streets. Vouch Mobile delivers AT&T's reliable network at a price that lets you spend more on lift tickets and less on your phone bill.",
+    "whyVouch": [
+      "Colorado's average phone bill of $112/month means residents pay premium prices—Vouch cuts that by 73%.",
+      "Whether you're commuting on I-25, working in Denver's tech scene, or streaming at Red Rocks, you need coverage that keeps up.",
+      "No credit check means CU students, new Colorado transplants, and ski resort workers can sign up instantly.",
+      "AT&T's network blankets Colorado from the Front Range to the Western Slope, with coverage in mountain towns like Vail and Aspen."
+    ],
+    "externalLinks": [
+      { "text": "Colorado Census Data", "url": "https://www.census.gov/quickfacts/CO", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "Colorado Economic Development", "url": "https://choosecolorado.com/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Colorado?",
+        "answer": "Yes! Vouch Mobile provides 98% population coverage across Colorado using AT&T's network. From Denver to Colorado Springs, Boulder to Fort Collins, you'll have reliable 5G and LTE service throughout the Centennial State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Colorado?",
+        "answer": "Vouch Mobile operates on AT&T's network in Colorado. AT&T provides extensive 5G coverage in Denver and the Front Range, plus reliable LTE coverage in mountain communities and rural areas."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Colorado?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Colorado. The average Coloradan pays $112/month for phone service, so you could save over $984 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Colorado?",
+        "answer": "No credit check required. Whether you're a CU Boulder student, a new Colorado resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Colorado?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Colorado address, then activate online in minutes. You can keep your existing phone number."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Colorado cities?",
+        "answer": "Yes! 5G is available in Denver, Colorado Springs, Aurora, Boulder, Fort Collins, Lakewood, and many other Colorado cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work in Colorado ski towns?",
+        "answer": "Yes. AT&T's network covers popular mountain destinations including Vail, Aspen, Breckenridge, and Steamboat Springs. Coverage may vary in remote backcountry areas, but resort towns have reliable service."
+      },
+      {
+        "question": "Does Vouch work in rural Colorado?",
+        "answer": "Yes. AT&T's network covers rural areas across Colorado, including the Eastern Plains and Western Slope. While coverage may vary in remote mountain areas, most populated communities have strong service."
+      }
+    ],
     "cities": [
-      { "name": "Denver", "description": "Full 5G coverage in the Mile High City" },
-      { "name": "Colorado Springs", "description": "Comprehensive coverage in the Pikes Peak region" },
-      { "name": "Aurora", "description": "Strong coverage across the Denver metro" },
-      { "name": "Boulder", "description": "Excellent coverage along the Front Range" }
+      { "name": "Denver", "description": "Full 5G coverage throughout the Mile High City, from LoDo to the suburbs" },
+      { "name": "Colorado Springs", "description": "Comprehensive coverage in the Pikes Peak region, including the Air Force Academy" },
+      { "name": "Aurora", "description": "Strong coverage across the Denver metro's eastern suburbs" },
+      { "name": "Boulder", "description": "Excellent coverage along the Front Range, including CU campus" },
+      { "name": "Fort Collins", "description": "Reliable service in Northern Colorado and CSU area" },
+      { "name": "Lakewood", "description": "Full coverage throughout the western Denver metro" }
     ]
   },
   {
@@ -54,12 +211,63 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "jpg",
+    "population": "22.6 million",
+    "avgPhoneBill": "$118",
+    "annualSavings": "$1,056",
+    "costOfLivingIndex": "103",
+    "majorIndustries": ["Tourism", "Healthcare", "Finance", "Aerospace"],
+    "uniqueHook": "Florida welcomes over 1,000 new residents daily, making it America's fastest-growing state. Whether you're a longtime Floridian or just arrived, Vouch Mobile helps you stay connected across the Sunshine State for a fraction of what big carriers charge.",
+    "whyVouch": [
+      "Florida's average phone bill of $118/month is above the national average—Vouch cuts that by 75%.",
+      "Whether you're stuck on I-4, enjoying the beaches, or working in Miami's finance district, you need reliable coverage.",
+      "No credit check means UCF students, new Florida residents, and seasonal workers can sign up instantly.",
+      "AT&T's network covers Florida from the Panhandle to the Keys, including comprehensive coverage in tourist destinations."
+    ],
+    "externalLinks": [
+      { "text": "Florida Census Data", "url": "https://www.census.gov/quickfacts/FL", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "Enterprise Florida", "url": "https://www.enterpriseflorida.com/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Florida?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across Florida using AT&T's network. From Miami to Jacksonville, Orlando to Tampa, you'll have reliable 5G and LTE service throughout the Sunshine State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Florida?",
+        "answer": "Vouch Mobile operates on AT&T's network in Florida. AT&T has invested heavily in Florida infrastructure, providing extensive 5G coverage in major metros and reliable LTE from the Panhandle to the Keys."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Florida?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Florida. The average Floridian pays $118/month for phone service, so you could save over $1,056 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Florida?",
+        "answer": "No credit check required. Whether you're a UF student, a new Florida resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly. We believe everyone deserves affordable wireless."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Florida?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Florida address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Florida cities?",
+        "answer": "Yes! 5G is available in Miami, Orlando, Tampa, Jacksonville, Fort Lauderdale, West Palm Beach, and many other Florida cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work for Florida snowbirds?",
+        "answer": "Absolutely. Seasonal residents love Vouch's no-contract service. Use it during your Florida winter, and since there's no commitment, you have flexibility for your travel schedule."
+      },
+      {
+        "question": "Does Vouch work in the Florida Keys?",
+        "answer": "Yes. AT&T's network provides coverage throughout the Florida Keys, from Key Largo to Key West. You'll stay connected while enjoying the islands."
+      }
+    ],
     "cities": [
-      { "name": "Miami", "description": "Full 5G coverage throughout Miami-Dade County and South Florida" },
-      { "name": "Orlando", "description": "Comprehensive coverage including theme park areas" },
+      { "name": "Miami", "description": "Full 5G coverage throughout Miami-Dade County, from Brickell to the beaches" },
+      { "name": "Orlando", "description": "Comprehensive coverage including Walt Disney World and Universal Studios areas" },
       { "name": "Tampa Bay", "description": "Strong coverage across Tampa, St. Petersburg, and Clearwater" },
-      { "name": "Jacksonville", "description": "Excellent coverage in Florida's largest city" },
-      { "name": "Fort Lauderdale", "description": "Full coverage in Broward County" },
+      { "name": "Jacksonville", "description": "Excellent coverage in Florida's largest city by area" },
+      { "name": "Fort Lauderdale", "description": "Full coverage throughout Broward County and the beaches" },
       { "name": "West Palm Beach", "description": "Reliable service throughout Palm Beach County" }
     ]
   },
@@ -71,11 +279,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "11.0 million",
+    "avgPhoneBill": "$109",
+    "annualSavings": "$948",
+    "costOfLivingIndex": "93",
+    "majorIndustries": ["Film & Entertainment", "Logistics", "Technology", "Healthcare"],
+    "uniqueHook": "Georgia has become a hub for film production and Fortune 500 headquarters, drawing talent from across the country. Vouch Mobile keeps Georgia's hustlers connected—from Hartsfield-Jackson to the Georgia coast—without the premium price tag.",
+    "whyVouch": [
+      "Georgia's average phone bill of $109/month adds up fast—Vouch cuts that by 72%.",
+      "Whether you're navigating Atlanta traffic on I-285, working in Midtown's tech corridor, or relaxing on Tybee Island, you need reliable coverage.",
+      "No credit check means Georgia State students, new Atlanta residents, and gig workers can sign up instantly.",
+      "AT&T's network (headquartered nearby) covers Georgia from the mountains to the coast, with particularly strong coverage in Metro Atlanta."
+    ],
+    "externalLinks": [
+      { "text": "Georgia Census Data", "url": "https://www.census.gov/quickfacts/GA", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "Georgia Economic Development", "url": "https://www.georgia.org/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Georgia?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across Georgia using AT&T's network. From Atlanta to Savannah, Augusta to Columbus, you'll have reliable 5G and LTE service throughout the Peach State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Georgia?",
+        "answer": "Vouch Mobile operates on AT&T's network in Georgia. AT&T has major infrastructure in the Southeast, providing extensive 5G coverage in Metro Atlanta and reliable LTE across the state."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Georgia?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Georgia. The average Georgian pays $109/month for phone service, so you could save over $948 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Georgia?",
+        "answer": "No credit check required. Whether you're a UGA student, a new Georgia resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly. We believe everyone deserves affordable wireless."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Georgia?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Georgia address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Georgia cities?",
+        "answer": "Yes! 5G is available in Atlanta, Augusta, Savannah, Columbus, Macon, Athens, and many other Georgia cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work in rural Georgia?",
+        "answer": "Yes. AT&T's network covers rural areas across Georgia, from the Blue Ridge Mountains to the coastal plains. While coverage may vary in very remote areas, most communities have strong service."
+      },
+      {
+        "question": "Is Vouch good for Atlanta commuters?",
+        "answer": "Absolutely. Atlanta's infamous traffic means you need reliable service while commuting. Vouch provides full coverage on I-285, I-85, I-75, and throughout Metro Atlanta's 29 counties."
+      }
+    ],
     "cities": [
-      { "name": "Atlanta", "description": "Full 5G coverage throughout Metro Atlanta" },
-      { "name": "Augusta", "description": "Comprehensive coverage in the CSRA" },
-      { "name": "Savannah", "description": "Strong coverage in coastal Georgia" },
-      { "name": "Columbus", "description": "Excellent coverage in West Georgia" }
+      { "name": "Atlanta", "description": "Full 5G coverage throughout Metro Atlanta, from Buckhead to the BeltLine" },
+      { "name": "Augusta", "description": "Comprehensive coverage in the CSRA, including Augusta National area" },
+      { "name": "Savannah", "description": "Strong coverage in coastal Georgia, from downtown to Tybee Island" },
+      { "name": "Columbus", "description": "Excellent coverage in West Georgia near Fort Moore" },
+      { "name": "Athens", "description": "Full coverage around UGA campus and the Classic City" },
+      { "name": "Macon", "description": "Reliable service in Middle Georgia" }
     ]
   },
   {
@@ -86,11 +347,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "12.5 million",
+    "avgPhoneBill": "$115",
+    "annualSavings": "$1,020",
+    "costOfLivingIndex": "93",
+    "majorIndustries": ["Finance", "Manufacturing", "Healthcare", "Technology"],
+    "uniqueHook": "Illinois combines big-city Chicago with small-town values across the Prairie State. Vouch Mobile delivers the connectivity Chicagoland commuters demand at a price that respects Midwestern frugality.",
+    "whyVouch": [
+      "Illinois' average phone bill of $115/month hits hard in a state with high taxes—Vouch cuts that by 74%.",
+      "Whether you're riding the L, driving Lake Shore Drive, or working in the Loop, you need coverage that never drops.",
+      "No credit check means U of I students, new Chicago residents, and gig workers can sign up instantly.",
+      "AT&T's network covers Illinois from Chicago to Carbondale, with excellent coverage along the I-90/94 corridor."
+    ],
+    "externalLinks": [
+      { "text": "Illinois Census Data", "url": "https://www.census.gov/quickfacts/IL", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "Illinois DCEO", "url": "https://dceo.illinois.gov/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Illinois?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across Illinois using AT&T's network. From Chicago to Springfield, Rockford to Champaign, you'll have reliable 5G and LTE service throughout the Prairie State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Illinois?",
+        "answer": "Vouch Mobile operates on AT&T's network in Illinois. AT&T provides extensive 5G coverage throughout Chicagoland and reliable LTE across downstate Illinois."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Illinois?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Illinois. The average Illinoisan pays $115/month for phone service, so you could save over $1,020 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Illinois?",
+        "answer": "No credit check required. Whether you're a Northwestern student, a new Chicago resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Illinois?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Illinois address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Illinois cities?",
+        "answer": "Yes! 5G is available in Chicago, Aurora, Naperville, Rockford, Joliet, Peoria, and many other Illinois cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work on the CTA and Metra?",
+        "answer": "Yes. You'll have coverage throughout the CTA system, including underground stations, and along Metra commuter rail lines throughout Chicagoland."
+      },
+      {
+        "question": "Does Vouch work in downstate Illinois?",
+        "answer": "Yes. AT&T's network covers communities throughout Central and Southern Illinois, including Springfield, Champaign-Urbana, Peoria, and Carbondale."
+      }
+    ],
     "cities": [
-      { "name": "Chicago", "description": "Full 5G coverage throughout Chicagoland" },
-      { "name": "Aurora", "description": "Comprehensive coverage in the western suburbs" },
-      { "name": "Naperville", "description": "Strong coverage in DuPage County" },
-      { "name": "Springfield", "description": "Excellent coverage in the state capital" }
+      { "name": "Chicago", "description": "Full 5G coverage throughout Chicagoland, from the Loop to the suburbs" },
+      { "name": "Aurora", "description": "Comprehensive coverage in the western suburbs along I-88" },
+      { "name": "Naperville", "description": "Strong coverage in DuPage County's tech corridor" },
+      { "name": "Springfield", "description": "Excellent coverage in the state capital" },
+      { "name": "Rockford", "description": "Reliable service in Northern Illinois" },
+      { "name": "Champaign-Urbana", "description": "Full coverage around U of I campus" }
     ]
   },
   {
@@ -101,11 +415,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "7.0 million",
+    "avgPhoneBill": "$121",
+    "annualSavings": "$1,092",
+    "costOfLivingIndex": "135",
+    "majorIndustries": ["Healthcare", "Education", "Technology", "Finance"],
+    "uniqueHook": "Massachusetts has some of the highest costs of living in America, yet the Bay State's students, professionals, and families still need reliable phone service. Vouch Mobile delivers Boston-quality coverage at a price that makes sense.",
+    "whyVouch": [
+      "Massachusetts' average phone bill of $121/month is among the nation's highest—Vouch cuts that by 75%.",
+      "Whether you're on the T, walking through Harvard Square, or commuting on the Mass Pike, you need coverage that keeps up.",
+      "No credit check means MIT students, new Boston residents, and healthcare workers can sign up instantly.",
+      "AT&T's network covers Massachusetts from Boston to the Berkshires, with excellent coverage along the I-95 corridor."
+    ],
+    "externalLinks": [
+      { "text": "Massachusetts Census Data", "url": "https://www.census.gov/quickfacts/MA", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "Mass.gov Economic Data", "url": "https://www.mass.gov/topics/economic-data", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Massachusetts?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across Massachusetts using AT&T's network. From Boston to Springfield, Worcester to Cape Cod, you'll have reliable 5G and LTE service throughout the Bay State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Massachusetts?",
+        "answer": "Vouch Mobile operates on AT&T's network in Massachusetts. AT&T provides extensive 5G coverage throughout Greater Boston and reliable LTE across the state, including Cape Cod and the Berkshires."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Massachusetts?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Massachusetts. The average Bay Stater pays $121/month for phone service, so you could save over $1,092 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Massachusetts?",
+        "answer": "No credit check required. Whether you're a Harvard student, a new Boston resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Massachusetts?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Massachusetts address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Massachusetts cities?",
+        "answer": "Yes! 5G is available in Boston, Cambridge, Worcester, Springfield, Lowell, New Bedford, and many other Massachusetts cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work on the MBTA?",
+        "answer": "Yes. You'll have coverage throughout the MBTA system, including subway stations on the Red, Orange, Blue, and Green Lines, plus commuter rail throughout Greater Boston."
+      },
+      {
+        "question": "Does Vouch work on Cape Cod?",
+        "answer": "Yes. AT&T's network provides reliable coverage throughout Cape Cod and the Islands, perfect for year-round residents and summer visitors alike."
+      }
+    ],
     "cities": [
-      { "name": "Boston", "description": "Full 5G coverage throughout Greater Boston" },
+      { "name": "Boston", "description": "Full 5G coverage throughout Greater Boston, from Back Bay to the Harbor" },
       { "name": "Worcester", "description": "Comprehensive coverage in Central Massachusetts" },
-      { "name": "Cambridge", "description": "Strong coverage in the Cambridge/Somerville area" },
-      { "name": "Springfield", "description": "Excellent coverage in Western Massachusetts" }
+      { "name": "Cambridge", "description": "Strong coverage in Cambridge/Somerville, including MIT and Harvard" },
+      { "name": "Springfield", "description": "Excellent coverage in Western Massachusetts" },
+      { "name": "Lowell", "description": "Reliable service in the Merrimack Valley" },
+      { "name": "New Bedford", "description": "Full coverage on the South Coast" }
     ]
   },
   {
@@ -116,11 +483,64 @@
     "coverage": "98%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "10.0 million",
+    "avgPhoneBill": "$107",
+    "annualSavings": "$924",
+    "costOfLivingIndex": "89",
+    "majorIndustries": ["Automotive", "Manufacturing", "Healthcare", "Technology"],
+    "uniqueHook": "Michigan's auto workers, college students, and families deserve phone service that's as reliable as a Detroit-made truck. Vouch Mobile delivers AT&T's network across both peninsulas at a price that leaves more money for what matters.",
+    "whyVouch": [
+      "Michigan's average phone bill of $107/month takes a big bite—Vouch cuts that by 72%.",
+      "Whether you're commuting on I-96, cheering at the Big House, or enjoying the lakeshore, you need coverage that keeps up.",
+      "No credit check means U of M students, new Michigan residents, and auto industry workers can sign up instantly.",
+      "AT&T's network covers Michigan from Detroit to the UP, with strong coverage along the I-94 and I-75 corridors."
+    ],
+    "externalLinks": [
+      { "text": "Michigan Census Data", "url": "https://www.census.gov/quickfacts/MI", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "MEDC", "url": "https://www.michiganbusiness.org/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Michigan?",
+        "answer": "Yes! Vouch Mobile provides 98% population coverage across Michigan using AT&T's network. From Detroit to Grand Rapids, Lansing to Traverse City, you'll have reliable 5G and LTE service throughout the Great Lakes State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Michigan?",
+        "answer": "Vouch Mobile operates on AT&T's network in Michigan. AT&T provides extensive 5G coverage in Metro Detroit and West Michigan, plus reliable LTE across the Lower and Upper Peninsulas."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Michigan?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Michigan. The average Michigander pays $107/month for phone service, so you could save over $924 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Michigan?",
+        "answer": "No credit check required. Whether you're a Michigan State student, a new Michigan resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Michigan?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Michigan address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Michigan cities?",
+        "answer": "Yes! 5G is available in Detroit, Grand Rapids, Ann Arbor, Lansing, Flint, Kalamazoo, and many other Michigan cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work in the Upper Peninsula?",
+        "answer": "Yes. AT&T's network covers populated areas of the UP, including Marquette, Sault Ste. Marie, and communities along US-2. Coverage may vary in remote wilderness areas."
+      },
+      {
+        "question": "Does Vouch work in Michigan's resort areas?",
+        "answer": "Yes. You'll have coverage in popular destinations like Traverse City, Mackinac Island (when accessible), and along the Lake Michigan shoreline."
+      }
+    ],
     "cities": [
-      { "name": "Detroit", "description": "Full 5G coverage throughout Metro Detroit" },
-      { "name": "Grand Rapids", "description": "Comprehensive coverage in West Michigan" },
-      { "name": "Ann Arbor", "description": "Strong coverage in Washtenaw County" },
-      { "name": "Lansing", "description": "Excellent coverage in the state capital" }
+      { "name": "Detroit", "description": "Full 5G coverage throughout Metro Detroit, from downtown to the suburbs" },
+      { "name": "Grand Rapids", "description": "Comprehensive coverage in West Michigan's largest city" },
+      { "name": "Ann Arbor", "description": "Strong coverage in Washtenaw County, including U of M campus" },
+      { "name": "Lansing", "description": "Excellent coverage in the state capital and MSU area" },
+      { "name": "Traverse City", "description": "Reliable service in Northern Michigan's resort region" },
+      { "name": "Flint", "description": "Full coverage throughout the Flint metro area" }
     ]
   },
   {
@@ -131,11 +551,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "9.3 million",
+    "avgPhoneBill": "$124",
+    "annualSavings": "$1,128",
+    "costOfLivingIndex": "115",
+    "majorIndustries": ["Pharmaceuticals", "Finance", "Technology", "Healthcare"],
+    "uniqueHook": "New Jersey's commuters and families pay some of the highest costs in the nation—property taxes, tolls, and yes, phone bills. Vouch Mobile helps Garden State residents keep more of their hard-earned money without sacrificing quality.",
+    "whyVouch": [
+      "New Jersey's average phone bill of $124/month is among America's highest—Vouch cuts that by 76%.",
+      "Whether you're commuting on NJ Transit, stuck on the Turnpike, or enjoying the Shore, you need coverage that works.",
+      "No credit check means Rutgers students, new NJ residents, and gig workers can sign up instantly.",
+      "AT&T's network covers New Jersey from the George Washington Bridge to Cape May, with excellent coverage in the most densely populated state."
+    ],
+    "externalLinks": [
+      { "text": "New Jersey Census Data", "url": "https://www.census.gov/quickfacts/NJ", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "NJ Economic Development", "url": "https://www.njeda.com/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in New Jersey?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across New Jersey using AT&T's network. From Newark to Atlantic City, Jersey City to Princeton, you'll have reliable 5G and LTE service throughout the Garden State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in New Jersey?",
+        "answer": "Vouch Mobile operates on AT&T's network in New Jersey. AT&T provides extensive 5G coverage throughout North Jersey and the Shore, plus reliable LTE statewide."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in New Jersey?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in New Jersey. The average New Jerseyan pays $124/month for phone service, so you could save over $1,128 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in New Jersey?",
+        "answer": "No credit check required. Whether you're a Princeton student, a new Jersey City resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in New Jersey?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your New Jersey address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in New Jersey cities?",
+        "answer": "Yes! 5G is available in Newark, Jersey City, Paterson, Elizabeth, Trenton, and many other New Jersey cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work on NJ Transit?",
+        "answer": "Yes. You'll have coverage throughout the NJ Transit system, including trains and buses serving the NYC metro area and throughout the state."
+      },
+      {
+        "question": "Does Vouch work at the Jersey Shore?",
+        "answer": "Yes. AT&T's network provides excellent coverage along the entire Jersey Shore, from Sandy Hook to Cape May, keeping you connected all summer long."
+      }
+    ],
     "cities": [
-      { "name": "Newark", "description": "Full 5G coverage in North Jersey" },
-      { "name": "Jersey City", "description": "Comprehensive coverage along the Hudson waterfront" },
+      { "name": "Newark", "description": "Full 5G coverage in North Jersey's largest city" },
+      { "name": "Jersey City", "description": "Comprehensive coverage along the Hudson waterfront with Manhattan views" },
       { "name": "Trenton", "description": "Strong coverage in the state capital" },
-      { "name": "Atlantic City", "description": "Excellent coverage at the Shore" }
+      { "name": "Atlantic City", "description": "Excellent coverage at the Shore and boardwalk" },
+      { "name": "Princeton", "description": "Full coverage around Princeton University" },
+      { "name": "Hoboken", "description": "Reliable service in the mile-square city" }
     ]
   },
   {
@@ -146,13 +619,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "jpg",
+    "population": "19.3 million",
+    "avgPhoneBill": "$128",
+    "annualSavings": "$1,176",
+    "costOfLivingIndex": "139",
+    "majorIndustries": ["Finance", "Media & Entertainment", "Technology", "Healthcare"],
+    "uniqueHook": "New York's cost of living is legendary—and phone bills are no exception. Whether you're in Manhattan or the Adirondacks, Vouch Mobile delivers the same AT&T network quality the big carriers charge three times more for.",
+    "whyVouch": [
+      "New York's average phone bill of $128/month is among America's highest—Vouch cuts that by 77%.",
+      "Whether you're riding the subway, commuting on Metro-North, or exploring Upstate, you need coverage that works everywhere.",
+      "No credit check means NYU students, new NYC residents, and gig workers can sign up instantly.",
+      "AT&T's network covers New York from Times Square to the Thousand Islands, with particularly strong coverage in the NYC metro area."
+    ],
+    "externalLinks": [
+      { "text": "New York Census Data", "url": "https://www.census.gov/quickfacts/NY", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "Empire State Development", "url": "https://esd.ny.gov/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in New York?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across New York using AT&T's network. From Manhattan to Buffalo, Long Island to the Adirondacks, you'll have reliable 5G and LTE service throughout the Empire State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in New York?",
+        "answer": "Vouch Mobile operates on AT&T's network in New York. AT&T provides extensive 5G coverage throughout NYC and major metros, plus reliable LTE across Upstate New York."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in New York?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in New York. The average New Yorker pays $128/month for phone service, so you could save over $1,176 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in New York?",
+        "answer": "No credit check required. Whether you're a Columbia student, a new Brooklyn resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in New York?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your New York address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in New York cities?",
+        "answer": "Yes! 5G is available throughout NYC's five boroughs, plus Buffalo, Rochester, Albany, Syracuse, and many other New York cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work on the NYC subway?",
+        "answer": "Yes. AT&T has invested heavily in NYC subway coverage. You'll have service in most underground stations and throughout the MTA system."
+      },
+      {
+        "question": "Does Vouch work in Upstate New York?",
+        "answer": "Yes. AT&T's network covers communities throughout Upstate New York, including the Hudson Valley, Finger Lakes, and Adirondack region. Coverage may vary in remote mountain areas."
+      }
+    ],
     "cities": [
-      { "name": "New York City", "description": "Full 5G coverage across all five boroughs" },
-      { "name": "Buffalo", "description": "Comprehensive coverage in Western New York" },
+      { "name": "New York City", "description": "Full 5G coverage across all five boroughs, from the Bronx to Staten Island" },
+      { "name": "Buffalo", "description": "Comprehensive coverage in Western New York's largest city" },
       { "name": "Rochester", "description": "Strong coverage throughout the Rochester metro area" },
       { "name": "Albany", "description": "Excellent coverage in the Capital District" },
-      { "name": "Syracuse", "description": "Full coverage in Central New York" },
-      { "name": "Long Island", "description": "Comprehensive coverage across Nassau and Suffolk" }
+      { "name": "Syracuse", "description": "Full coverage in Central New York, including SU campus" },
+      { "name": "Long Island", "description": "Comprehensive coverage across Nassau and Suffolk Counties" }
     ]
   },
   {
@@ -163,11 +687,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "10.8 million",
+    "avgPhoneBill": "$108",
+    "annualSavings": "$936",
+    "costOfLivingIndex": "95",
+    "majorIndustries": ["Technology", "Banking", "Healthcare", "Manufacturing"],
+    "uniqueHook": "North Carolina is booming—Charlotte's banking sector and the Research Triangle's tech scene are drawing talent from across the country. Vouch Mobile helps newcomers and longtime Tar Heels alike stay connected without the premium price.",
+    "whyVouch": [
+      "North Carolina's average phone bill of $108/month adds up fast—Vouch cuts that by 72%.",
+      "Whether you're commuting on I-40, working in Charlotte's Uptown, or enjoying the Blue Ridge Parkway, you need coverage that keeps up.",
+      "No credit check means Duke students, new NC residents, and gig workers can sign up instantly.",
+      "AT&T's network covers North Carolina from the Outer Banks to the Great Smoky Mountains, with excellent coverage in the Triangle and Charlotte."
+    ],
+    "externalLinks": [
+      { "text": "North Carolina Census Data", "url": "https://www.census.gov/quickfacts/NC", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "NC Commerce", "url": "https://www.nccommerce.com/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in North Carolina?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across North Carolina using AT&T's network. From Charlotte to Raleigh, Wilmington to Asheville, you'll have reliable 5G and LTE service throughout the Tar Heel State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in North Carolina?",
+        "answer": "Vouch Mobile operates on AT&T's network in North Carolina. AT&T provides extensive 5G coverage in Charlotte, the Triangle, and the Triad, plus reliable LTE from the coast to the mountains."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in North Carolina?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in North Carolina. The average North Carolinian pays $108/month for phone service, so you could save over $936 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in North Carolina?",
+        "answer": "No credit check required. Whether you're a UNC student, a new Charlotte resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in North Carolina?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your North Carolina address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in North Carolina cities?",
+        "answer": "Yes! 5G is available in Charlotte, Raleigh, Durham, Greensboro, Winston-Salem, Fayetteville, and many other North Carolina cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work at the Outer Banks?",
+        "answer": "Yes. AT&T's network provides coverage along the Outer Banks, keeping you connected while enjoying North Carolina's famous beaches."
+      },
+      {
+        "question": "Does Vouch work in the NC mountains?",
+        "answer": "Yes. You'll have coverage in Asheville, Boone, and along the Blue Ridge Parkway. Coverage may vary in remote mountain wilderness areas."
+      }
+    ],
     "cities": [
-      { "name": "Charlotte", "description": "Full 5G coverage in the Queen City" },
-      { "name": "Raleigh", "description": "Comprehensive coverage in the Triangle" },
-      { "name": "Durham", "description": "Strong coverage in the Research Triangle" },
-      { "name": "Greensboro", "description": "Excellent coverage in the Triad" }
+      { "name": "Charlotte", "description": "Full 5G coverage in the Queen City, from Uptown to the suburbs" },
+      { "name": "Raleigh", "description": "Comprehensive coverage in the state capital and Triangle area" },
+      { "name": "Durham", "description": "Strong coverage in the Research Triangle, including Duke campus" },
+      { "name": "Greensboro", "description": "Excellent coverage in the Triad region" },
+      { "name": "Wilmington", "description": "Full coverage at the coast and UNCW area" },
+      { "name": "Asheville", "description": "Reliable service in the Blue Ridge Mountains" }
     ]
   },
   {
@@ -178,11 +755,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "11.8 million",
+    "avgPhoneBill": "$104",
+    "annualSavings": "$888",
+    "costOfLivingIndex": "90",
+    "majorIndustries": ["Manufacturing", "Healthcare", "Finance", "Technology"],
+    "uniqueHook": "Ohio's hardworking families know the value of a dollar. From Cleveland's resurgence to Columbus's tech boom, Vouch Mobile delivers big-city coverage at a price that respects Midwestern values.",
+    "whyVouch": [
+      "Ohio's average phone bill of $104/month takes a chunk out of paychecks—Vouch cuts that by 71%.",
+      "Whether you're commuting on I-71, cheering on the Buckeyes, or working in Columbus's tech scene, you need reliable coverage.",
+      "No credit check means Ohio State students, new Ohio residents, and gig workers can sign up instantly.",
+      "AT&T's network covers Ohio from Lake Erie to the Ohio River, with excellent coverage in the C's: Columbus, Cleveland, and Cincinnati."
+    ],
+    "externalLinks": [
+      { "text": "Ohio Census Data", "url": "https://www.census.gov/quickfacts/OH", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "JobsOhio", "url": "https://www.jobsohio.com/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Ohio?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across Ohio using AT&T's network. From Columbus to Cleveland, Cincinnati to Toledo, you'll have reliable 5G and LTE service throughout the Buckeye State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Ohio?",
+        "answer": "Vouch Mobile operates on AT&T's network in Ohio. AT&T provides extensive 5G coverage in Columbus, Cleveland, and Cincinnati, plus reliable LTE across the state."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Ohio?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Ohio. The average Ohioan pays $104/month for phone service, so you could save over $888 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Ohio?",
+        "answer": "No credit check required. Whether you're an Ohio State student, a new Columbus resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Ohio?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Ohio address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Ohio cities?",
+        "answer": "Yes! 5G is available in Columbus, Cleveland, Cincinnati, Toledo, Akron, Dayton, and many other Ohio cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work in rural Ohio?",
+        "answer": "Yes. AT&T's network covers communities throughout Ohio, including smaller towns and agricultural areas. Most populated areas have strong service."
+      },
+      {
+        "question": "Is Vouch good for Ohio State game days?",
+        "answer": "Absolutely. You'll have coverage at Ohio Stadium and throughout Columbus, even during packed game days when network demand is high."
+      }
+    ],
     "cities": [
-      { "name": "Columbus", "description": "Full 5G coverage in the state capital" },
-      { "name": "Cleveland", "description": "Comprehensive coverage in Northeast Ohio" },
-      { "name": "Cincinnati", "description": "Strong coverage in the Tri-State area" },
-      { "name": "Toledo", "description": "Excellent coverage in Northwest Ohio" }
+      { "name": "Columbus", "description": "Full 5G coverage in the state capital and fastest-growing Ohio city" },
+      { "name": "Cleveland", "description": "Comprehensive coverage in Northeast Ohio, from downtown to the suburbs" },
+      { "name": "Cincinnati", "description": "Strong coverage in the Tri-State area including Over-the-Rhine" },
+      { "name": "Toledo", "description": "Excellent coverage in Northwest Ohio" },
+      { "name": "Akron", "description": "Full coverage in the Rubber City" },
+      { "name": "Dayton", "description": "Reliable service in the Miami Valley" }
     ]
   },
   {
@@ -193,11 +823,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "12.9 million",
+    "avgPhoneBill": "$112",
+    "annualSavings": "$984",
+    "costOfLivingIndex": "94",
+    "majorIndustries": ["Healthcare", "Education", "Finance", "Technology"],
+    "uniqueHook": "From Philly's historic streets to Pittsburgh's tech renaissance, Pennsylvania is a state of contrasts. Vouch Mobile bridges them all with reliable AT&T coverage at a price that works for steel workers and software developers alike.",
+    "whyVouch": [
+      "Pennsylvania's average phone bill of $112/month is a significant expense—Vouch cuts that by 73%.",
+      "Whether you're on SEPTA, commuting on the Turnpike, or working in Pittsburgh's tech hub, you need coverage that works.",
+      "No credit check means Penn State students, new PA residents, and gig workers can sign up instantly.",
+      "AT&T's network covers Pennsylvania from Philadelphia to Pittsburgh, with excellent coverage along the I-76 and I-80 corridors."
+    ],
+    "externalLinks": [
+      { "text": "Pennsylvania Census Data", "url": "https://www.census.gov/quickfacts/PA", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "PA DCED", "url": "https://dced.pa.gov/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Pennsylvania?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across Pennsylvania using AT&T's network. From Philadelphia to Pittsburgh, Allentown to State College, you'll have reliable 5G and LTE service throughout the Keystone State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Pennsylvania?",
+        "answer": "Vouch Mobile operates on AT&T's network in Pennsylvania. AT&T provides extensive 5G coverage in Philadelphia and Pittsburgh, plus reliable LTE across the state."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Pennsylvania?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Pennsylvania. The average Pennsylvanian pays $112/month for phone service, so you could save over $984 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Pennsylvania?",
+        "answer": "No credit check required. Whether you're a Temple student, a new Philadelphia resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Pennsylvania?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Pennsylvania address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Pennsylvania cities?",
+        "answer": "Yes! 5G is available in Philadelphia, Pittsburgh, Allentown, Harrisburg, Reading, Scranton, and many other Pennsylvania cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work on SEPTA?",
+        "answer": "Yes. You'll have coverage throughout the SEPTA system, including subway stations, buses, and regional rail throughout Greater Philadelphia."
+      },
+      {
+        "question": "Does Vouch work in rural Pennsylvania?",
+        "answer": "Yes. AT&T's network covers communities throughout Pennsylvania, including the Poconos, Pennsylvania Dutch Country, and most rural areas. Coverage may vary in very remote locations."
+      }
+    ],
     "cities": [
-      { "name": "Philadelphia", "description": "Full 5G coverage throughout Greater Philadelphia" },
-      { "name": "Pittsburgh", "description": "Comprehensive coverage in Western Pennsylvania" },
-      { "name": "Allentown", "description": "Strong coverage in the Lehigh Valley" },
-      { "name": "Harrisburg", "description": "Excellent coverage in the state capital" }
+      { "name": "Philadelphia", "description": "Full 5G coverage throughout Greater Philadelphia, from Center City to the suburbs" },
+      { "name": "Pittsburgh", "description": "Comprehensive coverage in Western Pennsylvania, including Oakland and the Strip District" },
+      { "name": "Allentown", "description": "Strong coverage throughout the Lehigh Valley" },
+      { "name": "Harrisburg", "description": "Excellent coverage in the state capital" },
+      { "name": "State College", "description": "Full coverage around Penn State campus" },
+      { "name": "Reading", "description": "Reliable service in Berks County" }
     ]
   },
   {
@@ -208,13 +891,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "jpg",
+    "population": "30.5 million",
+    "avgPhoneBill": "$116",
+    "annualSavings": "$1,032",
+    "costOfLivingIndex": "93",
+    "majorIndustries": ["Energy", "Technology", "Healthcare", "Aerospace"],
+    "uniqueHook": "Texas is AT&T's home state, and it shows—the Lone Star State has some of the best AT&T coverage in America. Vouch Mobile gives Texans access to this premium network at a no-frills price that respects the Texas tradition of value.",
+    "whyVouch": [
+      "Texas' average phone bill of $116/month adds up in a state this big—Vouch cuts that by 74%.",
+      "Whether you're on I-35, working in Austin's tech scene, or enjoying Friday night lights, you need coverage that spans the state.",
+      "No credit check means UT students, new Texas residents, and gig workers can sign up instantly.",
+      "AT&T is headquartered in Dallas, making Texas home to some of the company's best network infrastructure."
+    ],
+    "externalLinks": [
+      { "text": "Texas Census Data", "url": "https://www.census.gov/quickfacts/TX", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "Texas Economic Development", "url": "https://gov.texas.gov/business", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Texas?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across Texas using AT&T's network. From Houston to Dallas, Austin to San Antonio, you'll have reliable 5G and LTE service throughout the Lone Star State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Texas?",
+        "answer": "Vouch Mobile operates on AT&T's network in Texas. AT&T is headquartered in Dallas, so Texas has some of the company's best network infrastructure with extensive 5G coverage in all major metros."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Texas?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Texas. The average Texan pays $116/month for phone service, so you could save over $1,032 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Texas?",
+        "answer": "No credit check required. Whether you're a Texas A&M student, a new Austin resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Texas?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Texas address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Texas cities?",
+        "answer": "Yes! 5G is available in Houston, Dallas, Austin, San Antonio, Fort Worth, El Paso, and many other Texas cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work in rural Texas?",
+        "answer": "Yes. AT&T's network covers communities across Texas, from the Panhandle to the Rio Grande Valley. Most populated areas have strong service, though very remote ranch land may have limited coverage."
+      },
+      {
+        "question": "Is Vouch good for Texas road trips?",
+        "answer": "Absolutely. AT&T's extensive Texas coverage means you'll stay connected on I-10 from Houston to El Paso, I-35 from Dallas to San Antonio, and highways across the state."
+      }
+    ],
     "cities": [
-      { "name": "Houston", "description": "Full 5G coverage throughout the Greater Houston area and Harris County" },
+      { "name": "Houston", "description": "Full 5G coverage throughout Greater Houston, America's fourth-largest city" },
       { "name": "Dallas-Fort Worth", "description": "Comprehensive coverage across the Metroplex, AT&T's home territory" },
-      { "name": "San Antonio", "description": "Strong coverage from downtown to the surrounding Hill Country" },
+      { "name": "San Antonio", "description": "Strong coverage from the Alamo to the surrounding Hill Country" },
       { "name": "Austin", "description": "Excellent coverage in the state capital and tech hub" },
       { "name": "El Paso", "description": "Reliable service in West Texas and the border region" },
-      { "name": "Fort Worth", "description": "Full coverage across Tarrant County" }
+      { "name": "Fort Worth", "description": "Full coverage across Tarrant County and the Stockyards" }
     ]
   },
   {
@@ -225,11 +959,64 @@
     "coverage": "99%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "8.6 million",
+    "avgPhoneBill": "$119",
+    "annualSavings": "$1,068",
+    "costOfLivingIndex": "104",
+    "majorIndustries": ["Technology", "Defense", "Government", "Healthcare"],
+    "uniqueHook": "Virginia is home to Amazon's HQ2, countless defense contractors, and some of the highest-paid professionals in America. Vouch Mobile helps Northern Virginia tech workers and Hampton Roads military families keep more of their income.",
+    "whyVouch": [
+      "Virginia's average phone bill of $119/month is above the national average—Vouch cuts that by 75%.",
+      "Whether you're commuting on I-66, working in the Pentagon, or stationed at Norfolk Naval Base, you need reliable coverage.",
+      "No credit check means UVA students, new Virginia residents, and military families with PCS moves can sign up instantly.",
+      "AT&T's network covers Virginia from Northern Virginia to Virginia Beach, with excellent coverage along the I-95 and I-64 corridors."
+    ],
+    "externalLinks": [
+      { "text": "Virginia Census Data", "url": "https://www.census.gov/quickfacts/VA", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "Virginia Economic Development", "url": "https://www.vedp.org/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Virginia?",
+        "answer": "Yes! Vouch Mobile provides 99% population coverage across Virginia using AT&T's network. From Northern Virginia to Virginia Beach, Richmond to Roanoke, you'll have reliable 5G and LTE service throughout the Old Dominion."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Virginia?",
+        "answer": "Vouch Mobile operates on AT&T's network in Virginia. AT&T provides extensive 5G coverage in Northern Virginia and Hampton Roads, plus reliable LTE across the state."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Virginia?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Virginia. The average Virginian pays $119/month for phone service, so you could save over $1,068 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Virginia?",
+        "answer": "No credit check required. Whether you're a Virginia Tech student, a new Arlington resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Virginia?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Virginia address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Virginia cities?",
+        "answer": "Yes! 5G is available in Arlington, Virginia Beach, Norfolk, Richmond, Alexandria, Chesapeake, and many other Virginia cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Is Vouch good for military families?",
+        "answer": "Absolutely. No contracts mean you can easily switch when PCS orders come. Virginia's large military presence at Norfolk, Quantico, and other bases can rely on Vouch's flexible service."
+      },
+      {
+        "question": "Does Vouch work on DC Metro?",
+        "answer": "Yes. You'll have coverage throughout the DC Metro system, including Virginia stations on the Orange, Silver, Blue, and Yellow lines."
+      }
+    ],
     "cities": [
-      { "name": "Virginia Beach", "description": "Full 5G coverage in Hampton Roads" },
-      { "name": "Norfolk", "description": "Comprehensive coverage in the Tidewater region" },
+      { "name": "Virginia Beach", "description": "Full 5G coverage in Hampton Roads' largest city" },
+      { "name": "Norfolk", "description": "Comprehensive coverage in the Tidewater region, including the Naval base" },
       { "name": "Richmond", "description": "Strong coverage in the state capital" },
-      { "name": "Arlington", "description": "Excellent coverage in Northern Virginia" }
+      { "name": "Arlington", "description": "Excellent coverage in Northern Virginia, including Amazon HQ2 area" },
+      { "name": "Alexandria", "description": "Full coverage along the Potomac and Old Town" },
+      { "name": "Chesapeake", "description": "Reliable service throughout South Hampton Roads" }
     ]
   },
   {
@@ -240,11 +1027,64 @@
     "coverage": "98%",
     "hasImage": true,
     "imageExtension": "png",
+    "population": "7.9 million",
+    "avgPhoneBill": "$118",
+    "annualSavings": "$1,056",
+    "costOfLivingIndex": "108",
+    "majorIndustries": ["Technology", "Aerospace", "Healthcare", "Agriculture"],
+    "uniqueHook": "Washington is home to tech giants like Amazon, Microsoft, and Starbucks, yet also to vast agricultural regions and stunning natural beauty. Vouch Mobile connects all of Washington—from Seattle's tech campuses to the apple orchards of Wenatchee.",
+    "whyVouch": [
+      "Washington's average phone bill of $118/month is above the national average—Vouch cuts that by 75%.",
+      "Whether you're commuting on I-5, working in Seattle's tech scene, or exploring the Cascades, you need coverage that keeps up.",
+      "No credit check means UW students, new Seattle residents, and Amazon warehouse workers can sign up instantly.",
+      "AT&T's network covers Washington from Puget Sound to the Columbia Basin, with excellent coverage in the Seattle metro."
+    ],
+    "externalLinks": [
+      { "text": "Washington Census Data", "url": "https://www.census.gov/quickfacts/WA", "context": "population and demographics" },
+      { "text": "FCC Broadband Map", "url": "https://broadbandmap.fcc.gov/", "context": "coverage verification" },
+      { "text": "Washington Commerce", "url": "https://www.commerce.wa.gov/", "context": "economic data" }
+    ],
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Washington?",
+        "answer": "Yes! Vouch Mobile provides 98% population coverage across Washington using AT&T's network. From Seattle to Spokane, Tacoma to Tri-Cities, you'll have reliable 5G and LTE service throughout the Evergreen State."
+      },
+      {
+        "question": "What network does Vouch Mobile use in Washington?",
+        "answer": "Vouch Mobile operates on AT&T's network in Washington. AT&T provides extensive 5G coverage in the Seattle metro and Spokane, plus reliable LTE across the state."
+      },
+      {
+        "question": "How much does Vouch Mobile cost in Washington?",
+        "answer": "Vouch Mobile costs $30/month for unlimited talk, text, and data—no matter where you live in Washington. The average Washingtonian pays $118/month for phone service, so you could save over $1,056 per year by switching to Vouch."
+      },
+      {
+        "question": "Do I need a credit check for Vouch Mobile in Washington?",
+        "answer": "No credit check required. Whether you're a UW student, a new Seattle resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly."
+      },
+      {
+        "question": "How do I switch to Vouch Mobile in Washington?",
+        "answer": "Switching is easy: check that your phone is unlocked, order a free Vouch SIM card shipped to your Washington address, then activate online in minutes. You can keep your existing phone number—we'll handle the port."
+      },
+      {
+        "question": "Does Vouch Mobile have 5G in Washington cities?",
+        "answer": "Yes! 5G is available in Seattle, Tacoma, Bellevue, Spokane, Vancouver, and many other Washington cities. Your 5G access is included free with your $30/month plan."
+      },
+      {
+        "question": "Does Vouch work in rural Washington?",
+        "answer": "Yes. AT&T's network covers communities across Washington, including the Columbia Basin, Yakima Valley, and most smaller towns. Coverage may vary in remote mountain or forest areas."
+      },
+      {
+        "question": "Does Vouch work on Seattle ferries?",
+        "answer": "Coverage on Washington State Ferries varies. You'll have service at terminals and typically maintain connection on routes close to shore. Open water crossings may have limited coverage."
+      }
+    ],
     "cities": [
-      { "name": "Seattle", "description": "Full 5G coverage throughout the Seattle metro" },
-      { "name": "Tacoma", "description": "Comprehensive coverage in Pierce County" },
-      { "name": "Spokane", "description": "Strong coverage in Eastern Washington" },
-      { "name": "Bellevue", "description": "Excellent coverage on the Eastside" }
+      { "name": "Seattle", "description": "Full 5G coverage throughout the Seattle metro, from downtown to the suburbs" },
+      { "name": "Tacoma", "description": "Comprehensive coverage in Pierce County and the South Sound" },
+      { "name": "Spokane", "description": "Strong coverage in Eastern Washington's largest city" },
+      { "name": "Bellevue", "description": "Excellent coverage on the Eastside, home to tech giants" },
+      { "name": "Vancouver", "description": "Full coverage in the Portland metro's Washington side" },
+      { "name": "Olympia", "description": "Reliable service in the state capital" }
     ]
   }
 ]
