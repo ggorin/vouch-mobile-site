@@ -4,7 +4,7 @@ description: "Find phone plans that work without SSN or credit history. Options 
 date: 2026-01-17
 readTime: 10
 tags: posts
-image: /images/blog/mvno.png
+image: /images/blog/new-americans-phone-plans.png
 layout: post.njk
 ---
 

@@ -4,7 +4,7 @@ description: "Find the best phone plans for Uber drivers, DoorDash couriers, and
 date: 2026-01-17
 readTime: 11
 tags: posts
-image: /images/blog/mvno.png
+image: /images/blog/gig-worker-phone-plans.png
 layout: post.njk
 ---
 

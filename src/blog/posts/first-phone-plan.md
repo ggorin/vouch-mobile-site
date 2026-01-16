@@ -4,7 +4,7 @@ description: "Getting your first phone plan? Learn what to consider, common mist
 date: 2026-01-17
 readTime: 8
 tags: posts
-image: /images/blog/switch-carriers.png
+image: /images/blog/first-phone-plan.png
 layout: post.njk
 ---
 

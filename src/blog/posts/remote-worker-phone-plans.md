@@ -4,7 +4,7 @@ description: "Find the best phone plans for remote workers in 2026. Compare hots
 date: 2026-01-17
 readTime: 10
 tags: posts
-image: /images/blog/mvno.png
+image: /images/blog/remote-worker-phone-plans.png
 layout: post.njk
 ---
 

@@ -4,7 +4,7 @@ description: "Get a phone plan with bad credit. Discover no credit check carrier
 date: 2026-01-17
 readTime: 9
 tags: posts
-image: /images/blog/no-credit-check.png
+image: /images/blog/phone-plans-bad-credit.png
 layout: post.njk
 ---
 

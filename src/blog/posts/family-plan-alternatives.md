@@ -4,7 +4,7 @@ description: "Discover family phone plan alternatives that save money without sa
 date: 2026-01-17
 readTime: 10
 tags: posts
-image: /images/blog/no-credit-check.png
+image: /images/blog/family-plan-alternatives.png
 layout: post.njk
 ---
 

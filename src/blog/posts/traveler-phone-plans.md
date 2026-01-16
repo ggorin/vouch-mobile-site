@@ -4,7 +4,7 @@ description: "Find the best phone plans for travelers in 2026. Compare options w
 date: 2026-01-17
 readTime: 10
 tags: posts
-image: /images/blog/mvno.png
+image: /images/blog/traveler-phone-plans.png
 layout: post.njk
 ---
 

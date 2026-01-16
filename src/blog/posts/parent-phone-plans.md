@@ -4,7 +4,7 @@ description: "Find the best phone plans for kids and families in 2026. Compare a
 date: 2026-01-17
 readTime: 11
 tags: posts
-image: /images/blog/mvno.png
+image: /images/blog/parent-phone-plans.png
 layout: post.njk
 ---
 

@@ -4,7 +4,7 @@ description: "Discover 25 proven tips to save money on your phone bill without s
 date: 2026-01-17
 readTime: 12
 tags: posts
-image: /images/blog/mvno.png
+image: /images/blog/budget-phone-tips.png
 layout: post.njk
 ---
 

@@ -4,7 +4,7 @@ description: "Find affordable cell phone plans for small business owners in 2026
 date: 2026-01-17
 readTime: 11
 tags: posts
-image: /images/blog/mvno.png
+image: /images/blog/small-business-phone-plans.png
 layout: post.njk
 ---
 

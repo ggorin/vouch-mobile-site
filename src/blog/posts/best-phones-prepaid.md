@@ -4,7 +4,7 @@ description: "Find the best prepaid phones and unlocked phones for any budget. O
 date: 2026-01-17
 readTime: 10
 tags: posts
-image: /images/blog/phone-unlocked-new.png
+image: /images/blog/best-phones-prepaid.png
 layout: post.njk
 ---
 

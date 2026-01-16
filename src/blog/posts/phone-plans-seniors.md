@@ -4,7 +4,7 @@ description: "Find the best phone plans for seniors in 2026. Compare simple, aff
 date: 2026-01-17
 readTime: 9
 tags: posts
-image: /images/blog/mvno.png
+image: /images/blog/phone-plans-seniors.png
 layout: post.njk
 ---
 
