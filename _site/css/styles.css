@@ -549,8 +549,8 @@ h6 {
 }
 
 .logo img {
-  height: 36px;
-  width: auto;
+  width: 93px;
+  height: auto;
 }
 
 .nav {
@@ -2525,7 +2525,8 @@ h6 {
 }
 
 .footer-brand img {
-  height: 36px;
+  width: 93px;
+  height: auto;
   margin-bottom: var(--spacing-4);
   filter: brightness(0) invert(1);
 }
