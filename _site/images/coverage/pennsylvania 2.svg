@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00B5A0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00D4B8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="black" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad)" />
+  <circle cx="715" cy="503" r="171" fill="white" opacity="0.12042483079126322" /><circle cx="878" cy="363" r="191" fill="white" opacity="0.17584282888017339" /><circle cx="447" cy="520" r="148" fill="white" opacity="0.0619292759337436" /><circle cx="537" cy="307" r="116" fill="white" opacity="0.1613572315972791" /><circle cx="137" cy="516" r="150" fill="white" opacity="0.0864794010253615" />
+  <g text-anchor="middle" font-family="sans-serif" fill="white">
+    <text x="50%" y="45%" font-size="60" font-weight="bold" filter="url(#shadow)">Pennsylvania</text>
+    <text x="50%" y="60%" font-size="30" opacity="0.9">Reliable Coverage in the Keystone State</text>
+  </g>
+  <!-- Optional simple icon placeholder -->
+  
+</svg>
