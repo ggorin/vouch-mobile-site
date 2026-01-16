@@ -143,5 +143,208 @@
       "Better value at the unlimited tier",
       "Online-first convenience"
     ]
+  },
+  {
+    "name": "Straight Talk Wireless",
+    "shortName": "Straight Talk",
+    "slug": "straight-talk",
+    "network": "Verizon",
+    "startingPrice": "$25/month",
+    "regularPrice": "$60/month (Platinum)",
+    "contract": "No",
+    "creditCheck": "No",
+    "fiveG": "Yes",
+    "hotspot": "Unlimited (Platinum)",
+    "dataPriority": "Deprioritized",
+    "pros": [
+      "Available at Walmart stores nationwide",
+      "Walmart+ membership included on Gold/Platinum plans",
+      "Device credits and protection options"
+    ],
+    "cons": [
+      "Widespread payment processing issues reported",
+      "Customer service problems lasting months",
+      "Service date changes causing confusion"
+    ],
+    "vouchAdvantages": [
+      "Reliable AT&T network with consistent coverage",
+      "Simple online billing without payment hassles",
+      "No Walmart membership required for value",
+      "Straightforward pricing without complicated tiers"
+    ]
+  },
+  {
+    "name": "AT&T Prepaid",
+    "shortName": "AT&T Prepaid",
+    "slug": "att-prepaid",
+    "network": "AT&T",
+    "startingPrice": "$15/month",
+    "regularPrice": "$65/month (Unlimited Max Plus)",
+    "contract": "No",
+    "creditCheck": "No",
+    "fiveG": "Yes",
+    "hotspot": "35GB (Max Plus)",
+    "dataPriority": "Lower than postpaid (QCI 9)",
+    "pros": [
+      "Same AT&T network coverage as postpaid",
+      "Data rollover on select plans",
+      "Level Up pathway to build credit for postpaid"
+    ],
+    "cons": [
+      "Lower network priority than postpaid customers",
+      "Turbo add-on costs extra $7/month for priority",
+      "Unlimited Max Plus costs $65/month for full features"
+    ],
+    "vouchAdvantages": [
+      "Better value at $30/month for unlimited",
+      "No complicated tier structure to navigate",
+      "Same AT&T network at a fraction of the price",
+      "Simple pricing without add-on fees"
+    ]
+  },
+  {
+    "name": "Verizon Prepaid",
+    "shortName": "Verizon Prepaid",
+    "slug": "verizon-prepaid",
+    "network": "Verizon",
+    "startingPrice": "$35/month",
+    "regularPrice": "$70/month (Unlimited Plus)",
+    "contract": "No",
+    "creditCheck": "No",
+    "fiveG": "Yes",
+    "hotspot": "25GB (Unlimited Plus)",
+    "dataPriority": "Deprioritized (except Plus)",
+    "pros": [
+      "Strong Verizon 5G Ultra Wideband coverage",
+      "Loyalty discounts after 3 and 9 months",
+      "3-year price lock guarantee"
+    ],
+    "cons": [
+      "Standard plans deprioritized during congestion",
+      "Streaming limited to 480p on base unlimited",
+      "Higher pricing than most competitors"
+    ],
+    "vouchAdvantages": [
+      "Lower price at $30/month vs $70/month",
+      "Better rural coverage on AT&T network",
+      "No video streaming quality restrictions",
+      "Full features without premium tier pricing"
+    ]
+  },
+  {
+    "name": "T-Mobile Prepaid",
+    "shortName": "T-Mobile Prepaid",
+    "slug": "t-mobile-prepaid",
+    "network": "T-Mobile",
+    "startingPrice": "$15/month (Connect)",
+    "regularPrice": "$65/month (Unlimited Plus)",
+    "contract": "No",
+    "creditCheck": "No",
+    "fiveG": "Yes",
+    "hotspot": "5GB (Unlimited Plus)",
+    "dataPriority": "Same as postpaid",
+    "pros": [
+      "Premium data has same priority as postpaid",
+      "5-year price guarantee on eligible plans",
+      "Strong international features to 215+ countries"
+    ],
+    "cons": [
+      "T-Mobile has weaker rural coverage",
+      "Limited hotspot data on most plans",
+      "Unlimited Plus costs $65/month"
+    ],
+    "vouchAdvantages": [
+      "Better rural coverage on AT&T network",
+      "Lower price for comparable unlimited features",
+      "More generous hotspot data included",
+      "Simpler plan structure without confusion"
+    ]
+  },
+  {
+    "name": "US Mobile",
+    "shortName": "US Mobile",
+    "slug": "us-mobile",
+    "network": "Verizon/T-Mobile/AT&T",
+    "startingPrice": "$8/month",
+    "regularPrice": "$44/month (Unlimited Premium)",
+    "contract": "No",
+    "creditCheck": "No",
+    "fiveG": "Yes",
+    "hotspot": "20GB (Unlimited Starter)",
+    "dataPriority": "Varies by network",
+    "pros": [
+      "Choose between three major networks",
+      "Highly customizable build-your-own plans",
+      "Free network switching anytime"
+    ],
+    "cons": [
+      "Too many options can be overwhelming",
+      "Premium plan costs $44/month",
+      "Network experience varies by choice"
+    ],
+    "vouchAdvantages": [
+      "Consistent AT&T experience without network decisions",
+      "Simple pricing without build-your-own complexity",
+      "Better value at $30/month for unlimited",
+      "No need to research which network is best"
+    ]
+  },
+  {
+    "name": "Tello Mobile",
+    "shortName": "Tello",
+    "slug": "tello",
+    "network": "T-Mobile",
+    "startingPrice": "$5/month",
+    "regularPrice": "$25/month (Unlimited)",
+    "contract": "No",
+    "creditCheck": "No",
+    "fiveG": "Yes",
+    "hotspot": "10GB (Unlimited)",
+    "dataPriority": "Deprioritized",
+    "pros": [
+      "Extremely low starting price at $5/month",
+      "Free calls to 60+ countries included",
+      "BBB A+ rating with strong customer reviews"
+    ],
+    "cons": [
+      "T-Mobile has weaker rural coverage",
+      "Account suspension issues reported",
+      "Payment processing problems with some banks"
+    ],
+    "vouchAdvantages": [
+      "Better rural coverage on AT&T network",
+      "More reliable account management",
+      "Consistent service without suspension issues",
+      "Premium network experience for the price"
+    ]
+  },
+  {
+    "name": "Google Fi",
+    "shortName": "Google Fi",
+    "slug": "google-fi",
+    "network": "T-Mobile/US Cellular",
+    "startingPrice": "$18/month (+ data)",
+    "regularPrice": "$50/month (Unlimited Standard)",
+    "contract": "No",
+    "creditCheck": "No",
+    "fiveG": "Yes",
+    "hotspot": "25GB (Unlimited Standard)",
+    "dataPriority": "Varies by network",
+    "pros": [
+      "Automatic network switching for best signal",
+      "Excellent international coverage in 200+ countries",
+      "VPN and 100GB Google One storage included"
+    ],
+    "cons": [
+      "Customer service rated as unhelpful",
+      "Failed rebates causing unexpected charges",
+      "Charges continuing after cancellation reported"
+    ],
+    "vouchAdvantages": [
+      "Reliable customer support when you need it",
+      "Consistent AT&T network without switching complexity",
+      "Lower price at $30/month for unlimited",
+      "No rebate hassles or billing surprises"
+    ]
   }
 ]

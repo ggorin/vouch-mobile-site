@@ -1,0 +1,139 @@
+---
+layout: base.njk
+title: "Learn | Vouch Mobile Glossary"
+description: "Your comprehensive guide to wireless terminology. Learn about 5G, MVNOs, SIM cards, and everything you need to understand mobile phone service."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "DefinedTermSet",
+      "name": "Vouch Mobile Glossary",
+      "description": "A comprehensive guide to wireless and mobile phone terminology",
+      "url": "{{ site.url }}/learn/",
+      "hasDefinedTerm": [
+        {% for term in glossary %}
+        {
+          "@type": "DefinedTerm",
+          "name": "{{ term.term }}",
+          "description": "{{ term.shortDefinition }}",
+          "url": "{{ site.url }}/learn/{{ term.slug }}/"
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ site.url }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Learn"
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{# ============================================================================
+   HERO SECTION
+   ============================================================================ #}
+<section class="learn-index-hero">
+  <div class="learn-hero-bg">
+    <div class="learn-hero-gradient"></div>
+    <div class="learn-hero-pattern"></div>
+  </div>
+
+  <div class="container">
+    <nav class="breadcrumb-v2" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      <span>Learn</span>
+    </nav>
+
+    <div class="learn-index-header">
+      <div class="learn-index-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+      </div>
+      <h1 class="learn-index-title">Learn</h1>
+      <p class="learn-index-subtitle">Your comprehensive guide to wireless terminology. Understand the technology behind your mobile service.</p>
+    </div>
+  </div>
+</section>
+
+{# ============================================================================
+   GLOSSARY GRID
+   ============================================================================ #}
+<section class="learn-index-content">
+  <div class="container">
+    <div class="learn-index-grid">
+      {% for term in glossary %}
+      <a href="/learn/{{ term.slug }}/" class="learn-term-card">
+        <div class="term-card-header">
+          <span class="term-category">{{ term.category }}</span>
+          <svg class="term-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+        <h2 class="term-title">{{ term.term }}</h2>
+        <p class="term-preview">{{ term.shortDefinition | truncate(120) }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ============================================================================
+   CTA SECTION
+   ============================================================================ #}
+<section class="learn-cta-section">
+  <div class="learn-cta-bg">
+    <div class="cta-gradient-orb cta-gradient-orb--1"></div>
+    <div class="cta-gradient-orb cta-gradient-orb--2"></div>
+  </div>
+
+  <div class="container">
+    <div class="learn-cta-wrapper">
+      <div class="learn-cta-content">
+        <span class="learn-cta-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          Ready to Get Started?
+        </span>
+        <h2 class="learn-cta-title">Put Your Knowledge to Use</h2>
+        <p class="learn-cta-subtitle">Now that you understand the tech, experience it with Vouch Mobile. Unlimited plans starting at $30/month on AT&T's network.</p>
+
+        <div class="learn-cta-features">
+          <span class="cta-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            No Credit Check
+          </span>
+          <span class="cta-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            5G Included
+          </span>
+          <span class="cta-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            No Contracts
+          </span>
+        </div>
+
+        <div class="learn-cta-buttons">
+          <a href="https://vouchmobile.com" class="btn btn-primary btn-lg">
+            Get Started Today
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="/plans/" class="btn btn-outline-light btn-lg">View Plans</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

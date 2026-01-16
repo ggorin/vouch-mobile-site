@@ -12,6 +12,8 @@ eleventyNavigation:
   {% set stateList = (stateList.push({"@type": "State", "name": state.name}), stateList) %}
 {% endfor %}
 
+{% set popularStates = ["california", "texas", "new-york", "florida"] %}
+
 {% block schema %}
 <script type="application/ld+json">
 {{ {
@@ -37,111 +39,337 @@ eleventyNavigation:
 </script>
 {% endblock %}
 
-<!-- Premium Hero -->
-<section class="hero hero-sm">
-  <div class="container">
-     <div class="hero-mesh">
-      <span></span>
-      <span></span>
+<!-- Coverage Hero V2 - Network Visualization -->
+<section class="coverage-hero-v2">
+  <div class="coverage-hero-bg">
+    <div class="network-grid"></div>
+    <div class="signal-rings">
+      <span class="ring ring-1"></span>
+      <span class="ring ring-2"></span>
+      <span class="ring ring-3"></span>
     </div>
-    <div class="hero-content">
-      <div class="hero-badge">Nationwide 5G</div>
-      <h1>Coverage You Can <span class="highlight">Count On</span></h1>
-      <p class="hero-subtitle">Powered by AT&T's award-winning network. 99% population coverage.</p>
-      
+    <div class="coverage-particles">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="coverage-hero-content">
+      <div class="coverage-hero-badge">
+        <span class="pulse-dot"></span>
+        <span>Powered by AT&T</span>
+      </div>
+
+      <h1 class="coverage-hero-title">
+        <span class="title-line">Coast to Coast</span>
+        <span class="title-highlight">5G Coverage</span>
+      </h1>
+
+      <p class="coverage-hero-subtitle">
+        Premium network. Budget price. Check your area.
+      </p>
+
       <!-- Search Component -->
-      <div class="coverage-search-wrapper animate-fade-in animate-delay-2">
-        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        <input type="search" id="state-search" class="search-input" placeholder="Find your state..." aria-label="Search for a state">
+      <div class="coverage-search-v2">
+        <div class="search-input-wrapper">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="search" id="state-search" class="search-input-v2" placeholder="Search your state..." aria-label="Search for a state">
+        </div>
+        <button class="search-btn" onclick="document.getElementById('states').scrollIntoView({behavior: 'smooth'})">
+          View All States
+        </button>
+      </div>
+    </div>
+
+    <!-- Live Stats Strip -->
+    <div class="stats-strip">
+      <div class="stat-item">
+        <span class="stat-value">99%</span>
+        <span class="stat-desc">US Population</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-value">5G</span>
+        <span class="stat-desc">Included Free</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-value">#1</span>
+        <span class="stat-desc">Network Reliability</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item highlight">
+        <span class="stat-value">$30</span>
+        <span class="stat-desc">Unlimited Plan</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Stats & Benefits -->
-<section class="section">
+<!-- Featured States Section -->
+<section class="section featured-states-section">
   <div class="container">
-    <div class="stats-grid animate-fade-in animate-delay-3">
-      <div class="stat-card glass-panel">
-        <div class="stat-number">99%</div>
-        <div class="stat-label">Population Coverage</div>
-      </div>
-      <div class="stat-card glass-panel">
-        <div class="stat-number">5G</div>
-        <div class="stat-label">Network Access</div>
-      </div>
-      <div class="stat-card glass-panel">
-        <div class="stat-number">#1</div>
-        <div class="stat-label">Reliability</div>
-      </div>
-      <div class="stat-card glass-panel">
-        <div class="stat-number">$30</div>
-        <div class="stat-label">Per Month</div>
-      </div>
+    <div class="section-header-v2">
+      <span class="section-tag">Popular Destinations</span>
+      <h2 class="section-title-v2">Top Coverage Areas</h2>
+      <p class="section-subtitle-v2">Explore our most-requested state coverage guides</p>
     </div>
 
-    <div class="coverage-map-container mt-12 animate-fade-in animate-delay-4">
-      <div class="map-frame">
-        <img src="/images/coverage/coverage-hero.jpg" alt="Vouch Mobile nationwide coverage map" class="map-image">
-        <div class="map-overlay">
-          <div class="map-badge">
-            <span class="status-dot"></span> Live Network Status
+    <div class="featured-states-grid">
+      {% for state in states %}
+        {% if state.slug in popularStates %}
+        <a href="/coverage/{{ state.slug }}/" class="featured-state-card" data-state="{{ state.slug }}">
+          <div class="featured-state-bg">
+            {% set stateImgPath = "/images/coverage/" + state.slug + ".jpg" %}
+            {% set stateImgAlt = state.name + " coverage" %}
+            {% image stateImgPath, stateImgAlt, [300, 600], "(max-width: 768px) 50vw, 300px" %}
+            <div class="featured-state-overlay"></div>
           </div>
+          <div class="featured-state-content">
+            <div class="state-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              5G Ready
+            </div>
+            <h3 class="featured-state-name">{{ state.name }}</h3>
+            <p class="featured-state-cities">{% if state.cities %}{% for city in state.cities | batch(3) | first %}{{ city.name }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</p>
+            <span class="featured-state-link">
+              View Coverage
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Coverage Map Visual -->
+<section class="section coverage-map-section">
+  <div class="container">
+    <div class="coverage-map-wrapper">
+      <div class="map-visual">
+        {% image "/images/coverage/coverage-hero.jpg", "Vouch Mobile nationwide coverage map", [600, 1200, 1920], "(max-width: 768px) 100vw, 1200px", {class: "map-image-v2"} %}
+        <div class="map-hotspots">
+          <span class="hotspot" style="top: 25%; left: 15%;" title="Seattle">
+            <span class="hotspot-ping"></span>
+          </span>
+          <span class="hotspot" style="top: 35%; left: 12%;" title="San Francisco">
+            <span class="hotspot-ping"></span>
+          </span>
+          <span class="hotspot" style="top: 45%; left: 14%;" title="Los Angeles">
+            <span class="hotspot-ping"></span>
+          </span>
+          <span class="hotspot" style="top: 55%; left: 30%;" title="Dallas">
+            <span class="hotspot-ping"></span>
+          </span>
+          <span class="hotspot" style="top: 40%; left: 48%;" title="Chicago">
+            <span class="hotspot-ping"></span>
+          </span>
+          <span class="hotspot" style="top: 35%; left: 78%;" title="New York">
+            <span class="hotspot-ping"></span>
+          </span>
+          <span class="hotspot" style="top: 60%; left: 82%;" title="Miami">
+            <span class="hotspot-ping"></span>
+          </span>
         </div>
       </div>
+      <div class="map-info-card">
+        <div class="info-card-header">
+          <span class="status-indicator">
+            <span class="status-dot-live"></span>
+            Live Network
+          </span>
+        </div>
+        <h3>Nationwide AT&T Coverage</h3>
+        <p>Access the same towers as AT&T customers. 5G in 100+ cities, 4G LTE everywhere else.</p>
+        <ul class="coverage-checklist">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            No coverage gaps
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Same network priority
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            5G at no extra cost
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- State List -->
-<section class="section section-alt" id="states">
+<!-- All States Grid -->
+<section class="section section-alt states-section-v2" id="states">
   <div class="container">
-    <div class="section-header text-center mb-12">
-      <h2 class="section-title">Coverage by State</h2>
-      <p class="section-subtitle">Select your state to see local coverage details</p>
+    <div class="section-header-v2 text-center">
+      <span class="section-tag">All 50 States</span>
+      <h2 class="section-title-v2">Find Your State</h2>
+      <p class="section-subtitle-v2">Click any state for detailed coverage information</p>
     </div>
 
-    <div class="state-grid" id="state-grid">
+    <div class="states-grid-v2" id="state-grid">
       {% for state in states %}
-      <a href="/coverage/{{ state.slug }}/" class="state-link glass-panel-sm" data-state="{{ state.name | lower }}">
-        <span class="state-name">{{ state.name }}</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      <a href="/coverage/{{ state.slug }}/" class="state-card-v2" data-state="{{ state.name | lower }}">
+        <div class="state-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        </div>
+        <div class="state-card-content">
+          <span class="state-card-name">{{ state.name }}</span>
+          <span class="state-card-status">
+            <span class="mini-dot"></span>
+            Full Coverage
+          </span>
+        </div>
+        <svg class="state-card-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
       {% endfor %}
     </div>
-    <div id="no-results" class="text-center text-muted mt-8" style="display: none;">
-      <p>No states found matching your search.</p>
+
+    <div id="no-results" class="no-results-v2" style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="8" x2="14" y2="14"></line><line x1="14" y1="8" x2="8" y2="14"></line></svg>
+      <p>No states found matching your search</p>
+      <button onclick="document.getElementById('state-search').value=''; filterStates('')" class="btn btn-secondary btn-sm">Clear Search</button>
     </div>
   </div>
 </section>
 
-<!-- Features -->
-<section class="section">
+<!-- Network Features V2 -->
+<section class="section network-features-v2">
   <div class="container">
-    <h2 class="section-title text-center mb-12">Network Features</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+    <div class="section-header-v2 text-center">
+      <span class="section-tag">Network Perks</span>
+      <h2 class="section-title-v2">Everything Included</h2>
+      <p class="section-subtitle-v2">Premium features at a budget-friendly price</p>
+    </div>
+
+    <div class="features-grid-v2">
+      <div class="feature-card-v2">
+        <div class="feature-icon-v2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
         </div>
-        <h3>5G Included</h3>
-        <p>Access to AT&T's growing 5G network in major cities at no extra cost.</p>
+        <h3>5G Access</h3>
+        <p>Blazing fast 5G speeds in 100+ cities at no extra charge. Future-proof your connection.</p>
+        <span class="feature-tag">Free</span>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+
+      <div class="feature-card-v2">
+        <div class="feature-icon-v2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
         </div>
         <h3>WiFi Calling</h3>
-        <p>Make calls over WiFi for better indoor coverage when needed.</p>
+        <p>Crystal clear calls over WiFi when you're indoors. Never miss an important call.</p>
+        <span class="feature-tag">Included</span>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+
+      <div class="feature-card-v2">
+        <div class="feature-icon-v2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
         </div>
-        <h3>Device Compatibility</h3>
-        <p>Works with any unlocked phone that supports AT&T bands.</p>
+        <h3>No Contracts</h3>
+        <p>Month-to-month service. Cancel anytime without penalties or hidden fees.</p>
+        <span class="feature-tag">Flexible</span>
+      </div>
+
+      <div class="feature-card-v2">
+        <div class="feature-icon-v2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <h3>Fraud Protection</h3>
+        <p>Built-in scam call blocking and fraud alerts keep your account secure.</p>
+        <span class="feature-tag">Safe</span>
+      </div>
+
+      <div class="feature-card-v2">
+        <div class="feature-icon-v2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+        </div>
+        <h3>BYOD Compatible</h3>
+        <p>Bring your own device. Works with any unlocked phone supporting AT&T bands.</p>
+        <span class="feature-tag">Easy</span>
+      </div>
+
+      <div class="feature-card-v2">
+        <div class="feature-icon-v2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </div>
+        <h3>Real Support</h3>
+        <p>Talk to real humans when you need help. No bots, no endless hold times.</p>
+        <span class="feature-tag">Human</span>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Coverage CTA Section -->
+<section class="section coverage-cta-section">
+  <div class="container">
+    <div class="coverage-cta-wrapper">
+      <div class="cta-glow"></div>
+      <div class="coverage-cta-content">
+        <span class="cta-badge">Ready to Switch?</span>
+        <h2 class="cta-title">Get Premium Coverage for <span class="price-highlight">$30/mo</span></h2>
+        <p class="cta-subtitle">Same AT&T network. Fraction of the price. No compromises.</p>
+
+        <div class="cta-features">
+          <span class="cta-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Unlimited Talk & Text
+          </span>
+          <span class="cta-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            5GB High-Speed Data
+          </span>
+          <span class="cta-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            5G Access Included
+          </span>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="/plans/" class="btn btn-primary btn-lg">
+            View Plans
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="/compare/" class="btn btn-outline btn-lg">Compare Carriers</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// State search functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('state-search');
+  const stateGrid = document.getElementById('state-grid');
+  const noResults = document.getElementById('no-results');
+
+  if (searchInput && stateGrid) {
+    searchInput.addEventListener('input', function(e) {
+      filterStates(e.target.value.toLowerCase());
+    });
+  }
+
+  window.filterStates = function(query) {
+    const states = stateGrid.querySelectorAll('[data-state]');
+    let visibleCount = 0;
+
+    states.forEach(function(state) {
+      const stateName = state.getAttribute('data-state');
+      if (stateName.includes(query)) {
+        state.style.display = '';
+        visibleCount++;
+      } else {
+        state.style.display = 'none';
+      }
+    });
+
+    noResults.style.display = visibleCount === 0 ? 'flex' : 'none';
+  };
+});
+</script>

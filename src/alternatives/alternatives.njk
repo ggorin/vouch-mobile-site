@@ -1,0 +1,11 @@
+---
+layout: alternatives.njk
+pagination:
+  data: carriers
+  size: 1
+  alias: carrier
+permalink: "/compare/{{ carrier.slug }}/"
+eleventyComputed:
+  title: "Best {{ carrier.name }} Alternatives 2026 - Top Picks Compared"
+  description: "Looking for {{ carrier.name }} alternatives? Compare the {{ carrier.alternatives | length }} best options with better pricing, coverage, and features. Find your perfect switch."
+---

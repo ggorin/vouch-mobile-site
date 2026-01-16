@@ -1,0 +1,11 @@
+---
+layout: metro.njk
+pagination:
+  data: metros
+  size: 1
+  alias: metro
+permalink: "/coverage/{{ metro.state }}/{{ metro.slug }}/"
+eleventyComputed:
+  title: "{{ metro.metaTitle }}"
+  description: "{{ metro.metaDescription }}"
+---

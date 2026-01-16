@@ -1,0 +1,65 @@
+{#
+  Organization/LocalBusiness Schema Partial
+
+  Usage:
+  {% set schemaAreaServed = "California" %}
+  {% set schemaPriceRange = "$30/month" %}
+  {% include "schema/organization.njk" %}
+
+  Or for national coverage (no areaServed):
+  {% include "schema/organization.njk" %}
+
+  Parameters:
+  - schemaAreaServed: State or city name for LocalBusiness (optional)
+  - schemaPriceRange: Price range string (optional, defaults to "$30/month")
+  - schemaType: "Organization" or "LocalBusiness" (optional, defaults based on areaServed)
+#}
+{%- set priceRange = schemaPriceRange | default("$30/month") -%}
+{%- set entityType = schemaType | default("LocalBusiness" if schemaAreaServed else "Organization") -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ entityType }}",
+  "@id": "{{ site.url }}/#organization",
+  "name": "{{ site.name }}",
+  "url": "{{ site.url }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}/images/vouch-logo.png"
+  },
+  "description": {{ site.description | dump | safe }},
+  "telephone": "+1-800-VOUCH-MO",
+  "sameAs": [
+    "https://twitter.com/vouchmobile",
+    "https://facebook.com/vouchmobile",
+    "https://instagram.com/vouchmobile"
+  ],
+  {%- if entityType == "LocalBusiness" %}
+  "priceRange": "{{ priceRange }}",
+  {%- endif %}
+  {%- if schemaAreaServed %}
+  "areaServed": {
+    "@type": "State",
+    "name": "{{ schemaAreaServed }}",
+    "containedInPlace": {
+      "@type": "Country",
+      "name": "United States"
+    }
+  },
+  {%- else %}
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  {%- endif %}
+  "knowsAbout": [
+    "Mobile phone service",
+    "Wireless telecommunications",
+    "Prepaid phone plans",
+    "No credit check phone service",
+    "AT&T MVNO"
+  ],
+  "slogan": "Unlimited wireless. No credit check. No contracts."
+}
+</script>

@@ -57,152 +57,360 @@ layout: base.njk
 </script>
 {% endblock %}
 
-<section class="compare-hero">
+{# ============================================================================
+   HERO SECTION - Dramatic asymmetric battle layout
+   ============================================================================ #}
+<section class="compare-hero-v2">
+  <div class="compare-hero-bg">
+    <div class="compare-hero-gradient"></div>
+    <div class="compare-hero-grid-pattern"></div>
+  </div>
+
   <div class="container">
-    <div class="compare-hero-grid">
-      <div class="compare-content">
-        <h1>{{ title }}</h1>
-        <p class="compare-subtitle">{{ description }}</p>
-        <a href="#verdict" class="btn btn-primary">See the Verdict</a>
+    <div class="compare-hero-content">
+      {# Left side - Vouch (Winner) #}
+      <div class="compare-contender compare-contender--vouch">
+        <div class="contender-badge contender-badge--winner">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          Recommended
+        </div>
+        <h2 class="contender-name">Vouch Mobile</h2>
+        <div class="contender-network">
+          <span class="network-badge">AT&T Network</span>
+        </div>
+        <div class="contender-price">
+          <span class="price-amount">$30</span>
+          <span class="price-period">/month</span>
+        </div>
+        <ul class="contender-highlights">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited Everything</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> 5G Included</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> No Credit Check</li>
+        </ul>
       </div>
-      <div class="compare-image">
-        {% image "/images/compare/comparison-hero.jpg", "Vouch Mobile vs " + competitor.name + " comparison", [400, 800], "(min-width: 1024px) 50vw, 100vw", { class: "hero-image", loading: "eager" } %}
+
+      {# VS Badge #}
+      <div class="compare-vs-badge">
+        <div class="vs-inner">
+          <span class="vs-text">VS</span>
+        </div>
+        <div class="vs-pulse"></div>
       </div>
+
+      {# Right side - Competitor #}
+      <div class="compare-contender compare-contender--competitor">
+        <div class="contender-badge contender-badge--neutral">
+          Competitor
+        </div>
+        <h2 class="contender-name">{{ competitor.name }}</h2>
+        <div class="contender-network">
+          <span class="network-badge network-badge--muted">{{ competitor.network }}</span>
+        </div>
+        <div class="contender-price">
+          <span class="price-amount price-amount--muted">{{ competitor.regularPrice | replace("/month", "") | replace(" (unlimited)", "") | replace(" (plus)", "") }}</span>
+          <span class="price-period">/month</span>
+        </div>
+        <ul class="contender-highlights contender-highlights--muted">
+          <li>{{ competitor.contract }} commitment</li>
+          <li>{{ competitor.dataPriority }}</li>
+          <li>{{ competitor.hotspot }} hotspot</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="compare-hero-title">
+      <h1>{{ title }}</h1>
+      <p class="compare-hero-subtitle">{{ description }}</p>
     </div>
   </div>
 </section>
 
-<section class="section">
+{# ============================================================================
+   COMPARISON TABLE - Visual winner indicators
+   ============================================================================ #}
+<section class="compare-table-section">
   <div class="container">
-    <div class="content-grid">
-      <div class="content-main">
+    <div class="compare-layout">
+      <div class="compare-main">
+        <h2 class="section-heading">
+          <span class="heading-accent">Feature</span> Comparison
+        </h2>
 
-        <h2>Quick Comparison</h2>
-        <table class="comparison-table">
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th>Vouch Mobile</th>
-              <th>{{ competitor.name }}</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Network</td>
-              <td><strong>AT&T</strong></td>
-              <td>{{ competitor.network }}</td>
-            </tr>
-            <tr>
-              <td>Starting Price</td>
-              <td><strong>$30/month</strong></td>
-              <td>{{ competitor.startingPrice }}</td>
-            </tr>
-            <tr>
-              <td>Unlimited Price</td>
-              <td><strong>$30/month</strong></td>
-              <td>{{ competitor.regularPrice }}</td>
-            </tr>
-            <tr>
-              <td>Contract Required</td>
-              <td><strong>No</strong></td>
-              <td>{{ competitor.contract }}</td>
-            </tr>
-            <tr>
-              <td>Credit Check</td>
-              <td><strong>No</strong></td>
-              <td>{{ competitor.creditCheck }}</td>
-            </tr>
-            <tr>
-              <td>5G Access</td>
-              <td><strong>Included</strong></td>
-              <td>{{ competitor.fiveG }}</td>
-            </tr>
-            <tr>
-              <td>Hotspot</td>
-              <td><strong>5GB-20GB</strong></td>
-              <td>{{ competitor.hotspot }}</td>
-            </tr>
-            <tr>
-              <td>Data Priority</td>
-              <td><strong>Standard</strong></td>
-              <td>{{ competitor.dataPriority }}</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>{{ competitor.name }} Pros</h2>
-        <ul class="pros-list">
-          {% for pro in competitor.pros %}
-          <li>{{ pro }}</li>
-          {% endfor %}
-        </ul>
-
-        <h2>{{ competitor.name }} Cons</h2>
-        <ul class="cons-list">
-          {% for con in competitor.cons %}
-          <li>{{ con }}</li>
-          {% endfor %}
-        </ul>
-
-        <div class="callout callout-primary">
-          <h3>Why Choose Vouch Mobile Over {{ competitor.name }}?</h3>
-          <ul>
-            {% for advantage in competitor.vouchAdvantages %}
-            <li>{{ advantage }}</li>
-            {% endfor %}
-          </ul>
+        <div class="compare-table-wrapper">
+          <table class="compare-table-v2">
+            <thead>
+              <tr>
+                <th class="feature-col">Feature</th>
+                <th class="vouch-col">
+                  <div class="col-header col-header--vouch">
+                    <span class="col-logo">Vouch</span>
+                    <span class="col-winner-badge">Better Value</span>
+                  </div>
+                </th>
+                <th class="competitor-col">
+                  <div class="col-header col-header--competitor">
+                    {{ competitor.shortName or competitor.name }}
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature-name">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><circle cx="12" cy="20" r="1"></circle></svg>
+                  Network
+                </td>
+                <td class="vouch-value">
+                  <span class="value-winner">AT&T</span>
+                </td>
+                <td class="competitor-value">{{ competitor.network }}</td>
+              </tr>
+              <tr>
+                <td class="feature-name">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                  Starting Price
+                </td>
+                <td class="vouch-value">
+                  <span class="value-winner">$30/month</span>
+                </td>
+                <td class="competitor-value">{{ competitor.startingPrice }}</td>
+              </tr>
+              <tr>
+                <td class="feature-name">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                  Unlimited Price
+                </td>
+                <td class="vouch-value">
+                  <span class="value-winner">$30/month</span>
+                  <span class="value-badge">Best Price</span>
+                </td>
+                <td class="competitor-value">{{ competitor.regularPrice }}</td>
+              </tr>
+              <tr>
+                <td class="feature-name">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  Contract Required
+                </td>
+                <td class="vouch-value">
+                  <span class="value-winner value-winner--success">No</span>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </td>
+                <td class="competitor-value">{{ competitor.contract }}</td>
+              </tr>
+              <tr>
+                <td class="feature-name">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  Credit Check
+                </td>
+                <td class="vouch-value">
+                  <span class="value-winner value-winner--success">No</span>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </td>
+                <td class="competitor-value">{{ competitor.creditCheck }}</td>
+              </tr>
+              <tr>
+                <td class="feature-name">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                  5G Access
+                </td>
+                <td class="vouch-value">
+                  <span class="value-winner">Included</span>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </td>
+                <td class="competitor-value">{{ competitor.fiveG }}</td>
+              </tr>
+              <tr>
+                <td class="feature-name">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  Hotspot
+                </td>
+                <td class="vouch-value">
+                  <span class="value-winner">5GB-20GB</span>
+                </td>
+                <td class="competitor-value">{{ competitor.hotspot }}</td>
+              </tr>
+              <tr>
+                <td class="feature-name">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                  Data Priority
+                </td>
+                <td class="vouch-value">
+                  <span class="value-winner">Standard</span>
+                </td>
+                <td class="competitor-value">{{ competitor.dataPriority }}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <h2>The Verdict</h2>
-        <p>While {{ competitor.name }} has its strengths, Vouch Mobile offers a compelling alternative with straightforward $30/month pricing on AT&T's reliable network. With no credit check required, no contracts, and 5G included at no extra cost, Vouch Mobile is the smarter choice for budget-conscious consumers who don't want to sacrifice network quality.</p>
+        {# ============================================================================
+           PROS & CONS CARDS
+           ============================================================================ #}
+        <div class="pros-cons-section">
+          <div class="pros-cons-grid">
+            <div class="pros-card">
+              <div class="card-header card-header--pros">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                <h3>{{ competitor.name }} Pros</h3>
+              </div>
+              <ul class="card-list">
+                {% for pro in competitor.pros %}
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  {{ pro }}
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
 
-        <h2>Ready to Switch from {{ competitor.name }}?</h2>
-        <ol class="steps-list">
-          <li><strong>Keep Your Number:</strong> Port your existing number from {{ competitor.name }} for free.</li>
-          <li><strong>Order Your SIM:</strong> Get a free SIM card or instant eSIM activation.</li>
-          <li><strong>Activate & Save:</strong> Start enjoying AT&T's network for just $30/month.</li>
-        </ol>
+            <div class="cons-card">
+              <div class="card-header card-header--cons">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                <h3>{{ competitor.name }} Cons</h3>
+              </div>
+              <ul class="card-list card-list--cons">
+                {% for con in competitor.cons %}
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                  {{ con }}
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {# ============================================================================
+           WHY VOUCH WINS - Dramatic callout
+           ============================================================================ #}
+        <div class="vouch-wins-section" id="verdict">
+          <div class="wins-header">
+            <div class="wins-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            </div>
+            <h2>Why Choose Vouch Mobile Over {{ competitor.name }}?</h2>
+          </div>
+          <div class="wins-grid">
+            {% for advantage in competitor.vouchAdvantages %}
+            <div class="win-item">
+              <div class="win-number">{{ loop.index }}</div>
+              <p>{{ advantage }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        {# ============================================================================
+           THE VERDICT
+           ============================================================================ #}
+        <div class="verdict-section">
+          <div class="verdict-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            The Verdict
+          </div>
+          <p>While {{ competitor.name }} has its strengths, <strong>Vouch Mobile offers a compelling alternative</strong> with straightforward $30/month pricing on AT&T's reliable network. With no credit check required, no contracts, and 5G included at no extra cost, Vouch Mobile is the smarter choice for budget-conscious consumers who don't want to sacrifice network quality.</p>
+        </div>
+
+        {# ============================================================================
+           SWITCH STEPS
+           ============================================================================ #}
+        <div class="switch-steps-section">
+          <h2>Ready to Switch from {{ competitor.name }}?</h2>
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Keep Your Number</h4>
+                <p>Port your existing number from {{ competitor.name }} for free.</p>
+              </div>
+            </div>
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Order Your SIM</h4>
+                <p>Get a free SIM card or instant eSIM activation.</p>
+              </div>
+            </div>
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Activate & Save</h4>
+                <p>Start enjoying AT&T's network for just $30/month.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <aside class="content-sidebar">
-        <div class="sidebar-card">
-          <h3>Vouch Mobile Plan</h3>
-          <div class="price-display">
-            <span class="price">$30</span>
-            <span class="period">/month</span>
+      {# ============================================================================
+         SIDEBAR
+         ============================================================================ #}
+      <aside class="compare-sidebar">
+        <div class="sidebar-sticky">
+          <div class="sidebar-plan-card">
+            <div class="plan-card-header">
+              <span class="plan-badge">Best Value</span>
+              <h3>Vouch Mobile</h3>
+            </div>
+            <div class="plan-price">
+              <span class="price-dollar">$</span>
+              <span class="price-value">30</span>
+              <span class="price-period">/mo</span>
+            </div>
+            <ul class="plan-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited Talk</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited Text</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited Data</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> 5G Access</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Mobile Hotspot</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> No Credit Check</li>
+            </ul>
+            <a href="https://vouchmobile.com" class="plan-cta">
+              Switch Now
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
           </div>
-          <ul class="plan-features">
-            <li>Unlimited Talk</li>
-            <li>Unlimited Text</li>
-            <li>Unlimited Data</li>
-            <li>5G Access</li>
-            <li>Mobile Hotspot</li>
-            <li>No Credit Check</li>
-          </ul>
-          <a href="https://vouchmobile.com" class="btn btn-primary btn-block">Switch Now</a>
-        </div>
 
-        <div class="sidebar-card">
-          <h3>Compare Others</h3>
-          <ul class="compare-links">
-            {% for c in competitors %}
-            {% if c.slug != competitor.slug %}
-            <li><a href="/compare/{{ c.slug }}/">vs {{ c.name }}</a></li>
-            {% endif %}
-            {% endfor %}
-          </ul>
+          <div class="sidebar-compare-card">
+            <h4>Compare Others</h4>
+            <ul class="compare-others-list">
+              {% for c in competitors %}
+              {% if c.slug != competitor.slug %}
+              <li>
+                <a href="/compare/vouch-vs-{{ c.slug }}/">
+                  <span>vs {{ c.name }}</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
         </div>
       </aside>
     </div>
   </div>
 </section>
 
-<section class="cta-section section">
+{# ============================================================================
+   FINAL CTA
+   ============================================================================ #}
+<section class="compare-cta-section">
+  <div class="cta-bg">
+    <div class="cta-pattern"></div>
+  </div>
   <div class="container">
-    <div class="cta-content">
+    <div class="cta-content-v2">
+      <div class="cta-badge">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        Winner: Vouch Mobile
+      </div>
       <h2>Ready to Switch from {{ competitor.name }}?</h2>
-      <p>Join thousands who've made the smart switch to Vouch Mobile. No credit check, no contracts.</p>
-      <a href="https://vouchmobile.com" class="btn btn-primary btn-large">Get Started Today</a>
+      <p>Join thousands who've made the smart switch to Vouch Mobile. No credit check, no contracts, just better wireless.</p>
+      <a href="https://vouchmobile.com" class="cta-button">
+        Get Started Today
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
     </div>
   </div>
 </section>

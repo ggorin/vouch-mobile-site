@@ -1,0 +1,148 @@
+{#
+  How-To Steps Component
+  ======================
+  A responsive grid of step-by-step cards for guides and tutorials.
+
+  Usage:
+    {% from "components/how-to-steps.njk" import howToSteps %}
+    {{ howToSteps(steps=mySteps) }}
+
+  Parameters:
+    - steps: Array of step objects with the following properties:
+        - number: Step number (1, 2, 3, etc.) - optional, auto-generated if not provided
+        - title: Step title/heading
+        - description: Step description text
+        - link: Optional link URL for "Learn more" style links
+        - linkText: Optional link text (default: "Learn how")
+
+  CSS Dependencies:
+    - .steps-grid-v2
+    - .step-card-v2
+    - .step-number
+    - .step-link
+#}
+
+{% macro howToSteps(steps) %}
+{% if steps and steps.length > 0 %}
+<div class="steps-grid-v2">
+  {% for step in steps %}
+  <div class="step-card-v2">
+    <div class="step-number">{{ step.number | default(loop.index) }}</div>
+    <h3>{{ step.title }}</h3>
+    <p>{{ step.description }}</p>
+    {% if step.link %}
+    <a href="{{ step.link }}" class="step-link">{{ step.linkText | default("Learn how") }} &rarr;</a>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+{% endmacro %}
+
+{#
+  How-To Steps Section Component
+  ==============================
+  A complete steps section with header and grid.
+
+  Usage:
+    {% from "components/how-to-steps.njk" import howToSection %}
+    {{ howToSection(steps=mySteps, title="Get Started", location="California") }}
+
+  Parameters:
+    - steps: Array of step objects (see howToSteps for structure)
+    - title: Optional custom section title
+    - location: Location name (used in default title)
+    - tag: Optional tag label (default: "How To")
+#}
+
+{% macro howToSection(steps, title="", location="", tag="How To") %}
+{% if steps and steps.length > 0 %}
+<div class="content-section">
+  <div class="section-header-inline">
+    {% if tag %}
+    <span class="section-tag">{{ tag }}</span>
+    {% endif %}
+    <h2>{% if title %}{{ title }}{% elif location %}Get Started in {{ location }}{% else %}Get Started{% endif %}</h2>
+  </div>
+  {{ howToSteps(steps=steps) }}
+</div>
+{% endif %}
+{% endmacro %}
+
+{#
+  Default Getting Started Steps
+  =============================
+  Pre-configured steps for the standard Vouch Mobile onboarding flow.
+
+  Usage:
+    {% from "components/how-to-steps.njk" import defaultGettingStartedSteps, howToSection %}
+    {{ howToSection(steps=defaultGettingStartedSteps(location="California"), location="California") }}
+
+  Parameters:
+    - location: Location name for personalized messaging
+#}
+
+{% macro defaultGettingStartedSteps(location="your area") %}
+[
+  {
+    "number": 1,
+    "title": "Check Your Phone",
+    "description": "Make sure your phone is unlocked and compatible.",
+    "link": "/guides/check-phone-unlocked/",
+    "linkText": "Learn how"
+  },
+  {
+    "number": 2,
+    "title": "Choose Your Plan",
+    "description": "Select our $30/month unlimited plan."
+  },
+  {
+    "number": 3,
+    "title": "Order Your SIM",
+    "description": "Free shipping to any {{ location }} address."
+  },
+  {
+    "number": 4,
+    "title": "Activate & Save",
+    "description": "Simple activation takes just minutes.",
+    "link": "/guides/how-to-switch-carriers/",
+    "linkText": "Switching guide"
+  }
+]
+{% endmacro %}
+
+{#
+  Numbered List Steps Component
+  =============================
+  A simpler numbered list format for inline content.
+
+  Usage:
+    {% from "components/how-to-steps.njk" import numberedList %}
+    {{ numberedList(steps=mySteps) }}
+
+  Parameters:
+    - steps: Array of step objects with {title, description} properties
+    - ordered: Use ordered list (default: true)
+#}
+
+{% macro numberedList(steps, ordered=true) %}
+{% if steps and steps.length > 0 %}
+{% if ordered %}
+<ol class="numbered-steps-list">
+{% else %}
+<ul class="numbered-steps-list">
+{% endif %}
+  {% for step in steps %}
+  <li>
+    <strong>{{ step.title }}</strong>
+    {% if step.description %} - {{ step.description }}{% endif %}
+    {% if step.link %}<a href="{{ step.link }}">{{ step.linkText | default("Learn more") }}</a>{% endif %}
+  </li>
+  {% endfor %}
+{% if ordered %}
+</ol>
+{% else %}
+</ul>
+{% endif %}
+{% endif %}
+{% endmacro %}

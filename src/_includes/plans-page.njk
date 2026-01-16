@@ -1,0 +1,445 @@
+---
+layout: base.njk
+---
+
+{# ============================================================================
+   SCHEMA MARKUP - Product, FAQPage, BreadcrumbList
+   ============================================================================ #}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "{{ plan.title }}",
+      "description": "{{ plan.metaDescription }}",
+      "brand": {
+        "@type": "Brand",
+        "name": "Vouch Mobile"
+      },
+      "offers": {
+        "@type": "OfferCatalog",
+        "name": "{{ plan.title }} Plans",
+        "itemListElement": [
+          {% for tier in plan.tiers %}
+          {
+            "@type": "Offer",
+            "name": "{{ tier.name }}",
+            "price": "{{ tier.price }}",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2026-12-31",
+            "availability": "https://schema.org/InStock",
+            "url": "{{ site.url }}{{ page.url }}",
+            "description": "{{ tier.tagline }}"
+          }{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for faq in plan.faqs %}
+        {
+          "@type": "Question",
+          "name": {{ faq.question | dump | safe }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ faq.answer | dump | safe }}
+          }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ site.url }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Plans",
+          "item": "{{ site.url }}/plans/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ plan.title }}"
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{# ============================================================================
+   HERO SECTION - Dramatic gradient with value proposition
+   ============================================================================ #}
+<section class="plans-hero">
+  <div class="plans-hero__bg">
+    <div class="plans-hero__gradient"></div>
+    <div class="plans-hero__orbs">
+      <div class="plans-hero__orb plans-hero__orb--1"></div>
+      <div class="plans-hero__orb plans-hero__orb--2"></div>
+      <div class="plans-hero__orb plans-hero__orb--3"></div>
+    </div>
+    <div class="plans-hero__grid"></div>
+  </div>
+
+  <div class="container">
+    <nav class="breadcrumb-v2" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      <a href="/plans/">Plans</a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      <span>{{ plan.title }}</span>
+    </nav>
+
+    <div class="plans-hero__content">
+      <div class="plans-hero__badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        {{ plan.badge | default("Best Value Plans") }}
+      </div>
+
+      <h1 class="plans-hero__title">
+        <span class="plans-hero__title-main">{{ plan.heroTitle | default(plan.title) }}</span>
+      </h1>
+
+      <p class="plans-hero__subtitle">{{ plan.heroSubtitle | default(plan.description) }}</p>
+
+      <div class="plans-hero__stats">
+        {% for stat in plan.heroStats %}
+        <div class="plans-hero__stat">
+          <span class="plans-hero__stat-value">{{ stat.value }}</span>
+          <span class="plans-hero__stat-label">{{ stat.label }}</span>
+        </div>
+        {% if not loop.last %}
+        <div class="plans-hero__stat-divider"></div>
+        {% endif %}
+        {% endfor %}
+      </div>
+
+      <a href="#plans" class="plans-hero__scroll">
+        <span>See Plans</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# ============================================================================
+   PLAN CARDS SECTION - Featured plans with pricing comparison
+   ============================================================================ #}
+<section class="plans-cards" id="plans">
+  <div class="container">
+    <div class="plans-cards__header">
+      <span class="section-tag">Plans</span>
+      <h2 class="plans-cards__title">{{ plan.plansTitle | default("Choose Your Plan") }}</h2>
+      <p class="plans-cards__subtitle">{{ plan.plansSubtitle | default("All plans include unlimited talk, text, and data on AT&T's network") }}</p>
+    </div>
+
+    <div class="plans-cards__grid">
+      {% for tier in plan.tiers %}
+      <div class="plans-tier-card {% if tier.featured %}plans-tier-card--featured{% endif %}" style="--delay: {{ loop.index * 0.1 }}s">
+        {% if tier.featured %}
+        <div class="plans-tier-card__badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          {{ tier.badge | default("Best Value") }}
+        </div>
+        <div class="plans-tier-card__glow"></div>
+        {% endif %}
+
+        {% if tier.popular %}
+        <div class="plans-tier-card__popular">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Popular Choice
+        </div>
+        {% endif %}
+
+        <div class="plans-tier-card__header">
+          <div class="plans-tier-card__icon">
+            {% if tier.icon %}
+            {{ tier.icon | safe }}
+            {% else %}
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            {% endif %}
+          </div>
+          <h3 class="plans-tier-card__name">{{ tier.name }}</h3>
+          <p class="plans-tier-card__tagline">{{ tier.tagline }}</p>
+        </div>
+
+        <div class="plans-tier-card__price">
+          <div class="plans-tier-card__price-main">
+            <span class="plans-tier-card__currency">$</span>
+            <span class="plans-tier-card__amount">{{ tier.price }}</span>
+            <span class="plans-tier-card__period">/mo</span>
+          </div>
+          {% if tier.originalPrice %}
+          <div class="plans-tier-card__price-compare">
+            <span class="plans-tier-card__original-price">${{ tier.originalPrice }}/mo</span>
+            <span class="plans-tier-card__savings">Save {{ tier.savingsPercent }}%</span>
+          </div>
+          {% endif %}
+          {% if tier.priceNote %}
+          <p class="plans-tier-card__price-note">{{ tier.priceNote }}</p>
+          {% endif %}
+        </div>
+
+        <ul class="plans-tier-card__features">
+          {% for feature in tier.features %}
+          <li class="plans-tier-card__feature">
+            <svg class="plans-tier-card__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>{{ feature }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <div class="plans-tier-card__cta-wrapper">
+          <a href="{{ tier.ctaUrl | default('https://vouchmobile.com') }}" class="plans-tier-card__cta {% if tier.featured %}plans-tier-card__cta--primary{% endif %}">
+            {{ tier.ctaText | default("Get Started") }}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ============================================================================
+   WHAT'S INCLUDED - Feature checklist grid
+   ============================================================================ #}
+<section class="plans-included">
+  <div class="container">
+    <div class="plans-included__header">
+      <span class="section-tag">What's Included</span>
+      <h2 class="plans-included__title">{{ plan.includedTitle | default("Everything You Need") }}</h2>
+      <p class="plans-included__subtitle">{{ plan.includedSubtitle | default("All our plans come packed with premium features") }}</p>
+    </div>
+
+    <div class="plans-included__grid">
+      {% for feature in plan.includedFeatures %}
+      <div class="plans-included__item" style="--delay: {{ loop.index * 0.05 }}s">
+        <div class="plans-included__icon">
+          {% if feature.icon %}
+          {{ feature.icon | safe }}
+          {% else %}
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          {% endif %}
+        </div>
+        <div class="plans-included__content">
+          <h3 class="plans-included__name">{{ feature.name }}</h3>
+          <p class="plans-included__desc">{{ feature.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ============================================================================
+   SAVINGS CALCULATOR - Interactive component
+   ============================================================================ #}
+<section class="plans-calculator" id="calculator">
+  <div class="container">
+    <div class="plans-calculator__wrapper">
+      <div class="plans-calculator__content">
+        <span class="section-tag section-tag--coral">Save Money</span>
+        <h2 class="plans-calculator__title">{{ plan.calculatorTitle | default("See How Much You'll Save") }}</h2>
+        <p class="plans-calculator__desc">{{ plan.calculatorDesc | default("Compare your current bill to Vouch Mobile and discover your annual savings.") }}</p>
+
+        <div class="plans-calculator__benefits">
+          {% for benefit in plan.calculatorBenefits | default([
+            "No hidden fees or taxes",
+            "No contract lock-in",
+            "Switch anytime, risk-free"
+          ]) %}
+          <div class="plans-calculator__benefit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>{{ benefit }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="plans-calculator__card">
+        {% include "savings-calculator.njk" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ============================================================================
+   COMPARISON TABLE - How this plan beats competitors
+   ============================================================================ #}
+{% if plan.comparison %}
+<section class="plans-comparison" id="comparison">
+  <div class="container">
+    <div class="plans-comparison__header">
+      <span class="section-tag">Comparison</span>
+      <h2 class="plans-comparison__title">{{ plan.comparisonTitle | default("How We Stack Up") }}</h2>
+      <p class="plans-comparison__subtitle">{{ plan.comparisonSubtitle | default("See why Vouch Mobile offers the best value") }}</p>
+    </div>
+
+    <div class="plans-comparison__wrapper">
+      <table class="plans-comparison__table">
+        <thead>
+          <tr>
+            <th class="plans-comparison__feature-col">Feature</th>
+            {% for competitor in plan.comparison.competitors %}
+            <th class="plans-comparison__competitor-col {% if competitor.isVouch %}plans-comparison__competitor-col--vouch{% endif %}">
+              {% if competitor.isVouch %}
+              <span class="plans-comparison__winner-badge">Best Value</span>
+              {% endif %}
+              <span class="plans-comparison__name">{{ competitor.name }}</span>
+              <span class="plans-comparison__price">${{ competitor.price }}/mo</span>
+            </th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in plan.comparison.features %}
+          <tr>
+            <td class="plans-comparison__feature">
+              <span class="plans-comparison__feature-name">{{ row.name }}</span>
+            </td>
+            {% for value in row.values %}
+            <td class="plans-comparison__value {% if loop.index == plan.comparison.vouchIndex %}plans-comparison__value--vouch{% endif %}">
+              {% if value === true %}
+              <svg class="plans-comparison__check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              {% elif value === false %}
+              <svg class="plans-comparison__x" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              {% else %}
+              {{ value }}
+              {% endif %}
+            </td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# ============================================================================
+   TESTIMONIALS - Social proof section
+   ============================================================================ #}
+{% if plan.testimonials %}
+<section class="plans-testimonials" id="testimonials">
+  <div class="container">
+    <div class="plans-testimonials__header">
+      <span class="section-tag">Testimonials</span>
+      <h2 class="plans-testimonials__title">{{ plan.testimonialsTitle | default("What Our Customers Say") }}</h2>
+      <p class="plans-testimonials__subtitle">{{ plan.testimonialsSubtitle | default("Join thousands of satisfied Vouch Mobile users") }}</p>
+    </div>
+
+    <div class="plans-testimonials__grid">
+      {% for testimonial in plan.testimonials %}
+      <div class="plans-testimonial-card" style="--delay: {{ loop.index * 0.1 }}s">
+        <div class="plans-testimonial-card__stars">
+          {% for i in range(0, testimonial.rating | default(5)) %}
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          {% endfor %}
+        </div>
+        <blockquote class="plans-testimonial-card__quote">
+          "{{ testimonial.quote }}"
+        </blockquote>
+        <div class="plans-testimonial-card__author">
+          {% if testimonial.avatar %}
+          <img src="{{ testimonial.avatar }}" alt="{{ testimonial.name }}" class="plans-testimonial-card__avatar" loading="lazy">
+          {% else %}
+          <div class="plans-testimonial-card__avatar plans-testimonial-card__avatar--placeholder">
+            {{ testimonial.name | first | upper }}
+          </div>
+          {% endif %}
+          <div class="plans-testimonial-card__info">
+            <span class="plans-testimonial-card__name">{{ testimonial.name }}</span>
+            <span class="plans-testimonial-card__plan">{{ testimonial.plan | default("Vouch Mobile Customer") }}</span>
+          </div>
+        </div>
+        {% if testimonial.savings %}
+        <div class="plans-testimonial-card__savings">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><path d="M12 18V6"></path></svg>
+          Saves {{ testimonial.savings }}/year
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# ============================================================================
+   FAQ SECTION - Plan-specific questions
+   ============================================================================ #}
+{% if plan.faqs %}
+<section class="plans-faq" id="faq">
+  <div class="container">
+    <div class="plans-faq__header">
+      <span class="section-tag">FAQ</span>
+      <h2 class="plans-faq__title">{{ plan.faqTitle | default("Frequently Asked Questions") }}</h2>
+      <p class="plans-faq__subtitle">{{ plan.faqSubtitle | default("Everything you need to know about our plans") }}</p>
+    </div>
+
+    {% from "components/faq-accordion.njk" import faqAccordion %}
+    {{ faqAccordion(faqs=plan.faqs, id="plans-faq") }}
+  </div>
+</section>
+{% endif %}
+
+{# ============================================================================
+   CTA SECTION - Strong conversion push
+   ============================================================================ #}
+<section class="plans-cta">
+  <div class="plans-cta__bg">
+    <div class="plans-cta__gradient"></div>
+    <div class="plans-cta__pattern"></div>
+    <div class="plans-cta__orbs">
+      <div class="plans-cta__orb plans-cta__orb--1"></div>
+      <div class="plans-cta__orb plans-cta__orb--2"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="plans-cta__content">
+      <div class="plans-cta__badge">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        {{ plan.ctaBadge | default("Ready to Switch?") }}
+      </div>
+      <h2 class="plans-cta__title">{{ plan.ctaTitle | default("Start Saving Today") }}</h2>
+      <p class="plans-cta__text">{{ plan.ctaText | default("Join thousands of happy customers who've made the smart switch to Vouch Mobile.") }}</p>
+
+      <div class="plans-cta__features">
+        {% for feature in plan.ctaFeatures | default(["Keep Your Number", "Free Shipping", "No Credit Check"]) %}
+        <span class="plans-cta__feature">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          {{ feature }}
+        </span>
+        {% endfor %}
+      </div>
+
+      <div class="plans-cta__buttons">
+        <a href="{{ plan.ctaPrimaryUrl | default('https://vouchmobile.com') }}" class="btn btn-primary btn-lg">
+          {{ plan.ctaPrimaryText | default("Get Started Today") }}
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        {% if plan.ctaSecondaryUrl %}
+        <a href="{{ plan.ctaSecondaryUrl }}" class="btn btn-outline-light btn-lg">{{ plan.ctaSecondaryText | default("Compare Plans") }}</a>
+        {% endif %}
+      </div>
+
+      {% if plan.ctaNote %}
+      <p class="plans-cta__note">{{ plan.ctaNote }}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>

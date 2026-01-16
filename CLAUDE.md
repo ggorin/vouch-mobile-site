@@ -47,6 +47,36 @@ JSON files in `src/_data/` are globally available in templates:
 - `{{ text | slug }}` - URL-safe slugs
 - `{% year %}` - Current year
 
+### ⚠️ CRITICAL: Image Handling
+
+**NEVER use raw `<img>` tags for JPG/PNG images.** Always use the `{% image %}` shortcode to ensure automatic compression and responsive images.
+
+```njk
+{# ✅ CORRECT - Images are compressed and optimized #}
+{% image "/images/coverage/california.jpg", "California coverage map" %}
+{% image "/images/hero.png", "Hero image", [400, 800, 1200], "(max-width: 600px) 100vw, 50vw" %}
+
+{# ❌ WRONG - Images are copied as-is, NOT compressed #}
+<img src="/images/coverage/california.jpg" alt="California coverage map">
+```
+
+**Why this matters:**
+- Raw `<img>` tags use `addPassthroughCopy` which copies files without processing
+- The `{% image %}` shortcode generates optimized AVIF/WebP formats + multiple sizes
+- Using raw `<img>` can result in 10x larger file sizes
+
+**Exceptions (OK to use `<img>`):**
+- SVG files (already optimized, vector format)
+- External URLs
+- Dynamically generated paths in loops where the shortcode can't be used (see below)
+
+**For loops with dynamic paths**, the shortcode doesn't work directly. Use this pattern:
+```njk
+{# In loops, create a partial or use the shortcode with a set variable #}
+{% set imgSrc = "/images/coverage/" + state.slug + ".jpg" %}
+{% image imgSrc, state.name + " coverage" %}
+```
+
 ## Deployment
 
 **Host:** Sevalla (static site hosting)

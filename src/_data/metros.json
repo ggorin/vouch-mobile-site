@@ -1,0 +1,432 @@
+[
+  {
+    "name": "Los Angeles",
+    "slug": "los-angeles",
+    "state": "california",
+    "stateName": "California",
+    "stateAbbr": "CA",
+    "population": "4.0 million",
+    "metroPopulation": "12.9 million",
+    "avgPhoneBill": "$132",
+    "annualSavings": "$1,224",
+    "coverage": "99%",
+    "networkSpeed": "64 Mbps",
+    "metaTitle": "Vouch Mobile in Los Angeles - Coverage & Plans | LA Metro Area",
+    "metaDescription": "Get unlimited talk, text, and data in Los Angeles for just $30/month. 99% coverage across LA County on AT&T's network. No credit check required.",
+    "uniqueHook": "Los Angeles residents pay some of the highest phone bills in California, averaging $132/month. From Hollywood to Santa Monica, Vouch Mobile helps Angelenos keep more money in their pockets without sacrificing network quality.",
+    "whyVouch": [
+      "LA's average phone bill of $132/month is 10% higher than the national average—Vouch cuts that by 77%.",
+      "Whether you're stuck on the 405, riding Metro Rail, or working in DTLA's tech scene, you need coverage that keeps up.",
+      "No credit check means UCLA students, new LA transplants, and gig economy workers can sign up instantly.",
+      "AT&T has invested heavily in LA with 5G coverage at SoFi Stadium, LAX, Dodger Stadium, and the LA Convention Center."
+    ],
+    "areas": [
+      { "name": "Downtown LA", "description": "Full 5G coverage throughout the business district and Arts District" },
+      { "name": "Hollywood", "description": "Strong coverage from the Walk of Fame to the Hollywood Hills" },
+      { "name": "Santa Monica", "description": "Excellent coverage along the beach and 3rd Street Promenade" },
+      { "name": "Koreatown", "description": "Comprehensive coverage in one of LA's densest neighborhoods" },
+      { "name": "Westwood", "description": "Full coverage around UCLA and the Village" },
+      { "name": "Pasadena", "description": "Reliable service in Old Town and throughout the Rose City" },
+      { "name": "Long Beach", "description": "Strong coverage from the Queen Mary to Cal State Long Beach" },
+      { "name": "Burbank", "description": "Full coverage in the Media Capital of the World" }
+    ],
+    "localAngles": [
+      {
+        "title": "Commuters",
+        "description": "LA's notorious traffic means you spend hours in your car. Vouch keeps you connected with unlimited data for navigation and podcasts.",
+        "icon": "car"
+      },
+      {
+        "title": "Entertainment Industry",
+        "description": "From auditions to on-set calls, actors, crew, and creatives rely on their phones. Vouch delivers studio-quality coverage at indie prices.",
+        "icon": "film"
+      },
+      {
+        "title": "Gig Workers",
+        "description": "Uber drivers, DoorDash couriers, and freelancers throughout LA depend on reliable mobile data. No contracts mean flexibility for flexible work.",
+        "icon": "briefcase"
+      },
+      {
+        "title": "Tech Workers",
+        "description": "Silicon Beach is booming with startups and tech giants. Vouch gives you premium coverage without the premium price.",
+        "icon": "code"
+      }
+    ],
+    "demographics": {
+      "foreignBorn": "39.7%",
+      "topLanguages": ["Spanish", "Korean", "Armenian", "Chinese", "Persian"],
+      "medianAge": "36.2",
+      "transitRidership": "311+ million annual"
+    },
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Los Angeles?",
+        "answer": "Yes! Vouch Mobile provides 99% coverage across the Los Angeles metro area using AT&T's network. From Downtown LA to the San Fernando Valley, Santa Monica to Pasadena, you'll have reliable 5G and LTE service throughout LA County."
+      },
+      {
+        "question": "How much can LA residents save with Vouch?",
+        "answer": "Los Angeles residents pay an average of $132/month for phone service. With Vouch at $30/month, you could save over $1,224 per year—that's enough for concert tickets at the Hollywood Bowl or a weekend in Joshua Tree."
+      },
+      {
+        "question": "Does Vouch have 5G in Los Angeles?",
+        "answer": "Yes! AT&T 5G is available throughout Los Angeles, with enhanced 5G+ coverage at major venues like SoFi Stadium, Dodger Stadium, LAX, and the LA Convention Center. Standard 5G covers most of LA County."
+      },
+      {
+        "question": "Does Vouch work on LA Metro?",
+        "answer": "Yes. You'll have coverage throughout the LA Metro system, including underground stations on the Red and Purple Lines. Some deep tunnel sections may have limited coverage, but most stations have full service."
+      },
+      {
+        "question": "Is Vouch good for rideshare drivers in LA?",
+        "answer": "Absolutely. Uber, Lyft, and DoorDash drivers throughout Los Angeles rely on unlimited data for navigation and app usage. Vouch's $30/month price and no-contract flexibility is perfect for gig economy workers."
+      },
+      {
+        "question": "Does Vouch require a credit check in Los Angeles?",
+        "answer": "No credit check required. Whether you're a USC student, a new LA resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly with no credit inquiry."
+      }
+    ]
+  },
+  {
+    "name": "New York City",
+    "slug": "new-york-city",
+    "state": "new-york",
+    "stateName": "New York",
+    "stateAbbr": "NY",
+    "population": "8.5 million",
+    "metroPopulation": "19.0 million",
+    "avgPhoneBill": "$135",
+    "annualSavings": "$1,260",
+    "coverage": "99%",
+    "networkSpeed": "75 Mbps",
+    "metaTitle": "Vouch Mobile in New York City - Coverage & Plans | NYC Metro Area",
+    "metaDescription": "Get unlimited talk, text, and data in New York City for just $30/month. 99% coverage across all five boroughs on AT&T's network. No credit check required.",
+    "uniqueHook": "New York City has the highest cost of living in America, and phone bills are no exception. Vouch Mobile helps New Yorkers across all five boroughs access AT&T's premium network at a price that respects your budget.",
+    "whyVouch": [
+      "NYC's average phone bill of $135/month is the highest in America—Vouch cuts that by 78%.",
+      "Whether you're riding the subway, commuting on Metro-North, or working in Midtown, you need coverage that works underground and above.",
+      "No credit check means NYU students, new NYC transplants, and service industry workers can sign up instantly.",
+      "AT&T has invested heavily in NYC subway coverage, with 5G now available on lines including the G train."
+    ],
+    "areas": [
+      { "name": "Manhattan", "description": "Full 5G coverage from the Financial District to Harlem" },
+      { "name": "Brooklyn", "description": "Strong coverage from Williamsburg to Bay Ridge" },
+      { "name": "Queens", "description": "Comprehensive coverage from Astoria to Jamaica" },
+      { "name": "The Bronx", "description": "Reliable service from the South Bronx to Riverdale" },
+      { "name": "Staten Island", "description": "Full coverage from St. George to Tottenville" },
+      { "name": "Long Island City", "description": "Excellent coverage in the rapidly-growing Queens neighborhood" },
+      { "name": "DUMBO", "description": "Strong coverage under the Manhattan Bridge and waterfront" },
+      { "name": "Midtown", "description": "Dense 5G coverage in the business district" }
+    ],
+    "localAngles": [
+      {
+        "title": "Subway Commuters",
+        "description": "NYC's 3.4 million daily subway riders need coverage that works underground. AT&T's expanding subway 5G keeps you connected.",
+        "icon": "train"
+      },
+      {
+        "title": "Finance Professionals",
+        "description": "Wall Street demands constant connectivity. Vouch delivers premium network quality at a budget price for finance workers.",
+        "icon": "chart"
+      },
+      {
+        "title": "Service Industry",
+        "description": "Restaurant workers, retail staff, and hospitality professionals need affordable plans. No credit check means easy signup.",
+        "icon": "coffee"
+      },
+      {
+        "title": "Students",
+        "description": "NYU, Columbia, and 100+ other colleges create massive student demand for affordable wireless. Vouch fits student budgets.",
+        "icon": "graduation"
+      }
+    ],
+    "demographics": {
+      "foreignBorn": "37.5%",
+      "topLanguages": ["Spanish", "Chinese", "Russian", "Bengali", "Haitian Creole"],
+      "medianAge": "36.9",
+      "transitRidership": "1.2 billion annual"
+    },
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in New York City?",
+        "answer": "Yes! Vouch Mobile provides 99% coverage across all five NYC boroughs using AT&T's network. From Manhattan to Staten Island, the Bronx to Brooklyn, you'll have reliable 5G and LTE service throughout the city."
+      },
+      {
+        "question": "How much can NYC residents save with Vouch?",
+        "answer": "New York City residents pay an average of $135/month for phone service—the highest in America. With Vouch at $30/month, you could save over $1,260 per year. That's your monthly MetroCard or a weekend getaway to the Catskills."
+      },
+      {
+        "question": "Does Vouch work on the NYC subway?",
+        "answer": "Yes! AT&T has invested heavily in NYC subway coverage. Most underground stations now have cellular service, with 5G available on select lines including the G train. Coverage continues to expand."
+      },
+      {
+        "question": "Does Vouch have 5G in Manhattan?",
+        "answer": "Yes! Manhattan has extensive AT&T 5G coverage, with enhanced 5G+ in high-traffic areas like Times Square, Hudson Yards, and the Financial District. All five boroughs have growing 5G coverage."
+      },
+      {
+        "question": "Is Vouch good for NYC gig workers?",
+        "answer": "Absolutely. Delivery workers, rideshare drivers, and freelancers throughout NYC need unlimited data at an affordable price. Vouch's no-contract flexibility is perfect for variable income."
+      },
+      {
+        "question": "Does Vouch require a credit check in NYC?",
+        "answer": "No credit check required. Whether you're a new NYC arrival, a college student, or rebuilding your credit, you can sign up for Vouch Mobile instantly with no credit inquiry."
+      }
+    ]
+  },
+  {
+    "name": "Chicago",
+    "slug": "chicago",
+    "state": "illinois",
+    "stateName": "Illinois",
+    "stateAbbr": "IL",
+    "population": "2.7 million",
+    "metroPopulation": "9.4 million",
+    "avgPhoneBill": "$118",
+    "annualSavings": "$1,056",
+    "coverage": "99%",
+    "networkSpeed": "55 Mbps",
+    "metaTitle": "Vouch Mobile in Chicago - Coverage & Plans | Chicago Metro Area",
+    "metaDescription": "Get unlimited talk, text, and data in Chicago for just $30/month. 99% coverage across Chicagoland on AT&T's network. No credit check required.",
+    "uniqueHook": "Illinois has the highest wireless taxes in America at 33.8%, making phone bills even more painful. Vouch Mobile helps Chicagoans fight back with transparent $30/month pricing and no hidden fees.",
+    "whyVouch": [
+      "Chicago's average phone bill of $118/month gets hit with America's highest wireless taxes—Vouch cuts your base cost by 75%.",
+      "Whether you're riding the L, commuting on Metra, or working in the Loop, you need coverage that spans the city and suburbs.",
+      "No credit check means Northwestern students, new Chicago residents, and service workers can sign up instantly.",
+      "AT&T has invested $4.8 billion in Illinois network infrastructure from 2020-2024."
+    ],
+    "areas": [
+      { "name": "The Loop", "description": "Full 5G coverage throughout Chicago's downtown business district" },
+      { "name": "Lincoln Park", "description": "Strong coverage from DePaul to the lakefront" },
+      { "name": "Wicker Park", "description": "Excellent coverage in the trendy Northwest Side neighborhood" },
+      { "name": "Pilsen", "description": "Comprehensive coverage in the vibrant Lower West Side" },
+      { "name": "Logan Square", "description": "Reliable service in the popular Northwest Side area" },
+      { "name": "Hyde Park", "description": "Full coverage around University of Chicago" },
+      { "name": "Naperville", "description": "Strong suburban coverage in DuPage County" },
+      { "name": "Evanston", "description": "Complete coverage around Northwestern University" }
+    ],
+    "localAngles": [
+      {
+        "title": "L Riders",
+        "description": "Chicago's 127.5 million annual rail riders need coverage that works above and below ground. Vouch keeps you connected on the CTA.",
+        "icon": "train"
+      },
+      {
+        "title": "Finance Workers",
+        "description": "Chicago's financial district demands constant connectivity. Vouch delivers the Loop coverage you need at a fraction of the price.",
+        "icon": "chart"
+      },
+      {
+        "title": "Healthcare Workers",
+        "description": "Hospital staff across Chicagoland's major medical centers rely on their phones. Vouch fits healthcare worker budgets.",
+        "icon": "medical"
+      },
+      {
+        "title": "Students",
+        "description": "Northwestern, UChicago, Loyola, and DePaul students need affordable wireless. No credit check makes signup easy for students.",
+        "icon": "graduation"
+      }
+    ],
+    "demographics": {
+      "foreignBorn": "20.8%",
+      "topLanguages": ["Spanish", "Polish", "Chinese", "Tagalog", "Arabic"],
+      "medianAge": "35.1",
+      "transitRidership": "309.2 million annual"
+    },
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Chicago?",
+        "answer": "Yes! Vouch Mobile provides 99% coverage across the Chicago metro area using AT&T's network. From the Loop to the suburbs, you'll have reliable 5G and LTE service throughout Chicagoland."
+      },
+      {
+        "question": "How much can Chicago residents save with Vouch?",
+        "answer": "Chicago residents pay an average of $118/month for phone service, plus Illinois has America's highest wireless taxes at 33.8%. With Vouch at $30/month, you could save over $1,056 per year."
+      },
+      {
+        "question": "Does Vouch work on the CTA?",
+        "answer": "Yes! You'll have coverage throughout the CTA system, including L trains and buses. Underground stations on the Blue and Red Lines have cellular coverage, keeping you connected during your commute."
+      },
+      {
+        "question": "Does Vouch have 5G in Chicago?",
+        "answer": "Yes! AT&T 5G is available throughout Chicago, with coverage at high-traffic venues like the United Center, Soldier Field, O'Hare, and Midway airports. 57% of Illinois has AT&T 5G coverage."
+      },
+      {
+        "question": "Why are phone bills so high in Illinois?",
+        "answer": "Illinois has the highest wireless taxes in the nation at 33.8%, adding significant cost to your bill. Vouch's simple $30/month pricing helps you avoid some of the pain of high-tax wireless."
+      },
+      {
+        "question": "Does Vouch require a credit check in Chicago?",
+        "answer": "No credit check required. Whether you're a UIC student, a new Chicago resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly with no credit inquiry."
+      }
+    ]
+  },
+  {
+    "name": "Houston",
+    "slug": "houston",
+    "state": "texas",
+    "stateName": "Texas",
+    "stateAbbr": "TX",
+    "population": "2.3 million",
+    "metroPopulation": "7.4 million",
+    "avgPhoneBill": "$119",
+    "annualSavings": "$1,068",
+    "coverage": "99%",
+    "networkSpeed": "58 Mbps",
+    "metaTitle": "Vouch Mobile in Houston - Coverage & Plans | Houston Metro Area",
+    "metaDescription": "Get unlimited talk, text, and data in Houston for just $30/month. 99% coverage across the Houston metro on AT&T's network. No credit check required.",
+    "uniqueHook": "Houston is one of America's fastest-growing metros, adding nearly 200,000 residents in the past year alone. Vouch Mobile helps new Houstonians and longtime residents alike stay connected across this sprawling metro without the sprawling phone bill.",
+    "whyVouch": [
+      "Houston's average phone bill of $119/month adds up fast in a city this big—Vouch cuts that by 75%.",
+      "Whether you're stuck on I-10, working in the Energy Corridor, or exploring the Museum District, you need coverage that spans Greater Houston.",
+      "No credit check means Rice students, new Houston residents, and energy sector workers can sign up instantly.",
+      "AT&T provides 5G coverage at Minute Maid Park and Toyota Center, with expanding coverage across the metro."
+    ],
+    "areas": [
+      { "name": "Downtown Houston", "description": "Full 5G coverage throughout the business district" },
+      { "name": "Midtown", "description": "Strong coverage in Houston's urban core" },
+      { "name": "The Heights", "description": "Excellent coverage in the historic neighborhood" },
+      { "name": "Montrose", "description": "Comprehensive coverage in the diverse inner-loop area" },
+      { "name": "Galleria", "description": "Full coverage around Houston's premier shopping district" },
+      { "name": "The Woodlands", "description": "Reliable service in the master-planned community" },
+      { "name": "Sugar Land", "description": "Strong coverage in the Fort Bend County suburb" },
+      { "name": "Pearland", "description": "Complete coverage south of Houston" }
+    ],
+    "localAngles": [
+      {
+        "title": "Energy Workers",
+        "description": "Houston's energy sector demands constant connectivity. From downtown offices to refineries, Vouch keeps you connected.",
+        "icon": "lightning"
+      },
+      {
+        "title": "Medical Center Staff",
+        "description": "The Texas Medical Center is the world's largest. Healthcare workers need affordable, reliable coverage.",
+        "icon": "medical"
+      },
+      {
+        "title": "Commuters",
+        "description": "Houston's sprawl means long commutes. Unlimited data for navigation and entertainment makes drives easier.",
+        "icon": "car"
+      },
+      {
+        "title": "New Residents",
+        "description": "Houston adds 1,000+ new residents weekly. No credit check means instant signup for newcomers.",
+        "icon": "home"
+      }
+    ],
+    "demographics": {
+      "foreignBorn": "28.5%",
+      "topLanguages": ["Spanish", "Vietnamese", "Chinese", "Arabic", "Urdu"],
+      "medianAge": "33.9",
+      "transitRidership": "76.8 million annual"
+    },
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Houston?",
+        "answer": "Yes! Vouch Mobile provides 99% coverage across the Houston metro area using AT&T's network. From Downtown to The Woodlands, Sugar Land to Pearland, you'll have reliable 5G and LTE service throughout Greater Houston."
+      },
+      {
+        "question": "How much can Houston residents save with Vouch?",
+        "answer": "Houston residents pay an average of $119/month for phone service. With Vouch at $30/month, you could save over $1,068 per year—enough to cover several Texans games or a weekend in Galveston."
+      },
+      {
+        "question": "Does Vouch have 5G in Houston?",
+        "answer": "Yes! AT&T 5G is available throughout Houston, with enhanced 5G+ coverage at major venues like Minute Maid Park and Toyota Center. Coverage extends across the inner loop and into the suburbs."
+      },
+      {
+        "question": "Does Vouch work on Houston Metro?",
+        "answer": "Yes! You'll have coverage throughout the METRO Houston system, including METRORail light rail and bus routes. The RideMetro app works seamlessly with Vouch's unlimited data."
+      },
+      {
+        "question": "Is Vouch good for Houston's sprawl?",
+        "answer": "Absolutely. Houston's 10,000+ square mile metro demands consistent coverage. AT&T's network spans from Katy to Baytown, keeping you connected across Greater Houston's entire footprint."
+      },
+      {
+        "question": "Does Vouch require a credit check in Houston?",
+        "answer": "No credit check required. Whether you're a UH student, a new Houston transplant, or rebuilding your credit, you can sign up for Vouch Mobile instantly with no credit inquiry."
+      }
+    ]
+  },
+  {
+    "name": "Phoenix",
+    "slug": "phoenix",
+    "state": "arizona",
+    "stateName": "Arizona",
+    "stateAbbr": "AZ",
+    "population": "1.7 million",
+    "metroPopulation": "4.8 million",
+    "avgPhoneBill": "$117",
+    "annualSavings": "$1,044",
+    "coverage": "99%",
+    "networkSpeed": "52 Mbps",
+    "metaTitle": "Vouch Mobile in Phoenix - Coverage & Plans | Phoenix Metro Area",
+    "metaDescription": "Get unlimited talk, text, and data in Phoenix for just $30/month. 99% coverage across the Valley on AT&T's network. No credit check required.",
+    "uniqueHook": "Phoenix is one of America's fastest-growing metros, with 68% of Arizona's population calling the Valley home. Vouch Mobile helps Valley residents—from Scottsdale to Tempe—access premium coverage at a price that respects your wallet.",
+    "whyVouch": [
+      "Phoenix's average phone bill of $117/month is significant in a rapidly-growing market—Vouch cuts that by 74%.",
+      "Whether you're commuting on the I-10, working in Scottsdale's tech scene, or attending an ASU game, you need coverage that spans the Valley.",
+      "No credit check means ASU students, new Valley residents, and seasonal workers can sign up instantly.",
+      "AT&T has invested $1.1 billion in Arizona infrastructure, with 5G+ at Footprint Center and expanding coverage."
+    ],
+    "areas": [
+      { "name": "Downtown Phoenix", "description": "Full 5G coverage throughout the city center" },
+      { "name": "Scottsdale", "description": "Excellent coverage from Old Town to North Scottsdale" },
+      { "name": "Tempe", "description": "Strong coverage around ASU and Mill Avenue" },
+      { "name": "Mesa", "description": "Comprehensive coverage in the East Valley" },
+      { "name": "Chandler", "description": "Reliable service in the tech corridor" },
+      { "name": "Glendale", "description": "Full coverage including State Farm Stadium area" },
+      { "name": "Gilbert", "description": "Strong coverage in the fast-growing suburb" },
+      { "name": "Peoria", "description": "Complete coverage in the Northwest Valley" }
+    ],
+    "localAngles": [
+      {
+        "title": "Snowbirds",
+        "description": "Phoenix's seasonal residents need flexible phone service. No contracts mean you can easily manage service around your travel schedule.",
+        "icon": "sun"
+      },
+      {
+        "title": "Tech Workers",
+        "description": "The Valley's growing tech scene demands reliable connectivity. Vouch delivers Silicon Desert coverage at startup prices.",
+        "icon": "code"
+      },
+      {
+        "title": "Students",
+        "description": "ASU's 70,000+ students need affordable wireless. No credit check and $30/month fits the student budget perfectly.",
+        "icon": "graduation"
+      },
+      {
+        "title": "New Residents",
+        "description": "Phoenix adds thousands of new residents monthly. Vouch's instant signup with no credit check welcomes newcomers.",
+        "icon": "home"
+      }
+    ],
+    "demographics": {
+      "foreignBorn": "19.8%",
+      "topLanguages": ["Spanish", "Vietnamese", "Chinese", "Arabic", "Tagalog"],
+      "medianAge": "39.2",
+      "transitRidership": "45 million annual"
+    },
+    "faqs": [
+      {
+        "question": "Does Vouch Mobile work in Phoenix?",
+        "answer": "Yes! Vouch Mobile provides 99% coverage across the Phoenix metro area using AT&T's network. From Downtown Phoenix to Scottsdale, Tempe to Mesa, you'll have reliable 5G and LTE service throughout the Valley."
+      },
+      {
+        "question": "How much can Phoenix residents save with Vouch?",
+        "answer": "Phoenix residents pay an average of $117/month for phone service. With Vouch at $30/month, you could save over $1,044 per year—that's a season pass to your favorite Arizona attraction."
+      },
+      {
+        "question": "Does Vouch have 5G in Phoenix?",
+        "answer": "Yes! AT&T 5G is available in Phoenix, with high-quality 5G+ coverage at Footprint Center and Desert Diamond Arena. While AT&T's 5G footprint in Arizona is smaller than competitors, coverage in populated areas is strong."
+      },
+      {
+        "question": "Does Vouch work on Valley Metro?",
+        "answer": "Yes! You'll have coverage throughout the Valley Metro system, including the light rail from Phoenix to Mesa. The Valley Metro app works seamlessly with Vouch's unlimited data."
+      },
+      {
+        "question": "Is Vouch good for Phoenix snowbirds?",
+        "answer": "Absolutely. Seasonal residents love Vouch's no-contract flexibility. Use the service when you're in the Valley, and since there's no commitment, you have complete flexibility for your travel schedule."
+      },
+      {
+        "question": "Does Vouch require a credit check in Phoenix?",
+        "answer": "No credit check required. Whether you're an ASU student, a new Valley resident, or rebuilding your credit, you can sign up for Vouch Mobile instantly with no credit inquiry."
+      }
+    ]
+  }
+]

@@ -1,0 +1,424 @@
+[
+  {
+    "term": "5G",
+    "slug": "5g",
+    "category": "Network Technology",
+    "shortDefinition": "5G is the fifth generation of mobile network technology that delivers significantly faster data speeds, lower latency, and improved network capacity compared to 4G LTE. It uses advanced antenna technology and new radio frequencies to enable download speeds up to 10-100 times faster than previous generations.",
+    "fullDefinition": "5G represents a major leap forward in wireless technology, fundamentally changing how cellular networks operate. Unlike its predecessor 4G LTE, which primarily improved upon 3G speeds, 5G introduces intelligent beamforming technology that calculates device location and directs focused, narrow beams of radio energy specifically toward each device.\n\nThe technology operates across three spectrum bands: low-band (sub-1 GHz) provides wide coverage but slower speeds similar to 4G; mid-band (1-6 GHz) balances speed and coverage and is the most commonly deployed; and high-band/mmWave (24+ GHz) delivers ultra-fast speeds but with limited range and building penetration.\n\nBase stations are equipped with large antenna arrays (64, 128, or more antennas) allowing simultaneous transmission of dozens of independent data streams on the same frequency band. This architecture can support up to 1 million devices per square kilometer, making 5G ideal for densely populated areas.",
+    "howItApplies": "Vouch Mobile includes full 5G access at no additional cost with every plan. Our service runs on AT&T's nationwide 5G network, giving you access to one of the largest and fastest 5G networks in the country. Whether you're streaming 4K video, downloading large files, or gaming online, you'll automatically connect to 5G wherever it's available and enjoy the improved speeds and lower latency.",
+    "keyPoints": [
+      "Download speeds up to 10-100 times faster than 4G LTE",
+      "Lower latency enables responsive online gaming and real-time interactions",
+      "Can handle more devices without slowdowns in congested areas",
+      "Requires a 5G-compatible device to access 5G speeds",
+      "Backward compatible with 4G LTE networks",
+      "85% of global population expected to have 5G coverage by 2029"
+    ],
+    "relatedTerms": ["lte", "volte", "deprioritization", "sim-card-esim"],
+    "faqs": [
+      {
+        "question": "What is 5G?",
+        "answer": "5G is the fifth generation of mobile network technology that delivers significantly faster data speeds and lower latency than 4G LTE. It uses advanced antenna technology to enable download speeds up to 10-100 times faster than previous generations."
+      },
+      {
+        "question": "Do I need a new phone for 5G?",
+        "answer": "Yes, you need a 5G-compatible device to access 5G networks. Most smartphones released since 2020 include 5G support. If your phone doesn't have 5G, you'll still get excellent 4G LTE service with Vouch Mobile on AT&T's network."
+      },
+      {
+        "question": "Does 5G drain my battery faster?",
+        "answer": "5G can use more battery than LTE, but this depends on your usage patterns and network conditions. Most modern 5G phones have optimizations that minimize additional battery drain, and your phone automatically switches to LTE when 5G isn't needed."
+      },
+      {
+        "question": "Is 5G available everywhere?",
+        "answer": "5G coverage continues to expand but isn't available everywhere yet. Coverage varies by region and carrier. Vouch Mobile uses AT&T's 5G network, which covers major cities and suburban areas. Your phone automatically falls back to 4G LTE elsewhere."
+      },
+      {
+        "question": "Does Vouch Mobile charge extra for 5G?",
+        "answer": "No, Vouch Mobile includes 5G access at no additional cost with every plan. Our $25/month unlimited plan gives you full access to AT&T's 5G network wherever it's available, with no hidden fees or speed restrictions."
+      }
+    ],
+    "metaTitle": "What is 5G? | Mobile Phone Glossary | Vouch Mobile",
+    "metaDescription": "Learn what 5G is and how it delivers faster speeds and lower latency than 4G LTE. Vouch Mobile includes free 5G access on AT&T's network with every plan."
+  },
+  {
+    "term": "LTE",
+    "slug": "lte",
+    "category": "Network Technology",
+    "shortDefinition": "LTE (Long-Term Evolution) is an enhanced 4G network technology that delivers significantly faster download and upload speeds than earlier 2G and 3G networks. It provides typical speeds of 5-100 Mbps and remains the backbone of mobile connectivity worldwide.",
+    "fullDefinition": "LTE stands for Long-Term Evolution and represents the fourth generation of mobile network technology. When combined with 4G branding, it describes a mobile network that delivers significantly faster download and upload speeds than earlier 2G and 3G networks, along with real-time Voice over LTE (VoLTE) capability.\n\nLTE technology broadcasts cellular signals across a broad area from cell towers with a limited number of antennas (typically up to four). Unlike 5G's intelligent beamforming, LTE sends signals more broadly to devices. Voice calls over LTE (VoLTE) allow users to talk without experiencing delay while maintaining their data connection simultaneously.\n\nWhile 5G is the newest technology, LTE remains critically important. Its coverage is more established and available in more areas than 5G. LTE will continue to complement 5G for the foreseeable future, providing reliable connectivity in areas where 5G hasn't been deployed yet.",
+    "howItApplies": "Vouch Mobile provides full LTE coverage through AT&T's nationwide network. When you're in an area without 5G coverage, your phone automatically connects to AT&T's reliable 4G LTE network. With typical speeds of 5-100 Mbps, LTE handles everything from HD video streaming to video calls with ease. Plus, LTE uses less battery than 5G, helping extend your phone's battery life.",
+    "keyPoints": [
+      "Typical download speeds of 5-100 Mbps, suitable for most everyday activities",
+      "More extensive coverage than 5G in most areas",
+      "Uses less battery power than 5G, extending device battery life",
+      "Supports VoLTE for high-quality voice calls while using data",
+      "Universally supported by all modern smartphones",
+      "Will coexist with 5G for many years to come"
+    ],
+    "relatedTerms": ["5g", "volte", "wifi-calling", "deprioritization"],
+    "faqs": [
+      {
+        "question": "What is LTE?",
+        "answer": "LTE (Long-Term Evolution) is enhanced 4G network technology that delivers faster download and upload speeds than earlier 2G and 3G networks. It provides typical speeds of 5-100 Mbps and remains the reliable backbone of mobile connectivity worldwide."
+      },
+      {
+        "question": "Is LTE fast enough for streaming?",
+        "answer": "Yes, LTE can comfortably handle HD video streaming, video calls, and general browsing. With typical speeds of 5-100 Mbps, LTE provides reliable performance for nearly all everyday smartphone activities including social media, music streaming, and web browsing."
+      },
+      {
+        "question": "What is the difference between 4G and LTE?",
+        "answer": "LTE is an enhanced version of 4G technology. While 4G refers to the fourth generation of mobile networks, LTE (Long-Term Evolution) represents the improved standard that most carriers deploy. When you see 4G LTE, it means you're getting the faster, more reliable version."
+      },
+      {
+        "question": "Will LTE be phased out?",
+        "answer": "Not in the near future. LTE and 5G will coexist for many years as carriers continue expanding 5G coverage. LTE remains essential for coverage in rural areas and as a fallback when 5G isn't available. Your Vouch Mobile service uses both networks seamlessly."
+      },
+      {
+        "question": "Can I use LTE if I have a 5G phone?",
+        "answer": "Yes, all 5G phones are backward compatible with 4G LTE networks. Your phone automatically switches between 5G and LTE based on availability and network conditions, ensuring you always have the best possible connection with Vouch Mobile."
+      }
+    ],
+    "metaTitle": "What is LTE? | 4G LTE Explained | Vouch Mobile",
+    "metaDescription": "Learn what LTE (4G LTE) is and how it provides reliable mobile connectivity with speeds of 5-100 Mbps. Vouch Mobile uses AT&T's nationwide LTE network."
+  },
+  {
+    "term": "Hotspot / Mobile Hotspot",
+    "slug": "hotspot",
+    "category": "Data Features",
+    "shortDefinition": "A mobile hotspot is a cellular feature that allows you to share your phone's internet connection with other devices like laptops and tablets by broadcasting a personal Wi-Fi network. The hotspot feature uses a portion of your cellular data plan to provide internet access to connected devices.",
+    "fullDefinition": "Mobile hotspot data is a cellular feature that transforms your smartphone into a portable Wi-Fi router. When you enable hotspot on your phone, it connects to the cellular network and broadcasts that connection as a small Wi-Fi network. Other devices can then join this Wi-Fi network the same way they would connect to any standard Wi-Fi.\n\nData usage through hotspot varies significantly by activity. HD video streaming consumes 3-5 GB per hour, while regular web browsing uses only 20-50 MB per hour. Video calls typically use 1-2 GB per hour. Understanding your usage patterns helps you choose the right plan.\n\nWhile many carriers advertise 'unlimited' hotspot data, most plans include conditions. You may get a specific amount of high-speed hotspot data (25 GB, 50 GB, or 100 GB per month), after which speeds may slow down through deprioritization or throttling to 3G speeds.",
+    "howItApplies": "Vouch Mobile includes hotspot data with our unlimited plan, allowing you to connect your laptop, tablet, or other devices to your phone's internet connection. This means you can work from anywhere, stream content on a larger screen, or provide internet access for family members when Wi-Fi isn't available. Check your plan details for specific hotspot data allowances.",
+    "keyPoints": [
+      "Turns your phone into a portable Wi-Fi router for other devices",
+      "Uses your phone's cellular data plan to provide internet access",
+      "Data usage varies by activity: streaming uses more, browsing uses less",
+      "Most unlimited plans have high-speed hotspot limits before speeds slow",
+      "Eliminates need for separate data plans for tablets and laptops",
+      "Battery drains faster when hotspot is active"
+    ],
+    "relatedTerms": ["deprioritization", "lte", "5g", "wifi-calling"],
+    "faqs": [
+      {
+        "question": "What is a mobile hotspot?",
+        "answer": "A mobile hotspot is a feature that allows you to share your phone's cellular internet connection with other devices like laptops and tablets. Your phone broadcasts a Wi-Fi network that other devices can connect to, using your cellular data plan."
+      },
+      {
+        "question": "Does hotspot use the same data as my phone?",
+        "answer": "Yes, hotspot shares from your phone's data plan. When connected devices browse the web or stream video, that usage counts against your monthly data allowance. Many plans track hotspot usage separately and may have specific limits."
+      },
+      {
+        "question": "How much data does hotspot use?",
+        "answer": "Data usage varies by activity. HD video streaming uses 3-5 GB per hour, video calls use 1-2 GB per hour, and regular web browsing uses only 20-50 MB per hour. Music streaming uses roughly 1-2 MB per song."
+      },
+      {
+        "question": "Is hotspot slower than using my phone directly?",
+        "answer": "Not inherently. The speed depends on your phone's cellular signal strength and the receiving device's capabilities. However, if you've exceeded your high-speed hotspot limit, speeds may be reduced while regular phone data remains unaffected."
+      },
+      {
+        "question": "Does using hotspot drain my battery faster?",
+        "answer": "Yes, using hotspot drains your battery faster because your phone is broadcasting a Wi-Fi signal while maintaining its cellular connection. For extended hotspot use, keep your phone plugged in or use a portable charger."
+      }
+    ],
+    "metaTitle": "What is a Mobile Hotspot? | Phone Glossary | Vouch Mobile",
+    "metaDescription": "Learn what a mobile hotspot is and how to share your phone's internet with laptops and tablets. Vouch Mobile includes hotspot data with unlimited plans."
+  },
+  {
+    "term": "Deprioritization",
+    "slug": "deprioritization",
+    "category": "Network Management",
+    "shortDefinition": "Data deprioritization is the temporary slowing of your mobile data speeds during times of high network congestion. Unlike throttling, deprioritization is congestion-based and temporary, with your speeds returning to normal automatically once network traffic decreases in your area.",
+    "fullDefinition": "Deprioritization is a network management technique that carriers use to fairly allocate bandwidth during periods of heavy network usage. When many users in the same area are using data simultaneously, the network may temporarily slow down certain users' speeds to ensure everyone gets reasonable service.\n\nThis is fundamentally different from throttling. Throttling is permanent speed reduction that occurs after you exceed a data limit and lasts until your billing cycle resets. Deprioritization is temporary and based on real-time network conditions, meaning your speeds recover automatically when congestion clears.\n\nDeprioritization typically happens during peak usage times: evening hours (6-10 PM), weekends in crowded areas, major events or concerts, and holiday periods. The impact varies, with speeds potentially dropping from 50 Mbps to 10-20 Mbps, but service remains usable for most activities.",
+    "howItApplies": "As an MVNO on AT&T's network, Vouch Mobile users may experience deprioritization during periods of heavy network congestion. This is a standard practice across all carriers and MVNOs. However, deprioritization is relatively uncommon to experience in practice, and when it does occur, you'll still be able to browse, stream, and use apps, just at temporarily reduced speeds.",
+    "keyPoints": [
+      "Temporary speed reduction during network congestion, not permanent",
+      "Different from throttling, which is based on exceeding data limits",
+      "Speeds return to normal automatically when congestion clears",
+      "Common during peak hours like evenings and weekends in busy areas",
+      "Standard practice across all carriers and MVNOs for fair network access",
+      "Service remains usable for most activities during deprioritization"
+    ],
+    "relatedTerms": ["lte", "5g", "hotspot", "byod"],
+    "faqs": [
+      {
+        "question": "What is deprioritization?",
+        "answer": "Deprioritization is the temporary slowing of mobile data speeds during times of high network congestion. Unlike throttling, it's based on real-time network conditions and your speeds return to normal automatically once network traffic decreases."
+      },
+      {
+        "question": "Is deprioritization the same as throttling?",
+        "answer": "No, they're different. Deprioritization is temporary and based on network congestion, with speeds recovering automatically. Throttling is permanent speed reduction after exceeding your data limit, lasting until your next billing cycle."
+      },
+      {
+        "question": "When does deprioritization happen?",
+        "answer": "Deprioritization typically occurs during peak usage times: evenings (6-10 PM), weekends in crowded areas, major events or concerts, and holiday periods. It only happens when the network is congested in your specific location."
+      },
+      {
+        "question": "Can I avoid deprioritization?",
+        "answer": "Deprioritization is based on real-time network conditions and affects all users fairly during congestion. While you can't prevent it entirely, you can avoid peak usage times if speed is critical for your activities."
+      },
+      {
+        "question": "How slow does deprioritization make my speeds?",
+        "answer": "Speeds may temporarily drop from 50 Mbps to 10-20 Mbps during congestion, but service typically remains usable for browsing, social media, and standard video streaming. Speeds recover automatically when congestion clears."
+      }
+    ],
+    "metaTitle": "What is Deprioritization? | Data Speed Guide | Vouch Mobile",
+    "metaDescription": "Learn what data deprioritization is and how it differs from throttling. Understand when temporary speed reductions occur and how Vouch Mobile handles network congestion."
+  },
+  {
+    "term": "BYOD (Bring Your Own Device)",
+    "slug": "byod",
+    "category": "Device & SIM",
+    "shortDefinition": "BYOD (Bring Your Own Device) means using your existing, unlocked smartphone with a new carrier instead of buying a new phone. This allows you to switch to Vouch Mobile while keeping your current device, saving money and reducing electronic waste.",
+    "fullDefinition": "BYOD (Bring Your Own Device) in the consumer mobile context refers to using your existing phone with a new wireless carrier. Instead of purchasing a new device from the carrier, you simply get a SIM card or eSIM from your new carrier and activate your current phone on their network.\n\nThe process is straightforward: ensure your phone is unlocked (not locked to a specific carrier), verify it's compatible with the new carrier's network bands, request a SIM card or eSIM from the new carrier, and activate your service. Most modern smartphones purchased in the last 5-7 years will work with major carriers.\n\nBYOD offers significant advantages: you save hundreds of dollars by not buying a new phone, you keep a device you're already familiar with, and you contribute to sustainability by reducing electronic waste. Many carriers, including MVNOs like Vouch Mobile, specifically cater to BYOD customers with simple activation processes.",
+    "howItApplies": "Vouch Mobile is perfect for BYOD. Simply bring your existing unlocked phone that's compatible with AT&T's network, and we'll provide you with a free SIM card or instant eSIM activation. You can check device compatibility on our website before signing up. Most unlocked iPhones, Samsung Galaxy phones, Google Pixels, and other major smartphone brands work seamlessly with Vouch Mobile.",
+    "keyPoints": [
+      "Use your existing phone with a new carrier instead of buying new",
+      "Requires an unlocked phone compatible with the carrier's network",
+      "Saves money by avoiding new device purchases",
+      "Reduces electronic waste and promotes sustainability",
+      "Most phones from the last 5-7 years are compatible",
+      "Simple activation with SIM card or eSIM"
+    ],
+    "relatedTerms": ["unlocked-phone", "sim-card-esim", "number-porting"],
+    "faqs": [
+      {
+        "question": "What is BYOD?",
+        "answer": "BYOD (Bring Your Own Device) means using your existing unlocked smartphone with a new carrier instead of buying a new phone. You keep your current device and simply activate it with a new SIM card or eSIM from your new carrier."
+      },
+      {
+        "question": "Can my phone work with Vouch Mobile?",
+        "answer": "Most unlocked phones from the last 5-7 years work with Vouch Mobile. We use AT&T's network, so your phone needs to be unlocked and compatible with AT&T's network bands. Check our website's compatibility tool to verify before signing up."
+      },
+      {
+        "question": "How do I know if my phone is unlocked?",
+        "answer": "On iPhone, go to Settings, General, About and look for Carrier Lock. If it says 'No SIM restrictions,' your phone is unlocked. On Android, insert a SIM from a different carrier. If it works, your phone is unlocked."
+      },
+      {
+        "question": "Do I need to do anything special to bring my phone to Vouch Mobile?",
+        "answer": "Just verify your phone is unlocked and compatible with AT&T's network. Then choose either a free physical SIM card shipped to you or instant eSIM activation if your phone supports it. Activation typically takes just minutes."
+      },
+      {
+        "question": "What if my phone isn't compatible?",
+        "answer": "If your current phone isn't compatible with Vouch Mobile, you have options: purchase an unlocked phone from any retailer, or request your current carrier unlock your phone if you've met their requirements."
+      }
+    ],
+    "metaTitle": "What is BYOD? | Bring Your Own Device | Vouch Mobile",
+    "metaDescription": "Learn what BYOD (Bring Your Own Device) means and how to use your existing phone with Vouch Mobile. Save money by keeping your current smartphone."
+  },
+  {
+    "term": "Number Porting",
+    "slug": "number-porting",
+    "category": "Switching Carriers",
+    "shortDefinition": "Number porting is the process of transferring your existing phone number from one carrier to another when switching services. This allows you to keep your phone number when you switch to Vouch Mobile, so you don't have to update contacts or notify everyone of a new number.",
+    "fullDefinition": "Number porting (also called 'porting' or 'number portability') is the process of transferring your existing phone number from your current service provider to a new one. This federally protected right ensures you can switch carriers without losing your phone number.\n\nThe porting process involves providing your new carrier with your current phone number, proof of ownership (usually a recent phone bill), your account number, and any PIN or passcode your current carrier uses. The new carrier then coordinates with your old carrier to transfer the number. For cell phone numbers, this typically takes anywhere from 10 minutes to 24 hours.\n\nImportantly, your old carrier cannot refuse to port your number, even if you owe money or have an outstanding balance. Number portability is a consumer right regulated by the FCC. Once porting is complete, your service automatically switches to your new carrier.",
+    "howItApplies": "Vouch Mobile offers free number porting, making it easy to keep your existing phone number when you switch. During sign-up, simply provide your current phone number and account information. Most number ports complete within minutes to a few hours, and you'll maintain full service throughout the process. Your contacts won't even know you switched carriers.",
+    "keyPoints": [
+      "Keep your existing phone number when switching carriers",
+      "Protected by federal law; carriers cannot refuse porting",
+      "Typically completes in 10 minutes to 24 hours for cell phones",
+      "Requires account number and PIN from current carrier",
+      "Free with most carriers including Vouch Mobile",
+      "Contacts preserved; no need to notify everyone of a new number"
+    ],
+    "relatedTerms": ["byod", "unlocked-phone", "sim-card-esim"],
+    "faqs": [
+      {
+        "question": "What is number porting?",
+        "answer": "Number porting is the process of transferring your existing phone number from one carrier to another when switching services. It allows you to keep your current phone number so you don't have to update contacts or notify everyone of a new number."
+      },
+      {
+        "question": "How long does number porting take?",
+        "answer": "For cell phone numbers, porting typically takes anywhere from 10 minutes to 24 hours. Most ports complete within a few hours. VoIP or landline numbers may take 7-10 business days. Vouch Mobile ports are usually very fast."
+      },
+      {
+        "question": "How much does number porting cost?",
+        "answer": "Number porting is free with Vouch Mobile. While some carriers may charge fees, porting itself is a federally protected right. Your old carrier cannot charge you a fee specifically for releasing your number."
+      },
+      {
+        "question": "Will I lose service during porting?",
+        "answer": "There's typically minimal disruption during porting. You may experience a brief gap as service transfers from your old carrier to Vouch Mobile, but this usually lasts only minutes. Keep both phones available until porting completes."
+      },
+      {
+        "question": "Can my old carrier refuse to port my number?",
+        "answer": "No, carriers cannot refuse to port your number. Number portability is a consumer right regulated by the FCC. Even if you owe money or have an outstanding balance, your old carrier must release your number upon request."
+      },
+      {
+        "question": "What information do I need to port my number?",
+        "answer": "You'll need your 10-digit phone number, account number with your current carrier, any PIN or passcode, and typically your billing address. Having a recent phone bill handy helps verify this information."
+      }
+    ],
+    "metaTitle": "What is Number Porting? | Keep Your Phone Number | Vouch Mobile",
+    "metaDescription": "Learn what number porting is and how to keep your phone number when switching to Vouch Mobile. Free, fast porting takes just minutes to hours."
+  },
+  {
+    "term": "WiFi Calling",
+    "slug": "wifi-calling",
+    "category": "Calling Features",
+    "shortDefinition": "WiFi calling is a mobile phone feature that allows you to make and receive voice calls over an internet connection instead of using cellular networks. It enables calls in areas with weak cellular signal but strong WiFi, using your regular phone number and native calling app.",
+    "fullDefinition": "WiFi calling (also called VoWiFi) is a feature that transmits voice calls over WiFi internet connections instead of cellular networks. When enabled, your phone automatically uses WiFi for calls when connected to a wireless network, falling back to cellular when WiFi isn't available.\n\nThe technology works by converting your voice into digital packets that travel over WiFi to your carrier's network, then routing to the recipient. This uses Voice over Internet Protocol (VoIP) technology integrated with your carrier's network, using your regular phone number and native calling app rather than third-party apps.\n\nWiFi calling is especially valuable in buildings with poor cellular reception, basements, remote locations, or anywhere with weak signal but available WiFi. It also saves battery compared to cellular calls, especially in low-signal areas where your phone works harder to maintain connection.",
+    "howItApplies": "Vouch Mobile supports WiFi calling on compatible devices, extending your coverage anywhere you have WiFi. This is especially useful in homes or offices with weak cellular signal. Calls made over WiFi use your regular Vouch Mobile number and count toward your included minutes just like regular calls. Your phone seamlessly switches between WiFi and cellular as you move.",
+    "keyPoints": [
+      "Make and receive calls over WiFi instead of cellular networks",
+      "Extends coverage in areas with weak cellular but strong WiFi",
+      "Uses your regular phone number and native calling app",
+      "Seamlessly switches between WiFi and cellular automatically",
+      "Saves battery compared to calls in weak cellular areas",
+      "No special apps needed; built into iPhone and Android"
+    ],
+    "relatedTerms": ["volte", "lte", "5g"],
+    "faqs": [
+      {
+        "question": "What is WiFi calling?",
+        "answer": "WiFi calling is a feature that allows you to make and receive voice calls over a WiFi internet connection instead of cellular networks. It uses your regular phone number and works through your phone's native calling app."
+      },
+      {
+        "question": "Can I use WiFi calling without cellular signal?",
+        "answer": "Yes, WiFi calling only requires a WiFi connection; you don't need cellular signal. This makes it ideal for basements, remote locations, or buildings with poor cellular reception but available WiFi."
+      },
+      {
+        "question": "Do WiFi calls count toward my plan minutes?",
+        "answer": "Yes, WiFi calls use your included calling minutes just like regular cellular calls. With Vouch Mobile's unlimited plan, this doesn't matter since calls are unlimited. There are no additional charges for WiFi calling."
+      },
+      {
+        "question": "What happens if I move out of WiFi range during a call?",
+        "answer": "Your phone automatically switches to cellular if available, typically without dropping the call. This seamless handoff means you can start a call on WiFi at home and continue it on cellular as you leave."
+      },
+      {
+        "question": "How do I enable WiFi calling?",
+        "answer": "On iPhone, go to Settings, Phone, WiFi Calling. On Android, go to Settings, Network, WiFi Calling. Once enabled, your phone automatically uses WiFi for calls when connected to a wireless network."
+      }
+    ],
+    "metaTitle": "What is WiFi Calling? | Make Calls Over WiFi | Vouch Mobile",
+    "metaDescription": "Learn what WiFi calling is and how to make calls over internet connections. Vouch Mobile supports WiFi calling for better coverage anywhere you have WiFi."
+  },
+  {
+    "term": "VoLTE",
+    "slug": "volte",
+    "category": "Calling Features",
+    "shortDefinition": "VoLTE (Voice over LTE) is technology that transmits voice calls over 4G LTE networks instead of older 2G or 3G infrastructure. It delivers HD voice quality, faster call connection times, and allows simultaneous voice and data usage on your phone.",
+    "fullDefinition": "VoLTE (Voice over Long-Term Evolution) transmits voice calls as data packets over 4G LTE networks, rather than switching to older 2G or 3G networks for calls. This approach keeps your phone on a single network for both voice and data, improving efficiency and call quality.\n\nThe technology delivers several key benefits: HD voice quality with a wider frequency range that captures speech nuances, faster call setup times (you hear the phone ring sooner), and the ability to continue using data while on a call. You can browse the web, receive notifications, or use apps without interrupting your conversation.\n\nVoLTE is now the standard for voice calls on modern networks. With 375 network operators worldwide invested in VoLTE and 320 already offering the service, it's the default calling technology for most smartphones. As carriers phase out 2G and 3G networks, VoLTE becomes essential for making calls.",
+    "howItApplies": "Vouch Mobile fully supports VoLTE on AT&T's network, giving you crystal-clear HD voice calls and the ability to use data while talking. Every call you make with a VoLTE-capable phone benefits from faster connection times and improved audio quality. Since AT&T has sunset its 3G network, VoLTE is how all voice calls work on our service.",
+    "keyPoints": [
+      "Transmits voice calls over 4G LTE as data packets",
+      "Delivers HD voice quality with clearer, more natural sound",
+      "Faster call connection times; less waiting for the phone to ring",
+      "Enables simultaneous voice and data; browse while talking",
+      "Uses less battery than older call technology",
+      "Standard technology on all modern smartphones and carriers"
+    ],
+    "relatedTerms": ["lte", "wifi-calling", "5g"],
+    "faqs": [
+      {
+        "question": "What is VoLTE?",
+        "answer": "VoLTE (Voice over LTE) is technology that transmits voice calls over 4G LTE networks instead of older 2G or 3G. It delivers HD voice quality, faster call connections, and lets you use data simultaneously while on a call."
+      },
+      {
+        "question": "Is VoLTE the same as WiFi calling?",
+        "answer": "No, they're different technologies. VoLTE uses your cellular LTE network for calls, while WiFi calling uses an internet connection. Both deliver HD voice quality, but WiFi calling is useful when cellular signal is weak."
+      },
+      {
+        "question": "Do I need to enable VoLTE?",
+        "answer": "VoLTE is typically enabled by default on modern smartphones and carrier plans. If you're unsure, check your phone's settings under cellular or network options. With Vouch Mobile on AT&T's network, VoLTE should work automatically."
+      },
+      {
+        "question": "What phones support VoLTE?",
+        "answer": "Most smartphones released since 2015 support VoLTE, including all iPhones from iPhone 6 onward, all Google Pixel models, and Samsung Galaxy phones from 2015 and later. Virtually all current smartphones support VoLTE."
+      },
+      {
+        "question": "Why does VoLTE matter now?",
+        "answer": "With carriers shutting down older 2G and 3G networks, VoLTE is now required for making voice calls on most networks. If your phone doesn't support VoLTE, you may not be able to make calls on modern networks."
+      }
+    ],
+    "metaTitle": "What is VoLTE? | Voice over LTE Explained | Vouch Mobile",
+    "metaDescription": "Learn what VoLTE (Voice over LTE) is and how it delivers HD voice calls with faster connections. Vouch Mobile supports VoLTE on AT&T's network."
+  },
+  {
+    "term": "SIM Card / eSIM",
+    "slug": "sim-card-esim",
+    "category": "Device & SIM",
+    "shortDefinition": "A SIM card (Subscriber Identity Module) is a small chip that stores your phone number and carrier information, connecting your phone to your mobile service. An eSIM is an embedded digital version built into your phone that can be programmed remotely without a physical card.",
+    "fullDefinition": "A SIM card is a small integrated circuit that serves as your phone's identity on a cellular network. It stores your International Mobile Subscriber Identity (IMSI), phone number, and security keys that authenticate your device. Without a SIM card or eSIM, your phone cannot make calls, send texts, or use mobile data.\n\nPhysical SIM cards come in different sizes: Nano SIM is the smallest and most common in modern phones, Micro SIM was widely used from 2010-2015, and Mini SIM (the original size) is rarely used today. Most carriers provide 3-in-1 SIM cards that can be punched out to fit any size.\n\neSIM (embedded SIM) is built directly into your phone's circuitry and programmed remotely via QR code or carrier app. Benefits include instant activation without waiting for a physical card, the ability to store multiple carrier profiles, and easier switching between carriers. Many newer phones support both physical SIM and eSIM, enabling dual-SIM functionality.",
+    "howItApplies": "Vouch Mobile offers both physical SIM cards and eSIM activation. When you sign up, choose a free physical SIM shipped to your door or instant eSIM activation if your phone supports it (iPhone XS and later, most Android flagships from 2019+). Both options get you connected to AT&T's network quickly, with eSIM activation often completing in minutes.",
+    "keyPoints": [
+      "SIM cards store your phone number and connect you to your carrier",
+      "Nano SIM is the standard size for modern smartphones",
+      "eSIM is built into the phone and programmed digitally",
+      "eSIM enables instant activation without waiting for mail delivery",
+      "Dual-SIM phones can use both physical SIM and eSIM together",
+      "Your phone number is linked to the SIM, not the phone itself"
+    ],
+    "relatedTerms": ["byod", "number-porting", "unlocked-phone"],
+    "faqs": [
+      {
+        "question": "What is a SIM card?",
+        "answer": "A SIM card (Subscriber Identity Module) is a small chip that stores your phone number, carrier information, and security credentials. It connects your phone to your mobile service and authenticates you on the cellular network."
+      },
+      {
+        "question": "What is an eSIM?",
+        "answer": "An eSIM (embedded SIM) is a digital SIM built into your phone that can be programmed remotely without a physical card. It allows instant carrier activation via QR code or app and can store multiple carrier profiles."
+      },
+      {
+        "question": "Does Vouch Mobile offer eSIM?",
+        "answer": "Yes, Vouch Mobile offers both physical SIM cards (free with free shipping) and instant eSIM activation. If your phone supports eSIM (iPhone XS or later, most 2019+ Android flagships), you can activate in minutes without waiting for mail."
+      },
+      {
+        "question": "What size SIM card do I need?",
+        "answer": "Most modern phones use Nano SIM, the smallest size. Vouch Mobile provides 3-in-1 SIM cards that can be punched out to fit Nano, Micro, or Standard SIM slots, so you'll have the right size regardless of your phone."
+      },
+      {
+        "question": "Can I switch SIM cards between phones?",
+        "answer": "Yes, if both phones are unlocked and compatible with the same carrier network. Simply move your SIM card to the new phone. For eSIM, you'll need to transfer your eSIM profile to the new device through your carrier."
+      },
+      {
+        "question": "What happens if I lose my SIM card?",
+        "answer": "Losing your SIM card doesn't mean you lose your phone number. Contact Vouch Mobile to get a replacement SIM card or activate an eSIM. Your number is associated with your account, not the physical card itself."
+      }
+    ],
+    "metaTitle": "What is a SIM Card & eSIM? | Mobile Glossary | Vouch Mobile",
+    "metaDescription": "Learn what SIM cards and eSIM are and how they connect your phone to mobile service. Vouch Mobile offers free SIM cards and instant eSIM activation."
+  },
+  {
+    "term": "Unlocked Phone",
+    "slug": "unlocked-phone",
+    "category": "Device & SIM",
+    "shortDefinition": "An unlocked phone is a mobile device that can work with any compatible wireless carrier, not just one specific carrier. Unlike locked phones that only accept one carrier's SIM card, unlocked phones give you the freedom to switch carriers anytime without buying a new device.",
+    "fullDefinition": "An unlocked phone has no carrier restrictions, meaning it can connect to any wireless network that supports its frequency bands. Phone manufacturers lock devices to specific carriers via software; unlocking removes this restriction. Once unlocked, the phone accepts SIM cards from any compatible carrier.\n\nUnlocked phones offer significant advantages: carrier flexibility lets you switch to better plans anytime, they're valuable for international travel since you can use local SIM cards instead of paying roaming fees, and they typically have higher resale value. The trade-off is that unlocked phones usually cost more upfront since carriers subsidize locked phones in exchange for service commitments.\n\nTo check if your phone is unlocked: on iPhone, go to Settings > General > About and look for 'No SIM restrictions' under Carrier Lock. On Android, go to Settings > Network > Mobile Network > Network Operators; if multiple networks appear, it's unlocked. You can also try inserting a SIM from a different carrier.",
+    "howItApplies": "Vouch Mobile requires an unlocked phone to use our service since we're an MVNO operating on AT&T's network. If your phone is currently locked to another carrier, you may be able to request an unlock after meeting their requirements. Once unlocked, simply insert a Vouch Mobile SIM or activate eSIM to start using our affordable unlimited service.",
+    "keyPoints": [
+      "Works with any compatible carrier; not restricted to one company",
+      "Freedom to switch carriers anytime without buying a new phone",
+      "Ideal for international travel; use local SIM cards abroad",
+      "Higher resale value than locked phones",
+      "Required for MVNO services like Vouch Mobile",
+      "May cost more upfront but saves money long-term"
+    ],
+    "relatedTerms": ["byod", "sim-card-esim", "number-porting"],
+    "faqs": [
+      {
+        "question": "What is an unlocked phone?",
+        "answer": "An unlocked phone is a device that can work with any compatible wireless carrier. Unlike locked phones restricted to one carrier, unlocked phones accept SIM cards from any carrier, giving you freedom to switch services anytime."
+      },
+      {
+        "question": "How do I check if my phone is unlocked?",
+        "answer": "On iPhone, go to Settings, General, About and look for Carrier Lock. If it says 'No SIM restrictions,' it's unlocked. On Android, try inserting a SIM from a different carrier. If it works normally, your phone is unlocked."
+      },
+      {
+        "question": "Can I unlock my phone?",
+        "answer": "Yes, most carriers will unlock your phone after you've met their requirements, typically completing your contract or payment plan. Contact your current carrier's unlock department. Some carriers unlock automatically after requirements are met."
+      },
+      {
+        "question": "Do I need an unlocked phone for Vouch Mobile?",
+        "answer": "Yes, Vouch Mobile requires an unlocked phone compatible with AT&T's network. If your phone is currently locked to another carrier, you'll need to request an unlock before switching to our service."
+      },
+      {
+        "question": "Is buying an unlocked phone worth it?",
+        "answer": "Yes, for most people. While unlocked phones cost more upfront, they offer carrier freedom, better resale value, and work internationally with local SIMs. You can shop any carrier for the best deals and switch anytime."
+      },
+      {
+        "question": "Will my unlocked phone work with any carrier?",
+        "answer": "An unlocked phone works with any carrier whose network bands it supports. Most modern unlocked phones support major US carriers. Verify compatibility before switching; Vouch Mobile's website has a compatibility checker."
+      }
+    ],
+    "metaTitle": "What is an Unlocked Phone? | Device Freedom | Vouch Mobile",
+    "metaDescription": "Learn what an unlocked phone is and why carrier freedom matters. Vouch Mobile works with any unlocked phone compatible with AT&T's network."
+  }
+]

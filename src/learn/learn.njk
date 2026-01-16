@@ -1,0 +1,11 @@
+---
+pagination:
+  data: glossary
+  size: 1
+  alias: term
+permalink: "learn/{{ term.slug }}/"
+layout: learn.njk
+eleventyComputed:
+  title: "What is {{ term.term }}? | Vouch Mobile Glossary"
+  description: "{{ term.shortDefinition }}"
+---

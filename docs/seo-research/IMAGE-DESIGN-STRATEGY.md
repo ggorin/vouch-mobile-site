@@ -1,5 +1,66 @@
 # Vouch Mobile Image Design Strategy
 
+## Logo Reference Requirement
+
+**CRITICAL:** All generated media assets MUST use the Vouch logo as a reference image to ensure brand consistency.
+
+### Logo File Location
+```
+src/images/logo.png
+```
+
+### Logo Specifications
+- **Format:** PNG with transparency
+- **Size:** 3.9 KB
+- **Elements:**
+  - "Vouch" text in dark navy (#1F2937)
+  - Teal checkmark forming the "V" (#00B5A0)
+  - "MOBILE" in smaller caps underneath
+
+### Using Logo as Reference Image
+
+When generating images with AI tools (Gemini/Nanobanana), always:
+
+1. **Upload the logo** as a reference image input for brand consistency
+2. **Reference the brand colors** extracted from the logo in your prompt
+3. **Verify output** matches the logo's color palette and aesthetic
+
+The logo serves as a **brand reference** - it doesn't need to appear in every image, but should inform the style and colors.
+
+**Example prompt with logo reference:**
+```
+Using the attached Vouch Mobile logo as a brand reference,
+create a featured image for a blog post about [TOPIC].
+
+Maintain the brand colors:
+- Primary teal: #00B5A0 (from the logo checkmark)
+- Dark navy: #1F2937 (from the logo text)
+- White background
+
+Style should match the clean, modern aesthetic of the logo.
+```
+
+**When to include the logo in the image:**
+- Social share images (OG images)
+- Infographics meant for external distribution
+- Comparison charts
+- Any image that may be shared outside the website
+
+**When logo is not needed in output:**
+- Decorative hero images
+- Background imagery
+- Inline illustrations
+- Photos
+
+**MCP Tool Usage:**
+```
+mcp__nanobanana__generate_image with:
+- input_image_path_1: "/path/to/vouch/src/images/logo.png"
+- prompt: [your prompt referencing the logo]
+```
+
+---
+
 ## Brand Visual Identity
 
 ### Color Palette
@@ -64,29 +125,72 @@
 
 | Spec | Value |
 |------|-------|
-| Dimensions | 800 × 600px (hero), 400 × 300px (card) |
-| Format | SVG (state outlines), JPG (photos) |
-| Style | State silhouette + iconic imagery |
+| Dimensions | 1920 × 1080px (16:9 hero) |
+| Format | JPG (optimized) |
+| Style | Editorial photography with duotone treatment |
 
-**Approach Options:**
+**Recommended Approach: Editorial Photography with Duotone**
 
-**Option A: State Silhouettes (Current)**
-- Solid color state outline
-- Primary teal (#00B5A0) fill
-- Clean, consistent across all 50 states
-- Fast to generate, scales well
+This approach creates premium, magazine-quality images that don't look AI-generated.
 
-**Option B: Photo + State Overlay**
-- Iconic state landmark/cityscape photo
-- Semi-transparent state outline overlay
-- More engaging but harder to scale
+**Why this works:**
+- Real photography grounds the image in reality
+- Duotone color treatment makes it ownable with brand colors
+- Cinematic composition leaves space for text overlay
+- No clip-art icons or literal state silhouettes
+- Looks like premium stock photography
 
-**Option C: Illustrated State Cards**
-- Stylized state shape
-- 2-3 iconic elements (landmarks, symbols)
-- Consistent illustration style
+**Duotone Color Treatment:**
+- **Shadows:** Deep navy (#1F2937)
+- **Highlights:** Shift toward teal (#00B5A0)
+- Creates brand-consistent look across all states
 
-**Recommendation:** Stick with Option A (silhouettes) for consistency, add Option B photos for top 15 priority states.
+**Composition Rules:**
+- Subject (skyline/landmark) in right two-thirds
+- Open sky/negative space on left for text placement
+- Water reflections add depth when available
+- Golden hour or blue hour lighting preferred
+
+**Prompt Template for State Images:**
+```
+Editorial photograph of [ICONIC LOCATION], [CITY], [STATE] at golden hour,
+shot from [VANTAGE POINT]. The image has a sophisticated duotone color
+treatment: shadows are deep navy (#1F2937), highlights shift toward teal
+(#00B5A0). Cinematic composition with the [SUBJECT] in the right two-thirds,
+open sky on the left for text placement. [ADDITIONAL DETAILS - water,
+reflections, etc.]. Photorealistic, shot on medium format camera.
+Moody, premium, magazine-quality. No text, no graphics, no overlays.
+```
+
+**Required Parameters:**
+```
+aspectRatio: "16:9"
+imageSize: "2K"
+style: "editorial photography duotone cinematic"
+useGoogleSearch: true  ← CRITICAL for accurate landmarks
+```
+
+**Example Locations by State:**
+
+| State | Iconic Location | Vantage Point |
+|-------|-----------------|---------------|
+| California | Golden Gate Bridge, SF | Baker Beach or Marin Headlands |
+| Texas | Austin skyline | Lady Bird Lake |
+| Florida | Miami skyline | Biscayne Bay |
+| New York | Manhattan skyline | Brooklyn Bridge Park |
+| Illinois | Chicago skyline | North Avenue Beach |
+| Washington | Seattle skyline | Kerry Park |
+| Arizona | Phoenix skyline | Papago Park |
+| Colorado | Denver skyline | City Park |
+| Georgia | Atlanta skyline | Jackson Street Bridge |
+| North Carolina | Charlotte skyline | Midtown Park |
+
+**What NOT to do:**
+- ❌ State silhouettes with icons inside (looks like clip art)
+- ❌ "Clean white background" (sterile, generic)
+- ❌ Multiple competing landmarks in one image
+- ❌ Flat illustration style (screams AI-generated)
+- ❌ Generic "city skyline" without specific location
 
 ### 3. Comparison Page Images
 **Purpose:** Vouch vs Competitor pages
@@ -195,6 +299,137 @@
 - Infographics and diagrams
 - Conceptual illustrations
 - Abstract/geometric backgrounds
+
+---
+
+## MCP Tool Reference (@rlabs-inc/gemini-mcp)
+
+This project uses the **@rlabs-inc/gemini-mcp** server for AI image generation.
+
+### Available Image Tools
+
+| Tool | Purpose |
+|------|---------|
+| `gemini-generate-image` | Generate new images from prompts |
+| `gemini-start-image-edit` | Start an editing session with a base image |
+| `gemini-continue-image-edit` | Refine an image in an active session |
+| `gemini-end-image-edit` | Close an editing session |
+| `gemini-image-prompt` | Generate optimized prompts for image generation |
+
+### gemini-generate-image Parameters
+
+| Parameter | Required | Options | Notes |
+|-----------|----------|---------|-------|
+| `prompt` | ✅ | Text description | Natural language, not keywords |
+| `style` | ❌ | Any style descriptor | e.g., "flat design", "photorealistic", "watercolor" |
+| `aspectRatio` | ❌ | `1:1`, `2:3`, `3:2`, `3:4`, `4:3`, `4:5`, `5:4`, `9:16`, `16:9`, `21:9` | Default: `1:1` |
+| `imageSize` | ❌ | `1K`, `2K`, `4K` | Default: `2K`. 4K = slower, higher quality |
+| `useGoogleSearch` | ❌ | `true`/`false` | Grounds image in real-world data |
+
+### Aspect Ratio Quick Reference
+
+| Ratio | Use Case | Dimensions (2K) |
+|-------|----------|-----------------|
+| `1:1` | Social thumbnails, icons | 2048×2048 |
+| `16:9` | Blog featured, OG images | 2048×1152 |
+| `4:3` | State page heroes | 2048×1536 |
+| `3:2` | Standard photos | 2048×1365 |
+| `9:16` | Mobile/story format | 1152×2048 |
+| `21:9` | Wide banners | 2048×878 |
+
+### Resolution Settings
+
+| Size | Pixels | Use Case | Speed |
+|------|--------|----------|-------|
+| `1K` | 1024px | Drafts, iterations, quick tests | Fast |
+| `2K` | 2048px | Web images, blog posts | Balanced |
+| `4K` | 4096px | Print, high-quality OG images | Slow |
+
+**Tip:** Use `1K` for rapid iteration, `2K` for final web assets, `4K` only for critical hero images.
+
+### Image Editing Sessions
+
+For iterative refinement, use the editing workflow:
+
+```
+1. gemini-start-image-edit → Creates base image, returns sessionId
+2. gemini-continue-image-edit → Refine with natural language (uses sessionId)
+3. gemini-continue-image-edit → Keep refining...
+4. gemini-end-image-edit → Close session when done
+```
+
+**Example refinement prompts:**
+- "Make the background lighter"
+- "Change the teal to a slightly darker shade"
+- "Add more negative space on the right"
+- "Make the state silhouette larger"
+
+### Environment Variables
+
+| Variable | Default | Purpose |
+|----------|---------|---------|
+| `GEMINI_API_KEY` | (required) | API authentication |
+| `GEMINI_IMAGE_MODEL` | `gemini-3-pro-image-preview` | Image generation model |
+| `GEMINI_OUTPUT_DIR` | `./gemini-output` | Where images are saved |
+
+### Practical Examples for Vouch
+
+**State Page Hero (4:3, brand colors):**
+```
+Tool: gemini-generate-image
+- prompt: "A stylized silhouette of Texas state filled with teal (#00B5A0).
+          Inside the silhouette, subtle icons of the Dallas skyline, an oil
+          derrick, and a lone star. Clean white background, modern flat
+          illustration style. No text."
+- aspectRatio: "4:3"
+- imageSize: "2K"
+- style: "flat design minimal illustration"
+```
+
+**Blog Featured Image (16:9):**
+```
+Tool: gemini-generate-image
+- prompt: "A clean, modern illustration showing a smartphone next to a
+          piggy bank with coins. The phone displays a checkmark. Teal
+          (#00B5A0) accent color, white background, minimal style.
+          Represents saving money on phone bills. No text."
+- aspectRatio: "16:9"
+- imageSize: "2K"
+- style: "flat design infographic"
+```
+
+**Comparison Chart (16:9, use Google Search):**
+```
+Tool: gemini-generate-image
+- prompt: "Side-by-side comparison infographic. Left side: teal (#00B5A0)
+          box with '$30/mo' and checkmarks. Right side: gray box with
+          '$45/mo'. 'VS' badge in center. Clean white background."
+- aspectRatio: "16:9"
+- imageSize: "2K"
+- useGoogleSearch: false
+```
+
+**Real-World Data (with Google Search grounding):**
+```
+Tool: gemini-generate-image
+- prompt: "Infographic showing AT&T 5G coverage across California. Use
+          accurate coverage data. Teal (#00B5A0) for covered areas on
+          a California state map. Clean, minimal design."
+- aspectRatio: "4:3"
+- imageSize: "2K"
+- useGoogleSearch: true
+```
+
+### Common Issues & Solutions
+
+| Issue | Solution |
+|-------|----------|
+| Colors don't match brand | Be explicit: "teal (#00B5A0)" not just "teal" |
+| Too much detail/clutter | Add "minimal style, clean, ample white space" |
+| Unwanted text in image | Add "Do not include any text in the image" |
+| Wrong aspect ratio | Double-check parameter matches intended use |
+| Image too dark | Specify "white background, bright, well-lit" |
+| Style inconsistent | Use same style parameter across all generations |
 
 ---
 
@@ -700,7 +935,10 @@ src/images/
 
 For each new page/post:
 
+- [ ] **Use logo as reference image** (src/images/logo.png) for brand consistency
 - [ ] Create featured image (1200×630)
+- [ ] Verify brand colors match logo (#00B5A0 teal, #1F2937 navy)
+- [ ] Include logo in image if shareable (OG images, infographics, comparison charts)
 - [ ] Optimize file size (<200KB)
 - [ ] Use descriptive filename with keywords
 - [ ] Write keyword-rich alt text
@@ -729,4 +967,5 @@ For each new page/post:
 ---
 
 *Strategy created: January 2025*
+*Updated: January 2026 - Added logo reference requirement, MCP tool reference*
 *Review quarterly for updates*

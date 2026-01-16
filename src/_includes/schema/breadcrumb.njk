@@ -1,0 +1,55 @@
+{#
+  Breadcrumb Schema Partial
+
+  Usage:
+  {% include "schema/breadcrumb.njk" %}
+
+  Or with set:
+  {% set breadcrumbItems = [
+    { name: "Home", url: site.url },
+    { name: "Coverage", url: site.url + "/coverage/" },
+    { name: "California", url: site.url + "/coverage/california/" }
+  ] %}
+  {% include "schema/breadcrumb.njk" %}
+
+  Parameters:
+  - breadcrumbItems: Array of {name, url} objects (required)
+#}
+{%- macro renderBreadcrumb(items) -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {%- for item in items %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "name": {{ item.name | dump | safe }},
+      "item": {{ item.url | dump | safe }}
+    }{%- if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endmacro -%}
+
+{#- Standalone include mode - uses breadcrumbItems variable -#}
+{%- if breadcrumbItems -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {%- for item in breadcrumbItems %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "name": {{ item.name | dump | safe }},
+      "item": {{ item.url | dump | safe }}
+    }{%- if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif -%}

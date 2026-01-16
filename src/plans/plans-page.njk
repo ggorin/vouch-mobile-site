@@ -1,0 +1,11 @@
+---
+pagination:
+  data: plansData
+  size: 1
+  alias: plan
+permalink: "plans/{{ plan.slug }}/"
+layout: plans-page.njk
+eleventyComputed:
+  title: "{{ plan.title }} | Vouch Mobile"
+  description: "{{ plan.metaDescription }}"
+---

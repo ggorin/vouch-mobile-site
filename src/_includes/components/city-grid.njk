@@ -1,0 +1,107 @@
+{#
+  City Grid Component
+  ===================
+  A responsive grid of city cards showing coverage areas.
+
+  Usage:
+    {% from "components/city-grid.njk" import cityGrid %}
+    {{ cityGrid(cities=myCities) }}
+
+  Parameters:
+    - cities: Array of city objects with {name, description} properties
+    - showBadge: Whether to show the 5G badge (default: true)
+    - badgeText: Text for the badge (default: "5G")
+
+  CSS Dependencies:
+    - .cities-grid-v2
+    - .city-card-v2
+    - .city-icon
+    - .city-content
+    - .city-badge
+    - .status-dot
+#}
+
+{% macro cityGrid(cities, showBadge=true, badgeText="5G") %}
+{% if cities and cities.length > 0 %}
+<div class="cities-grid-v2">
+  {% for city in cities %}
+  <div class="city-card-v2">
+    <div class="city-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+    </div>
+    <div class="city-content">
+      <h3>{{ city.name }}</h3>
+      {% if city.description %}
+      <p>{{ city.description }}</p>
+      {% endif %}
+    </div>
+    {% if showBadge %}
+    <div class="city-badge">
+      <span class="status-dot"></span>
+      {{ badgeText }}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+{% endmacro %}
+
+{#
+  City Section Component
+  ======================
+  A complete cities section with header and grid.
+
+  Usage:
+    {% from "components/city-grid.njk" import citySection %}
+    {{ citySection(cities=myCities, stateName="California", title="Cities We Cover") }}
+
+  Parameters:
+    - cities: Array of city objects with {name, description} properties
+    - stateName: Name of the state (used in default title)
+    - title: Optional custom section title
+    - tag: Optional tag label (default: "Cities")
+    - showBadge: Whether to show 5G badges (default: true)
+#}
+
+{% macro citySection(cities, stateName="", title="", tag="Cities", showBadge=true) %}
+{% if cities and cities.length > 0 %}
+<div class="content-section">
+  <div class="section-header-inline">
+    {% if tag %}
+    <span class="section-tag">{{ tag }}</span>
+    {% endif %}
+    <h2>{% if title %}{{ title }}{% else %}{{ stateName }} Cities We Cover{% endif %}</h2>
+  </div>
+  {{ cityGrid(cities=cities, showBadge=showBadge) }}
+</div>
+{% endif %}
+{% endmacro %}
+
+{#
+  Simple City List Component
+  ==========================
+  A compact list of city names for sidebars or smaller spaces.
+
+  Usage:
+    {% from "components/city-grid.njk" import cityList %}
+    {{ cityList(cities=myCities, limit=5) }}
+
+  Parameters:
+    - cities: Array of city objects with {name} property
+    - limit: Maximum number of cities to show (default: all)
+#}
+
+{% macro cityList(cities, limit=0) %}
+{% if cities and cities.length > 0 %}
+<ul class="city-list">
+  {% set displayCities = cities if limit == 0 else cities | slice(0, limit) %}
+  {% for city in displayCities %}
+  <li>{{ city.name }}</li>
+  {% endfor %}
+  {% if limit > 0 and cities.length > limit %}
+  <li class="city-list-more">+{{ cities.length - limit }} more</li>
+  {% endif %}
+</ul>
+{% endif %}
+{% endmacro %}

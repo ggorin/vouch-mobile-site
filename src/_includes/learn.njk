@@ -1,0 +1,336 @@
+---
+layout: base.njk
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "DefinedTerm",
+      "name": "{{ term.term }}",
+      "description": "{{ term.shortDefinition }}",
+      "inDefinedTermSet": {
+        "@type": "DefinedTermSet",
+        "name": "Vouch Mobile Glossary",
+        "url": "{{ site.url }}/learn/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% if term.faqs %}
+        {% for faq in term.faqs %}
+        {
+          "@type": "Question",
+          "name": "{{ faq.question }}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ faq.answer }}"
+          }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+        {% endif %}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ site.url }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Learn",
+          "item": "{{ site.url }}/learn/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ term.term }}"
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{# ============================================================================
+   HERO SECTION - Editorial term display with category badge
+   ============================================================================ #}
+<section class="learn-hero">
+  <div class="learn-hero-bg">
+    <div class="learn-hero-gradient"></div>
+    <div class="learn-hero-pattern"></div>
+  </div>
+
+  <div class="container">
+    <nav class="breadcrumb-v2" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      <a href="/learn/">Learn</a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      <span>{{ term.term }}</span>
+    </nav>
+
+    <div class="learn-hero-content">
+      <div class="learn-category-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          {% if term.category == "Network Technology" %}
+          <path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>
+          {% elif term.category == "Plans & Pricing" %}
+          <line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          {% elif term.category == "Account & Billing" %}
+          <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line>
+          {% elif term.category == "Device & SIM" %}
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>
+          {% else %}
+          <circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>
+          {% endif %}
+        </svg>
+        {{ term.category }}
+      </div>
+
+      <h1 class="learn-hero-title">{{ term.term }}</h1>
+
+      <div class="learn-hero-meta">
+        <span class="meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          5 min read
+        </span>
+        <span class="meta-divider"></span>
+        <span class="meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          Glossary
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ============================================================================
+   MAIN CONTENT AREA
+   ============================================================================ #}
+<section class="learn-content-section">
+  <div class="container">
+    <div class="learn-layout">
+      {# Main Content Column #}
+      <article class="learn-main">
+        {# Definition Card - Key answer for AI snippets #}
+        <div class="learn-definition-card">
+          <div class="definition-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </div>
+          <div class="definition-content">
+            <span class="definition-label">Quick Definition</span>
+            <p class="definition-text">{{ term.shortDefinition }}</p>
+          </div>
+        </div>
+
+        {# Deep Dive Content #}
+        <div class="learn-deep-dive">
+          <div class="section-marker">
+            <span class="marker-line"></span>
+            <span class="marker-label">Deep Dive</span>
+          </div>
+
+          <div class="prose-content">
+            {{ term.fullContent | safe }}
+          </div>
+        </div>
+
+        {# How It Applies to Vouch Section #}
+        {% if term.howItApplies %}
+        <div class="learn-vouch-section">
+          <div class="vouch-section-header">
+            <div class="vouch-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h2>How This Applies to Vouch Mobile</h2>
+          </div>
+          <div class="vouch-content-box">
+            <p>{{ term.howItApplies }}</p>
+          </div>
+        </div>
+        {% endif %}
+
+        {# FAQ Section #}
+        {% if term.faqs and term.faqs.length > 0 %}
+        <div class="learn-faq-section" id="faq">
+          <div class="section-marker">
+            <span class="marker-line"></span>
+            <span class="marker-label">Common Questions</span>
+          </div>
+
+          <h2 class="learn-faq-title">Frequently Asked Questions About {{ term.term }}</h2>
+
+          <div class="learn-faq-list">
+            {% for faq in term.faqs %}
+            <div class="learn-faq-item">
+              <button class="learn-faq-trigger" aria-expanded="false">
+                <span class="faq-question-text">{{ faq.question }}</span>
+                <span class="faq-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </span>
+              </button>
+              <div class="learn-faq-content">
+                <p>{{ faq.answer }}</p>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        {# Related Terms Section #}
+        {% if term.relatedTerms and term.relatedTerms.length > 0 %}
+        <div class="learn-related-section">
+          <div class="section-marker">
+            <span class="marker-line"></span>
+            <span class="marker-label">Related Terms</span>
+          </div>
+
+          <h2 class="learn-related-title">Explore Related Concepts</h2>
+
+          <div class="learn-related-grid">
+            {% for related in term.relatedTerms %}
+            <a href="/learn/{{ related.slug }}/" class="learn-related-pill">
+              <span class="pill-text">{{ related.term }}</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </article>
+
+      {# Sidebar #}
+      <aside class="learn-sidebar">
+        <div class="sidebar-sticky">
+          {# Table of Contents Card #}
+          <div class="learn-toc-card">
+            <div class="toc-header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+              <span>On This Page</span>
+            </div>
+            <nav class="toc-nav">
+              <a href="#" class="toc-link active">Quick Definition</a>
+              <a href="#" class="toc-link">Deep Dive</a>
+              {% if term.howItApplies %}
+              <a href="#" class="toc-link">For Vouch Customers</a>
+              {% endif %}
+              {% if term.faqs and term.faqs.length > 0 %}
+              <a href="#faq" class="toc-link">FAQ</a>
+              {% endif %}
+              {% if term.relatedTerms and term.relatedTerms.length > 0 %}
+              <a href="#" class="toc-link">Related Terms</a>
+              {% endif %}
+            </nav>
+          </div>
+
+          {# CTA Card #}
+          <div class="learn-cta-card">
+            <div class="cta-card-glow"></div>
+            <div class="cta-card-content">
+              <span class="cta-card-badge">Ready to Switch?</span>
+              <h3>Experience {{ term.term }} with Vouch</h3>
+              <p>Get unlimited talk, text, and data on AT&T's network for just $30/month. No credit check required.</p>
+              <a href="https://vouchmobile.com" class="btn btn-primary btn-block">
+                Get Started
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          {# Browse More Card #}
+          <div class="learn-browse-card">
+            <h4>Browse the Glossary</h4>
+            <a href="/learn/" class="browse-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              <span>View All Terms</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+{# ============================================================================
+   CTA SECTION - Learn more about Vouch
+   ============================================================================ #}
+<section class="learn-cta-section">
+  <div class="learn-cta-bg">
+    <div class="cta-gradient-orb cta-gradient-orb--1"></div>
+    <div class="cta-gradient-orb cta-gradient-orb--2"></div>
+  </div>
+
+  <div class="container">
+    <div class="learn-cta-wrapper">
+      <div class="learn-cta-content">
+        <span class="learn-cta-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          Now You Know
+        </span>
+        <h2 class="learn-cta-title">Ready to Put This Knowledge Into Action?</h2>
+        <p class="learn-cta-subtitle">Experience everything you've learned about {{ term.term }} with Vouch Mobile. Unlimited plans starting at $30/month on AT&T's network.</p>
+
+        <div class="learn-cta-features">
+          <span class="cta-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            No Credit Check
+          </span>
+          <span class="cta-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            5G Included
+          </span>
+          <span class="cta-feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            No Contracts
+          </span>
+        </div>
+
+        <div class="learn-cta-buttons">
+          <a href="https://vouchmobile.com" class="btn btn-primary btn-lg">
+            Get Started Today
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="/learn/" class="btn btn-outline-light btn-lg">Explore More Terms</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// FAQ Accordion for Learn Pages
+document.addEventListener('DOMContentLoaded', function() {
+  const faqTriggers = document.querySelectorAll('.learn-faq-trigger');
+
+  faqTriggers.forEach(function(trigger) {
+    trigger.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      const content = this.nextElementSibling;
+
+      // Close all others
+      faqTriggers.forEach(function(t) {
+        t.setAttribute('aria-expanded', 'false');
+        t.nextElementSibling.style.maxHeight = null;
+      });
+
+      // Toggle current
+      if (!isExpanded) {
+        this.setAttribute('aria-expanded', 'true');
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
+  });
+});
+</script>

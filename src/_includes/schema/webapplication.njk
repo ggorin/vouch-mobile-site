@@ -1,0 +1,59 @@
+{#
+  WebApplication Schema Partial
+
+  Usage for tools/calculators:
+  {% set schemaApp = {
+    name: "Savings Calculator",
+    description: "Calculate how much you can save by switching to Vouch Mobile",
+    url: site.url + "/tools/savings-calculator/"
+  } %}
+  {% include "schema/webapplication.njk" %}
+
+  Parameters:
+  - schemaApp.name: Name of the tool/application (required)
+  - schemaApp.description: Description of what the tool does (required)
+  - schemaApp.url: Full URL to the tool page (required)
+  - schemaApp.category: Application category (optional, defaults to "UtilityApplication")
+  - schemaApp.operatingSystem: OS compatibility (optional, defaults to "Any")
+  - schemaApp.offers: Pricing info (optional, defaults to free)
+#}
+{%- if schemaApp -%}
+{%- set appCategory = schemaApp.category | default("UtilityApplication") -%}
+{%- set appOS = schemaApp.operatingSystem | default("Any") -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": {{ schemaApp.name | dump | safe }},
+  "description": {{ schemaApp.description | dump | safe }},
+  "url": {{ schemaApp.url | dump | safe }},
+  "applicationCategory": "{{ appCategory }}",
+  "operatingSystem": "{{ appOS }}",
+  "browserRequirements": "Requires JavaScript",
+  "softwareVersion": "1.0",
+  "provider": {
+    "@type": "Organization",
+    "@id": "{{ site.url }}/#organization",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}"
+  },
+  {%- if schemaApp.offers %}
+  "offers": {{ schemaApp.offers | dump | safe }},
+  {%- else %}
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  {%- endif %}
+  "featureList": [
+    "Free to use",
+    "No login required",
+    "Instant results",
+    "Mobile-friendly"
+  ],
+  "screenshot": "{{ site.url }}/images/tools/{{ schemaApp.name | slug }}-screenshot.png"
+}
+</script>
+{%- endif -%}

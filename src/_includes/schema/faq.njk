@@ -1,0 +1,41 @@
+{#
+  FAQ Page Schema Partial
+
+  Usage:
+  {% set schemaFaqs = [
+    { question: "What is Vouch Mobile?", answer: "Vouch Mobile is an affordable wireless carrier..." },
+    { question: "Does Vouch require a credit check?", answer: "No, Vouch Mobile never requires a credit check." }
+  ] %}
+  {% include "schema/faq.njk" %}
+
+  Or use an existing faqs variable:
+  {% set schemaFaqs = faqs %}
+  {% include "schema/faq.njk" %}
+
+  Parameters:
+  - schemaFaqs: Array of {question, answer} objects (required)
+
+  Notes:
+  - Answers are properly JSON-escaped using the dump filter
+  - Supports HTML in answers (will be included as-is)
+#}
+{%- if schemaFaqs and schemaFaqs.length > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for faq in schemaFaqs %}
+    {
+      "@type": "Question",
+      "name": {{ faq.question | dump | safe }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ faq.answer | dump | safe }}
+      }
+    }{%- if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif -%}

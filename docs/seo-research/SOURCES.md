@@ -112,6 +112,118 @@ Use these sources for citations and backlinks. Do NOT link to competitor website
 
 ---
 
+## Geographic Page External Links
+
+Use these sources specifically for state and metro area landing pages. Each geo page should include **3-5 external links** to authoritative, non-competitor sources.
+
+### State-Level Sources
+
+#### Census & Demographics (Use for every state page)
+- **Census QuickFacts by State** - `https://www.census.gov/quickfacts/[STATE-CODE]`
+  - Example: `https://www.census.gov/quickfacts/CA` for California
+  - Population, median income, demographics
+- **Data USA State Profiles** - `https://datausa.io/profile/geo/[state-name]`
+  - Example: `https://datausa.io/profile/geo/california`
+  - Economic data, industry breakdown, education stats
+
+#### Coverage & Network Verification
+- **FCC Broadband Map** - https://broadbandmap.fcc.gov/
+  - Official government coverage data (high E-E-A-T value)
+- **Ookla 5G Map** - https://www.speedtest.net/ookla-5g-map
+  - Independent 5G coverage verification
+- **OpenSignal State Reports** - https://www.opensignal.com/reports
+  - Network experience data by region
+
+#### State Regulatory Bodies (High Authority)
+| State | Public Utility Commission | URL |
+|-------|--------------------------|-----|
+| California | CPUC | https://www.cpuc.ca.gov/ |
+| Texas | PUC of Texas | https://www.puc.texas.gov/ |
+| Florida | FL PSC | https://www.psc.state.fl.us/ |
+| New York | NY PSC | https://www.dps.ny.gov/ |
+| Illinois | ICC | https://www.icc.illinois.gov/ |
+| Pennsylvania | PA PUC | https://www.puc.pa.gov/ |
+| Ohio | PUCO | https://puco.ohio.gov/ |
+| Georgia | GA PSC | https://psc.ga.gov/ |
+| North Carolina | NC UC | https://www.ncuc.gov/ |
+| New Jersey | NJ BPU | https://www.nj.gov/bpu/ |
+| Virginia | VA SCC | https://www.scc.virginia.gov/ |
+| Washington | WA UTC | https://www.utc.wa.gov/ |
+| Arizona | AZ CC | https://www.azcc.gov/ |
+| Massachusetts | MA DPU | https://www.mass.gov/orgs/department-of-public-utilities |
+| Michigan | MPSC | https://www.michigan.gov/mpsc |
+
+### Metro Area Sources
+
+#### Transit Authorities (City Pages)
+| Metro | Transit Authority | URL |
+|-------|------------------|-----|
+| Los Angeles | LA Metro | https://www.metro.net/ |
+| New York City | MTA | https://www.mta.info/ |
+| Chicago | CTA | https://www.transitchicago.com/ |
+| Houston | METRO | https://www.ridemetro.org/ |
+| Phoenix | Valley Metro | https://www.valleymetro.org/ |
+
+#### City Open Data Portals
+- **Los Angeles** - https://data.lacity.org/
+- **New York City** - https://opendata.cityofnewyork.us/
+- **Chicago** - https://data.cityofchicago.org/
+- **Houston** - https://www.houstontx.gov/opendata/
+- **Phoenix** - https://www.phoenixopendata.com/
+
+### Cost of Living Sources
+- **MIT Living Wage Calculator** - https://livingwage.mit.edu/
+  - State and metro area living wage data
+- **BLS Regional Price Parities** - https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area
+  - Official cost of living by state
+- **Numbeo Cost of Living** - https://www.numbeo.com/cost-of-living/country_result.jsp?country=United+States
+  - City-level cost comparison data
+
+### Cell Phone Bill Statistics
+- **J.D. Power Wireless Studies** - https://www.jdpower.com/business/telecommunications
+  - Average phone bill data, customer satisfaction
+- **Consumer Expenditure Survey (BLS)** - https://www.bls.gov/cex/
+  - Official household spending on telecom
+
+---
+
+## External Link Best Practices for Geo Pages
+
+### Link Density
+- **Target: 3-5 external links per 800-1000 words** (industry standard: 2-4 per 1000 words)
+- Spread links throughout content, not clustered
+- Use descriptive anchor text (not "click here")
+
+### E-E-A-T Priority Order
+1. **Government sources** (FCC, Census, State PUCs) - Highest authority
+2. **Academic/research** (MIT Living Wage, BLS) - High authority
+3. **Independent testing** (OpenSignal, Ookla, RootMetrics) - Neutral credibility
+4. **Industry publications** (CNET, Tom's Guide) - Moderate authority
+
+### What NOT to Link
+- ❌ Competitor websites (Mint Mobile, Visible, Cricket, etc.)
+- ❌ Competitor pricing pages
+- ❌ Affiliate comparison sites with bias
+- ❌ Outdated sources (pre-2024)
+- ❌ Wikipedia (use primary sources instead)
+
+### Example External Links for California Page
+```markdown
+According to [Census Bureau data](https://www.census.gov/quickfacts/CA),
+California has a population of 39.5 million...
+
+The [FCC Broadband Map](https://broadbandmap.fcc.gov/) shows AT&T
+coverage reaches 99% of California's population...
+
+[OpenSignal's latest report](https://www.opensignal.com/reports)
+ranks AT&T network experience in California...
+
+The [MIT Living Wage Calculator](https://livingwage.mit.edu/states/06)
+estimates a family of four needs $110,000/year in California...
+```
+
+---
+
 ## How to Cite
 
 When writing content, use these patterns:
@@ -138,4 +250,4 @@ When writing content, use these patterns:
 
 ---
 
-*Last updated: January 2025*
+*Last updated: January 2026*

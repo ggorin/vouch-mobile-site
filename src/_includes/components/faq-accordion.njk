@@ -1,0 +1,117 @@
+{#
+  FAQ Accordion Component
+  =======================
+  A reusable FAQ accordion with accessible expand/collapse functionality.
+
+  Usage:
+    {% from "components/faq-accordion.njk" import faqAccordion %}
+    {{ faqAccordion(faqs=myFaqs, id="my-faq") }}
+
+  Parameters:
+    - faqs: Array of FAQ objects with {question, answer} properties
+    - id: Optional unique ID for the FAQ section (default: "faq")
+    - title: Optional section title (default: none)
+    - subtitle: Optional section subtitle (default: none)
+    - includeScript: Whether to include the JS (default: true, set false if already included)
+
+  CSS Dependencies:
+    - .faq-grid-v2
+    - .faq-card-v2
+    - .faq-trigger
+    - .faq-content
+    - .faq-question-text
+    - .faq-icon
+#}
+
+{% macro faqAccordion(faqs, id="faq", title="", subtitle="", includeScript=true) %}
+{% if faqs and faqs.length > 0 %}
+<div class="faq-grid-v2" id="{{ id }}">
+  {% for faq in faqs %}
+  <div class="faq-card-v2">
+    <button class="faq-trigger" aria-expanded="false" aria-controls="{{ id }}-content-{{ loop.index }}">
+      <span class="faq-question-text">{{ faq.question }}</span>
+      <span class="faq-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      </span>
+    </button>
+    <div class="faq-content" id="{{ id }}-content-{{ loop.index }}">
+      <p>{{ faq.answer }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% if includeScript %}
+<script>
+// FAQ Accordion - {{ id }}
+(function() {
+  if (window.faqAccordionInitialized) return;
+  window.faqAccordionInitialized = true;
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqTriggers = document.querySelectorAll('.faq-trigger');
+
+    faqTriggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function() {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        const content = this.nextElementSibling;
+
+        // Close all others in the same container
+        const container = this.closest('.faq-grid-v2');
+        if (container) {
+          container.querySelectorAll('.faq-trigger').forEach(function(t) {
+            t.setAttribute('aria-expanded', 'false');
+            t.nextElementSibling.style.maxHeight = null;
+          });
+        }
+
+        // Toggle current
+        if (!isExpanded) {
+          this.setAttribute('aria-expanded', 'true');
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+    });
+  });
+})();
+</script>
+{% endif %}
+{% endif %}
+{% endmacro %}
+
+{#
+  FAQ Section Component
+  =====================
+  A complete FAQ section with header, accordion, and optional section wrapper.
+
+  Usage:
+    {% from "components/faq-accordion.njk" import faqSection %}
+    {{ faqSection(faqs=myFaqs, title="Frequently Asked Questions") }}
+
+  Parameters:
+    - faqs: Array of FAQ objects with {question, answer} properties
+    - id: Optional unique ID for the section (default: "faq")
+    - title: Section title
+    - subtitle: Optional section subtitle
+    - tag: Optional tag label above title (default: "FAQ")
+    - includeScript: Whether to include the JS (default: true)
+    - altBackground: Use alternate section background (default: true)
+#}
+
+{% macro faqSection(faqs, id="faq", title="Frequently Asked Questions", subtitle="", tag="FAQ", includeScript=true, altBackground=true) %}
+<section class="section{% if altBackground %} section-alt{% endif %} state-faq-section" id="{{ id }}">
+  <div class="container">
+    <div class="section-header-v2 text-center">
+      {% if tag %}
+      <span class="section-tag">{{ tag }}</span>
+      {% endif %}
+      <h2 class="section-title-v2">{{ title }}</h2>
+      {% if subtitle %}
+      <p class="section-subtitle-v2">{{ subtitle }}</p>
+      {% endif %}
+    </div>
+
+    {{ faqAccordion(faqs=faqs, id=id + "-accordion", includeScript=includeScript) }}
+  </div>
+</section>
+{% endmacro %}
