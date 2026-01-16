@@ -1,0 +1,17 @@
+# Robots.txt for Vouch Mobile
+# https://vouchmobile.com
+
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://vouchmobile.com/sitemap.xml
+
+# Crawl-delay suggestion for polite crawling
+Crawl-delay: 1
+
+# Block access to any admin or development directories (if they exist)
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
