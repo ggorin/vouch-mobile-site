@@ -24,6 +24,7 @@
   --color-text: #1F2937;
   --color-text-light: #64748B;
   --color-text-muted: #94A3B8;
+  --color-text-secondary: #64748B;
 
   --color-white: #FFFFFF;
   --color-off-white: #F8FAFC;
@@ -31,6 +32,7 @@
   --color-bg: #FFFFFF;
   --color-bg-alt: #F8FAFC;
   --color-bg-dark: #1F2937;
+  --color-surface: #F8FAFC;
 
   --color-border: #E2E8F0;
   --color-border-dark: rgba(0, 0, 0, 0.08);
