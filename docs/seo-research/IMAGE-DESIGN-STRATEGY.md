@@ -656,24 +656,31 @@ Do not include any text.
 
 ### Template 3: Editorial/Geographic (92% success)
 
+> **KEY LEARNING:** Emphasize "HIGH CONTRAST" and "BRIGHT VIBRANT teal sky" -
+> without this, images come out too dark and muted.
+
 ```
-Editorial photograph of [iconic location], [city], [state] at [time of day],
-shot from [vantage point]. The image has a sophisticated duotone color
-treatment: shadows are [shadow color], highlights shift toward [highlight color].
-Cinematic composition with [subject] in the [position], [negative space location]
-for text placement. [Additional environmental details]. Photorealistic, shot on
-[camera type]. [Mood descriptors]. No text, no graphics, no overlays.
+Editorial photograph of [iconic location], [city], [state] at blue hour,
+shot from [vantage point]. HIGH CONTRAST duotone color treatment with
+VIVID TEAL (#00B5A0) sky and deep navy (#1F2937) shadows. The sky should
+be BRIGHT and VIBRANT, not dark. Strong contrast between illuminated
+[subject] and colorful sky. Cinematic composition with [subject] in the
+right two-thirds, open bright teal sky on left for text placement.
+[Additional details]. Photorealistic, shot on medium format camera.
+Vibrant, high contrast, magazine-quality. No text, no graphics, no overlays.
 ```
 
 **Vouch Example:**
 ```
 Editorial photograph of the Austin skyline, Texas at blue hour, shot from
-across Lady Bird Lake. The image has a sophisticated duotone color treatment:
-shadows are deep navy (#1F2937), highlights shift toward teal (#00B5A0).
-Cinematic composition with the skyline in the right two-thirds, open twilight
-sky on the left for text placement. Water reflections add depth, subtle city
-lights beginning to glow. Photorealistic, shot on medium format camera.
-Moody, premium, magazine-quality. No text, no graphics, no overlays.
+across Lady Bird Lake. HIGH CONTRAST duotone color treatment with VIVID
+TEAL (#00B5A0) sky and deep navy (#1F2937) shadows. The sky should be
+BRIGHT and VIBRANT teal, NOT dark. Strong contrast between illuminated
+buildings and colorful sky. Cinematic composition with skyline in the
+right two-thirds, open bright teal sky on left for text placement.
+Congress Avenue Bridge visible, water reflections mirroring the teal sky.
+Photorealistic, shot on medium format camera. Vibrant, high contrast,
+magazine-quality. No text, no graphics, no overlays.
 ```
 
 ### Template 4: Comparison/Infographic (94% success)
@@ -1086,24 +1093,37 @@ mcp__nanobanana__gemini_generate_image(
 ```
 
 **State Coverage Hero (Editorial Photography):**
+
+> **CRITICAL:** Use **high contrast** with **bright vibrant teal sky** - not dark/muted.
+> Reference `california.jpg` as the contrast standard. Use **16:9 aspect ratio** for card consistency.
+
 ```python
 mcp__nanobanana__gemini_generate_image(
     prompt="""Editorial photograph of [ICONIC LANDMARK], [CITY], [STATE]
-    at golden hour, shot from [VANTAGE POINT].
+    at blue hour, shot from [VANTAGE POINT].
 
-    The image has a sophisticated duotone color treatment: shadows are
-    deep navy (#1F2937), highlights shift toward teal (#00B5A0).
+    HIGH CONTRAST duotone color treatment with VIVID TEAL (#00B5A0) sky
+    and deep navy (#1F2937) shadows. The sky should be BRIGHT and VIBRANT
+    teal, NOT dark or muted. Strong contrast between illuminated buildings
+    and the colorful sky.
 
     Cinematic composition with the [SUBJECT] in the right two-thirds,
-    open sky on the left for text placement. [Additional details: water
-    reflections, fog, city lights, etc.].
+    open bright teal sky on the left for text placement. Water reflections
+    mirroring the teal sky. [Additional details: bridges, landmarks, etc.].
 
-    Photorealistic, shot on medium format camera. Moody, premium,
+    Photorealistic, shot on medium format camera. Vibrant, high contrast,
     magazine-quality. No text, no graphics, no overlays.""",
     enable_google_search=True,  # Critical for accurate landmarks
-    aspect_ratio="16:9",
+    aspect_ratio="16:9",        # Must match for consistent card crops
     output_path="src/images/coverage/[state-slug].jpg"
 )
+```
+
+**Key Contrast Requirements:**
+- Sky must be **bright vibrant teal**, not dark navy
+- Strong separation between light sky and dark buildings/water
+- Buildings should have visible illumination/city lights
+- Water reflections should mirror the teal sky color
 ```
 
 **Lifestyle Segment Image:**

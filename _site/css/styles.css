@@ -6188,24 +6188,38 @@ table.comparison-table {
 
 .featured-state-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   border-radius: var(--radius-2xl);
   overflow: hidden;
-  aspect-ratio: 3 / 4;
+  background: linear-gradient(to bottom, var(--color-bg-alt) 0%, var(--color-bg) 100%);
   text-decoration: none;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dark .featured-state-card {
+  background: linear-gradient(to bottom, var(--color-bg-alt) 0%, var(--color-bg-dark) 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .featured-state-card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.dark .featured-state-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
 .featured-state-card:hover .featured-state-bg img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .featured-state-bg {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
 }
 
 .featured-state-bg img {
@@ -6216,23 +6230,15 @@ table.comparison-table {
 }
 
 .featured-state-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(0, 0, 0, 0.2) 40%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
+  display: none;
 }
 
 .featured-state-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: var(--spacing-6);
-  color: white;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: var(--spacing-5);
+  color: var(--color-text);
 }
 
 .state-badge {
@@ -6240,26 +6246,29 @@ table.comparison-table {
   align-items: center;
   gap: var(--spacing-1);
   padding: var(--spacing-1) var(--spacing-2);
-  background: rgba(45, 212, 191, 0.2);
-  border: 1px solid rgba(45, 212, 191, 0.4);
+  background: rgba(45, 212, 191, 0.15);
+  border: 1px solid rgba(45, 212, 191, 0.3);
   border-radius: var(--radius-sm);
   font-size: var(--font-size-xs);
   font-weight: 600;
-  color: #2DD4BF;
+  color: var(--color-primary);
   margin-bottom: var(--spacing-2);
+  width: fit-content;
 }
 
 .featured-state-name {
   font-family: var(--font-display);
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
   font-weight: 700;
+  color: var(--color-text);
   margin-bottom: var(--spacing-1);
 }
 
 .featured-state-cities {
   font-size: var(--font-size-sm);
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: var(--spacing-3);
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-4);
+  flex: 1;
 }
 
 .featured-state-link {
@@ -6268,8 +6277,9 @@ table.comparison-table {
   gap: var(--spacing-2);
   font-size: var(--font-size-sm);
   font-weight: 600;
-  color: white;
+  color: var(--color-primary);
   transition: gap var(--transition);
+  margin-top: auto;
 }
 
 .featured-state-card:hover .featured-state-link {
@@ -6810,8 +6820,12 @@ table.comparison-table {
     gap: var(--spacing-4);
   }
 
-  .featured-state-card {
-    aspect-ratio: 1;
+  .featured-state-content {
+    padding: var(--spacing-4);
+  }
+
+  .featured-state-name {
+    font-size: var(--font-size-lg);
   }
 
   .states-grid-v2 {
@@ -6872,7 +6886,7 @@ table.comparison-table {
     grid-template-columns: 1fr;
   }
 
-  .featured-state-card {
+  .featured-state-bg {
     aspect-ratio: 16 / 9;
   }
 
