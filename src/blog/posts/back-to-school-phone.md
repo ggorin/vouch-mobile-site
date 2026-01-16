@@ -5,6 +5,7 @@ excerpt: "Get your student set up with the right phone plan without breaking the
 date: 2026-01-17
 readTime: 9
 tags: posts
+image: /images/blog/back-to-school-phone.png
 layout: post.njk
 ---
 

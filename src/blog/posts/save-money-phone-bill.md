@@ -5,6 +5,7 @@ description: "15 proven ways to reduce your phone bill and save money. Actionabl
 date: 2026-01-17
 readTime: 10
 tags: posts
+image: /images/blog/save-money-phone-bill.png
 layout: post.njk
 ---
 

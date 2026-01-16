@@ -5,6 +5,7 @@ description: "Complete guide to porting your phone number to a new carrier. Step
 date: 2026-01-17
 readTime: 8
 tags: posts
+image: /images/blog/port-phone-number.png
 layout: post.njk
 ---
 

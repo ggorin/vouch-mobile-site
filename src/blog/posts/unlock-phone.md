@@ -5,6 +5,7 @@ description: "Learn how to unlock your phone from any carrier. Step-by-step inst
 date: 2026-01-17
 readTime: 9
 tags: posts
+image: /images/blog/unlock-phone.png
 layout: post.njk
 ---
 

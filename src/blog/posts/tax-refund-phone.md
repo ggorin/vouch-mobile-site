@@ -5,6 +5,7 @@ excerpt: "Tax refund season is the perfect time to make smart phone decisions. L
 date: 2026-01-17
 readTime: 8
 tags: posts
+image: /images/blog/tax-refund-phone.png
 layout: post.njk
 ---
 

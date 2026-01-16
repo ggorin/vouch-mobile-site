@@ -5,6 +5,7 @@ excerpt: "Score major savings on phone plans this Black Friday. We break down th
 date: 2026-01-17
 readTime: 8
 tags: posts
+image: /images/blog/black-friday-phone-deals.png
 layout: post.njk
 ---
 

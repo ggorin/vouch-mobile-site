@@ -5,6 +5,7 @@ excerpt: "Looking for a practical, appreciated gift? Phone plan gifts provide re
 date: 2026-01-17
 readTime: 7
 tags: posts
+image: /images/blog/gift-phone-plan.png
 layout: post.njk
 ---
 

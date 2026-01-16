@@ -5,6 +5,7 @@ description: "Prepaid vs postpaid phone plans compared. Learn the pros, cons, an
 date: 2026-01-17
 readTime: 9
 tags: posts
+image: /images/blog/prepaid-vs-postpaid.png
 layout: post.njk
 ---
 

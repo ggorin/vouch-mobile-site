@@ -5,6 +5,7 @@ excerpt: "The wireless industry is evolving fast. Here are the biggest phone pla
 date: 2026-01-17
 readTime: 9
 tags: posts
+image: /images/blog/2026-phone-plan-trends.png
 layout: post.njk
 ---
 

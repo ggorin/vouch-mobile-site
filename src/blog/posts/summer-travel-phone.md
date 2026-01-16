@@ -5,6 +5,7 @@ excerpt: "Don't let phone worries ruin your summer vacation. Learn how to stay c
 date: 2026-01-17
 readTime: 8
 tags: posts
+image: /images/blog/summer-travel-phone.png
 layout: post.njk
 ---
 

@@ -4,7 +4,7 @@ description: "Find affordable phone plans for college students in 2026. Compare 
 date: 2026-01-17
 readTime: 10
 tags: posts
-image: /images/blog/mvno.png
+image: /images/blog/college-student-phone-plans.png
 layout: post.njk
 ---
 

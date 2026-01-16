@@ -5,6 +5,7 @@ description: "Determine how much phone data you need with our usage guide. Learn
 date: 2026-01-17
 readTime: 8
 tags: posts
+image: /images/blog/phone-plan-data-explained.png
 layout: post.njk
 ---
 

@@ -5,6 +5,7 @@ excerpt: "Make 2026 the year you stop overpaying for wireless service. This guid
 date: 2026-01-17
 readTime: 9
 tags: posts
+image: /images/blog/new-year-phone-savings.png
 layout: post.njk
 ---
 
