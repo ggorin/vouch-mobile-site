@@ -256,44 +256,301 @@ URL Pattern: `/blog/[topic]/`
 
 ## Implementation Priority
 
-### Phase 1: Foundation (Week 1-2)
-- [ ] State pages for top 15 high-priority states
-- [ ] Top 5 comparison pages (Mint, Visible, Cricket, Metro, Boost)
-- [ ] Core guide pages (No Credit Check, Switch Carriers, MVNO Guide)
+### Phase 1: Foundation (Week 1-2) ✅ COMPLETE
+- [x] State pages for top 15 high-priority states
+- [x] Top 5 comparison pages (Mint, Visible, Cricket, Metro, Boost)
+- [x] Core guide pages (No Credit Check, Switch Carriers, MVNO Guide)
 
-### Phase 2: Geographic Expansion (Week 3-4)
-- [ ] Remaining 35 state pages
-- [ ] 5 major metro pages
-- [ ] Additional comparison pages
+### Phase 2: Geographic Expansion (Week 3-4) ✅ COMPLETE
+- [x] Remaining 35 state pages (all 50 states done)
+- [x] 5 major metro pages (LA, NYC, Chicago, Houston, Phoenix)
+- [x] Additional comparison pages (7 more: AT&T/Verizon/T-Mobile Prepaid, US Mobile, Tello, Google Fi, Straight Talk)
 
-### Phase 3: Content Depth (Week 5-6)
-- [ ] All glossary/definition pages
-- [ ] Commercial intent pages
-- [ ] Lifestyle content
+### Phase 3: Content Depth (Week 5-6) 🔄 PARTIAL
+- [x] All glossary/definition pages (10/10 complete)
+- [ ] Commercial intent pages (3/10 complete - need 7 more)
+- [ ] Lifestyle content (0/15 complete)
 
-### Phase 4: Tools & Engagement (Week 7-8)
-- [ ] Interactive tools
-- [ ] Seasonal content
-- [ ] Link-building content
+### Phase 4: Tools & Engagement (Week 7-8) 🔄 PARTIAL
+- [x] Interactive tools (3/5 complete - compatibility checker, savings calculator, data calculator)
+- [ ] Coverage checker tool
+- [ ] Unlock status checker tool
+- [ ] Seasonal content (0/7 complete)
+- [ ] Lifestyle/situational content (0/8 complete)
+
+### Outstanding Items Summary
+- **Alternatives pages**: 5 remaining (Cricket, Mint, Metro, Visible, Boost)
+- **Guide pages**: 10 remaining
+- **Commercial intent pages**: 7 remaining
+- **Lifestyle content**: 15 remaining
+- **Tools**: 2 remaining
+
+**See [REMAINING-WORK.md](REMAINING-WORK.md) for detailed completion guide.**
 
 ---
 
 ## Page Template Guidelines
 
-### State Page Template
+### State Page Template (Comprehensive)
+
+**SEO Requirements:**
+- **Word count:** 800-1,200 words minimum
+- **Unique content:** 40-60% must be state-specific (not templated)
+- **External links:** 3-5 to authoritative sources (see SOURCES.md)
+- **Internal links:** 3-5 to related pages (guides, comparisons, other states)
+- **Schema:** LocalBusiness + ServiceArea + FAQPage + BreadcrumbList
+- **Images:** See Image Requirements below
+
+**Image Requirements:**
+- **Hero image:** 800×600px state-specific image (silhouette or landmark photo)
+- **OG image:** 1200×630px for social sharing (include logo)
+- **Logo reference:** Use `src/images/logo.png` as reference input for brand consistency
+- **Brand colors:** #00B5A0 (teal), #1F2937 (navy) - derived from logo
+- **Alt text:** Include state name and "Vouch Mobile coverage"
+
+**See [IMAGE-DESIGN-STRATEGY.md](seo-research/IMAGE-DESIGN-STRATEGY.md) for complete image generation guidelines.**
+
 ```
+URL: /coverage/[state-slug]/
 H1: Vouch Mobile in [State]: Unlimited Plans on AT&T's Network
 Meta: Get unlimited talk, text & data in [State] for just $30/mo. No credit check. AT&T network coverage. Switch today!
 
-Sections:
-1. Hero with state-specific headline
-2. Coverage stats for [State] (AT&T coverage %)
-3. Plan details ($30/mo unlimited)
-4. Major cities covered list
-5. Why Vouch works in [State]
-6. FAQ specific to [State]
-7. CTA to sign up
+CONTENT SECTIONS (in order):
+──────────────────────────────────────────────────────────────
+
+1. HERO SECTION
+   - State-specific headline with primary keyword
+   - Subheadline with value proposition
+   - Primary CTA button
+   - Trust badges (AT&T network, no credit check, etc.)
+
+2. KEY FACTS BOX (Unique per state)
+   - Population: [from Census]
+   - AT&T coverage: [%]
+   - Average phone bill in [State]: $XX/mo
+   - Vouch price: $30/mo
+   - Annual savings: $XXX
+   [External link to Census QuickFacts]
+
+3. WHY VOUCH IN [STATE]
+   - State-specific pain points (high bills, credit issues, etc.)
+   - Cost of living context (link to MIT Living Wage or BLS data)
+   - Local industry/demographic angles
+   - AT&T network reliability in this state
+   [External link to FCC Broadband Map or OpenSignal]
+
+4. COVERAGE MAP & DETAILS
+   - AT&T coverage statistics for state
+   - Major cities covered (bulleted list)
+   - Rural coverage notes if applicable
+   - 5G availability status
+   [External link to Ookla 5G Map]
+
+5. PLAN DETAILS
+   - Pricing ($30/mo unlimited)
+   - What's included (talk, text, data, hotspot)
+   - No hidden fees messaging
+   - No credit check messaging
+
+6. HOW IT WORKS
+   - Step 1: Check compatibility
+   - Step 2: Choose your plan
+   - Step 3: Get your SIM/eSIM
+   - Step 4: Activate & port number
+   [Internal link to /guides/how-to-switch-carriers/]
+
+7. LOCAL SAVINGS COMPARISON
+   - Average [State] phone bill vs Vouch
+   - Annual savings calculation
+   - Comparison table with competitors
+   [Internal link to relevant /compare/ page]
+
+8. FAQ SECTION (Required - 5-8 questions)
+   See FAQ Guidelines below
+
+9. RELATED CONTENT
+   - Links to nearby state pages
+   - Links to relevant guides
+   - Links to comparison pages
+
+10. FINAL CTA
+    - Strong call-to-action
+    - Trust reinforcement
+    - Secondary CTA (check coverage, learn more)
+
+──────────────────────────────────────────────────────────────
 ```
+
+### State Page FAQ Guidelines
+
+**CRITICAL:** FAQ schema should only be used for genuine questions users ask, not promotional content. Google penalizes FAQ schema misuse.
+
+**Required Questions (adapt to each state):**
+
+1. **Coverage question**
+   "Does Vouch Mobile work in [State]?"
+   - Confirm AT&T network coverage
+   - Mention major cities
+   - Link to coverage checker
+
+2. **Network question**
+   "What network does Vouch use in [State]?"
+   - Explain AT&T MVNO relationship
+   - Coverage percentage
+   - 5G availability
+
+3. **Pricing question**
+   "How much does Vouch cost in [State]?"
+   - $30/mo unlimited
+   - No state-specific taxes added (or clarify if there are)
+   - Compare to state average
+
+4. **Credit check question**
+   "Do I need a credit check for Vouch in [State]?"
+   - No credit check required
+   - Prepaid model explanation
+
+5. **Switching question**
+   "How do I switch to Vouch in [State]?"
+   - Port number process
+   - Timeline (same day activation)
+   - Link to switching guide
+
+**Optional State-Specific Questions:**
+
+6. "Is Vouch good for [major city] residents?"
+7. "Does Vouch work in rural [State]?"
+8. "How does Vouch compare to [local competitor] in [State]?"
+
+**FAQ Schema Implementation:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Vouch Mobile work in California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Vouch Mobile works throughout California..."
+      }
+    }
+  ]
+}
+```
+
+### State Page Schema Requirements
+
+**Required Schema Types:**
+
+1. **LocalBusiness** (primary)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Vouch Mobile",
+  "description": "Unlimited phone plans on AT&T's network",
+  "areaServed": {
+    "@type": "State",
+    "name": "California"
+  },
+  "priceRange": "$30/month"
+}
+```
+
+2. **ServiceArea** (coverage)
+```json
+{
+  "@type": "Service",
+  "serviceType": "Mobile Phone Service",
+  "areaServed": {
+    "@type": "State",
+    "name": "California",
+    "containsPlace": [
+      {"@type": "City", "name": "Los Angeles"},
+      {"@type": "City", "name": "San Francisco"},
+      {"@type": "City", "name": "San Diego"}
+    ]
+  }
+}
+```
+
+3. **BreadcrumbList** (navigation)
+```json
+{
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vouchmobile.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Coverage", "item": "https://vouchmobile.com/coverage/"},
+    {"@type": "ListItem", "position": 3, "name": "California", "item": "https://vouchmobile.com/coverage/california/"}
+  ]
+}
+```
+
+4. **FAQPage** (questions - see above)
+
+### State Page External Links Checklist
+
+Each state page MUST include links to:
+
+| # | Source Type | Example | Purpose |
+|---|-------------|---------|---------|
+| 1 | Census data | census.gov/quickfacts/[STATE] | Population/demographics |
+| 2 | Coverage verification | broadbandmap.fcc.gov | Network proof |
+| 3 | Cost of living | livingwage.mit.edu | Savings context |
+| 4 | Network testing | opensignal.com or speedtest.net | Performance data |
+| 5 | State regulator (optional) | State PUC website | Authority signal |
+
+**See [SOURCES.md](seo-research/SOURCES.md) for complete list of approved external links.**
+
+### State Page Internal Links Checklist
+
+Each state page should link to:
+
+| Link To | Anchor Text Example |
+|---------|---------------------|
+| /guides/how-to-switch-carriers/ | "switching to Vouch" |
+| /guides/no-credit-check-phone-plans/ | "no credit check required" |
+| /compare/vouch-vs-[competitor]/ | "compare Vouch to [competitor]" |
+| /tools/coverage-checker/ | "check your coverage" |
+| Neighboring state pages | "coverage in [nearby state]" |
+
+### Unique Content Requirements (Avoid Thin/Duplicate)
+
+**Google will penalize pages that are essentially duplicates with city names swapped.**
+
+Each state page MUST have unique:
+- [ ] State population and demographic stats
+- [ ] State-specific cost of living data
+- [ ] Average phone bill for that state (if available)
+- [ ] Major cities list (not generic)
+- [ ] State-specific pain points or angles
+- [ ] Local industry/employer mentions where relevant
+- [ ] FAQ answers tailored to state context
+
+**Content Differentiation Ideas:**
+- **High cost states (CA, NY, MA):** Emphasize savings vs high cost of living
+- **High phone bill states (TX, PA):** Emphasize savings vs state average bills
+- **High immigrant population (CA, FL, NY, NJ):** Emphasize no credit check, no SSN required
+- **Rural states:** Emphasize AT&T rural coverage strength
+- **Tech hub states (CA, WA, TX):** Emphasize 5G, unlimited data for remote workers
+
+### Metro Area Page Template
+
+Same structure as state pages, but with city-specific additions:
+
+**Additional Unique Content:**
+- Neighborhood coverage details
+- Transit/commuter context (link to transit authority)
+- Local competitor landscape
+- City-specific testimonials (if available)
+- City open data statistics
+
+**Additional External Links:**
+- City transit authority website
+- City open data portal
+- Local news sources (for testimonials/press mentions)
 
 ### Comparison Page Template
 ```

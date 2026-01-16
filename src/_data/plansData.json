@@ -1,0 +1,1743 @@
+[
+  {
+    "slug": "unlimited-under-30",
+    "title": "Unlimited Plans Under $30",
+    "metaDescription": "Get unlimited talk, text, and data for under $30/month with Vouch Mobile. No credit check, no contracts. AT&T's network at a fraction of the cost.",
+    "heroTitle": "Unlimited Under $30",
+    "heroSubtitle": "Premium wireless without the premium price. Get unlimited everything on AT&T's nationwide 5G network.",
+    "badge": "Best Value Under $30",
+    "heroStats": [
+      { "value": "$25", "label": "Starting Price" },
+      { "value": "5G", "label": "Network Access" },
+      { "value": "0", "label": "Credit Check" }
+    ],
+    "plansTitle": "Affordable Unlimited Plans",
+    "plansSubtitle": "Every plan includes unlimited talk, text, and data with no hidden fees",
+    "tiers": [
+      {
+        "name": "Starter",
+        "tagline": "Perfect for light users",
+        "price": 20,
+        "priceNote": "with AutoPay",
+        "features": [
+          "Unlimited Talk & Text",
+          "35GB High-Speed Data",
+          "5G Access Included",
+          "5GB Mobile Hotspot",
+          "WiFi Calling",
+          "No Contract Required"
+        ],
+        "ctaText": "Get Starter",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"></path><polyline points=\"22 4 12 14.01 9 11.01\"></polyline></svg>"
+      },
+      {
+        "name": "Premium",
+        "tagline": "Great value for everyday use",
+        "price": 25,
+        "priceNote": "with AutoPay",
+        "featured": true,
+        "badge": "Best Value",
+        "features": [
+          "Unlimited Talk & Text",
+          "Unlimited Data",
+          "5G Priority Access",
+          "10GB Mobile Hotspot",
+          "eSIM Support",
+          "WiFi Calling",
+          "No Contract Required",
+          "No Credit Check"
+        ],
+        "ctaText": "Get Premium",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z\"></path></svg>"
+      },
+      {
+        "name": "Value",
+        "tagline": "Budget-friendly essentials",
+        "price": 15,
+        "priceNote": "12-month commitment",
+        "originalPrice": 20,
+        "savingsPercent": 25,
+        "features": [
+          "Unlimited Talk & Text",
+          "10GB High-Speed Data",
+          "4G LTE Access",
+          "WiFi Calling",
+          "No Credit Check"
+        ],
+        "ctaText": "Get Value",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"></path><path d=\"M12 18V6\"></path></svg>"
+      }
+    ],
+    "includedTitle": "Everything Included",
+    "includedSubtitle": "All plans come with these premium features at no extra cost",
+    "includedFeatures": [
+      {
+        "name": "Nationwide 5G",
+        "description": "Access AT&T's 5G network in 200+ cities",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon></svg>"
+      },
+      {
+        "name": "No Credit Check",
+        "description": "Get approved instantly without affecting your credit score",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path></svg>"
+      },
+      {
+        "name": "Free SIM Card",
+        "description": "Physical SIM or eSIM shipped free to your door",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\"></rect><rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"></rect></svg>"
+      },
+      {
+        "name": "Keep Your Number",
+        "description": "Easy number transfer from your current carrier",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path></svg>"
+      },
+      {
+        "name": "WiFi Calling",
+        "description": "Make calls over WiFi when cellular signal is weak",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M5 12.55a11 11 0 0 1 14.08 0\"></path><path d=\"M1.42 9a16 16 0 0 1 21.16 0\"></path><path d=\"M8.53 16.11a6 6 0 0 1 6.95 0\"></path><line x1=\"12\" y1=\"20\" x2=\"12.01\" y2=\"20\"></line></svg>"
+      },
+      {
+        "name": "No Contracts",
+        "description": "Cancel anytime with no early termination fees",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"></rect><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"></path></svg>"
+      }
+    ],
+    "calculatorTitle": "Calculate Your Savings",
+    "calculatorDesc": "See how much you could save by switching from your current carrier to Vouch Mobile's affordable unlimited plans.",
+    "calculatorBenefits": [
+      "No hidden fees or taxes",
+      "No contract lock-in",
+      "Switch anytime, risk-free"
+    ],
+    "comparison": {
+      "vouchIndex": 1,
+      "competitors": [
+        { "name": "Metro", "price": 30 },
+        { "name": "Vouch Mobile", "price": 25, "isVouch": true },
+        { "name": "Visible", "price": 30 },
+        { "name": "Cricket", "price": 30 }
+      ],
+      "features": [
+        { "name": "5G Access", "values": [true, true, true, true] },
+        { "name": "Unlimited Data", "values": [true, true, true, true] },
+        { "name": "Mobile Hotspot", "values": ["5GB", "10GB", "Unlimited", "5GB"] },
+        { "name": "No Credit Check", "values": [true, true, true, true] },
+        { "name": "No Contract", "values": [true, true, true, true] },
+        { "name": "AT&T Network", "values": [false, true, false, true] },
+        { "name": "eSIM Support", "values": [true, true, true, false] },
+        { "name": "Price Lock Guarantee", "values": [true, true, false, false] }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "I switched from Verizon and I'm saving over $600 a year. Same great coverage, fraction of the price!",
+        "name": "Sarah M.",
+        "plan": "Premium Plan",
+        "rating": 5,
+        "savings": "$660"
+      },
+      {
+        "quote": "No credit check was a game-changer for me. Got approved instantly and had service the same day.",
+        "name": "Marcus T.",
+        "plan": "Starter Plan",
+        "rating": 5,
+        "savings": "$480"
+      },
+      {
+        "quote": "The 5G speeds are incredible and I love that there are no hidden fees. What you see is what you pay.",
+        "name": "Jennifer L.",
+        "plan": "Premium Plan",
+        "rating": 5,
+        "savings": "$540"
+      }
+    ],
+    "testimonialsTitle": "Trusted by Thousands",
+    "testimonialsSubtitle": "See what our customers are saying about switching to Vouch Mobile",
+    "faqs": [
+      {
+        "question": "What network does Vouch Mobile use?",
+        "answer": "Vouch Mobile uses AT&T's nationwide 4G LTE and 5G network, giving you coverage in 99% of the country. You get the same towers and coverage as AT&T customers at a fraction of the cost."
+      },
+      {
+        "question": "Is there really no credit check?",
+        "answer": "Correct! Vouch Mobile never performs credit checks. Everyone gets approved instantly regardless of credit history. We believe great wireless shouldn't depend on your credit score."
+      },
+      {
+        "question": "Can I keep my current phone number?",
+        "answer": "Yes! We make it easy to transfer your existing number from any carrier. The process typically takes just a few minutes during activation."
+      },
+      {
+        "question": "What happens if I go over my data limit?",
+        "answer": "On our unlimited plans, you'll never be charged overage fees. After using your high-speed data allotment, speeds may be reduced during network congestion, but you'll always stay connected."
+      },
+      {
+        "question": "Are there any hidden fees?",
+        "answer": "No hidden fees, ever. The price you see is the price you pay. Taxes and regulatory fees are included in your monthly bill."
+      },
+      {
+        "question": "How do I activate my service?",
+        "answer": "Activation is simple! Order your free SIM card (or use eSIM for instant activation), download the Vouch Mobile app, and follow the easy setup steps. Most customers are up and running in under 5 minutes."
+      }
+    ],
+    "faqTitle": "Common Questions",
+    "faqSubtitle": "Everything you need to know about our affordable unlimited plans",
+    "ctaBadge": "Limited Time Offer",
+    "ctaTitle": "Get Unlimited for Under $30",
+    "ctaText": "Join thousands of smart switchers who save hundreds every year without sacrificing quality or coverage.",
+    "ctaFeatures": ["Keep Your Number", "Free SIM Shipping", "No Credit Check"],
+    "ctaPrimaryText": "Switch & Save Now",
+    "ctaPrimaryUrl": "https://vouchmobile.com",
+    "ctaSecondaryText": "Compare All Plans",
+    "ctaSecondaryUrl": "/plans/",
+    "ctaNote": "Free shipping on all orders. Activate in minutes."
+  },
+  {
+    "slug": "prepaid-unlimited",
+    "title": "Best Prepaid Unlimited Plans 2026",
+    "metaDescription": "Compare the best prepaid unlimited plans for 2026. Vouch Mobile offers true unlimited data on AT&T's 5G network with no credit check required.",
+    "heroTitle": "Prepaid Unlimited Plans",
+    "heroSubtitle": "No contracts. No credit checks. No surprises. Just unlimited wireless the way it should be.",
+    "badge": "Top Prepaid Plans 2026",
+    "heroStats": [
+      { "value": "25M+", "label": "Prepaid Users" },
+      { "value": "99%", "label": "US Coverage" },
+      { "value": "$0", "label": "Activation Fee" }
+    ],
+    "plansTitle": "Prepaid Plans That Deliver",
+    "plansSubtitle": "Pay upfront, save more. No surprise bills or overage charges.",
+    "tiers": [
+      {
+        "name": "Flex",
+        "tagline": "Pay as you go freedom",
+        "price": 20,
+        "priceNote": "per month",
+        "features": [
+          "Unlimited Talk & Text",
+          "35GB Priority Data",
+          "5G Network Access",
+          "5GB Mobile Hotspot",
+          "No Annual Contract",
+          "Cancel Anytime"
+        ],
+        "ctaText": "Choose Flex",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2v20M2 12h20\"></path></svg>"
+      },
+      {
+        "name": "Unlimited Pro",
+        "tagline": "Maximum value, zero compromises",
+        "price": 30,
+        "priceNote": "per month",
+        "featured": true,
+        "badge": "Most Popular",
+        "popular": true,
+        "features": [
+          "Truly Unlimited Data",
+          "Priority 5G Access",
+          "15GB Mobile Hotspot",
+          "HD Video Streaming",
+          "International Texting",
+          "eSIM Compatible",
+          "No Credit Check",
+          "No Activation Fee"
+        ],
+        "ctaText": "Get Unlimited Pro",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"></polygon></svg>"
+      },
+      {
+        "name": "Annual Saver",
+        "tagline": "Best rate with 12-month prepay",
+        "price": 22,
+        "priceNote": "per month, billed annually",
+        "originalPrice": 30,
+        "savingsPercent": 27,
+        "features": [
+          "Truly Unlimited Data",
+          "5G Priority Access",
+          "10GB Mobile Hotspot",
+          "WiFi Calling",
+          "eSIM Support",
+          "Price Lock Guarantee",
+          "No Credit Check"
+        ],
+        "ctaText": "Save with Annual",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline></svg>"
+      }
+    ],
+    "includedTitle": "Premium Features Standard",
+    "includedSubtitle": "Every prepaid plan includes features others charge extra for",
+    "includedFeatures": [
+      {
+        "name": "Priority Data",
+        "description": "Your data isn't deprioritized like other prepaid carriers",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M13 2L3 14h9l-1 8 10-12h-9l1-8z\"></path></svg>"
+      },
+      {
+        "name": "Instant Activation",
+        "description": "eSIM support means you're connected in minutes, not days",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline></svg>"
+      },
+      {
+        "name": "HD Streaming",
+        "description": "Watch videos in full HD quality, not throttled like competitors",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"2\" y=\"7\" width=\"20\" height=\"15\" rx=\"2\" ry=\"2\"></rect><polyline points=\"17 2 12 7 7 2\"></polyline></svg>"
+      },
+      {
+        "name": "International Texting",
+        "description": "Text to 200+ countries at no additional charge",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"></path></svg>"
+      },
+      {
+        "name": "Multi-Device Ready",
+        "description": "Add tablets and smartwatches for one low price",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\" ry=\"2\"></rect><line x1=\"12\" y1=\"18\" x2=\"12.01\" y2=\"18\"></line></svg>"
+      },
+      {
+        "name": "Family Discounts",
+        "description": "Add multiple lines and save even more per line",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"9\" cy=\"7\" r=\"4\"></circle><path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"></path><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"></path></svg>"
+      }
+    ],
+    "calculatorTitle": "Your Prepaid Savings",
+    "calculatorDesc": "Calculate how much you'll save switching from postpaid to Vouch Mobile prepaid plans.",
+    "testimonials": [
+      {
+        "quote": "Finally, a prepaid plan that doesn't feel like second-class service. The speeds are just as fast as my old Verizon plan.",
+        "name": "David K.",
+        "plan": "Unlimited Pro",
+        "rating": 5,
+        "savings": "$720"
+      },
+      {
+        "quote": "Paying annually saves me almost $100 and I never have to think about my phone bill. Set it and forget it!",
+        "name": "Amy R.",
+        "plan": "Annual Saver",
+        "rating": 5,
+        "savings": "$96"
+      },
+      {
+        "quote": "The eSIM activation was incredibly fast. I was making calls on my new Vouch line within 10 minutes of signing up.",
+        "name": "Chris P.",
+        "plan": "Flex Plan",
+        "rating": 5,
+        "savings": "$540"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What makes Vouch Mobile prepaid plans different?",
+        "answer": "Unlike most prepaid carriers that deprioritize your data, Vouch Mobile gives you priority access on AT&T's network. You get the same speeds as postpaid customers without the contracts or credit checks."
+      },
+      {
+        "question": "Can I switch to prepaid from my current carrier?",
+        "answer": "Absolutely! Switching is easy and you can keep your current phone number. Most customers complete the switch in under 15 minutes."
+      },
+      {
+        "question": "What happens when my prepaid period ends?",
+        "answer": "Your service continues seamlessly with AutoPay enabled. Without AutoPay, you'll receive a reminder before your service expires so you never lose connectivity unexpectedly."
+      },
+      {
+        "question": "Is prepaid really the same quality as postpaid?",
+        "answer": "With Vouch Mobile, yes! We don't throttle your speeds or deprioritize your data like traditional prepaid carriers. You get premium service at prepaid prices."
+      },
+      {
+        "question": "Can I upgrade or downgrade my plan?",
+        "answer": "Yes, you can change your plan at any time through the Vouch Mobile app. Changes take effect on your next billing cycle."
+      }
+    ],
+    "ctaBadge": "Join 25M+ Prepaid Users",
+    "ctaTitle": "Go Prepaid, Go Premium",
+    "ctaText": "Experience premium wireless with the freedom of prepaid. No contracts, no surprises.",
+    "ctaFeatures": ["No Contracts", "No Surprises", "No Compromise"],
+    "ctaPrimaryText": "Start Your Prepaid Plan",
+    "ctaPrimaryUrl": "https://vouchmobile.com"
+  },
+  {
+    "slug": "5g-affordable",
+    "title": "Affordable 5G Phone Plans 2026",
+    "metaDescription": "Get affordable 5G phone plans starting at $20/month. Access AT&T's nationwide 5G network with Vouch Mobile - no credit check, no contracts required.",
+    "heroTitle": "5G Plans That Fit Your Budget",
+    "heroSubtitle": "Experience lightning-fast 5G speeds without the lightning-fast bill. Real 5G, real savings.",
+    "badge": "Affordable 5G Plans",
+    "heroStats": [
+      { "value": "5G", "label": "Network Speed" },
+      { "value": "200+", "label": "5G Cities" },
+      { "value": "$20", "label": "Starting Price" }
+    ],
+    "plansTitle": "5G Plans for Every Budget",
+    "plansSubtitle": "All plans include access to AT&T's growing 5G network",
+    "tiers": [
+      {
+        "name": "5G Starter",
+        "tagline": "Entry to the 5G world",
+        "price": 20,
+        "priceNote": "with AutoPay",
+        "features": [
+          "5G Network Access",
+          "Unlimited Talk & Text",
+          "35GB High-Speed Data",
+          "5GB Mobile Hotspot",
+          "WiFi Calling",
+          "No Contract"
+        ],
+        "ctaText": "Get 5G Starter",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M13 2L3 14h9l-1 8 10-12h-9l1-8z\"></path></svg>"
+      },
+      {
+        "name": "5G Unlimited",
+        "tagline": "Full 5G power, unlimited everything",
+        "price": 30,
+        "priceNote": "with AutoPay",
+        "featured": true,
+        "badge": "Best 5G Value",
+        "popular": true,
+        "features": [
+          "Priority 5G Access",
+          "Unlimited Talk & Text",
+          "Truly Unlimited Data",
+          "15GB Mobile Hotspot",
+          "HD Video Streaming",
+          "International Texting",
+          "eSIM Support",
+          "No Credit Check"
+        ],
+        "ctaText": "Get 5G Unlimited",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"></polygon></svg>"
+      },
+      {
+        "name": "5G Ultra",
+        "tagline": "Maximum speed, maximum features",
+        "price": 40,
+        "priceNote": "with AutoPay",
+        "features": [
+          "5G+ Ultra Wideband",
+          "Unlimited Talk & Text",
+          "100GB Premium Data",
+          "25GB Mobile Hotspot",
+          "4K Video Streaming",
+          "International Calling (50 countries)",
+          "Premium Customer Support",
+          "Device Protection Included"
+        ],
+        "ctaText": "Get 5G Ultra",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\"></path></svg>"
+      }
+    ],
+    "includedTitle": "5G Features Included",
+    "includedSubtitle": "Every 5G plan comes loaded with premium features",
+    "includedFeatures": [
+      {
+        "name": "Nationwide 5G",
+        "description": "AT&T's 5G covers 200+ cities and growing daily",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon></svg>"
+      },
+      {
+        "name": "Ultra-Fast Downloads",
+        "description": "Download movies in seconds, not minutes",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"></path><polyline points=\"7 10 12 15 17 10\"></polyline><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"3\"></line></svg>"
+      },
+      {
+        "name": "Low Latency Gaming",
+        "description": "Perfect for mobile gaming with minimal lag",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"2\" y=\"6\" width=\"20\" height=\"12\" rx=\"2\"></rect><line x1=\"6\" y1=\"12\" x2=\"18\" y2=\"12\"></line><line x1=\"12\" y1=\"9\" x2=\"12\" y2=\"15\"></line></svg>"
+      },
+      {
+        "name": "HD Video Calls",
+        "description": "Crystal clear FaceTime and video conferencing",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"23 7 16 12 23 17 23 7\"></polygon><rect x=\"1\" y=\"5\" width=\"15\" height=\"14\" rx=\"2\" ry=\"2\"></rect></svg>"
+      },
+      {
+        "name": "Seamless Streaming",
+        "description": "Buffer-free streaming even in 4K quality",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polygon points=\"10 8 16 12 10 16 10 8\"></polygon></svg>"
+      },
+      {
+        "name": "Future-Proof",
+        "description": "5G network expands monthly with new coverage areas",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M12 6v6l4 2\"></path></svg>"
+      }
+    ],
+    "calculatorTitle": "5G Savings Calculator",
+    "calculatorDesc": "See how much you can save with Vouch Mobile's affordable 5G plans compared to major carriers.",
+    "comparison": {
+      "vouchIndex": 1,
+      "competitors": [
+        { "name": "Verizon", "price": 80 },
+        { "name": "Vouch Mobile", "price": 30, "isVouch": true },
+        { "name": "T-Mobile", "price": 70 },
+        { "name": "AT&T", "price": 75 }
+      ],
+      "features": [
+        { "name": "5G Access", "values": [true, true, true, true] },
+        { "name": "Unlimited Data", "values": [true, true, true, true] },
+        { "name": "No Contract", "values": [false, true, false, false] },
+        { "name": "No Credit Check", "values": [false, true, false, false] },
+        { "name": "Price Lock", "values": [false, true, true, false] },
+        { "name": "Mobile Hotspot", "values": ["50GB", "15GB", "50GB", "50GB"] },
+        { "name": "Monthly Cost", "values": ["$80", "$30", "$70", "$75"] },
+        { "name": "Annual Savings vs Major", "values": ["$0", "$600", "$120", "$60"] }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "I couldn't believe I was getting 5G speeds for $30/month. Downloaded a whole season of my show in about 3 minutes!",
+        "name": "Kevin J.",
+        "plan": "5G Unlimited",
+        "rating": 5,
+        "savings": "$600"
+      },
+      {
+        "quote": "As a mobile gamer, the low latency 5G has been game-changing. No more lag during competitive matches.",
+        "name": "Lisa W.",
+        "plan": "5G Ultra",
+        "rating": 5,
+        "savings": "$480"
+      },
+      {
+        "quote": "My video calls for work are crystal clear now. The 5G coverage in my area is surprisingly excellent.",
+        "name": "Robert M.",
+        "plan": "5G Unlimited",
+        "rating": 5,
+        "savings": "$540"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is 5G and do I need it?",
+        "answer": "5G is the latest generation of mobile network technology, offering significantly faster speeds and lower latency than 4G. If you stream video, play mobile games, or work remotely, 5G will noticeably improve your experience."
+      },
+      {
+        "question": "Will my phone work with Vouch Mobile's 5G?",
+        "answer": "Most phones from 2020 onwards support 5G. You can check your phone's compatibility on our website or in the Vouch Mobile app. If your phone doesn't support 5G, you'll still get great 4G LTE coverage."
+      },
+      {
+        "question": "Is 5G coverage available in my area?",
+        "answer": "Vouch Mobile uses AT&T's 5G network, which covers 200+ cities and is expanding rapidly. Check our coverage map to see 5G availability in your specific area."
+      },
+      {
+        "question": "Will I get charged more if I use 5G?",
+        "answer": "No! 5G access is included in all our plans at no extra charge. Unlike some carriers, we don't charge a premium for 5G connectivity."
+      },
+      {
+        "question": "How fast is 5G compared to 4G?",
+        "answer": "5G can be up to 10-100 times faster than 4G. In real-world usage, you can expect download speeds of 100-500 Mbps on 5G compared to 25-50 Mbps on 4G LTE."
+      },
+      {
+        "question": "Does 5G use more battery?",
+        "answer": "Early 5G phones did have slightly higher battery usage, but modern 5G devices are optimized to manage power efficiently. Most users don't notice a significant difference."
+      }
+    ],
+    "ctaBadge": "Experience 5G Today",
+    "ctaTitle": "Get 5G Without the Big Bill",
+    "ctaText": "Join the 5G revolution without breaking the bank. Premium 5G speeds, prepaid freedom.",
+    "ctaFeatures": ["5G Speeds", "No Contracts", "No Credit Check"],
+    "ctaPrimaryText": "Get Your 5G Plan",
+    "ctaPrimaryUrl": "https://vouchmobile.com",
+    "ctaSecondaryText": "Check 5G Coverage",
+    "ctaSecondaryUrl": "/coverage/"
+  },
+  {
+    "slug": "no-contract",
+    "title": "No Contract Phone Plans 2026",
+    "metaDescription": "Find the best no contract phone plans for 2026. Vouch Mobile offers month-to-month wireless with no commitments, no early termination fees, and no credit check.",
+    "heroTitle": "No Contract Phone Plans",
+    "heroSubtitle": "Freedom to switch, pause, or cancel anytime. Your wireless plan should work for you, not lock you in.",
+    "badge": "Best No Contract Plans",
+    "heroStats": [
+      { "value": "$0", "label": "Termination Fees" },
+      { "value": "0", "label": "Contracts" },
+      { "value": "100%", "label": "Flexibility" }
+    ],
+    "plansTitle": "Plans Without Strings Attached",
+    "plansSubtitle": "Every plan is month-to-month with no long-term commitments required",
+    "tiers": [
+      {
+        "name": "Starter",
+        "tagline": "Perfect for commitment-free basics",
+        "price": 20,
+        "priceNote": "month-to-month",
+        "features": [
+          "Unlimited Talk & Text",
+          "35GB High-Speed Data",
+          "5G Network Access",
+          "5GB Mobile Hotspot",
+          "Cancel Anytime",
+          "No Termination Fees"
+        ],
+        "ctaText": "Get Starter",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"></rect><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"></path><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"17\"></line></svg>"
+      },
+      {
+        "name": "Freedom",
+        "tagline": "Maximum flexibility, zero compromise",
+        "price": 25,
+        "priceNote": "month-to-month",
+        "featured": true,
+        "badge": "Most Popular",
+        "features": [
+          "Unlimited Talk & Text",
+          "Unlimited Data",
+          "5G Priority Access",
+          "10GB Mobile Hotspot",
+          "eSIM Support",
+          "WiFi Calling",
+          "Pause Service Anytime",
+          "No Credit Check"
+        ],
+        "ctaText": "Get Freedom",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"></path><polyline points=\"22 4 12 14.01 9 11.01\"></polyline></svg>"
+      },
+      {
+        "name": "Value",
+        "tagline": "Budget-friendly freedom",
+        "price": 15,
+        "priceNote": "month-to-month",
+        "originalPrice": 20,
+        "savingsPercent": 25,
+        "features": [
+          "Unlimited Talk & Text",
+          "10GB High-Speed Data",
+          "4G LTE Access",
+          "WiFi Calling",
+          "No Credit Check",
+          "Cancel Anytime"
+        ],
+        "ctaText": "Get Value",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"></path><path d=\"M12 18V6\"></path></svg>"
+      }
+    ],
+    "includedTitle": "Total Freedom Included",
+    "includedSubtitle": "Every no-contract plan comes with these flexibility features",
+    "includedFeatures": [
+      {
+        "name": "Cancel Anytime",
+        "description": "Leave whenever you want with zero penalties or fees",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"15\" y1=\"9\" x2=\"9\" y2=\"15\"></line><line x1=\"9\" y1=\"9\" x2=\"15\" y2=\"15\"></line></svg>"
+      },
+      {
+        "name": "Pause Service",
+        "description": "Traveling or taking a break? Pause your plan for up to 3 months",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"10\" y1=\"15\" x2=\"10\" y2=\"9\"></line><line x1=\"14\" y1=\"15\" x2=\"14\" y2=\"9\"></line></svg>"
+      },
+      {
+        "name": "Switch Plans Freely",
+        "description": "Upgrade or downgrade your plan at any time without fees",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"17 1 21 5 17 9\"></polyline><path d=\"M3 11V9a4 4 0 0 1 4-4h14\"></path><polyline points=\"7 23 3 19 7 15\"></polyline><path d=\"M21 13v2a4 4 0 0 1-4 4H3\"></path></svg>"
+      },
+      {
+        "name": "No Commitment Required",
+        "description": "Month-to-month service, your choice every single month",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"6\"></line><line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"6\"></line><line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"></line></svg>"
+      },
+      {
+        "name": "Keep Your Number",
+        "description": "Bring your number and take it with you if you ever leave",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path></svg>"
+      },
+      {
+        "name": "No Activation Fees",
+        "description": "Start your service without paying setup or activation costs",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path><polyline points=\"9 12 12 15 16 10\"></polyline></svg>"
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "After being trapped in a 2-year contract with my old carrier, Vouch Mobile's no-contract approach is refreshing. I stay because I want to, not because I have to.",
+        "name": "Michelle S.",
+        "plan": "Freedom Plan",
+        "rating": 5,
+        "savings": "$540"
+      },
+      {
+        "quote": "I paused my service during a 2-month trip abroad and picked right back up when I returned. No other carrier made that so easy.",
+        "name": "Jason K.",
+        "plan": "Starter Plan",
+        "rating": 5,
+        "savings": "$420"
+      },
+      {
+        "quote": "Switched from T-Mobile where they wanted $200 to cancel. With Vouch, I know I can leave anytime. That freedom is priceless.",
+        "name": "Andrea T.",
+        "plan": "Freedom Plan",
+        "rating": 5,
+        "savings": "$660"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does no contract really mean?",
+        "answer": "No contract means you're not locked into any long-term agreement. You pay month-to-month and can cancel, pause, or change your plan at any time without paying early termination fees or penalties."
+      },
+      {
+        "question": "Can I really cancel anytime without fees?",
+        "answer": "Yes! With Vouch Mobile, you can cancel your service at any time with zero termination fees. Your service continues until the end of your paid period, and you can even keep your phone number if you're switching to another carrier."
+      },
+      {
+        "question": "What happens if I want to pause my service?",
+        "answer": "You can pause your Vouch Mobile service for up to 3 months through the app. During the pause, you won't be charged, and your number will be reserved. Simply unpause when you're ready to resume service."
+      },
+      {
+        "question": "Is the service quality the same without a contract?",
+        "answer": "Absolutely! You get the exact same AT&T network coverage, 5G speeds, and features whether you're on a month-to-month plan or if you'd been with us for years. No compromises."
+      },
+      {
+        "question": "Do I need to pass a credit check?",
+        "answer": "No credit check required! Since there's no contract, we don't need to check your credit. Everyone gets approved instantly regardless of credit history."
+      },
+      {
+        "question": "Can I switch between plans easily?",
+        "answer": "Yes, you can upgrade or downgrade your plan at any time through the Vouch Mobile app. Changes take effect on your next billing cycle, and there are never any fees to switch plans."
+      }
+    ],
+    "ctaBadge": "No Strings Attached",
+    "ctaTitle": "Get Wireless Freedom Today",
+    "ctaText": "Join thousands who chose flexibility over contracts. Premium wireless, no commitments.",
+    "ctaFeatures": ["Cancel Anytime", "No Termination Fees", "Pause Service Option"],
+    "ctaPrimaryText": "Start Contract-Free",
+    "ctaPrimaryUrl": "https://vouchmobile.com"
+  },
+  {
+    "slug": "cheapest-unlimited",
+    "title": "Cheapest Unlimited Data Plans 2026",
+    "metaDescription": "Compare the cheapest unlimited data plans for 2026. Get truly unlimited talk, text, and data starting at just $15/month with Vouch Mobile.",
+    "heroTitle": "Cheapest Unlimited Plans",
+    "heroSubtitle": "Why pay more for unlimited? Get the same network, same features, at half the price of big carriers.",
+    "badge": "Lowest Price Guarantee",
+    "heroStats": [
+      { "value": "$15", "label": "Starting Price" },
+      { "value": "60%", "label": "Average Savings" },
+      { "value": "$0", "label": "Hidden Fees" }
+    ],
+    "plansTitle": "Unlimited Plans, Unbeatable Prices",
+    "plansSubtitle": "Real unlimited data without the premium price tag",
+    "tiers": [
+      {
+        "name": "Budget Unlimited",
+        "tagline": "Unlimited essentials at rock-bottom price",
+        "price": 15,
+        "priceNote": "with AutoPay",
+        "features": [
+          "Unlimited Talk & Text",
+          "Unlimited Data (10GB high-speed)",
+          "4G LTE Access",
+          "WiFi Calling",
+          "No Contract",
+          "No Credit Check"
+        ],
+        "ctaText": "Get Budget Unlimited",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"></path><path d=\"M12 18V6\"></path></svg>"
+      },
+      {
+        "name": "Smart Unlimited",
+        "tagline": "Best value for heavy data users",
+        "price": 25,
+        "priceNote": "with AutoPay",
+        "featured": true,
+        "badge": "Best Value",
+        "features": [
+          "Unlimited Talk & Text",
+          "Truly Unlimited Data",
+          "5G Priority Access",
+          "10GB Mobile Hotspot",
+          "eSIM Support",
+          "WiFi Calling",
+          "HD Streaming",
+          "No Credit Check"
+        ],
+        "ctaText": "Get Smart Unlimited",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z\"></path></svg>"
+      },
+      {
+        "name": "Saver Unlimited",
+        "tagline": "Premium unlimited at mid-tier price",
+        "price": 20,
+        "priceNote": "with AutoPay",
+        "features": [
+          "Unlimited Talk & Text",
+          "35GB High-Speed Data",
+          "5G Network Access",
+          "5GB Mobile Hotspot",
+          "WiFi Calling",
+          "eSIM Support",
+          "No Contract"
+        ],
+        "ctaText": "Get Saver Unlimited",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z\"></path></svg>"
+      }
+    ],
+    "includedTitle": "Maximum Value Included",
+    "includedSubtitle": "Cheap price doesn't mean cheap features - here's what you get",
+    "includedFeatures": [
+      {
+        "name": "Same AT&T Network",
+        "description": "Use the exact same towers as $80/month AT&T customers",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon></svg>"
+      },
+      {
+        "name": "No Hidden Fees",
+        "description": "The price you see is the price you pay, taxes included",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path></svg>"
+      },
+      {
+        "name": "Price Lock Guarantee",
+        "description": "Your rate never increases - locked in as long as you stay",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"></rect><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"></path></svg>"
+      },
+      {
+        "name": "Free SIM & Shipping",
+        "description": "No activation fees or SIM card costs to get started",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\"></rect><rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"></rect></svg>"
+      },
+      {
+        "name": "No Data Caps Surprises",
+        "description": "Unlimited means unlimited - no overage charges ever",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"></path><polyline points=\"22 4 12 14.01 9 11.01\"></polyline></svg>"
+      },
+      {
+        "name": "AutoPay Discount",
+        "description": "Save an extra $5/month when you enable automatic payments",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"23 4 23 10 17 10\"></polyline><polyline points=\"1 20 1 14 7 14\"></polyline><path d=\"M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15\"></path></svg>"
+      }
+    ],
+    "comparison": {
+      "vouchIndex": 1,
+      "competitors": [
+        { "name": "Verizon", "price": 80 },
+        { "name": "Vouch Mobile", "price": 25, "isVouch": true },
+        { "name": "AT&T", "price": 75 },
+        { "name": "T-Mobile", "price": 70 }
+      ],
+      "features": [
+        { "name": "Monthly Cost", "values": ["$80", "$25", "$75", "$70"] },
+        { "name": "Annual Cost", "values": ["$960", "$300", "$900", "$840"] },
+        { "name": "Annual Savings", "values": ["$0", "$660", "$60", "$120"] },
+        { "name": "Unlimited Data", "values": [true, true, true, true] },
+        { "name": "5G Included", "values": [true, true, true, true] },
+        { "name": "No Contract", "values": [false, true, false, false] },
+        { "name": "No Credit Check", "values": [false, true, false, false] },
+        { "name": "Price Lock", "values": [false, true, false, true] }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "I was paying $85/month with Verizon for the same service I now get for $25. That's $720 back in my pocket every year!",
+        "name": "Carlos R.",
+        "plan": "Smart Unlimited",
+        "rating": 5,
+        "savings": "$720"
+      },
+      {
+        "quote": "Skeptical at first that cheap could be good. After 6 months, I can confirm - same coverage, same speeds, way less money.",
+        "name": "Emily W.",
+        "plan": "Saver Unlimited",
+        "rating": 5,
+        "savings": "$540"
+      },
+      {
+        "quote": "$15 for unlimited is insane. Perfect for my needs and I never worry about running out of data anymore.",
+        "name": "Tyler J.",
+        "plan": "Budget Unlimited",
+        "rating": 5,
+        "savings": "$780"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How can Vouch Mobile be so cheap?",
+        "answer": "As an MVNO (Mobile Virtual Network Operator), we lease network capacity from AT&T at wholesale rates. We don't have expensive retail stores or massive marketing budgets, so we pass those savings directly to you."
+      },
+      {
+        "question": "Is cheap unlimited data actually unlimited?",
+        "answer": "Yes! Our unlimited plans are truly unlimited - no data caps and no overage charges. Some plans may have reduced speeds during network congestion after using a certain amount of high-speed data, but you'll never be cut off."
+      },
+      {
+        "question": "What's the catch with these low prices?",
+        "answer": "There's no catch! You get the same AT&T network, same coverage, same 5G access. The only difference is we operate more efficiently and charge less. No hidden fees, no contracts, no surprises."
+      },
+      {
+        "question": "Will my service quality be worse because it's cheaper?",
+        "answer": "Not at all. You're using AT&T's same towers and infrastructure. Your calls, texts, and data work identically to AT&T's own customers. The savings come from our business model, not from reduced service quality."
+      },
+      {
+        "question": "Are there any hidden fees I should know about?",
+        "answer": "Zero hidden fees. Your monthly price includes all taxes and regulatory fees. The price you see on our website is exactly what you pay - that's our promise."
+      },
+      {
+        "question": "Can I really get unlimited data for $15/month?",
+        "answer": "Yes! Our Budget Unlimited plan at $15/month includes unlimited talk, text, and data. You get 10GB of high-speed data, and unlimited data at reduced speeds after that. It's perfect for moderate data users."
+      }
+    ],
+    "ctaBadge": "Save 60% or More",
+    "ctaTitle": "Stop Overpaying for Unlimited",
+    "ctaText": "Why pay $70-80/month when you can get the same service for $25? Start saving today.",
+    "ctaFeatures": ["Same Network", "60% Savings", "No Hidden Fees"],
+    "ctaPrimaryText": "Get the Cheapest Unlimited",
+    "ctaPrimaryUrl": "https://vouchmobile.com"
+  },
+  {
+    "slug": "hotspot-plans",
+    "title": "Phone Plans with Mobile Hotspot 2026",
+    "metaDescription": "Find the best phone plans with mobile hotspot included. Vouch Mobile offers up to 20GB hotspot data with unlimited plans. Share your connection anywhere.",
+    "heroTitle": "Plans with Mobile Hotspot",
+    "heroSubtitle": "Turn your phone into a WiFi router. Connect laptops, tablets, and devices anywhere you go.",
+    "badge": "Best Hotspot Plans",
+    "heroStats": [
+      { "value": "20GB", "label": "Max Hotspot" },
+      { "value": "5G", "label": "Hotspot Speed" },
+      { "value": "$0", "label": "Extra Fees" }
+    ],
+    "plansTitle": "Hotspot-Ready Plans",
+    "plansSubtitle": "All plans include mobile hotspot at no extra charge",
+    "tiers": [
+      {
+        "name": "Hotspot Basic",
+        "tagline": "5GB hotspot for occasional use",
+        "price": 20,
+        "priceNote": "with AutoPay",
+        "features": [
+          "Unlimited Talk & Text",
+          "35GB Phone Data",
+          "5GB Mobile Hotspot",
+          "5G Network Access",
+          "WiFi Calling",
+          "No Contract Required"
+        ],
+        "ctaText": "Get Hotspot Basic",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M5 12.55a11 11 0 0 1 14.08 0\"></path><path d=\"M1.42 9a16 16 0 0 1 21.16 0\"></path><path d=\"M8.53 16.11a6 6 0 0 1 6.95 0\"></path><line x1=\"12\" y1=\"20\" x2=\"12.01\" y2=\"20\"></line></svg>"
+      },
+      {
+        "name": "Hotspot Plus",
+        "tagline": "10GB hotspot for regular sharers",
+        "price": 25,
+        "priceNote": "with AutoPay",
+        "featured": true,
+        "badge": "Most Popular",
+        "features": [
+          "Unlimited Talk & Text",
+          "Unlimited Phone Data",
+          "10GB Mobile Hotspot",
+          "5G Priority Access",
+          "eSIM Support",
+          "WiFi Calling",
+          "HD Streaming",
+          "No Credit Check"
+        ],
+        "ctaText": "Get Hotspot Plus",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z\"></path></svg>"
+      },
+      {
+        "name": "Hotspot Max",
+        "tagline": "20GB hotspot for power users",
+        "price": 40,
+        "priceNote": "with AutoPay",
+        "features": [
+          "Unlimited Talk & Text",
+          "100GB Premium Data",
+          "20GB Mobile Hotspot",
+          "5G+ Ultra Wideband",
+          "4K Video Streaming",
+          "International Texting",
+          "Premium Support",
+          "Device Protection"
+        ],
+        "ctaText": "Get Hotspot Max",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\"></path></svg>"
+      }
+    ],
+    "includedTitle": "Hotspot Features Included",
+    "includedSubtitle": "Everything you need to stay connected on multiple devices",
+    "includedFeatures": [
+      {
+        "name": "5G Hotspot Speeds",
+        "description": "Share your 5G connection with connected devices",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon></svg>"
+      },
+      {
+        "name": "Connect Multiple Devices",
+        "description": "Link up to 10 devices at once to your hotspot",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\" ry=\"2\"></rect><rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"></rect><line x1=\"9\" y1=\"1\" x2=\"9\" y2=\"4\"></line><line x1=\"15\" y1=\"1\" x2=\"15\" y2=\"4\"></line><line x1=\"9\" y1=\"20\" x2=\"9\" y2=\"23\"></line><line x1=\"15\" y1=\"20\" x2=\"15\" y2=\"23\"></line><line x1=\"20\" y1=\"9\" x2=\"23\" y2=\"9\"></line><line x1=\"20\" y1=\"14\" x2=\"23\" y2=\"14\"></line><line x1=\"1\" y1=\"9\" x2=\"4\" y2=\"9\"></line><line x1=\"1\" y1=\"14\" x2=\"4\" y2=\"14\"></line></svg>"
+      },
+      {
+        "name": "Secure Connection",
+        "description": "WPA2 encryption keeps your hotspot secure",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"></rect><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"></path></svg>"
+      },
+      {
+        "name": "Work From Anywhere",
+        "description": "Perfect for remote work and travel productivity",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"></rect><line x1=\"8\" y1=\"21\" x2=\"16\" y2=\"21\"></line><line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"21\"></line></svg>"
+      },
+      {
+        "name": "No Extra Charges",
+        "description": "Hotspot is included in your plan, not an add-on",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"></path><path d=\"M12 18V6\"></path></svg>"
+      },
+      {
+        "name": "Easy Setup",
+        "description": "Enable hotspot with one tap in your phone settings",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"3\"></circle><path d=\"M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z\"></path></svg>"
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "I work remotely and travel a lot. The 10GB hotspot has been a lifesaver - I can work from coffee shops, airports, anywhere.",
+        "name": "Rachel M.",
+        "plan": "Hotspot Plus",
+        "rating": 5,
+        "savings": "$480"
+      },
+      {
+        "quote": "My kids use the hotspot for their tablets on road trips. Way better than paying for in-car WiFi or using expensive airport internet.",
+        "name": "Mark D.",
+        "plan": "Hotspot Max",
+        "rating": 5,
+        "savings": "$600"
+      },
+      {
+        "quote": "5GB is plenty for checking emails and light browsing when I'm away from WiFi. Love that it's included at no extra cost.",
+        "name": "Linda K.",
+        "plan": "Hotspot Basic",
+        "rating": 5,
+        "savings": "$360"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is mobile hotspot and how does it work?",
+        "answer": "Mobile hotspot lets you share your phone's cellular data connection with other devices like laptops, tablets, or other phones. Your phone essentially becomes a portable WiFi router that other devices can connect to."
+      },
+      {
+        "question": "How much hotspot data do I need?",
+        "answer": "It depends on your usage. 5GB is good for occasional email and light browsing. 10GB works well for regular use including some video streaming. 20GB is ideal for heavy users who work remotely or travel frequently."
+      },
+      {
+        "question": "Does hotspot usage count against my phone data?",
+        "answer": "Hotspot data is separate from your phone's high-speed data allocation. If you have 10GB of hotspot, that's specifically for tethering, not pulled from your phone's unlimited data pool."
+      },
+      {
+        "question": "How fast is the hotspot connection?",
+        "answer": "Your hotspot uses the same 5G or 4G LTE connection as your phone. In good coverage areas, you can expect speeds comparable to home WiFi - easily fast enough for video calls, streaming, and general work tasks."
+      },
+      {
+        "question": "Can I connect multiple devices at once?",
+        "answer": "Yes! You can connect up to 10 devices to your Vouch Mobile hotspot simultaneously. Perfect for families or connecting your laptop and tablet at the same time."
+      },
+      {
+        "question": "What happens when I use all my hotspot data?",
+        "answer": "When you reach your hotspot limit, the hotspot feature pauses until your next billing cycle. Your regular phone service continues unaffected. You can also upgrade your plan mid-cycle if you need more hotspot data."
+      }
+    ],
+    "ctaBadge": "Stay Connected Everywhere",
+    "ctaTitle": "Get a Plan with Real Hotspot",
+    "ctaText": "Share your connection with all your devices. Work, play, and stream from anywhere.",
+    "ctaFeatures": ["Up to 20GB Hotspot", "5G Speeds", "No Extra Cost"],
+    "ctaPrimaryText": "Get Hotspot Now",
+    "ctaPrimaryUrl": "https://vouchmobile.com"
+  },
+  {
+    "slug": "pay-as-you-go",
+    "title": "Pay As You Go Phone Plans 2026",
+    "metaDescription": "Find the best pay as you go phone plans. Only pay for what you use with Vouch Mobile. No monthly bills, no contracts - just flexible wireless when you need it.",
+    "heroTitle": "Pay As You Go Plans",
+    "heroSubtitle": "Ultimate control over your wireless spending. Pay only when you need service, not when you don't.",
+    "badge": "Maximum Flexibility",
+    "heroStats": [
+      { "value": "$0", "label": "Monthly Commitment" },
+      { "value": "90", "label": "Days Validity" },
+      { "value": "100%", "label": "Usage Control" }
+    ],
+    "plansTitle": "Flexible Pay As You Go Options",
+    "plansSubtitle": "Load up when you need it, no recurring charges",
+    "tiers": [
+      {
+        "name": "Occasional",
+        "tagline": "For backup phones and light use",
+        "price": 10,
+        "priceNote": "per month when active",
+        "features": [
+          "Unlimited Talk & Text",
+          "1GB High-Speed Data",
+          "4G LTE Access",
+          "90-Day Validity",
+          "Roll Over Unused Data",
+          "No Monthly Bill"
+        ],
+        "ctaText": "Get Occasional",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline></svg>"
+      },
+      {
+        "name": "Flexible",
+        "tagline": "Perfect balance of value and control",
+        "price": 20,
+        "priceNote": "per month when active",
+        "featured": true,
+        "badge": "Best Flexibility",
+        "features": [
+          "Unlimited Talk & Text",
+          "10GB High-Speed Data",
+          "5G Network Access",
+          "90-Day Validity",
+          "5GB Mobile Hotspot",
+          "Roll Over Data",
+          "Pause Anytime",
+          "No Credit Check"
+        ],
+        "ctaText": "Get Flexible",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"17 1 21 5 17 9\"></polyline><path d=\"M3 11V9a4 4 0 0 1 4-4h14\"></path><polyline points=\"7 23 3 19 7 15\"></polyline><path d=\"M21 13v2a4 4 0 0 1-4 4H3\"></path></svg>"
+      },
+      {
+        "name": "Traveler",
+        "tagline": "Extended validity for infrequent users",
+        "price": 30,
+        "priceNote": "for 90 days",
+        "features": [
+          "Unlimited Talk & Text",
+          "15GB High-Speed Data",
+          "5G Network Access",
+          "90-Day Validity",
+          "10GB Mobile Hotspot",
+          "International Texting",
+          "Perfect for Travel",
+          "WiFi Calling"
+        ],
+        "ctaText": "Get Traveler",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"></path></svg>"
+      }
+    ],
+    "includedTitle": "Pay As You Go Benefits",
+    "includedSubtitle": "All the features you need with total spending control",
+    "includedFeatures": [
+      {
+        "name": "No Monthly Bill",
+        "description": "Only pay when you actually need to reload your service",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><line x1=\"12\" y1=\"1\" x2=\"12\" y2=\"23\"></line><path d=\"M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6\"></path></svg>"
+      },
+      {
+        "name": "Data Rollover",
+        "description": "Unused data carries over to your next active period",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"23 4 23 10 17 10\"></polyline><path d=\"M20.49 15a9 9 0 1 1-2.12-9.36L23 10\"></path></svg>"
+      },
+      {
+        "name": "90-Day Validity",
+        "description": "Your balance stays active for 3 full months",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"6\"></line><line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"6\"></line><line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"></line></svg>"
+      },
+      {
+        "name": "Keep Your Number",
+        "description": "Your number stays reserved even between refills",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path></svg>"
+      },
+      {
+        "name": "Instant Top-Up",
+        "description": "Add more service instantly through the app",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon></svg>"
+      },
+      {
+        "name": "Usage Alerts",
+        "description": "Get notified before your balance runs low",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9\"></path><path d=\"M13.73 21a2 2 0 0 1-3.46 0\"></path></svg>"
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "I keep Vouch as my backup phone line. Love that I only pay when I need it and my data rolls over. Perfect for emergencies.",
+        "name": "Steve H.",
+        "plan": "Occasional Plan",
+        "rating": 5,
+        "savings": "$300"
+      },
+      {
+        "quote": "As a snowbird who splits time between states, the 90-day validity is perfect. I refill when I travel, not every month.",
+        "name": "Barbara N.",
+        "plan": "Traveler Plan",
+        "rating": 5,
+        "savings": "$450"
+      },
+      {
+        "quote": "Finally a phone plan that doesn't force me to pay every month. I use it when I need it, simple as that.",
+        "name": "Derek P.",
+        "plan": "Flexible Plan",
+        "rating": 5,
+        "savings": "$240"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How does pay as you go work?",
+        "answer": "Instead of paying every month automatically, you purchase service credit when you need it. Your balance stays active for 90 days, and you only reload when you want to continue service."
+      },
+      {
+        "question": "What happens when my 90 days expire?",
+        "answer": "Your service pauses but your phone number is reserved for 60 additional days. Simply reload within that window to reactivate your service and keep your number."
+      },
+      {
+        "question": "Does unused data really roll over?",
+        "answer": "Yes! Any unused high-speed data from your current period carries over when you reload within the validity window. It's a great way to build up a data bank for heavy usage months."
+      },
+      {
+        "question": "Is pay as you go good for my main phone?",
+        "answer": "It can be! If you're a light user or have inconsistent needs, pay as you go can save you money. Heavy users might prefer our monthly unlimited plans for better value."
+      },
+      {
+        "question": "Can I switch to a monthly plan later?",
+        "answer": "Absolutely. You can switch to any of our monthly plans at any time through the Vouch Mobile app. Your number transfers seamlessly and any remaining balance converts to account credit."
+      },
+      {
+        "question": "How do I check my balance and usage?",
+        "answer": "The Vouch Mobile app shows your current balance, data usage, and days remaining in real-time. You can also set up alerts to notify you when your balance gets low."
+      }
+    ],
+    "ctaBadge": "Pay Only When You Need",
+    "ctaTitle": "Take Control of Your Wireless",
+    "ctaText": "Stop paying for service you don't use. Pay as you go puts you in complete control.",
+    "ctaFeatures": ["No Monthly Bills", "90-Day Validity", "Data Rollover"],
+    "ctaPrimaryText": "Start Pay As You Go",
+    "ctaPrimaryUrl": "https://vouchmobile.com"
+  },
+  {
+    "slug": "talk-text-only",
+    "title": "Talk and Text Only Phone Plans 2026",
+    "metaDescription": "Find affordable talk and text only phone plans. Perfect for seniors, kids, or anyone who doesn't need data. Vouch Mobile plans starting at just $10/month.",
+    "heroTitle": "Talk & Text Only Plans",
+    "heroSubtitle": "Not everyone needs unlimited data. Get reliable talk and text at an unbeatable price.",
+    "badge": "Simple & Affordable",
+    "heroStats": [
+      { "value": "$10", "label": "Starting Price" },
+      { "value": "Unlimited", "label": "Talk & Text" },
+      { "value": "0", "label": "Data Charges" }
+    ],
+    "plansTitle": "Simple Talk & Text Plans",
+    "plansSubtitle": "Straightforward plans for people who value simplicity",
+    "tiers": [
+      {
+        "name": "Basic Talk",
+        "tagline": "Just the essentials, nothing more",
+        "price": 10,
+        "priceNote": "per month",
+        "features": [
+          "Unlimited Talk",
+          "Unlimited Text",
+          "No Data Included",
+          "Voicemail Included",
+          "Caller ID",
+          "No Contract"
+        ],
+        "ctaText": "Get Basic Talk",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path></svg>"
+      },
+      {
+        "name": "Talk Plus",
+        "tagline": "Talk, text, and a little data",
+        "price": 15,
+        "priceNote": "per month",
+        "featured": true,
+        "badge": "Most Popular",
+        "features": [
+          "Unlimited Talk",
+          "Unlimited Text",
+          "500MB Bonus Data",
+          "WiFi Calling",
+          "Visual Voicemail",
+          "Spam Call Blocking",
+          "No Contract",
+          "No Credit Check"
+        ],
+        "ctaText": "Get Talk Plus",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"></path></svg>"
+      },
+      {
+        "name": "Talk Premium",
+        "tagline": "Enhanced features for power callers",
+        "price": 20,
+        "priceNote": "per month",
+        "features": [
+          "Unlimited Talk",
+          "Unlimited Text",
+          "1GB Data for Apps",
+          "HD Voice Quality",
+          "International Texting",
+          "WiFi Calling",
+          "Voicemail Transcription",
+          "Call Recording"
+        ],
+        "ctaText": "Get Talk Premium",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z\"></path></svg>"
+      }
+    ],
+    "includedTitle": "Simple Plan Features",
+    "includedSubtitle": "Everything you need for reliable communication",
+    "includedFeatures": [
+      {
+        "name": "Crystal Clear Calls",
+        "description": "HD Voice technology for superior call quality",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path></svg>"
+      },
+      {
+        "name": "Spam Call Blocking",
+        "description": "Automatically filter out robocalls and spam",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path></svg>"
+      },
+      {
+        "name": "Nationwide Coverage",
+        "description": "AT&T's network covers 99% of Americans",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"></path></svg>"
+      },
+      {
+        "name": "WiFi Calling",
+        "description": "Make calls over WiFi when cell signal is weak",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M5 12.55a11 11 0 0 1 14.08 0\"></path><path d=\"M1.42 9a16 16 0 0 1 21.16 0\"></path><path d=\"M8.53 16.11a6 6 0 0 1 6.95 0\"></path><line x1=\"12\" y1=\"20\" x2=\"12.01\" y2=\"20\"></line></svg>"
+      },
+      {
+        "name": "Visual Voicemail",
+        "description": "See and manage voicemails like text messages",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"5.5\" cy=\"11.5\" r=\"4.5\"></circle><circle cx=\"18.5\" cy=\"11.5\" r=\"4.5\"></circle><line x1=\"5.5\" y1=\"16\" x2=\"18.5\" y2=\"16\"></line></svg>"
+      },
+      {
+        "name": "Easy for Everyone",
+        "description": "Simple setup, perfect for seniors and kids",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"9\" cy=\"7\" r=\"4\"></circle><path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"></path><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"></path></svg>"
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Got this for my mom who only makes calls and texts. She loves the simplicity and I love the $10 monthly bill!",
+        "name": "Jennifer T.",
+        "plan": "Basic Talk",
+        "rating": 5,
+        "savings": "$480"
+      },
+      {
+        "quote": "Perfect for my daughter's first phone. Talk and text is all she needs, and I'm not paying for data she won't use.",
+        "name": "Michael R.",
+        "plan": "Talk Plus",
+        "rating": 5,
+        "savings": "$360"
+      },
+      {
+        "quote": "I have WiFi everywhere I go. Why would I pay $70 for data I never use? This plan is exactly what I needed.",
+        "name": "Dorothy M.",
+        "plan": "Basic Talk",
+        "rating": 5,
+        "savings": "$720"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I use apps without a data plan?",
+        "answer": "You can use apps when connected to WiFi. Without a data plan, apps won't work over cellular. Our Talk Plus plan includes 500MB for basic app functionality like messaging apps."
+      },
+      {
+        "question": "Who is a talk and text only plan good for?",
+        "answer": "These plans are perfect for seniors who primarily call and text, kids getting their first phone, backup phones, or anyone who has WiFi access everywhere and doesn't need cellular data."
+      },
+      {
+        "question": "Will my smartphone work with talk and text only?",
+        "answer": "Yes! Any phone compatible with our network will work. Your smartphone will function normally for calls and texts, and use WiFi for data-dependent features like browsing and apps."
+      },
+      {
+        "question": "Can I add data later if I need it?",
+        "answer": "Absolutely! You can upgrade to any of our data plans at any time through the Vouch Mobile app. Changes take effect on your next billing cycle."
+      },
+      {
+        "question": "Is unlimited text really unlimited?",
+        "answer": "Yes, truly unlimited! Send and receive as many text messages (SMS and MMS) as you want with no limits or extra charges."
+      },
+      {
+        "question": "Does the plan include picture messaging?",
+        "answer": "Yes, MMS (picture and video messaging) is included in all our talk and text plans at no extra charge."
+      }
+    ],
+    "ctaBadge": "Simple & Straightforward",
+    "ctaTitle": "Get Talk & Text for Less",
+    "ctaText": "Not everyone needs unlimited data. Get reliable communication at an unbeatable price.",
+    "ctaFeatures": ["$10/Month Starting", "Unlimited Calls", "Unlimited Texts"],
+    "ctaPrimaryText": "Get Talk & Text",
+    "ctaPrimaryUrl": "https://vouchmobile.com"
+  },
+  {
+    "slug": "single-line",
+    "title": "Single Line Phone Plans 2026",
+    "metaDescription": "Find the best single line phone plans that don't require family pricing. Vouch Mobile offers individual unlimited plans starting at $15/month. No group needed.",
+    "heroTitle": "Single Line Phone Plans",
+    "heroSubtitle": "Great rates for individuals, no family plan required. One line, one great price.",
+    "badge": "Best Single Line Value",
+    "heroStats": [
+      { "value": "$15", "label": "Starting Price" },
+      { "value": "1", "label": "Line Minimum" },
+      { "value": "0", "label": "Group Required" }
+    ],
+    "plansTitle": "Individual Plans, Individual Prices",
+    "plansSubtitle": "Get the best rate on your own terms, no family or group needed",
+    "tiers": [
+      {
+        "name": "Solo Basic",
+        "tagline": "Essentials for individual users",
+        "price": 15,
+        "priceNote": "single line price",
+        "features": [
+          "Unlimited Talk & Text",
+          "10GB High-Speed Data",
+          "4G LTE Access",
+          "WiFi Calling",
+          "No Family Required",
+          "No Contract"
+        ],
+        "ctaText": "Get Solo Basic",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path><circle cx=\"12\" cy=\"7\" r=\"4\"></circle></svg>"
+      },
+      {
+        "name": "Solo Unlimited",
+        "tagline": "Full unlimited for one, best value",
+        "price": 25,
+        "priceNote": "single line price",
+        "featured": true,
+        "badge": "Best Individual Value",
+        "features": [
+          "Unlimited Talk & Text",
+          "Unlimited Data",
+          "5G Priority Access",
+          "10GB Mobile Hotspot",
+          "eSIM Support",
+          "WiFi Calling",
+          "HD Streaming",
+          "No Credit Check"
+        ],
+        "ctaText": "Get Solo Unlimited",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z\"></path></svg>"
+      },
+      {
+        "name": "Solo Premium",
+        "tagline": "Maximum features for power users",
+        "price": 40,
+        "priceNote": "single line price",
+        "features": [
+          "Unlimited Talk & Text",
+          "100GB Premium Data",
+          "5G+ Ultra Wideband",
+          "20GB Mobile Hotspot",
+          "4K Video Streaming",
+          "International Calling",
+          "Premium Support",
+          "Device Protection"
+        ],
+        "ctaText": "Get Solo Premium",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\"></path></svg>"
+      }
+    ],
+    "includedTitle": "Single Line Benefits",
+    "includedSubtitle": "Everything individuals need at individual pricing",
+    "includedFeatures": [
+      {
+        "name": "No Group Required",
+        "description": "Get the best price without needing 4+ lines",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path><circle cx=\"12\" cy=\"7\" r=\"4\"></circle></svg>"
+      },
+      {
+        "name": "Transparent Pricing",
+        "description": "The price shown is your price, no multi-line math",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"></path><path d=\"M12 18V6\"></path></svg>"
+      },
+      {
+        "name": "Same Premium Features",
+        "description": "Get 5G, hotspot, and all features single users deserve",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon></svg>"
+      },
+      {
+        "name": "Add Lines Anytime",
+        "description": "Start solo and add family later if you want",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"8.5\" cy=\"7\" r=\"4\"></circle><line x1=\"20\" y1=\"8\" x2=\"20\" y2=\"14\"></line><line x1=\"23\" y1=\"11\" x2=\"17\" y2=\"11\"></line></svg>"
+      },
+      {
+        "name": "Individual Account",
+        "description": "Your own account, your own bill, your own control",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path></svg>"
+      },
+      {
+        "name": "Easy Self-Management",
+        "description": "Manage everything through our simple app",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"5\" y=\"2\" width=\"14\" height=\"20\" rx=\"2\" ry=\"2\"></rect><line x1=\"12\" y1=\"18\" x2=\"12.01\" y2=\"18\"></line></svg>"
+      }
+    ],
+    "comparison": {
+      "vouchIndex": 1,
+      "competitors": [
+        { "name": "Verizon (1 line)", "price": 80 },
+        { "name": "Vouch Mobile", "price": 25, "isVouch": true },
+        { "name": "AT&T (1 line)", "price": 75 },
+        { "name": "T-Mobile (1 line)", "price": 70 }
+      ],
+      "features": [
+        { "name": "Single Line Price", "values": ["$80", "$25", "$75", "$70"] },
+        { "name": "Unlimited Data", "values": [true, true, true, true] },
+        { "name": "5G Included", "values": [true, true, true, true] },
+        { "name": "Price Without 4 Lines", "values": ["$80", "$25", "$75", "$70"] },
+        { "name": "No Contract", "values": [false, true, false, false] },
+        { "name": "No Credit Check", "values": [false, true, false, false] },
+        { "name": "Annual Savings", "values": ["$0", "$660", "$60", "$120"] }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Big carriers wanted me to add 3 more lines for a decent price. Vouch gave me unlimited for $25 with just my single line.",
+        "name": "Alex P.",
+        "plan": "Solo Unlimited",
+        "rating": 5,
+        "savings": "$660"
+      },
+      {
+        "quote": "Living alone, I don't need a family plan. Finally found a carrier that doesn't penalize single users!",
+        "name": "Samantha K.",
+        "plan": "Solo Unlimited",
+        "rating": 5,
+        "savings": "$540"
+      },
+      {
+        "quote": "My college-age son doesn't need to be on our family plan anymore. Vouch's single line rate is perfect for him.",
+        "name": "Richard L.",
+        "plan": "Solo Basic",
+        "rating": 5,
+        "savings": "$480"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why are single line plans cheaper at Vouch Mobile?",
+        "answer": "Unlike major carriers who inflate single-line prices to push family plans, we offer the same fair rate to everyone. Our efficient MVNO model means we can offer premium service at reasonable prices for all customers."
+      },
+      {
+        "question": "Can I get the same features as family plans?",
+        "answer": "Absolutely! Our single line plans include all the same features - 5G access, mobile hotspot, unlimited data - that family plan users get. You don't sacrifice anything by being an individual user."
+      },
+      {
+        "question": "What if I want to add a line later?",
+        "answer": "No problem! You can add additional lines to your account at any time. Each line gets its own great rate, and you can manage everything from one account if you'd like."
+      },
+      {
+        "question": "How do single line prices compare to competitors?",
+        "answer": "Major carriers like Verizon and AT&T charge $75-80/month for a single unlimited line. Vouch Mobile offers comparable service for just $25/month - that's over $600 in annual savings."
+      },
+      {
+        "question": "Is there a minimum number of lines required?",
+        "answer": "Nope! One line is all you need. There's no minimum line requirement and no pressure to add more. We welcome single-line customers."
+      },
+      {
+        "question": "Do I get my own separate account?",
+        "answer": "Yes! You have your own individual account with your own login, bill, and settings. You're not grouped with anyone or dependent on another account holder."
+      }
+    ],
+    "ctaBadge": "Individual Value",
+    "ctaTitle": "Get Great Rates on Your Own",
+    "ctaText": "You shouldn't need a family plan to get a fair price. Get individual value at Vouch Mobile.",
+    "ctaFeatures": ["Single Line Pricing", "No Family Required", "Same Premium Features"],
+    "ctaPrimaryText": "Get Your Single Line",
+    "ctaPrimaryUrl": "https://vouchmobile.com"
+  },
+  {
+    "slug": "att-network",
+    "title": "AT&T Network Plans (MVNO) 2026",
+    "metaDescription": "Get AT&T network coverage at half the price. Vouch Mobile is an AT&T MVNO offering unlimited plans from $15/month. Same towers, same 5G, way less money.",
+    "heroTitle": "AT&T Network, Better Price",
+    "heroSubtitle": "All the coverage of AT&T's nationwide 5G network at a fraction of the cost. Same towers, different price tag.",
+    "badge": "Official AT&T MVNO",
+    "heroStats": [
+      { "value": "99%", "label": "US Coverage" },
+      { "value": "5G", "label": "Network Access" },
+      { "value": "50%", "label": "Cost Savings" }
+    ],
+    "plansTitle": "AT&T Network Plans",
+    "plansSubtitle": "Premium AT&T coverage without the premium price",
+    "tiers": [
+      {
+        "name": "AT&T Basic",
+        "tagline": "AT&T network at entry-level price",
+        "price": 20,
+        "priceNote": "with AutoPay",
+        "features": [
+          "AT&T 4G LTE & 5G Network",
+          "Unlimited Talk & Text",
+          "35GB High-Speed Data",
+          "5GB Mobile Hotspot",
+          "99% US Coverage",
+          "No Contract"
+        ],
+        "ctaText": "Get AT&T Basic",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"></path></svg>"
+      },
+      {
+        "name": "AT&T Unlimited",
+        "tagline": "Full AT&T experience, half the price",
+        "price": 25,
+        "priceNote": "with AutoPay",
+        "featured": true,
+        "badge": "Best AT&T Value",
+        "features": [
+          "AT&T 5G Priority Access",
+          "Unlimited Talk & Text",
+          "Truly Unlimited Data",
+          "10GB Mobile Hotspot",
+          "eSIM Support",
+          "WiFi Calling",
+          "HD Streaming",
+          "No Credit Check"
+        ],
+        "ctaText": "Get AT&T Unlimited",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z\"></path></svg>"
+      },
+      {
+        "name": "AT&T Premium",
+        "tagline": "Maximum AT&T features and priority",
+        "price": 40,
+        "priceNote": "with AutoPay",
+        "features": [
+          "AT&T 5G+ Ultra Wideband",
+          "Unlimited Talk & Text",
+          "100GB Premium Data",
+          "20GB Mobile Hotspot",
+          "4K Video Streaming",
+          "International Calling (50 countries)",
+          "Premium Support",
+          "AT&T ActiveArmor Security"
+        ],
+        "ctaText": "Get AT&T Premium",
+        "ctaUrl": "https://vouchmobile.com",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\"></path></svg>"
+      }
+    ],
+    "includedTitle": "AT&T Network Benefits",
+    "includedSubtitle": "Everything you love about AT&T, without everything you hate about the price",
+    "includedFeatures": [
+      {
+        "name": "Same AT&T Towers",
+        "description": "Use the exact same cell towers as AT&T customers",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon></svg>"
+      },
+      {
+        "name": "AT&T 5G Access",
+        "description": "Full access to AT&T's growing 5G network in 200+ cities",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M5 12.55a11 11 0 0 1 14.08 0\"></path><path d=\"M1.42 9a16 16 0 0 1 21.16 0\"></path><path d=\"M8.53 16.11a6 6 0 0 1 6.95 0\"></path><line x1=\"12\" y1=\"20\" x2=\"12.01\" y2=\"20\"></line></svg>"
+      },
+      {
+        "name": "99% US Coverage",
+        "description": "AT&T's network covers virtually everywhere in America",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"></path></svg>"
+      },
+      {
+        "name": "HD Voice Calling",
+        "description": "Crystal clear VoLTE calls on AT&T's network",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path></svg>"
+      },
+      {
+        "name": "No AT&T Store Hassle",
+        "description": "Sign up online in minutes, no store visit needed",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"></rect><line x1=\"8\" y1=\"21\" x2=\"16\" y2=\"21\"></line><line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"21\"></line></svg>"
+      },
+      {
+        "name": "Keep AT&T Phones",
+        "description": "Your AT&T phone works perfectly with Vouch Mobile",
+        "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"5\" y=\"2\" width=\"14\" height=\"20\" rx=\"2\" ry=\"2\"></rect><line x1=\"12\" y1=\"18\" x2=\"12.01\" y2=\"18\"></line></svg>"
+      }
+    ],
+    "comparison": {
+      "vouchIndex": 1,
+      "competitors": [
+        { "name": "AT&T Direct", "price": 75 },
+        { "name": "Vouch Mobile", "price": 25, "isVouch": true },
+        { "name": "Cricket", "price": 55 },
+        { "name": "AT&T Prepaid", "price": 50 }
+      ],
+      "features": [
+        { "name": "Uses AT&T Network", "values": [true, true, true, true] },
+        { "name": "5G Access", "values": [true, true, true, true] },
+        { "name": "Unlimited Data", "values": [true, true, true, true] },
+        { "name": "Mobile Hotspot", "values": ["50GB", "10GB", "15GB", "15GB"] },
+        { "name": "No Contract", "values": [false, true, true, true] },
+        { "name": "No Credit Check", "values": [false, true, true, true] },
+        { "name": "Monthly Cost", "values": ["$75", "$25", "$55", "$50"] },
+        { "name": "Annual Savings vs AT&T", "values": ["$0", "$600", "$240", "$300"] }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Same AT&T coverage I had before, $50 less per month. I don't understand why anyone pays full AT&T prices.",
+        "name": "Nathan B.",
+        "plan": "AT&T Unlimited",
+        "rating": 5,
+        "savings": "$600"
+      },
+      {
+        "quote": "Was with AT&T for 12 years. Switched to Vouch and kept my same great coverage. Wish I'd switched sooner!",
+        "name": "Patricia H.",
+        "plan": "AT&T Premium",
+        "rating": 5,
+        "savings": "$480"
+      },
+      {
+        "quote": "My AT&T iPhone worked instantly with Vouch. Same 5G speeds in my area, literally no difference except my bill.",
+        "name": "Kevin D.",
+        "plan": "AT&T Unlimited",
+        "rating": 5,
+        "savings": "$540"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is an MVNO and how does it work?",
+        "answer": "MVNO stands for Mobile Virtual Network Operator. Vouch Mobile leases network capacity from AT&T at wholesale rates and passes those savings to you. You get the same AT&T towers and coverage, just at a much lower price."
+      },
+      {
+        "question": "Is this really the same as AT&T service?",
+        "answer": "Yes! Your calls, texts, and data all travel through AT&T's towers and infrastructure. The coverage map is identical to AT&T's. The only difference is the billing - you pay Vouch Mobile instead of AT&T."
+      },
+      {
+        "question": "Will my AT&T phone work with Vouch Mobile?",
+        "answer": "Absolutely! Any phone currently working on AT&T will work seamlessly with Vouch Mobile. Just swap in our SIM card (or activate eSIM) and you're ready to go."
+      },
+      {
+        "question": "Do I get 5G on the AT&T network?",
+        "answer": "Yes! Vouch Mobile includes full access to AT&T's 5G network at no extra charge. Wherever AT&T has 5G coverage, you'll have 5G coverage."
+      },
+      {
+        "question": "Why is Vouch Mobile so much cheaper than AT&T?",
+        "answer": "We don't have expensive retail stores, celebrity endorsements, or massive marketing budgets. As an MVNO, we operate efficiently and pass those savings directly to our customers."
+      },
+      {
+        "question": "Can I keep my current phone number?",
+        "answer": "Yes! Transferring your number from AT&T (or any carrier) is simple and free. Most transfers complete in under 10 minutes."
+      }
+    ],
+    "ctaBadge": "AT&T Network at Half Price",
+    "ctaTitle": "Get AT&T Coverage for Less",
+    "ctaText": "Same nationwide 5G network. Same great coverage. Half the monthly cost.",
+    "ctaFeatures": ["AT&T Network", "99% US Coverage", "50% Savings"],
+    "ctaPrimaryText": "Switch to Vouch Mobile",
+    "ctaPrimaryUrl": "https://vouchmobile.com"
+  }
+]

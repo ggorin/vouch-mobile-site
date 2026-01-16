@@ -1,0 +1,357 @@
+{
+  "items": [
+    {
+      "slug": "compatibility-checker",
+      "name": "Phone Compatibility Checker",
+      "shortName": "Compatibility Checker",
+      "tagline": "Check if your phone works with Vouch",
+      "description": "Instantly verify if your current phone is compatible with Vouch Mobile's AT&T network. Enter your phone's IMEI or select your device model to check network compatibility, 5G support, and band requirements.",
+      "metaDescription": "Free phone compatibility checker for Vouch Mobile. Enter your IMEI or phone model to instantly verify if your device works on AT&T's network with 5G support.",
+      "icon": "smartphone",
+      "category": "Device",
+      "estimatedTime": "30 seconds",
+      "features": [
+        "IMEI number lookup",
+        "Phone model search",
+        "5G band compatibility",
+        "LTE band verification",
+        "Instant results"
+      ],
+      "howToSteps": [
+        {
+          "number": 1,
+          "title": "Find Your IMEI",
+          "description": "Dial *#06# on your phone or check Settings > About Phone to find your 15-digit IMEI number."
+        },
+        {
+          "number": 2,
+          "title": "Enter Your Details",
+          "description": "Type your IMEI number or search for your phone model in the compatibility checker."
+        },
+        {
+          "number": 3,
+          "title": "Get Instant Results",
+          "description": "See if your phone is compatible with Vouch's AT&T network, including 5G and LTE support."
+        },
+        {
+          "number": 4,
+          "title": "Start Saving",
+          "description": "If compatible, you can bring your phone to Vouch and start saving immediately."
+        }
+      ],
+      "whyMatters": {
+        "title": "Why Check Compatibility First?",
+        "content": "Not all phones work on every network. Vouch Mobile uses AT&T's network, which requires specific LTE and 5G bands. Phones purchased from Verizon or Sprint (CDMA-only devices) may not be compatible. Checking compatibility before switching ensures a seamless transition and prevents frustration.",
+        "points": [
+          "AT&T uses GSM technology - some older CDMA phones won't work",
+          "5G requires specific bands (n5, n77, n260, n261) for fastest speeds",
+          "LTE bands 12, 17, and 29 provide the best coverage",
+          "Carrier-locked phones need to be unlocked before switching"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Where do I find my phone's IMEI number?",
+          "answer": "Dial *#06# on your phone to display the IMEI. You can also find it in Settings > About Phone on Android or Settings > General > About on iPhone."
+        },
+        {
+          "question": "What if my phone isn't compatible?",
+          "answer": "If your current phone isn't compatible, you can purchase a new unlocked phone from any retailer. Vouch works with any unlocked GSM phone that supports AT&T's LTE bands."
+        },
+        {
+          "question": "Does my phone need to be unlocked?",
+          "answer": "Yes, your phone must be carrier-unlocked to use with Vouch Mobile. Contact your current carrier to request an unlock if your phone is still locked."
+        },
+        {
+          "question": "Will I get 5G speeds with my phone?",
+          "answer": "If your phone supports AT&T's 5G bands (n5, n77, n260, or n261), you'll have access to 5G speeds where available. Our checker will tell you which bands your phone supports."
+        }
+      ],
+      "relatedTools": ["savings-calculator", "data-calculator"]
+    },
+    {
+      "slug": "savings-calculator",
+      "name": "Phone Bill Savings Calculator",
+      "shortName": "Savings Calculator",
+      "tagline": "See how much you'll save with Vouch",
+      "description": "Calculate your potential savings by switching to Vouch Mobile. Compare your current phone bill to our unlimited plans and see your monthly and annual savings instantly.",
+      "metaDescription": "Free savings calculator for Vouch Mobile. Enter your current phone bill to see how much you can save switching to $30/month unlimited wireless on AT&T's network.",
+      "icon": "dollar-sign",
+      "category": "Savings",
+      "estimatedTime": "1 minute",
+      "features": [
+        "Current bill comparison",
+        "Multi-line support",
+        "Monthly savings estimate",
+        "Annual savings calculation",
+        "Carrier-specific comparisons"
+      ],
+      "howToSteps": [
+        {
+          "number": 1,
+          "title": "Enter Current Bill",
+          "description": "Input your current monthly phone bill amount or select your carrier for average pricing."
+        },
+        {
+          "number": 2,
+          "title": "Select Lines",
+          "description": "Choose how many phone lines you're comparing - individual or family plans."
+        },
+        {
+          "number": 3,
+          "title": "View Your Savings",
+          "description": "See your monthly and annual savings compared to Vouch's $30/month unlimited plan."
+        },
+        {
+          "number": 4,
+          "title": "Make the Switch",
+          "description": "Ready to save? Start your switch to Vouch and keep your number."
+        }
+      ],
+      "whyMatters": {
+        "title": "Why Most People Overpay for Phone Service",
+        "content": "The average American pays $141/month for cell phone service - that's over $1,692 per year. Much of this cost goes to fancy stores, celebrity endorsements, and device financing. Vouch cuts the extras and passes the savings to you while using the same AT&T network.",
+        "points": [
+          "Average US phone bill: $141/month vs. Vouch's $30/month",
+          "Family of 4 can save over $1,000/year",
+          "No hidden fees or surprise charges",
+          "Same AT&T network coverage as premium carriers"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "How accurate is this savings calculator?",
+          "answer": "Our calculator uses industry-average pricing data and your actual input. Your real savings may vary based on taxes, fees, and specific plan features from your current carrier."
+        },
+        {
+          "question": "Does the $30/month price include taxes?",
+          "answer": "Vouch's $30/month price is the base plan cost. Taxes and regulatory fees vary by location and are added at checkout, but our total is still significantly less than major carriers."
+        },
+        {
+          "question": "What's included in Vouch's $30 plan?",
+          "answer": "Vouch's Premium plan includes unlimited talk, text, and data, plus 5G access, 5GB mobile hotspot, eSIM support, WiFi calling, and no credit check or contract."
+        },
+        {
+          "question": "Can I save more with multiple lines?",
+          "answer": "Yes! Families can save even more. While we price each line at $30/month, your total savings multiply with each line you switch from an expensive carrier."
+        }
+      ],
+      "relatedTools": ["compatibility-checker", "data-calculator"]
+    },
+    {
+      "slug": "data-calculator",
+      "name": "Data Usage Calculator",
+      "shortName": "Data Calculator",
+      "tagline": "Estimate your monthly data needs",
+      "description": "Not sure how much data you use? Our data usage calculator helps you estimate your monthly data consumption based on your actual usage habits - streaming, social media, video calls, and more.",
+      "metaDescription": "Free data usage calculator. Estimate your monthly mobile data needs based on streaming, social media, video calls, and browsing habits. Find the right phone plan.",
+      "icon": "bar-chart",
+      "category": "Planning",
+      "estimatedTime": "2 minutes",
+      "features": [
+        "Activity-based estimation",
+        "Streaming quality options",
+        "Social media usage tracking",
+        "Video call data calculation",
+        "Plan recommendations"
+      ],
+      "howToSteps": [
+        {
+          "number": 1,
+          "title": "Select Your Activities",
+          "description": "Choose the activities you do regularly - streaming, social media, video calls, gaming, etc."
+        },
+        {
+          "number": 2,
+          "title": "Set Usage Frequency",
+          "description": "Indicate how often and how long you spend on each activity per day or week."
+        },
+        {
+          "number": 3,
+          "title": "Choose Quality Settings",
+          "description": "Select your preferred streaming quality (SD, HD, or 4K) for accurate estimates."
+        },
+        {
+          "number": 4,
+          "title": "Get Your Estimate",
+          "description": "See your estimated monthly data usage and which Vouch plan is right for you."
+        }
+      ],
+      "whyMatters": {
+        "title": "Why Understanding Your Data Usage Matters",
+        "content": "Many people pay for more data than they need, while others hit frustrating data caps. Understanding your actual usage helps you choose the right plan. With Vouch's unlimited data, you don't have to worry - but it's still useful to know your habits.",
+        "points": [
+          "Video streaming uses the most data: 1-8 GB per hour depending on quality",
+          "Social media with autoplay videos can use 1-2 GB per hour",
+          "Music streaming is efficient at only 50-150 MB per hour",
+          "Most people overestimate their data needs"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "How accurate is this data calculator?",
+          "answer": "Our estimates are based on industry-standard data consumption rates. Actual usage varies based on app settings, video quality, and compression. Use this as a helpful guide, not an exact measurement."
+        },
+        {
+          "question": "What uses the most mobile data?",
+          "answer": "Video streaming is the biggest data consumer. Watching Netflix in HD uses about 3 GB per hour, while 4K can use 7+ GB per hour. Social media with autoplay videos is the second biggest user."
+        },
+        {
+          "question": "Do I need unlimited data?",
+          "answer": "If you regularly stream video, use social media, or work remotely with video calls, unlimited data provides peace of mind. Light users who mainly text and browse may be fine with less."
+        },
+        {
+          "question": "Does Vouch throttle data after a certain amount?",
+          "answer": "Vouch's unlimited plans provide full-speed data for typical usage. During network congestion, data may be temporarily prioritized, but you'll never hit a hard cap or overage charge."
+        }
+      ],
+      "relatedTools": ["savings-calculator", "compatibility-checker"]
+    },
+    {
+      "slug": "coverage-checker",
+      "name": "Network Coverage Checker",
+      "shortName": "Coverage Checker",
+      "tagline": "Check Vouch coverage in your area",
+      "description": "Enter your ZIP code to instantly check Vouch Mobile network coverage in your area. See coverage quality ratings, 5G availability, and network type for your location using AT&T's nationwide network.",
+      "metaDescription": "Free network coverage checker for Vouch Mobile. Enter your ZIP code to see coverage quality, 5G availability, and signal strength in your area on AT&T's network.",
+      "icon": "map-pin",
+      "category": "Coverage",
+      "estimatedTime": "30 seconds",
+      "features": [
+        "ZIP code lookup",
+        "Coverage quality rating",
+        "5G availability check",
+        "Network type identification",
+        "Instant results"
+      ],
+      "howToSteps": [
+        {
+          "number": 1,
+          "title": "Enter Your ZIP Code",
+          "description": "Type in your 5-digit ZIP code to check coverage in your area."
+        },
+        {
+          "number": 2,
+          "title": "View Coverage Rating",
+          "description": "See your area's coverage quality - Excellent, Good, or Fair based on AT&T network data."
+        },
+        {
+          "number": 3,
+          "title": "Check 5G Availability",
+          "description": "Find out if 5G service is available in your area and what type of 5G network."
+        },
+        {
+          "number": 4,
+          "title": "Make Your Decision",
+          "description": "Use your coverage results to confidently switch to Vouch Mobile."
+        }
+      ],
+      "whyMatters": {
+        "title": "Why Check Coverage Before Switching?",
+        "content": "Vouch Mobile uses AT&T's nationwide network, providing coverage to 99% of Americans. However, coverage quality varies by location. Urban areas typically have excellent 5G coverage, while rural areas may have strong LTE. Checking coverage ensures you'll have the service quality you expect before making the switch.",
+        "points": [
+          "Vouch uses AT&T's network - same towers as AT&T customers",
+          "5G Ultra Wideband available in major metropolitan areas",
+          "5G/LTE coverage reaches 99% of the US population",
+          "Rural areas may have LTE-only coverage with excellent reliability"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "How accurate is this coverage checker?",
+          "answer": "Our coverage data is based on AT&T's network coverage maps. Actual coverage may vary based on terrain, buildings, and other factors. For the most accurate assessment, consider your typical usage locations."
+        },
+        {
+          "question": "What's the difference between 5G Ultra and regular 5G?",
+          "answer": "5G Ultra (also called 5G+) uses high-band millimeter wave spectrum for extremely fast speeds up to 1+ Gbps. Regular 5G uses mid-band or low-band spectrum with speeds of 100-400 Mbps. Both are significantly faster than LTE."
+        },
+        {
+          "question": "Will I get the same coverage as AT&T customers?",
+          "answer": "Yes! Vouch Mobile uses AT&T's full network including all cell towers and 5G infrastructure. You'll have the same coverage footprint as AT&T postpaid customers."
+        },
+        {
+          "question": "What if my area shows 'Fair' coverage?",
+          "answer": "Fair coverage means you'll have reliable service for calls and texts, with data speeds that may be slower in some spots. Many customers in fair coverage areas still have great experiences, especially for everyday use."
+        },
+        {
+          "question": "Does Vouch offer coverage outside the US?",
+          "answer": "Vouch Mobile focuses on providing excellent domestic coverage. International roaming options may be available for travel. Check our plans page for current international features."
+        }
+      ],
+      "relatedTools": ["compatibility-checker", "savings-calculator"]
+    },
+    {
+      "slug": "unlock-checker",
+      "name": "Phone Unlock Status Guide",
+      "shortName": "Unlock Guide",
+      "tagline": "Learn how to unlock your phone for Vouch",
+      "description": "Get step-by-step instructions to unlock your phone from your current carrier. Select your device type and carrier to see specific unlock requirements, timelines, and official carrier links.",
+      "metaDescription": "Free phone unlock guide for switching to Vouch Mobile. Get carrier-specific unlock instructions for AT&T, Verizon, T-Mobile, and more. No IMEI required.",
+      "icon": "unlock",
+      "category": "Device",
+      "estimatedTime": "1 minute",
+      "features": [
+        "Carrier-specific instructions",
+        "Device type guidance",
+        "Unlock requirements checklist",
+        "Official carrier links",
+        "No IMEI required"
+      ],
+      "howToSteps": [
+        {
+          "number": 1,
+          "title": "Select Your Device Type",
+          "description": "Choose whether you have an iPhone or Android device for tailored instructions."
+        },
+        {
+          "number": 2,
+          "title": "Select Your Current Carrier",
+          "description": "Choose the carrier your phone is currently locked to (AT&T, Verizon, T-Mobile, etc.)."
+        },
+        {
+          "number": 3,
+          "title": "Review Requirements",
+          "description": "See the specific requirements your carrier needs before they'll unlock your phone."
+        },
+        {
+          "number": 4,
+          "title": "Follow the Steps",
+          "description": "Use our step-by-step guide and official carrier links to complete the unlock process."
+        }
+      ],
+      "whyMatters": {
+        "title": "Why You Need an Unlocked Phone",
+        "content": "Most phones purchased through a carrier are 'locked' to that carrier's network. To use your phone with Vouch Mobile, it must be unlocked. The good news: carriers are legally required to unlock eligible phones, and the process is usually free. Understanding your carrier's requirements saves time and frustration.",
+        "points": [
+          "Carrier-locked phones can only be used on that carrier's network",
+          "Unlocking is free and required by FCC regulations for eligible devices",
+          "Most carriers require 60 days of active service before unlocking",
+          "Phones must be paid off in full before carriers will unlock them"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "How do I know if my phone is already unlocked?",
+          "answer": "The easiest test is to insert a SIM card from a different carrier. If it works, your phone is unlocked. You can also check in your phone settings or contact your carrier directly."
+        },
+        {
+          "question": "How long does unlocking take?",
+          "answer": "Most carriers process unlock requests within 24-48 hours. AT&T and Verizon are typically fastest, while some prepaid carriers may take up to 5 business days."
+        },
+        {
+          "question": "Will unlocking my phone erase my data?",
+          "answer": "No, unlocking your phone does not affect your data, apps, or settings. It simply removes the carrier restriction so you can use other networks."
+        },
+        {
+          "question": "What if my carrier won't unlock my phone?",
+          "answer": "If you meet all requirements and your carrier refuses, you can file a complaint with the FCC. Carriers are legally required to unlock eligible devices. Common issues include outstanding balances or not meeting the time requirement."
+        },
+        {
+          "question": "Do I need to provide my IMEI to unlock?",
+          "answer": "Yes, your carrier will need your IMEI number when you submit an unlock request. You can find it by dialing *#06# on your phone or checking Settings > About Phone."
+        }
+      ],
+      "relatedTools": ["compatibility-checker", "coverage-checker"]
+    }
+  ]
+}

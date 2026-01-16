@@ -1,0 +1,1090 @@
+[
+  {
+    "name": "AT&T",
+    "slug": "att-alternatives",
+    "network": "AT&T",
+    "tagline": "Find a better deal on the same network quality",
+    "originalPrice": "$75/mo",
+    "fiveG": "Yes (extra)",
+    "contract": "2 years",
+    "creditCheck": "Required",
+    "hotspot": "Varies",
+    "painPoints": [
+      {
+        "title": "Expensive Monthly Bills",
+        "description": "AT&T's unlimited plans start at $65/month and can exceed $85/month with fees and taxes."
+      },
+      {
+        "title": "Long-Term Contracts",
+        "description": "Many customers are locked into 2-year agreements with early termination fees up to $325."
+      },
+      {
+        "title": "Credit Check Required",
+        "description": "AT&T runs a hard credit check that can impact your credit score and may result in deposit requirements."
+      },
+      {
+        "title": "Hidden Fees",
+        "description": "Activation fees, upgrade fees, and administrative charges add up quickly on your monthly bill."
+      }
+    ],
+    "alternatives": [
+      {
+        "name": "Vouch Mobile",
+        "rank": 1,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "No hidden fees",
+        "features": [
+          "Unlimited talk, text & data",
+          "5G included at no extra cost",
+          "No credit check required",
+          "No contracts or commitments",
+          "Mobile hotspot included"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5-20GB",
+        "isVouch": true,
+        "url": "https://vouchmobile.com",
+        "switchReasons": [
+          "Save over $500 per year on the same AT&T network",
+          "No credit check means instant approval",
+          "Month-to-month flexibility with no penalties",
+          "5G access included at no additional cost"
+        ]
+      },
+      {
+        "name": "Cricket Wireless",
+        "rank": 2,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "2GB data limit",
+        "features": [
+          "AT&T network coverage",
+          "In-store support available",
+          "Multi-line discounts",
+          "Unlimited plans from $55/mo"
+        ],
+        "fiveG": "Extra cost",
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "15GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-cricket/"
+      },
+      {
+        "name": "Visible",
+        "rank": 3,
+        "network": "Verizon",
+        "price": "$25/mo",
+        "priceNote": "Basic plan",
+        "features": [
+          "Verizon network",
+          "Unlimited data",
+          "No annual contract",
+          "Party Pay discounts"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-visible/"
+      },
+      {
+        "name": "Mint Mobile",
+        "rank": 4,
+        "network": "T-Mobile",
+        "price": "$15/mo",
+        "priceNote": "3-month intro",
+        "features": [
+          "Low intro pricing",
+          "T-Mobile 5G network",
+          "Free international calls",
+          "Bulk discounts"
+        ],
+        "fiveG": true,
+        "contract": "3-12 months",
+        "creditCheck": "No",
+        "hotspot": "Included",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-mint-mobile/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I keep my phone number when switching from AT&T?",
+        "answer": "Yes! You can port your existing AT&T phone number to any alternative carrier. The process typically takes a few minutes to a few hours. Make sure you don't cancel your AT&T service before initiating the port, as you'll need your account active to transfer the number."
+      },
+      {
+        "question": "Will my AT&T phone work with other carriers?",
+        "answer": "Most AT&T phones are compatible with AT&T MVNOs like Vouch Mobile since they use the same network. For carriers on different networks (T-Mobile, Verizon), your phone needs to be unlocked and support their bands. AT&T will unlock your phone for free if it's paid off and you've had it for at least 60 days."
+      },
+      {
+        "question": "How do I get out of my AT&T contract?",
+        "answer": "If you're under contract, you may face early termination fees (up to $325). However, you can avoid this by: paying off your device balance, waiting until your contract ends, or switching to a no-contract carrier like Vouch Mobile after your current term. AT&T no longer offers traditional 2-year contracts on most plans."
+      },
+      {
+        "question": "What's the best AT&T alternative for coverage?",
+        "answer": "For identical coverage, choose an AT&T MVNO like Vouch Mobile or Cricket Wireless - they use the exact same towers. Vouch Mobile offers the best value at $30/month with no credit check, while Cricket has physical stores. If you're in urban areas, T-Mobile or Verizon MVNOs are also excellent options."
+      },
+      {
+        "question": "Will I lose coverage if I switch from AT&T?",
+        "answer": "Not if you choose an AT&T MVNO! Carriers like Vouch Mobile use AT&T's same towers and network infrastructure, so you get identical coverage. The only difference is you pay less. For non-AT&T alternatives, coverage depends on that network's strength in your area."
+      }
+    ]
+  },
+  {
+    "name": "Verizon",
+    "slug": "verizon-alternatives",
+    "network": "Verizon",
+    "tagline": "Same reliability, better price - find your perfect match",
+    "originalPrice": "$80/mo",
+    "fiveG": "Yes",
+    "contract": "No (device payments)",
+    "creditCheck": "Required",
+    "hotspot": "Varies",
+    "painPoints": [
+      {
+        "title": "Premium Pricing",
+        "description": "Verizon charges a premium for their network, with unlimited plans ranging from $70-$90/month before taxes."
+      },
+      {
+        "title": "Device Payment Lock-in",
+        "description": "While there's no traditional contract, device payment plans can keep you tied to Verizon for 24-36 months."
+      },
+      {
+        "title": "Hard Credit Checks",
+        "description": "Verizon requires a credit check that impacts your score and may require a deposit for those with limited credit."
+      },
+      {
+        "title": "Complex Plan Tiers",
+        "description": "Multiple plan levels with different perks make it confusing to know if you're getting the best value."
+      }
+    ],
+    "alternatives": [
+      {
+        "name": "Vouch Mobile",
+        "rank": 1,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "All-inclusive",
+        "features": [
+          "Unlimited everything",
+          "5G included",
+          "No credit check",
+          "No contracts",
+          "AT&T network reliability"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5-20GB",
+        "isVouch": true,
+        "url": "https://vouchmobile.com",
+        "switchReasons": [
+          "Save over $600 annually compared to Verizon",
+          "AT&T network offers comparable nationwide coverage",
+          "No credit check or deposit required",
+          "Simple flat-rate pricing with no surprises"
+        ]
+      },
+      {
+        "name": "Visible",
+        "rank": 2,
+        "network": "Verizon",
+        "price": "$25/mo",
+        "priceNote": "Basic plan",
+        "features": [
+          "Verizon network",
+          "Unlimited data",
+          "No contract",
+          "App-based service"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-visible/"
+      },
+      {
+        "name": "US Mobile",
+        "rank": 3,
+        "network": "Verizon/T-Mobile",
+        "price": "$25/mo",
+        "priceNote": "Unlimited Basic",
+        "features": [
+          "Choose your network",
+          "Unlimited plans",
+          "Build-your-own options",
+          "Premium data available"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "Varies",
+        "isVouch": false,
+        "url": "#"
+      },
+      {
+        "name": "Mint Mobile",
+        "rank": 4,
+        "network": "T-Mobile",
+        "price": "$15/mo",
+        "priceNote": "3-month intro",
+        "features": [
+          "Lowest intro price",
+          "T-Mobile 5G",
+          "Bulk savings",
+          "Ryan Reynolds approved"
+        ],
+        "fiveG": true,
+        "contract": "3-12 months",
+        "creditCheck": "No",
+        "hotspot": "Included",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-mint-mobile/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I port my Verizon number to another carrier?",
+        "answer": "Absolutely! Your phone number belongs to you, not Verizon. When switching, simply provide your new carrier with your Verizon account number and PIN. Don't cancel Verizon until the port completes, which usually takes minutes to a few hours."
+      },
+      {
+        "question": "Will a Verizon phone work on AT&T's network?",
+        "answer": "Most newer Verizon phones are unlocked and support multiple networks. Phones from 2020 onwards typically work on AT&T. Check that your phone supports AT&T's bands (2, 4, 5, 12, 14, 17, 29, 30, 66). Verizon will unlock your phone after 60 days of service."
+      },
+      {
+        "question": "What happens to my Verizon device payments if I switch?",
+        "answer": "You'll need to pay off your remaining device balance or continue making payments. Verizon won't block your phone for switching, but the payments continue. Some carriers offer trade-in credits or bill credits to help offset this cost."
+      },
+      {
+        "question": "Is AT&T coverage as good as Verizon?",
+        "answer": "AT&T and Verizon are both top-tier networks with 99%+ population coverage. AT&T actually has slightly more geographic coverage in rural areas. For most people, there's no noticeable difference in everyday use. Vouch Mobile gives you full AT&T coverage for $30/month."
+      },
+      {
+        "question": "What's the cheapest Verizon alternative with good coverage?",
+        "answer": "For the same Verizon network, Visible offers plans from $25/month. However, Vouch Mobile at $30/month on AT&T's network provides better overall value with no data deprioritization and includes features like mobile hotspot that cost extra on Visible's basic plan."
+      }
+    ]
+  },
+  {
+    "name": "T-Mobile",
+    "slug": "t-mobile-alternatives",
+    "network": "T-Mobile",
+    "tagline": "Great alternatives with even better value",
+    "originalPrice": "$70/mo",
+    "fiveG": "Yes",
+    "contract": "No",
+    "creditCheck": "Required",
+    "hotspot": "Varies",
+    "painPoints": [
+      {
+        "title": "Rising Prices",
+        "description": "T-Mobile's prices have increased significantly since the Sprint merger, with unlimited plans now starting at $70/month."
+      },
+      {
+        "title": "Rural Coverage Gaps",
+        "description": "Despite improvements, T-Mobile still has weaker coverage in rural areas compared to AT&T and Verizon."
+      },
+      {
+        "title": "Credit Requirements",
+        "description": "T-Mobile runs credit checks and may require deposits, adding barriers for many customers."
+      },
+      {
+        "title": "Network Congestion",
+        "description": "In some areas, T-Mobile's network can become congested during peak hours, slowing data speeds."
+      }
+    ],
+    "alternatives": [
+      {
+        "name": "Vouch Mobile",
+        "rank": 1,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "Flat rate",
+        "features": [
+          "Unlimited everything",
+          "5G included",
+          "No credit check",
+          "Better rural coverage",
+          "No contracts"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5-20GB",
+        "isVouch": true,
+        "url": "https://vouchmobile.com",
+        "switchReasons": [
+          "AT&T network has better rural coverage than T-Mobile",
+          "Save $40/month compared to T-Mobile unlimited",
+          "No credit check means everyone qualifies",
+          "Simpler pricing with no hidden fees"
+        ]
+      },
+      {
+        "name": "Mint Mobile",
+        "rank": 2,
+        "network": "T-Mobile",
+        "price": "$15/mo",
+        "priceNote": "3-month intro",
+        "features": [
+          "Same T-Mobile network",
+          "Lowest intro pricing",
+          "Bulk payment discounts",
+          "5G included"
+        ],
+        "fiveG": true,
+        "contract": "3-12 months",
+        "creditCheck": "No",
+        "hotspot": "Included",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-mint-mobile/"
+      },
+      {
+        "name": "Metro by T-Mobile",
+        "rank": 3,
+        "network": "T-Mobile",
+        "price": "$30/mo",
+        "priceNote": "Basic plan",
+        "features": [
+          "T-Mobile owned",
+          "Physical stores",
+          "Phone deals",
+          "Amazon Prime option"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5-15GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-metro/"
+      },
+      {
+        "name": "Cricket Wireless",
+        "rank": 4,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "2GB data",
+        "features": [
+          "AT&T network",
+          "In-store support",
+          "Multi-line savings",
+          "Unlimited from $55"
+        ],
+        "fiveG": "Extra cost",
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "15GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-cricket/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I use my T-Mobile phone on AT&T's network?",
+        "answer": "Yes, most T-Mobile phones from 2019 onwards are compatible with AT&T. Your phone needs to be unlocked (T-Mobile unlocks devices after they're paid off) and support AT&T's LTE bands. iPhones and most Samsung Galaxy phones work seamlessly on both networks."
+      },
+      {
+        "question": "Will I get better coverage if I switch from T-Mobile?",
+        "answer": "It depends on your location. AT&T generally has better rural and indoor coverage than T-Mobile. If you experience dropped calls or slow data in certain areas with T-Mobile, switching to an AT&T-based carrier like Vouch Mobile could significantly improve your experience."
+      },
+      {
+        "question": "How do I switch from T-Mobile without losing my number?",
+        "answer": "Contact your new carrier to initiate a port request with your T-Mobile account number and PIN. The port typically completes within minutes. Don't cancel T-Mobile first - the port will automatically close your account once the number transfers."
+      },
+      {
+        "question": "Is T-Mobile's 5G better than AT&T's?",
+        "answer": "Both networks offer excellent 5G coverage in urban areas. T-Mobile has more mid-band 5G (faster speeds), while AT&T has better low-band 5G (wider coverage). For everyday use, both provide significant speed improvements over 4G. Vouch Mobile includes 5G access on AT&T at no extra cost."
+      },
+      {
+        "question": "What's the best T-Mobile alternative for families?",
+        "answer": "For families, Vouch Mobile offers the best per-line value at $30/month with no contracts. Unlike T-Mobile's family plans that require multiple lines for discounts, each Vouch line is independently priced. Mint Mobile also offers family savings with their bulk purchasing model."
+      }
+    ]
+  },
+  {
+    "name": "Cricket Wireless",
+    "slug": "cricket-alternatives",
+    "network": "AT&T",
+    "tagline": "Keep AT&T coverage without Cricket's limitations",
+    "originalPrice": "$55/mo",
+    "fiveG": "Extra cost",
+    "contract": "No",
+    "creditCheck": "No",
+    "hotspot": "15GB",
+    "painPoints": [
+      {
+        "title": "5G Costs Extra",
+        "description": "Unlike most competitors, Cricket charges additional fees for 5G access, making it more expensive to stay on the latest network technology."
+      },
+      {
+        "title": "Data Deprioritization",
+        "description": "Cricket customers are always deprioritized behind AT&T postpaid customers, leading to slower speeds during peak usage times in busy areas."
+      },
+      {
+        "title": "Limited Plan Flexibility",
+        "description": "Cricket's plans are rigid with limited customization options, and their cheapest plans have restrictive data caps of just 2-5GB."
+      },
+      {
+        "title": "Streaming Quality Limits",
+        "description": "Video streaming is capped at SD quality (480p) on most Cricket plans, frustrating users who want HD content on their unlimited data."
+      }
+    ],
+    "alternatives": [
+      {
+        "name": "Vouch Mobile",
+        "rank": 1,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "5G included",
+        "features": [
+          "Same AT&T network coverage",
+          "5G included at no extra cost",
+          "No credit check required",
+          "No contracts or commitments",
+          "Mobile hotspot included"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5-20GB",
+        "isVouch": true,
+        "url": "https://vouchmobile.com",
+        "switchReasons": [
+          "5G included free vs Cricket's extra charge",
+          "Save $25/month on unlimited compared to Cricket",
+          "Same AT&T network towers and coverage",
+          "No video streaming restrictions"
+        ]
+      },
+      {
+        "name": "Visible",
+        "rank": 2,
+        "network": "Verizon",
+        "price": "$25/mo",
+        "priceNote": "Basic plan",
+        "features": [
+          "Verizon network",
+          "Unlimited data",
+          "No annual contract",
+          "5G included"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-visible/"
+      },
+      {
+        "name": "US Mobile",
+        "rank": 3,
+        "network": "Verizon/T-Mobile/AT&T",
+        "price": "$25/mo",
+        "priceNote": "Unlimited Starter",
+        "features": [
+          "Choose your network",
+          "Highly customizable plans",
+          "5G included",
+          "20GB hotspot"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "20GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-us-mobile/"
+      },
+      {
+        "name": "Mint Mobile",
+        "rank": 4,
+        "network": "T-Mobile",
+        "price": "$15/mo",
+        "priceNote": "3-month intro",
+        "features": [
+          "Lowest intro pricing",
+          "T-Mobile 5G network",
+          "Bulk payment discounts",
+          "5G included"
+        ],
+        "fiveG": true,
+        "contract": "3-12 months",
+        "creditCheck": "No",
+        "hotspot": "Included",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-mint-mobile/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I keep my phone number when switching from Cricket?",
+        "answer": "Yes! You can port your Cricket phone number to any new carrier. The process is simple - just don't cancel Cricket before initiating the port. You'll need your Cricket account number and PIN, which you can find in your Cricket app or by calling customer service."
+      },
+      {
+        "question": "Will my Cricket phone work with Vouch Mobile?",
+        "answer": "Since both Cricket and Vouch Mobile use the AT&T network, your Cricket phone will work seamlessly with Vouch Mobile. Cricket phones are typically unlocked if you've had service for at least 6 months, but even if locked, they should work fine on another AT&T MVNO."
+      },
+      {
+        "question": "Why do Cricket customers switch to other carriers?",
+        "answer": "The top reasons Cricket customers switch include: paying extra for 5G access, experiencing slow speeds due to deprioritization during peak hours, wanting better unlimited plan pricing, and frustration with video streaming quality caps. Vouch Mobile solves all these issues on the same AT&T network."
+      },
+      {
+        "question": "Is Vouch Mobile really on the same network as Cricket?",
+        "answer": "Yes! Both Vouch Mobile and Cricket are AT&T MVNOs, meaning they use the exact same cell towers and network infrastructure. You'll get identical coverage - the difference is Vouch Mobile offers better pricing and includes 5G at no extra charge."
+      },
+      {
+        "question": "How much can I save by switching from Cricket to Vouch Mobile?",
+        "answer": "Cricket's unlimited plan costs $55/month, while Vouch Mobile's unlimited plan is just $30/month - that's $25/month in savings, or $300 per year. Plus, you get 5G included free with Vouch Mobile, which Cricket charges extra for."
+      }
+    ]
+  },
+  {
+    "name": "Mint Mobile",
+    "slug": "mint-mobile-alternatives",
+    "network": "T-Mobile",
+    "tagline": "Same savings mindset, better flexibility",
+    "originalPrice": "$30/mo",
+    "fiveG": "Yes",
+    "contract": "3-12 months",
+    "creditCheck": "No",
+    "hotspot": "Included",
+    "painPoints": [
+      {
+        "title": "Large Upfront Payments",
+        "description": "Mint Mobile requires you to pay for 3, 6, or 12 months upfront to get advertised pricing. Their $15/month rate requires a full year payment of $180 at once."
+      },
+      {
+        "title": "Price Jumps After Intro",
+        "description": "The heavily-advertised $15/month intro pricing doubles to $30/month after your first 3-month period, surprising many customers."
+      },
+      {
+        "title": "Weaker Rural Coverage",
+        "description": "T-Mobile's network still lags behind AT&T in rural areas. If you travel or live outside major cities, you may experience coverage gaps."
+      },
+      {
+        "title": "No True Month-to-Month",
+        "description": "Unlike truly flexible carriers, Mint Mobile doesn't offer genuine month-to-month billing - you must commit to at least 3 months minimum."
+      }
+    ],
+    "alternatives": [
+      {
+        "name": "Vouch Mobile",
+        "rank": 1,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "Month-to-month",
+        "features": [
+          "True month-to-month billing",
+          "Better rural AT&T coverage",
+          "No upfront bulk payment required",
+          "5G included",
+          "No price increases after promo"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5-20GB",
+        "isVouch": true,
+        "url": "https://vouchmobile.com",
+        "switchReasons": [
+          "Pay monthly instead of 3-12 months upfront",
+          "Better rural coverage on AT&T network",
+          "Consistent $30/month with no price jumps",
+          "Cancel anytime without losing prepaid money"
+        ]
+      },
+      {
+        "name": "Visible",
+        "rank": 2,
+        "network": "Verizon",
+        "price": "$25/mo",
+        "priceNote": "True monthly",
+        "features": [
+          "Verizon network",
+          "Month-to-month billing",
+          "No prepayment required",
+          "5G included"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-visible/"
+      },
+      {
+        "name": "Tello Mobile",
+        "rank": 3,
+        "network": "T-Mobile",
+        "price": "$25/mo",
+        "priceNote": "Unlimited",
+        "features": [
+          "Same T-Mobile network",
+          "True month-to-month",
+          "Free international calls",
+          "BBB A+ rating"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "10GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-tello/"
+      },
+      {
+        "name": "US Mobile",
+        "rank": 4,
+        "network": "Verizon/T-Mobile/AT&T",
+        "price": "$25/mo",
+        "priceNote": "Unlimited Starter",
+        "features": [
+          "Network flexibility",
+          "Month-to-month",
+          "Build-your-own plans",
+          "5G included"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "20GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-us-mobile/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I switch from Mint Mobile before my prepaid period ends?",
+        "answer": "Yes, you can switch anytime, but you won't get a refund for unused months. This is one reason many people prefer month-to-month carriers like Vouch Mobile - you only pay for what you use and can leave whenever you want."
+      },
+      {
+        "question": "Why do people leave Mint Mobile?",
+        "answer": "Common reasons include: frustration with upfront payments, price increases after the intro period, T-Mobile's weaker rural coverage, and wanting more flexibility. Vouch Mobile addresses all these issues with true month-to-month billing on AT&T's superior rural network."
+      },
+      {
+        "question": "Will my Mint Mobile phone work with other carriers?",
+        "answer": "Mint Mobile phones are typically unlocked. Most modern smartphones work on all major networks. If switching to an AT&T-based carrier like Vouch Mobile, verify your phone supports AT&T's bands - most iPhones and Samsung Galaxy phones from 2019 onwards will work."
+      },
+      {
+        "question": "Is Vouch Mobile's coverage better than Mint Mobile?",
+        "answer": "In rural and suburban areas, yes. Vouch Mobile uses AT&T's network, which has significantly better coverage outside major cities compared to T-Mobile (Mint's network). In urban areas, both networks perform similarly."
+      },
+      {
+        "question": "How do I port my number from Mint Mobile?",
+        "answer": "Get your Mint Mobile account number and transfer PIN from the Mint Mobile app or website. Provide these to your new carrier when signing up. Don't cancel Mint Mobile first - the port will automatically close your account. The transfer usually completes within minutes."
+      }
+    ]
+  },
+  {
+    "name": "Metro by T-Mobile",
+    "slug": "metro-alternatives",
+    "network": "T-Mobile",
+    "tagline": "Better value without the store visit",
+    "originalPrice": "$60/mo",
+    "fiveG": "Yes",
+    "contract": "No",
+    "creditCheck": "No",
+    "hotspot": "5-15GB",
+    "painPoints": [
+      {
+        "title": "Expensive Unlimited Plans",
+        "description": "Metro's unlimited plans cost $50-$60/month, significantly more than competitors offering similar features on comparable or better networks."
+      },
+      {
+        "title": "Constant Data Deprioritization",
+        "description": "Metro customers are always deprioritized behind T-Mobile postpaid users, meaning slower speeds during busy times in congested areas."
+      },
+      {
+        "title": "Rural Coverage Gaps",
+        "description": "Despite T-Mobile improvements, Metro still has weaker coverage in rural areas and some suburbs compared to AT&T-based carriers."
+      },
+      {
+        "title": "In-Store Experience Required",
+        "description": "Many Metro transactions require visiting a physical store, adding inconvenience compared to fully online carriers with easy self-service."
+      }
+    ],
+    "alternatives": [
+      {
+        "name": "Vouch Mobile",
+        "rank": 1,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "All online",
+        "features": [
+          "Better AT&T rural coverage",
+          "Fully online service",
+          "5G included",
+          "No deprioritization hassles",
+          "Half the price of Metro unlimited"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5-20GB",
+        "isVouch": true,
+        "url": "https://vouchmobile.com",
+        "switchReasons": [
+          "Save $30/month vs Metro's unlimited plan",
+          "Better rural coverage on AT&T network",
+          "Manage everything online - no store visits",
+          "Consistent speeds without deprioritization"
+        ]
+      },
+      {
+        "name": "Mint Mobile",
+        "rank": 2,
+        "network": "T-Mobile",
+        "price": "$15/mo",
+        "priceNote": "3-month intro",
+        "features": [
+          "Same T-Mobile network",
+          "Lowest intro pricing",
+          "Fully online service",
+          "5G included"
+        ],
+        "fiveG": true,
+        "contract": "3-12 months",
+        "creditCheck": "No",
+        "hotspot": "Included",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-mint-mobile/"
+      },
+      {
+        "name": "Visible",
+        "rank": 3,
+        "network": "Verizon",
+        "price": "$25/mo",
+        "priceNote": "Basic plan",
+        "features": [
+          "Verizon network",
+          "Fully online",
+          "Month-to-month",
+          "5G included"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-visible/"
+      },
+      {
+        "name": "Tello Mobile",
+        "rank": 4,
+        "network": "T-Mobile",
+        "price": "$25/mo",
+        "priceNote": "Unlimited",
+        "features": [
+          "Same T-Mobile network",
+          "Lower pricing",
+          "Online-first service",
+          "Free international calls"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "10GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-tello/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I keep my Metro by T-Mobile phone number?",
+        "answer": "Absolutely! Your phone number belongs to you, not Metro. When switching, provide your new carrier with your Metro account number and PIN. The port usually completes in minutes to a few hours. Don't cancel Metro before the port completes."
+      },
+      {
+        "question": "Will my Metro phone work on AT&T's network?",
+        "answer": "Most Metro phones from 2019 onwards support multiple networks and will work on AT&T. Your phone needs to be unlocked (Metro unlocks phones after 180 days of active service) and support AT&T's LTE bands. iPhones and most Samsung Galaxy phones work seamlessly."
+      },
+      {
+        "question": "Why is Metro more expensive than other prepaid carriers?",
+        "answer": "Metro charges a premium for their retail store presence and brand recognition. You're paying for the convenience of in-store support and phone deals. Online-first carriers like Vouch Mobile pass those savings to customers, offering similar or better service for less."
+      },
+      {
+        "question": "Is AT&T coverage better than Metro's T-Mobile network?",
+        "answer": "In rural areas and many suburbs, yes. AT&T has traditionally stronger coverage outside major cities. In urban areas, both networks perform similarly. If you've experienced dead zones or weak signal with Metro, Vouch Mobile on AT&T may provide better coverage."
+      },
+      {
+        "question": "How much can I save switching from Metro to Vouch Mobile?",
+        "answer": "Metro's unlimited plan costs $60/month while Vouch Mobile's unlimited is $30/month - a savings of $30/month or $360/year. You get better AT&T coverage and convenient online service, making the switch both cheaper and more convenient."
+      }
+    ]
+  },
+  {
+    "name": "Visible",
+    "slug": "visible-alternatives",
+    "network": "Verizon",
+    "tagline": "Better value without the deprioritization headaches",
+    "originalPrice": "$45/mo",
+    "fiveG": "Yes",
+    "contract": "No",
+    "creditCheck": "No",
+    "hotspot": "5GB-Unlimited",
+    "painPoints": [
+      {
+        "title": "Heavy Data Deprioritization",
+        "description": "Visible's basic $25/month plan has severe data deprioritization, making speeds painfully slow during peak hours in congested areas."
+      },
+      {
+        "title": "Premium Plan Gets Expensive",
+        "description": "To avoid deprioritization, you need Visible+ at $45/month - nearly double the advertised base price and comparable to major carriers."
+      },
+      {
+        "title": "Limited Hotspot on Basic",
+        "description": "The basic plan only includes 5GB of hotspot data, while competitors offer 15-20GB at similar price points."
+      },
+      {
+        "title": "App-Only Customer Service",
+        "description": "Visible's app-based support can be frustrating when you have complex issues that need phone support or human interaction."
+      }
+    ],
+    "alternatives": [
+      {
+        "name": "Vouch Mobile",
+        "rank": 1,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "No deprioritization",
+        "features": [
+          "AT&T network reliability",
+          "No severe deprioritization",
+          "5G included",
+          "More hotspot data",
+          "Better rural coverage"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5-20GB",
+        "isVouch": true,
+        "url": "https://vouchmobile.com",
+        "switchReasons": [
+          "Consistent speeds without deprioritization issues",
+          "Better rural coverage than Verizon",
+          "More hotspot data at the same price point",
+          "Save $15/month vs Visible+ for similar experience"
+        ]
+      },
+      {
+        "name": "US Mobile",
+        "rank": 2,
+        "network": "Verizon/T-Mobile/AT&T",
+        "price": "$25/mo",
+        "priceNote": "Unlimited Starter",
+        "features": [
+          "Same Verizon network option",
+          "Network flexibility",
+          "20GB hotspot",
+          "Customizable plans"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "20GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-us-mobile/"
+      },
+      {
+        "name": "Cricket Wireless",
+        "rank": 3,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "2GB data",
+        "features": [
+          "AT&T network",
+          "Physical stores",
+          "Multi-line discounts",
+          "Unlimited from $55"
+        ],
+        "fiveG": "Extra cost",
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "15GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-cricket/"
+      },
+      {
+        "name": "Mint Mobile",
+        "rank": 4,
+        "network": "T-Mobile",
+        "price": "$15/mo",
+        "priceNote": "3-month intro",
+        "features": [
+          "Lowest intro price",
+          "T-Mobile 5G",
+          "Bulk discounts",
+          "Hotspot included"
+        ],
+        "fiveG": true,
+        "contract": "3-12 months",
+        "creditCheck": "No",
+        "hotspot": "Included",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-mint-mobile/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why do people leave Visible for other carriers?",
+        "answer": "The main complaints are severe data deprioritization causing slow speeds in busy areas, limited customer service options, and the higher price of Visible+ needed to avoid slowdowns. Vouch Mobile offers better value with consistent speeds on AT&T's network."
+      },
+      {
+        "question": "Will my Visible phone work on AT&T?",
+        "answer": "Most phones purchased from Visible are unlocked and will work on AT&T. Modern smartphones support multiple networks. Check that your phone supports AT&T's LTE bands - most iPhones and flagship Android phones from 2019 onwards work on both networks."
+      },
+      {
+        "question": "Is Visible's deprioritization really that bad?",
+        "answer": "In congested areas during peak hours, yes. Users report speeds dropping to under 1 Mbps, making basic tasks like loading web pages frustrating. This only affects the $25 basic plan - Visible+ at $45/month has better priority. Vouch Mobile avoids this issue entirely."
+      },
+      {
+        "question": "How does Vouch Mobile compare to Visible+?",
+        "answer": "Vouch Mobile costs $30/month vs Visible+ at $45/month - a $15/month savings. Both offer similar features without deprioritization issues. The main difference is network: AT&T (Vouch) vs Verizon (Visible+). AT&T has slightly better rural coverage."
+      },
+      {
+        "question": "Can I port my Visible number to another carrier?",
+        "answer": "Yes, you can transfer your number from Visible. Get your account number and PIN from the Visible app under Account settings. Provide these to your new carrier when signing up. The port typically completes in minutes. Don't cancel Visible before the transfer completes."
+      }
+    ]
+  },
+  {
+    "name": "Boost Mobile",
+    "slug": "boost-alternatives",
+    "network": "T-Mobile/AT&T",
+    "tagline": "Simpler plans with consistent network quality",
+    "originalPrice": "$50/mo",
+    "fiveG": "Yes",
+    "contract": "No",
+    "creditCheck": "No",
+    "hotspot": "Varies",
+    "painPoints": [
+      {
+        "title": "Confusing Multi-Network Setup",
+        "description": "Boost operates on both T-Mobile and AT&T networks depending on your location and plan, creating confusion about what coverage you'll actually get."
+      },
+      {
+        "title": "Inconsistent Plan Structure",
+        "description": "Boost frequently changes plans and pricing, making it hard to know if you're getting a good deal or what features are actually included."
+      },
+      {
+        "title": "Data Deprioritization",
+        "description": "Like other prepaid carriers, Boost customers experience deprioritization during network congestion, leading to slower speeds when you need them most."
+      },
+      {
+        "title": "Customer Service Challenges",
+        "description": "Boost has received numerous complaints about customer service quality, billing issues, and difficulty resolving problems."
+      }
+    ],
+    "alternatives": [
+      {
+        "name": "Vouch Mobile",
+        "rank": 1,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "Consistent network",
+        "features": [
+          "Dedicated AT&T network",
+          "Simple straightforward pricing",
+          "5G included",
+          "No network confusion",
+          "Reliable service"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5-20GB",
+        "isVouch": true,
+        "url": "https://vouchmobile.com",
+        "switchReasons": [
+          "Know exactly what network you're on - AT&T everywhere",
+          "Save $20/month vs Boost's unlimited plan",
+          "Simple pricing that doesn't change constantly",
+          "Better customer experience"
+        ]
+      },
+      {
+        "name": "Visible",
+        "rank": 2,
+        "network": "Verizon",
+        "price": "$25/mo",
+        "priceNote": "Basic plan",
+        "features": [
+          "Consistent Verizon network",
+          "Simple pricing",
+          "No contract",
+          "5G included"
+        ],
+        "fiveG": true,
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "5GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-visible/"
+      },
+      {
+        "name": "Mint Mobile",
+        "rank": 3,
+        "network": "T-Mobile",
+        "price": "$15/mo",
+        "priceNote": "3-month intro",
+        "features": [
+          "Consistent T-Mobile network",
+          "Low intro pricing",
+          "Clear plan structure",
+          "5G included"
+        ],
+        "fiveG": true,
+        "contract": "3-12 months",
+        "creditCheck": "No",
+        "hotspot": "Included",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-mint-mobile/"
+      },
+      {
+        "name": "Cricket Wireless",
+        "rank": 4,
+        "network": "AT&T",
+        "price": "$30/mo",
+        "priceNote": "2GB data",
+        "features": [
+          "Dedicated AT&T network",
+          "Physical stores",
+          "Multi-line discounts",
+          "Established carrier"
+        ],
+        "fiveG": "Extra cost",
+        "contract": "No",
+        "creditCheck": "No",
+        "hotspot": "15GB",
+        "isVouch": false,
+        "url": "/compare/vouch-vs-cricket/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What network is Boost Mobile actually on?",
+        "answer": "Boost Mobile operates on both T-Mobile and AT&T networks, which varies by your location and the plan you choose. This can be confusing because you may not know which network you're using. Vouch Mobile keeps it simple - you're always on AT&T's network."
+      },
+      {
+        "question": "Can I keep my phone number when switching from Boost?",
+        "answer": "Yes! Your phone number belongs to you. Get your Boost account number and PIN from the Boost app or by calling customer service. Provide these to your new carrier when signing up. Don't cancel Boost before the port completes."
+      },
+      {
+        "question": "Will my Boost phone work with other carriers?",
+        "answer": "Boost phones are typically unlocked after 12 months of service. Most modern smartphones support multiple networks. For switching to Vouch Mobile (AT&T), verify your phone supports AT&T bands. iPhones and recent Samsung phones generally work on all networks."
+      },
+      {
+        "question": "Why do customers leave Boost Mobile?",
+        "answer": "Common reasons include: confusion about which network they're using, frequent plan and pricing changes, customer service frustrations, and wanting a more straightforward carrier experience. Vouch Mobile offers clarity with dedicated AT&T service and simple pricing."
+      },
+      {
+        "question": "How much can I save by switching from Boost to Vouch Mobile?",
+        "answer": "Boost's unlimited plan costs $50/month while Vouch Mobile is $30/month - saving you $20/month or $240/year. Plus you get the clarity of knowing you're always on AT&T's reliable network with consistent, predictable pricing."
+      }
+    ]
+  }
+]
