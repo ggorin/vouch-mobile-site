@@ -7732,13 +7732,13 @@ table.comparison-table {
   transform: rotate(45deg);
 }
 
-.faq-content {
+.faq-item-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
 }
 
-.faq-content p {
+.faq-item-content p {
   padding: 0 var(--spacing-6) var(--spacing-5);
   color: var(--color-text-light);
   line-height: 1.7;

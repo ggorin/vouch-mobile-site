@@ -453,7 +453,7 @@ layout: base.njk
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           </span>
         </button>
-        <div class="faq-content">
+        <div class="faq-item-content">
           <p>{{ faq.answer }}</p>
         </div>
       </div>
@@ -466,7 +466,7 @@ layout: base.njk
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           </span>
         </button>
-        <div class="faq-content">
+        <div class="faq-item-content">
           <p>Yes! Vouch Mobile uses AT&T's network which provides excellent coverage across {{ state.name }} with {{ state.coverage }} population coverage.</p>
         </div>
       </div>
@@ -477,7 +477,7 @@ layout: base.njk
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           </span>
         </button>
-        <div class="faq-content">
+        <div class="faq-item-content">
           <p>No! Vouch Mobile never requires a credit check. {{ state.name }} residents can sign up regardless of credit history.</p>
         </div>
       </div>
@@ -488,7 +488,7 @@ layout: base.njk
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           </span>
         </button>
-        <div class="faq-content">
+        <div class="faq-item-content">
           <p>Yes! 5G coverage is available in major {{ state.name }} cities including {{ state.cities[0].name }}{% if state.cities[1] %}, {{ state.cities[1].name }}{% endif %}{% if state.cities[2] %}, and {{ state.cities[2].name }}{% endif %}.</p>
         </div>
       </div>
