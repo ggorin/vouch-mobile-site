@@ -120,6 +120,19 @@ module.exports = async function(eleventyConfig) {
     return allFaqs;
   });
 
+  // Glossary term lookup by slug
+  // Usage: {{ "lte" | glossaryTerm }} → "LTE"
+  eleventyConfig.addFilter("glossaryTerm", function(slug) {
+    const glossary = this.ctx?.glossary || [];
+    const term = glossary.find(t => t.slug === slug);
+    if (!term) {
+      console.warn(`⚠️  Warning: Glossary term not found for slug "${slug}"`);
+      // Format slug as readable fallback: "sim-card-esim" → "Sim Card Esim"
+      return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    }
+    return term.term;
+  });
+
   // Current year shortcode
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
