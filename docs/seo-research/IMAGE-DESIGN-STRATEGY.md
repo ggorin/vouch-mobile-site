@@ -302,169 +302,222 @@ useGoogleSearch: true  ← CRITICAL for accurate landmarks
 
 ---
 
-## MCP Tool Reference (@rlabs-inc/gemini-mcp)
+## MCP Tool Reference (mcp__nanobanana__)
 
-This project uses the **@rlabs-inc/gemini-mcp** server for AI image generation.
+This project uses the **nanobanana MCP server** for AI image generation with Gemini 3 Pro Image.
 
 ### Available Image Tools
 
 | Tool | Purpose |
 |------|---------|
-| `gemini-generate-image` | Generate new images from prompts |
-| `gemini-start-image-edit` | Start an editing session with a base image |
-| `gemini-continue-image-edit` | Refine an image in an active session |
-| `gemini-end-image-edit` | Close an editing session |
-| `gemini-image-prompt` | Generate optimized prompts for image generation |
+| `mcp__nanobanana__gemini_generate_image` | Generate new images from prompts with reference image support |
+| `mcp__nanobanana__gemini_edit_image` | Edit existing images with natural language instructions |
+| `mcp__nanobanana__gemini_chat` | Multi-turn conversations with image context (up to 10 images) |
+| `mcp__nanobanana__set_aspect_ratio` | Set default aspect ratio for a session |
+| `mcp__nanobanana__get_image_history` | Retrieve generated images from a session |
+| `mcp__nanobanana__clear_conversation` | Clear conversation history for a session |
 
-### gemini-generate-image Parameters
+### gemini_generate_image Parameters
 
-| Parameter | Required | Options | Notes |
-|-----------|----------|---------|-------|
-| `prompt` | ✅ | Text description | Natural language, not keywords |
-| `style` | ❌ | Any style descriptor | e.g., "flat design", "photorealistic", "watercolor" |
-| `aspectRatio` | ❌ | `1:1`, `2:3`, `3:2`, `3:4`, `4:3`, `4:5`, `5:4`, `9:16`, `16:9`, `21:9` | Default: `1:1` |
-| `imageSize` | ❌ | `1K`, `2K`, `4K` | Default: `2K`. 4K = slower, higher quality |
-| `useGoogleSearch` | ❌ | `true`/`false` | Grounds image in real-world data |
+| Parameter | Required | Type | Notes |
+|-----------|----------|------|-------|
+| `prompt` | ✅ | string | Natural language scene description |
+| `aspect_ratio` | ❌ | string | `1:1`, `9:16`, `16:9`, `3:4`, `4:3`, `3:2`, `2:3`, `5:4`, `4:5`, `21:9` |
+| `output_path` | ❌ | string | Custom save location (default: `~/Documents/nanobanana_generated/`) |
+| `reference_images` | ❌ | array | File paths to reference images for style/character consistency |
+| `conversation_id` | ❌ | string | Session ID for maintaining image history across generations |
+| `use_image_history` | ❌ | boolean | Include previous session images for style consistency |
+| `enable_google_search` | ❌ | boolean | Ground image in real-world data via Google Search |
+
+### gemini_edit_image Parameters
+
+| Parameter | Required | Type | Notes |
+|-----------|----------|------|-------|
+| `image_path` | ✅ | string | Path to source image, `'last'`, or `'history:N'` (e.g., `'history:0'`) |
+| `edit_prompt` | ✅ | string | Natural language edit instructions |
+| `aspect_ratio` | ❌ | string | Override aspect ratio for edited output |
+| `output_path` | ❌ | string | Custom save location |
+| `conversation_id` | ❌ | string | Session ID for accessing image history |
+| `reference_images` | ❌ | array | Additional reference images for style consistency (max 10) |
+| `enable_google_search` | ❌ | boolean | Ground edits in real-world data |
 
 ### Aspect Ratio Quick Reference
 
-| Ratio | Use Case | Dimensions (2K) |
-|-------|----------|-----------------|
-| `1:1` | Social thumbnails, icons | 2048×2048 |
-| `16:9` | Blog featured, OG images | 2048×1152 |
-| `4:3` | State page heroes | 2048×1536 |
-| `3:2` | Standard photos | 2048×1365 |
-| `9:16` | Mobile/story format | 1152×2048 |
-| `21:9` | Wide banners | 2048×878 |
+| Ratio | Use Case | Vouch Application |
+|-------|----------|-------------------|
+| `1:1` | Social thumbnails, icons | Profile images, app icons |
+| `16:9` | Blog featured, OG images | **Primary for blog posts** |
+| `4:3` | Standard photos, heroes | State page heroes |
+| `3:2` | Photography standard | Lifestyle images |
+| `9:16` | Mobile/story format | Instagram stories, mobile ads |
+| `21:9` | Ultra-wide cinematic | Wide banners, hero backgrounds |
 
-### Resolution Settings
+### Session-Based Workflow
 
-| Size | Pixels | Use Case | Speed |
-|------|--------|----------|-------|
-| `1K` | 1024px | Drafts, iterations, quick tests | Fast |
-| `2K` | 2048px | Web images, blog posts | Balanced |
-| `4K` | 4096px | Print, high-quality OG images | Slow |
+Use `conversation_id` to maintain consistency across multiple generations:
 
-**Tip:** Use `1K` for rapid iteration, `2K` for final web assets, `4K` only for critical hero images.
+```python
+# Step 1: Generate base image with a session ID
+mcp__nanobanana__gemini_generate_image(
+    prompt="Editorial photograph of Golden Gate Bridge at golden hour...",
+    aspect_ratio="16:9",
+    conversation_id="california-hero",
+    output_path="src/images/coverage/california.jpg"
+)
 
-### Image Editing Sessions
+# Step 2: Edit using session history
+mcp__nanobanana__gemini_edit_image(
+    image_path="last",  # References last image in session
+    edit_prompt="Make the sky more dramatic with deeper orange tones",
+    conversation_id="california-hero"
+)
 
-For iterative refinement, use the editing workflow:
-
+# Step 3: Generate related image with style consistency
+mcp__nanobanana__gemini_generate_image(
+    prompt="Editorial photograph of Los Angeles skyline at golden hour...",
+    conversation_id="california-hero",
+    use_image_history=True  # Maintains style from previous generations
+)
 ```
-1. gemini-start-image-edit → Creates base image, returns sessionId
-2. gemini-continue-image-edit → Refine with natural language (uses sessionId)
-3. gemini-continue-image-edit → Keep refining...
-4. gemini-end-image-edit → Close session when done
+
+### Reference Image Workflow
+
+Use reference images to maintain brand consistency:
+
+```python
+# Using Vouch logo as brand reference
+mcp__nanobanana__gemini_generate_image(
+    prompt="A clean, modern infographic showing phone plan comparison.
+           Use the brand colors from the reference logo: teal (#00B5A0)
+           as primary accent, dark navy (#1F2937) for text elements.
+           White background, minimal professional style.",
+    reference_images=["src/images/logo.png"],
+    aspect_ratio="16:9",
+    output_path="src/images/blog/phone-plan-comparison.png"
+)
 ```
 
-**Example refinement prompts:**
-- "Make the background lighter"
-- "Change the teal to a slightly darker shade"
-- "Add more negative space on the right"
-- "Make the state silhouette larger"
-
-### Environment Variables
-
-| Variable | Default | Purpose |
-|----------|---------|---------|
-| `GEMINI_API_KEY` | (required) | API authentication |
-| `GEMINI_IMAGE_MODEL` | `gemini-3-pro-image-preview` | Image generation model |
-| `GEMINI_OUTPUT_DIR` | `./gemini-output` | Where images are saved |
+**Reference Image Limits (Gemini 3 Pro):**
+- Up to **6 object images** for high-fidelity inclusion
+- Up to **5 human/character images** for identity consistency
+- Up to **14 total reference images** when combining objects and characters
 
 ### Practical Examples for Vouch
 
-**State Page Hero (4:3, brand colors):**
-```
-Tool: gemini-generate-image
-- prompt: "A stylized silhouette of Texas state filled with teal (#00B5A0).
-          Inside the silhouette, subtle icons of the Dallas skyline, an oil
-          derrick, and a lone star. Clean white background, modern flat
-          illustration style. No text."
-- aspectRatio: "4:3"
-- imageSize: "2K"
-- style: "flat design minimal illustration"
-```
-
-**Blog Featured Image (16:9):**
-```
-Tool: gemini-generate-image
-- prompt: "A clean, modern illustration showing a smartphone next to a
-          piggy bank with coins. The phone displays a checkmark. Teal
-          (#00B5A0) accent color, white background, minimal style.
-          Represents saving money on phone bills. No text."
-- aspectRatio: "16:9"
-- imageSize: "2K"
-- style: "flat design infographic"
+**State Page Hero (16:9, editorial photography):**
+```python
+mcp__nanobanana__gemini_generate_image(
+    prompt="""Editorial photograph of the Golden Gate Bridge, San Francisco
+    at golden hour, shot from Baker Beach. Sophisticated duotone color
+    treatment: shadows are deep navy (#1F2937), highlights shift toward
+    teal (#00B5A0). Cinematic composition with the bridge in the right
+    two-thirds, open sky on the left for text placement. Photorealistic,
+    shot on medium format camera. Moody, premium, magazine-quality.
+    No text, no graphics, no overlays.""",
+    aspect_ratio="16:9",
+    enable_google_search=True,  # Ensures accurate landmark rendering
+    output_path="src/images/coverage/california.jpg"
+)
 ```
 
-**Comparison Chart (16:9, use Google Search):**
-```
-Tool: gemini-generate-image
-- prompt: "Side-by-side comparison infographic. Left side: teal (#00B5A0)
-          box with '$30/mo' and checkmarks. Right side: gray box with
-          '$45/mo'. 'VS' badge in center. Clean white background."
-- aspectRatio: "16:9"
-- imageSize: "2K"
-- useGoogleSearch: false
+**Blog Featured Image (16:9, illustration):**
+```python
+mcp__nanobanana__gemini_generate_image(
+    prompt="""A clean, modern illustration showing a smartphone beside a
+    piggy bank with gold coins. The phone displays a green checkmark on
+    its screen. Teal (#00B5A0) accent color on the phone case, white
+    background with subtle shadows. Minimal flat design style with soft
+    gradients. Represents saving money on phone bills. Centered composition
+    with ample negative space. Do not include any text.""",
+    reference_images=["src/images/logo.png"],
+    aspect_ratio="16:9",
+    output_path="src/images/blog/save-money-phone-bill.png"
+)
 ```
 
-**Real-World Data (with Google Search grounding):**
+**Comparison Infographic (16:9):**
+```python
+mcp__nanobanana__gemini_generate_image(
+    prompt="""Side-by-side phone plan comparison infographic. Left side:
+    teal (#00B5A0) themed panel showing '$30/mo' in large bold text with
+    three green checkmarks below for features. Right side: gray (#6B7280)
+    themed panel showing '$45/mo' with same feature layout. Circular 'VS'
+    badge in dark navy (#1F2937) centered between panels. Clean white
+    background, modern flat design, professional infographic style.
+    No brand logos.""",
+    aspect_ratio="16:9",
+    output_path="src/images/compare/vouch-vs-competitor.png"
+)
 ```
-Tool: gemini-generate-image
-- prompt: "Infographic showing AT&T 5G coverage across California. Use
-          accurate coverage data. Teal (#00B5A0) for covered areas on
-          a California state map. Clean, minimal design."
-- aspectRatio: "4:3"
-- imageSize: "2K"
-- useGoogleSearch: true
+
+**Lifestyle Image with Character Consistency:**
+```python
+# Generate base lifestyle image
+mcp__nanobanana__gemini_generate_image(
+    prompt="""Warm, authentic photograph of a young professional woman
+    in her late 20s, Asian descent, working at a bright home office.
+    She's smiling while looking at her smartphone, laptop open nearby.
+    Natural daylight from a window, casual professional attire.
+    Warm color palette with teal (#00B5A0) accent on a coffee mug.
+    Shot with 50mm lens at f/2.8, shallow depth of field.""",
+    conversation_id="remote-worker-series",
+    aspect_ratio="16:9",
+    output_path="src/images/lifestyle/remote-worker.jpg"
+)
+
+# Generate related image maintaining character consistency
+mcp__nanobanana__gemini_generate_image(
+    prompt="""Same young professional woman from the previous image,
+    now at a coffee shop, working on her laptop with phone beside her.
+    Maintain her exact facial features and appearance. Warm afternoon
+    light, casual atmosphere. Teal accent in the scene.""",
+    conversation_id="remote-worker-series",
+    use_image_history=True,
+    aspect_ratio="16:9",
+    output_path="src/images/lifestyle/remote-worker-cafe.jpg"
+)
 ```
 
 ### Common Issues & Solutions
 
 | Issue | Solution |
 |-------|----------|
-| Colors don't match brand | Be explicit: "teal (#00B5A0)" not just "teal" |
-| Too much detail/clutter | Add "minimal style, clean, ample white space" |
-| Unwanted text in image | Add "Do not include any text in the image" |
-| Wrong aspect ratio | Double-check parameter matches intended use |
-| Image too dark | Specify "white background, bright, well-lit" |
-| Style inconsistent | Use same style parameter across all generations |
+| Colors don't match brand | Be explicit: `"teal (#00B5A0)"` not just `"teal"` |
+| Too much detail/clutter | Add `"minimal style, clean, ample white space"` |
+| Unwanted text in image | Add `"Do not include any text in the image"` |
+| Style drift across images | Use `conversation_id` + `use_image_history=True` |
+| Character looks different | Upload reference image, specify `"maintain exact facial features"` |
+| Landmark inaccurate | Enable `enable_google_search=True` for real-world grounding |
+| Aspect ratio changes on edit | Add `"Do not change the input aspect ratio"` to edit prompt |
+| Image too dark | Specify `"white background, bright, well-lit, high key lighting"` |
 
 ---
 
-## Gemini 3 Pro Image (Nano Banana Pro) Best Practices
+## Gemini 3 Pro Image Best Practices
 
-*Based on official Google DeepMind documentation and prompt engineering research (January 2025).*
+*Based on official Google documentation and prompt engineering research (January 2026).*
 
 ### Model Overview
 
-| Model | ID | Best For | Max Resolution |
-|-------|-----|----------|----------------|
-| **Nano Banana Pro** | `gemini-3-pro-image-preview` | Professional quality, perfect text, 4K output | 4096px |
+| Model | Best For | Max Resolution | Speed |
+|-------|----------|----------------|-------|
+| **Gemini 3 Pro Image** | Professional quality, perfect text, production assets | 4K (3840px) | 5-8 sec |
 
-**Nano Banana Pro** is the community nickname for **Gemini 3 Pro Image** — Google DeepMind's state-of-the-art image generation model released November 2025. It represents a fundamental shift from standard generation to **"visual reasoning."**
-
-### What Makes Gemini 3 Pro Image Different
-
-Unlike standard diffusion models, Nano Banana Pro uses a **"Thinking" process** to:
-- Reason through your prompt before generating
-- Plan composition, lighting, and scene logic
-- Render physically accurate results
+Gemini 3 Pro Image uses a **"Thinking" process** that reasons through your prompt before generating, planning composition, lighting, and scene logic for physically accurate results.
 
 **Key Capabilities:**
-- **Perfect text rendering** — Spells long sentences and complex logos accurately
+- **Perfect text rendering** — Accurate spelling for long sentences and complex logos
 - **4K native resolution** — Up to 4096×4096 for print-quality assets
 - **Google Search grounding** — Pulls real-time data for accurate infographics
 - **Multi-image composition** — Up to 14 reference images (6 objects, 5 characters)
 - **Character consistency** — Maintains identity across multiple generations
-- **Conversational editing** — Refine images through natural language
+- **Conversational editing** — Refine images through natural language in sessions
 
 ### Core Prompting Principle
 
 > **"Describe the scene, don't just list keywords."**
 
-Gemini 3 understands natural language. Narrative descriptions outperform keyword lists.
+Narrative-based prompting increases output quality by **3.2x** while reducing generation failures by **68%**.
 
 **❌ Bad (2023-era prompting):**
 ```
@@ -474,26 +527,275 @@ trending on artstation, masterpiece, highly detailed
 
 **✅ Good (Gemini 3 style):**
 ```
-A clean, modern infographic showing a smartphone with a teal accent color.
-The design is minimal and professional with plenty of white space.
-The phone displays a savings comparison chart.
+A clean, modern infographic showing a smartphone with a teal (#00B5A0)
+accent color. The design is minimal and professional with plenty of white
+space. The phone displays a savings comparison chart. Centered composition
+with soft studio lighting.
 ```
 
 ### Stop Using Old Prompt Hacks
 
-Gemini 3 Pro Image does NOT benefit from:
+Gemini 3 Pro Image does **NOT** benefit from:
 - ❌ Keyword spam ("4k, trending on artstation, masterpiece")
 - ❌ Repetitive quality modifiers
+- ❌ Negative prompts (list what you DON'T want) — use positive descriptions instead
 - ❌ Complex chain-of-thought prompt engineering
-- ❌ Negative prompts (list what you DON'T want)
 
 Instead, use:
 - ✅ Clear, direct natural language
-- ✅ Specific descriptive details
-- ✅ The "Thinking" mode for complex scenes
-- ✅ Conversational refinement for edits
+- ✅ Specific descriptive details with precision ("elderly Japanese ceramicist" > "old craftsman")
+- ✅ Positive descriptions ("empty street" instead of "no cars")
+- ✅ Conversational refinement for edits via session history
 
-### Prompt Structure Formula
+---
+
+## The 6-Component Prompting Framework
+
+Research shows this structure maximizes output quality. Each component contributes measurably:
+
+| Component | Impact | Purpose |
+|-----------|--------|---------|
+| **Shot Type** | +35% | Composition control (close-up, wide-angle, overhead) |
+| **Subject** | Core | Primary focus with specific descriptors |
+| **Action/State** | +28% | Dynamic verbs activate physics ("leaping", "pouring") |
+| **Environment** | +41% | Context from general to specific |
+| **Lighting** | +47% | Atmospheric descriptions guide mood and quality |
+| **Style/Mood** | +31% | Artistic direction and emotional tone |
+
+### The Formula
+
+```
+[Shot Type] + [Subject with Adjectives] + [Action/State] + [Environment] +
+[Lighting] + [Style/Mood] + [Technical Constraints]
+```
+
+### Three Critical Elements for Scene Descriptions
+
+1. **Spatial relationships must be explicit** — "beside," "overlooking," "nestled between" provide compositional anchors
+2. **Lighting descriptions guide atmosphere** — "harsh midday sun," "blue hour glow," "candlelit warmth" dramatically influence mood
+3. **Action verbs activate physics** — "leaping," "pouring," "rustling" generate dynamic scenes rather than static poses
+
+### Framework Applied to Vouch Use Cases
+
+**Blog Featured Image:**
+```
+[Shot type] Product-style flat lay composition
+[Subject] A modern smartphone with teal (#00B5A0) accent case beside a white piggy bank with gold coins
+[Action] Coins appearing to fall into the piggy bank
+[Environment] Clean white surface with subtle soft shadows
+[Lighting] Bright, diffused studio lighting from above-left
+[Style] Minimal flat design, professional infographic aesthetic
+[Constraints] 16:9 aspect ratio, no text, ample negative space on right for overlay
+```
+
+**State Hero Image:**
+```
+[Shot type] Wide-angle editorial photograph
+[Subject] The Golden Gate Bridge spanning San Francisco Bay
+[Action] Morning fog rolling beneath the bridge deck
+[Environment] Shot from Baker Beach with rocky foreground, open sky on left
+[Lighting] Golden hour with warm highlights, deep navy shadows
+[Style] Sophisticated duotone treatment, cinematic, magazine-quality
+[Constraints] 16:9 aspect ratio, no text or graphics, photorealistic
+```
+
+**Lifestyle Segment:**
+```
+[Shot type] Medium shot, 50mm portrait lens at f/2.8
+[Subject] A young professional woman in her late 20s, Asian descent, casual attire
+[Action] Smiling while checking her smartphone
+[Environment] Bright home office with laptop, plants, natural elements
+[Lighting] Soft natural daylight from large window, warm afternoon tones
+[Style] Authentic, warm, approachable lifestyle photography
+[Constraints] Teal (#00B5A0) accent visible (coffee mug), shallow depth of field
+```
+
+---
+
+## Production-Ready Prompt Templates
+
+These templates have **92-96% success rates** in production environments.
+
+### Template 1: Portrait/Lifestyle (96% success)
+
+```
+A [age/gender] [profession/descriptor] with [expression], captured in
+[lighting type] against [background/environment]. Shot with [lens] at
+[aperture], creating [mood] atmosphere with [color grading/treatment].
+[Specific details about clothing, accessories, or props with brand colors.]
+```
+
+**Vouch Example:**
+```
+A college student in his early 20s, diverse background, with a relaxed
+confident smile, captured in soft natural daylight against a campus quad
+with blurred students in background. Shot with 85mm lens at f/2.0,
+creating warm approachable atmosphere with slightly lifted shadows.
+He holds a smartphone with teal (#00B5A0) case while checking messages.
+```
+
+### Template 2: Product/Infographic (94% success)
+
+```
+[Resolution/quality] [product/concept description] on [surface/background].
+[Lighting setup] from [direction]. [Camera angle] with [focus description].
+[Aspect ratio]. [Brand color specifications]. [Style descriptors].
+Do not include any text.
+```
+
+**Vouch Example:**
+```
+Professional product-style illustration of a smartphone displaying a
+savings chart beside stacked coins on a clean white surface. Soft
+three-point studio lighting from above-left creating subtle shadows.
+Centered overhead view with entire composition in sharp focus. 16:9
+aspect ratio. Primary accent teal (#00B5A0) on phone elements, gold
+coins, white background. Clean minimal infographic style.
+Do not include any text.
+```
+
+### Template 3: Editorial/Geographic (92% success)
+
+```
+Editorial photograph of [iconic location], [city], [state] at [time of day],
+shot from [vantage point]. The image has a sophisticated duotone color
+treatment: shadows are [shadow color], highlights shift toward [highlight color].
+Cinematic composition with [subject] in the [position], [negative space location]
+for text placement. [Additional environmental details]. Photorealistic, shot on
+[camera type]. [Mood descriptors]. No text, no graphics, no overlays.
+```
+
+**Vouch Example:**
+```
+Editorial photograph of the Austin skyline, Texas at blue hour, shot from
+across Lady Bird Lake. The image has a sophisticated duotone color treatment:
+shadows are deep navy (#1F2937), highlights shift toward teal (#00B5A0).
+Cinematic composition with the skyline in the right two-thirds, open twilight
+sky on the left for text placement. Water reflections add depth, subtle city
+lights beginning to glow. Photorealistic, shot on medium format camera.
+Moody, premium, magazine-quality. No text, no graphics, no overlays.
+```
+
+### Template 4: Comparison/Infographic (94% success)
+
+```
+Side-by-side [comparison type] infographic. Left side: [primary color] themed
+[container] showing [primary data] with [supporting elements]. Right side:
+[secondary color] themed [container] showing [comparison data] with [matching
+elements]. [Divider element] centered between panels. [Background]. [Style].
+[Constraints about logos/text].
+```
+
+**Vouch Example:**
+```
+Side-by-side phone plan comparison infographic. Left side: teal (#00B5A0)
+themed rounded rectangle showing "$30/mo" in large bold numerals with three
+checkmark icons below for unlimited data, talk, and text. Right side: gray
+(#6B7280) themed rounded rectangle showing "$45/mo" with matching layout.
+Circular "VS" badge in dark navy (#1F2937) centered between panels. Clean
+white background with subtle drop shadows. Modern flat design, professional
+style. No brand logos, generic carrier representation only.
+```
+
+### Template 5: Process Diagram (91% success)
+
+```
+A horizontal [number]-step process diagram showing [process name]. Layout:
+[number] equally-spaced steps from left to right, connected by [connector style]
+arrows in [color].
+
+Step 1: [Icon description] with "[Label]" below
+Step 2: [Icon description] with "[Label]" below
+Step 3: [Icon description] with "[Label]" below
+
+Each step has a numbered circle ([numbers]) in [color] above the icon.
+Style: [design style], [font style] labels in [text color].
+Background: [color]. Aspect ratio: [ratio].
+```
+
+**Vouch Example:**
+```
+A horizontal 3-step process diagram showing how to switch phone carriers.
+Layout: 3 equally-spaced steps from left to right, connected by curved
+arrows in teal (#00B5A0).
+
+Step 1: Smartphone with magnifying glass icon with "Check Compatibility" below
+Step 2: SIM card with download arrow icon with "Order & Activate" below
+Step 3: Checkmark in circle icon with "Start Saving" below
+
+Each step has a numbered circle (1, 2, 3) in teal (#00B5A0) above the icon.
+Style: Modern flat design, clean sans-serif labels in dark gray (#1F2937).
+Background: White (#FFFFFF). Aspect ratio: 16:9.
+```
+
+---
+
+## Character Consistency Techniques
+
+Maintaining consistent characters across multiple images requires specific techniques.
+
+### Method 1: Session-Based Consistency
+
+Use `conversation_id` and `use_image_history`:
+
+```python
+# Initial generation establishes the character
+mcp__nanobanana__gemini_generate_image(
+    prompt="Portrait of a friendly customer service representative...",
+    conversation_id="vouch-rep-sarah",
+    output_path="src/images/lifestyle/rep-sarah-1.jpg"
+)
+
+# Subsequent generations reference the session
+mcp__nanobanana__gemini_generate_image(
+    prompt="The same customer service representative from the previous image,
+           now helping a customer at a desk. Maintain exact facial features,
+           hair style, and general appearance...",
+    conversation_id="vouch-rep-sarah",
+    use_image_history=True,
+    output_path="src/images/lifestyle/rep-sarah-2.jpg"
+)
+```
+
+### Method 2: Reference Image Consistency
+
+Upload the best generated image as a reference:
+
+```python
+mcp__nanobanana__gemini_generate_image(
+    prompt="The woman shown in the reference image, now in a different setting.
+           Maintain her exact facial features, hair color and style, and
+           approximate age. She is now at a coffee shop...",
+    reference_images=["src/images/lifestyle/rep-sarah-1.jpg"],
+    output_path="src/images/lifestyle/rep-sarah-cafe.jpg"
+)
+```
+
+### Method 3: Detailed Feature Specification
+
+Include 5-7 specific feature details for **94% likeness retention**:
+
+```
+Maintain exact features from previous image:
+- Oval face shape with soft jawline
+- Dark brown eyes, almond-shaped
+- Shoulder-length black hair with subtle waves
+- Light olive skin tone
+- Friendly smile showing teeth
+- Approximately 28-32 years old
+- Medium build
+```
+
+### Handling Character Drift
+
+If features drift after multiple edits:
+1. **Restart conversation** with a detailed description based on your best image
+2. **Re-upload** the "good" image as a reference
+3. **Constrain changes** to single modifications: "Change ONLY the background. Keep the person exactly the same."
+
+---
+
+## Prompt Structure Formula (Legacy Reference)
 
 Use this five-part structure for consistent results:
 
@@ -702,75 +1004,143 @@ The model connects to Google Search to construct factually accurate visualizatio
 ### Vouch-Specific Prompt Templates
 
 **Blog Featured Image:**
-```
-Create an image of a clean, modern illustration for a mobile phone
-blog post about [TOPIC].
+```python
+mcp__nanobanana__gemini_generate_image(
+    prompt="""A clean, modern illustration for a mobile phone blog post
+    about [TOPIC]. [Describe main visual element related to topic].
 
-Subject: [describe main visual element related to topic]
-Style: Flat design, minimal, professional infographic aesthetic.
-Colors: Teal (#00B5A0) as primary accent, white (#FFFFFF) background.
-Composition: Centered with ample negative space for text overlay.
-Aspect ratio: 16:9 (1200x675 pixels).
+    Style: Flat design, minimal, professional infographic aesthetic.
+    Colors: Teal (#00B5A0) as primary accent, white (#FFFFFF) background.
+    Composition: Centered with ample negative space on right for text overlay.
+    Soft studio lighting with subtle shadows for depth.
 
-Do not include any text in the image.
+    Do not include any text in the image.""",
+    reference_images=["src/images/logo.png"],
+    aspect_ratio="16:9",
+    output_path="src/images/blog/[slug].png"
+)
 ```
 
 **Comparison Hero Image:**
-```
-Create an image of a side-by-side phone plan comparison visual.
+```python
+mcp__nanobanana__gemini_generate_image(
+    prompt="""Side-by-side phone plan comparison infographic.
 
-Left side: Teal (#00B5A0) themed section with a modern smartphone icon
-and "$30/mo" pricing indicator.
-Center: A circular "VS" badge in dark gray.
-Right side: Gray (#6B7280) themed section with a generic phone icon
-and "$45/mo" pricing indicator.
+    Left side: Teal (#00B5A0) themed rounded panel with modern smartphone
+    icon and "$30/mo" in large bold numerals, three checkmarks below.
+    Center: Circular "VS" badge in dark navy (#1F2937).
+    Right side: Gray (#6B7280) themed panel with phone icon and "$45/mo",
+    matching layout to left side.
 
-Style: Clean, minimal, infographic design. No brand logos.
-Background: White (#FFFFFF) with subtle teal gradient accent.
-Aspect ratio: 16:9.
+    Style: Clean, minimal, infographic design. No brand logos.
+    Background: White (#FFFFFF) with subtle drop shadows on panels.
+    Professional, modern flat design.""",
+    aspect_ratio="16:9",
+    output_path="src/images/compare/vouch-vs-[competitor].png"
+)
 ```
 
 **Process Diagram:**
-```
-Create an image of a horizontal 3-step process diagram showing [PROCESS].
+```python
+mcp__nanobanana__gemini_generate_image(
+    prompt="""A horizontal 3-step process diagram showing [PROCESS NAME].
 
-Layout: Three equally-spaced steps from left to right, connected by
-teal (#00B5A0) arrows.
+    Layout: Three equally-spaced steps from left to right, connected by
+    curved arrows in teal (#00B5A0).
 
-Step 1: [Icon description] with "Step 1: [Label]" below
-Step 2: [Icon description] with "Step 2: [Label]" below
-Step 3: [Icon description] with "Step 3: [Label]" below
+    Step 1: [Icon description] with "[Label]" below
+    Step 2: [Icon description] with "[Label]" below
+    Step 3: [Icon description] with "[Label]" below
 
-Each step has a numbered circle (1, 2, 3) in teal above the icon.
-Style: Modern flat design, clean sans-serif labels in dark gray (#1F2937).
-Background: White (#FFFFFF).
-Aspect ratio: 16:9.
+    Each step has a numbered circle (1, 2, 3) in teal (#00B5A0) above the icon.
+    Style: Modern flat design, clean sans-serif labels in dark gray (#1F2937).
+    Background: White (#FFFFFF) with subtle depth through shadows.
+    Ample negative space around elements.""",
+    aspect_ratio="16:9",
+    output_path="src/images/guides/[process-slug]-diagram.png"
+)
 ```
 
 **MVNO Explainer Diagram:**
+```python
+mcp__nanobanana__gemini_generate_image(
+    prompt="""A network diagram explaining what an MVNO is.
+
+    Visual hierarchy showing three connected layers:
+    Top layer: Large cell tower icon labeled "AT&T Network Infrastructure"
+    in dark gray (#1F2937), representing the major carrier.
+
+    Middle layer: Arrow pointing down to a cloud/network icon labeled
+    "Vouch Mobile (MVNO)" in teal (#00B5A0), the focal point of the diagram.
+
+    Bottom layer: Arrow pointing to multiple smartphone icons labeled
+    "Customers" showing the end users.
+
+    Style: Clean infographic with teal (#00B5A0) highlighting the MVNO layer.
+    Arrows in gray connecting layers. White background, modern flat design.
+    Professional, educational visual.""",
+    enable_google_search=True,
+    aspect_ratio="16:9",
+    output_path="src/images/blog/what-is-mvno-diagram.png"
+)
 ```
-Create an image of a network diagram explaining what an MVNO is.
 
-Show three layers:
-Top layer: Large cell tower icon labeled "AT&T Network Infrastructure"
-Middle layer: Arrow pointing down to a cloud/network icon labeled "Vouch Mobile (MVNO)"
-Bottom layer: Arrow pointing to multiple smartphone icons labeled "Customers"
+**State Coverage Hero (Editorial Photography):**
+```python
+mcp__nanobanana__gemini_generate_image(
+    prompt="""Editorial photograph of [ICONIC LANDMARK], [CITY], [STATE]
+    at golden hour, shot from [VANTAGE POINT].
 
-Style: Clean infographic with teal (#00B5A0) accents on the MVNO layer.
-Arrows in gray, network elements in teal.
-White background, modern flat design.
-Aspect ratio: 16:9.
+    The image has a sophisticated duotone color treatment: shadows are
+    deep navy (#1F2937), highlights shift toward teal (#00B5A0).
+
+    Cinematic composition with the [SUBJECT] in the right two-thirds,
+    open sky on the left for text placement. [Additional details: water
+    reflections, fog, city lights, etc.].
+
+    Photorealistic, shot on medium format camera. Moody, premium,
+    magazine-quality. No text, no graphics, no overlays.""",
+    enable_google_search=True,  # Critical for accurate landmarks
+    aspect_ratio="16:9",
+    output_path="src/images/coverage/[state-slug].jpg"
+)
+```
+
+**Lifestyle Segment Image:**
+```python
+mcp__nanobanana__gemini_generate_image(
+    prompt="""Warm, authentic photograph of [DEMOGRAPHIC DESCRIPTION]
+    in [SETTING/ENVIRONMENT].
+
+    [Subject] is [ACTION with phone], showing natural, unposed moment.
+    [Environmental details that match the demographic].
+
+    Lighting: [Natural daylight/warm afternoon/soft indoor] creating
+    [mood] atmosphere. Shot with 50mm lens at f/2.8, shallow depth of field.
+
+    Teal (#00B5A0) accent visible naturally in scene (phone case, mug,
+    clothing detail, etc.). Diverse representation, authentic feel.
+    Focus on lifestyle context rather than the device.""",
+    conversation_id="[segment]-lifestyle-series",
+    aspect_ratio="16:9",
+    output_path="src/images/lifestyle/[segment].jpg"
+)
 ```
 
 ---
 
 ### Sources
 
-- [Gemini 3 Pro Image (Nano Banana Pro)](https://deepmind.google/models/gemini-image/pro/) - Google DeepMind Official
-- [Nano Banana Pro Prompting Tips](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/) - Google Blog
-- [Gemini 3 Developer Guide](https://ai.google.dev/gemini-api/docs/gemini-3) - Google AI for Developers
-- [Gemini 3 Prompting Guide](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/start/gemini-3-prompting-guide) - Google Cloud Documentation
+**Official Documentation:**
 - [Nano Banana Image Generation API](https://ai.google.dev/gemini-api/docs/image-generation) - Google AI for Developers
+- [How to Prompt Gemini Image Generation](https://developers.googleblog.com/en/how-to-prompt-gemini-2-5-flash-image-generation-for-the-best-results/) - Google Developers Blog
+- [Gemini Image Generation Production Release](https://developers.googleblog.com/en/gemini-2-5-flash-image-now-ready-for-production-with-new-aspect-ratios/) - Google Developers Blog
+
+**MCP Server:**
+- [Nanobanana MCP Server](https://github.com/zhongweili/nanobanana-mcp-server) - GitHub Repository
+
+**Prompting Research:**
+- [Gemini Flash Image Prompting Guide](https://www.cursor-ide.com/blog/gemini-flash-image-prompting-guide) - Production templates and cost optimization
 
 ---
 
@@ -935,16 +1305,26 @@ src/images/
 
 For each new page/post:
 
-- [ ] **Use logo as reference image** (src/images/logo.png) for brand consistency
-- [ ] Create featured image (1200×630)
-- [ ] Verify brand colors match logo (#00B5A0 teal, #1F2937 navy)
-- [ ] Include logo in image if shareable (OG images, infographics, comparison charts)
-- [ ] Optimize file size (<200KB)
+**Pre-Generation:**
+- [ ] Identify image category (blog, state, comparison, lifestyle, diagram)
+- [ ] Select appropriate template from Production-Ready Templates section
+- [ ] Determine if `conversation_id` needed for multi-image consistency
+
+**Generation:**
+- [ ] Use `reference_images=["src/images/logo.png"]` for brand consistency
+- [ ] Apply 6-component framework: Shot → Subject → Action → Environment → Lighting → Style
+- [ ] Set correct `aspect_ratio` (usually `"16:9"` for blog/OG images)
+- [ ] Use `enable_google_search=True` for geographic/landmark images
+- [ ] Specify `output_path` following file organization conventions
+
+**Post-Generation:**
+- [ ] Verify brand colors match (#00B5A0 teal, #1F2937 navy)
+- [ ] Check composition leaves space for text overlay if needed
+- [ ] Optimize file size (<200KB for web)
 - [ ] Use descriptive filename with keywords
 - [ ] Write keyword-rich alt text
-- [ ] Add to sitemap (if applicable)
 - [ ] Test OG image preview (opengraph.xyz)
-- [ ] Create mobile-optimized version if needed
+- [ ] If character consistency needed, note `conversation_id` for future use
 
 ---
 
@@ -968,4 +1348,5 @@ For each new page/post:
 
 *Strategy created: January 2025*
 *Updated: January 2026 - Added logo reference requirement, MCP tool reference*
+*Updated: January 2026 - Migrated to mcp__nanobanana__ tools, added 6-component prompting framework, production templates, session workflows, character consistency techniques*
 *Review quarterly for updates*
