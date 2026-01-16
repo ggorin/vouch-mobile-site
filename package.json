@@ -11,7 +11,9 @@
     "start": "eleventy --serve",
     "clean": "rm -rf _site",
     "validate:schema": "node scripts/validate-schema.js",
-    "build:validate": "npm run build && npm run validate:schema"
+    "check:links": "linkinator _site --recurse --skip 'vouchmobile.com|kinsta|external' --format json --verbosity error",
+    "build:validate": "npm run build && npm run validate:schema",
+    "build:check": "npm run build && npm run check:links"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,7 @@
     "glob": "^13.0.0",
     "html-minifier-terser": "^7.2.0",
     "inflight": "^1.0.6",
+    "linkinator": "^7.5.3",
     "rimraf": "^6.1.2"
   },
   "engines": {

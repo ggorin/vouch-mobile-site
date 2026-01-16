@@ -130,6 +130,37 @@ module.exports = async function(eleventyConfig) {
     });
   });
 
+  // Dynamic post URL lookup filter
+  // Usage in templates: {{ "switch-carriers" | postUrl }}
+  // Usage in markdown: [link text]({{ "switch-carriers" | postUrl }})
+  eleventyConfig.addFilter("postUrl", function(slug) {
+    const posts = this.ctx?.collections?.posts || [];
+    const post = posts.find(p => {
+      const filename = p.inputPath.split('/').pop().replace('.md', '');
+      return filename === slug;
+    });
+    if (!post) {
+      console.warn(`⚠️  Warning: Post not found for slug "${slug}"`);
+      return `/blog/${slug}/`; // Fallback, will 404 but visible in logs
+    }
+    return post.url;
+  });
+
+  // Internal link shortcode with validation
+  // Usage: {% link "switch-carriers", "How to Switch" %}
+  eleventyConfig.addShortcode("link", function(slug, text) {
+    const posts = this.ctx?.collections?.posts || [];
+    const post = posts.find(p => {
+      const filename = p.inputPath.split('/').pop().replace('.md', '');
+      return filename === slug;
+    });
+    if (!post) {
+      console.warn(`⚠️  Warning: Post not found for slug "${slug}"`);
+      return `<a href="/blog/${slug}/">${text}</a>`;
+    }
+    return `<a href="${post.url}">${text}</a>`;
+  });
+
   // States collection (from data file)
   eleventyConfig.addCollection("states", function(collectionApi) {
     return collectionApi.getAll().filter(item => item.data.layout === "state.njk");
