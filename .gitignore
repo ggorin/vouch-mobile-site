@@ -6,6 +6,13 @@ node_modules/
 # OS files
 .DS_Store
 
+# macOS download duplicates (files with spaces and numbers like "file 2.png")
+*\ [0-9]*
+*\ [0-9][0-9]*
+
+# Old/backup files
+*-old.*
+
 # Editor files
 *.swp
 *.swo
