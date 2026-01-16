@@ -8415,7 +8415,7 @@ table.comparison-table {
   background: var(--color-surface);
 }
 
-.plans-cards__grid {
+.plans-cards .plans-cards__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -8424,7 +8424,7 @@ table.comparison-table {
 }
 
 @media (max-width: 768px) {
-  .plans-cards__grid {
+  .plans-cards .plans-cards__grid {
     grid-template-columns: 1fr;
     max-width: 400px;
   }
