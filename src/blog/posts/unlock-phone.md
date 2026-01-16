@@ -67,7 +67,7 @@ Settings > General > About > Carrier Lock
 Settings > Connections > Networks > Network Unlock
 Or check Settings > About Phone > Status for SIM lock status
 
-For more detailed instructions, see our guide on [how to check if your phone is unlocked](/blog/posts/check-phone-unlocked/).
+For more detailed instructions, see our guide on [how to check if your phone is unlocked](/blog/how-to-check-if-your-phone-is-unlocked/).
 
 ## Unlock Requirements by Major Carrier
 

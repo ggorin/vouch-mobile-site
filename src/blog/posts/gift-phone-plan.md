@@ -119,7 +119,7 @@ For someone without current service or looking to switch:
 2. Add credit for multiple months of service
 3. Help them activate (or let them do it themselves)
 
-This is ideal for [first-time phone plan users](/blog/posts/first-phone-plan/) or people looking to [switch carriers](/blog/posts/switch-carriers/).
+This is ideal for [first-time phone plan users](/blog/first-phone-plan-guide-what-to-know-before-you-sign-up/) or people looking to [switch carriers](/blog/how-to-switch-phone-carriers-without-losing-your-number/).
 
 ### Option 4: Payment Gift Cards
 
@@ -174,7 +174,7 @@ Seniors often:
 - May be intimidated by phone plan complexity
 - Appreciate practical gifts over decorative ones
 
-Phone plan gifts show you care about their daily needs. Consider helping them [find a senior-appropriate plan](/blog/posts/phone-plans-seniors/) if they're looking to switch.
+Phone plan gifts show you care about their daily needs. Consider helping them [find a senior-appropriate plan](/blog/best-phone-plans-for-seniors-2026-simple-and-affordable-options/) if they're looking to switch.
 
 ### Gifting to Students
 
@@ -250,7 +250,7 @@ For bigger occasions, combine a phone with service:
 - Full year prepaid service: $300
 - Total: Great phone, year of unlimited service
 
-See our guide on [the best phones for prepaid plans](/blog/posts/best-phones-prepaid/) for phone recommendations.
+See our guide on [the best phones for prepaid plans](/blog/best-phones-for-prepaid-plans-2026-top-10-unlocked-phones/) for phone recommendations.
 
 ## Frequently Asked Questions
 

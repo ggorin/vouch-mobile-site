@@ -88,11 +88,11 @@ For a family, multiply by your number of lines. A family of four paying $240/mon
 
 Before switching, verify your phone works with your new carrier:
 
-- **Unlocked status:** Use our guide on [how to check if your phone is unlocked](/blog/posts/check-phone-unlocked/)
+- **Unlocked status:** Use our guide on [how to check if your phone is unlocked](/blog/how-to-check-if-your-phone-is-unlocked/)
 - **Network compatibility:** Most modern phones work on any major network
 - **eSIM support:** Many newer phones can activate instantly via eSIM
 
-If your phone is locked to your current carrier, you may need to [unlock it first](/blog/posts/unlock-phone/).
+If your phone is locked to your current carrier, you may need to [unlock it first](/blog/how-to-unlock-your-phone-carrier-unlock-guide-2026/).
 
 ### Step 4: Research Your Options (20 minutes)
 
@@ -116,7 +116,7 @@ The actual switching process is simpler than most people expect:
 
 Your number transfers automatically, and the entire process typically takes under an hour.
 
-Need a detailed walkthrough? Read our complete guide on [how to switch phone carriers](/blog/posts/switch-carriers/).
+Need a detailed walkthrough? Read our complete guide on [how to switch phone carriers](/blog/how-to-switch-phone-carriers-without-losing-your-number/).
 
 ## Maximizing Your 2026 Savings
 
@@ -162,7 +162,7 @@ You don't need the newest flagship phone. A device that's 1-2 generations old of
 - Often better battery life (improved over time)
 - Same app compatibility
 
-Check our recommendations for [the best phones for prepaid plans](/blog/posts/best-phones-prepaid/).
+Check our recommendations for [the best phones for prepaid plans](/blog/best-phones-for-prepaid-plans-2026-top-10-unlocked-phones/).
 
 ## Common Objections and Reality Checks
 

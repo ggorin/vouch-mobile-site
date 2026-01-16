@@ -65,7 +65,7 @@ Consider this comparison for a single line over two years:
 
 Even without Black Friday promotions, prepaid carriers save you money. The "free phone" deal from major carriers costs more over time than simply buying a phone outright and using an affordable prepaid plan.
 
-Want to understand how MVNOs offer lower prices? Read our guide on [what is an MVNO](/blog/posts/what-is-mvno/).
+Want to understand how MVNOs offer lower prices? Read our guide on [what is an MVNO](/blog/what-is-an-mvno-everything-you-need-to-know/).
 
 ## Best Black Friday Phone Plan Strategies
 
@@ -91,7 +91,7 @@ Black Friday is an excellent time to buy unlocked phones from:
 
 Buying unlocked gives you freedom to choose any carrier and switch anytime. Pair a discounted unlocked phone with an affordable prepaid plan for maximum savings.
 
-Check our guide on [the best phones for prepaid plans](/blog/posts/best-phones-prepaid/) for recommendations.
+Check our guide on [the best phones for prepaid plans](/blog/best-phones-for-prepaid-plans-2026-top-10-unlocked-phones/) for recommendations.
 
 ### Strategy 3: Stack Savings with Annual Plans
 
@@ -169,7 +169,7 @@ Prepaid carriers like Vouch Mobile offer rates that beat Black Friday "deals" ev
 
 The math is simple: $25/month x 12 = $300/year. Compare that to even the best Black Friday deals requiring $85/month plans. You'd save $720 annually just by choosing prepaid.
 
-Learn more about [how to save money on your phone bill](/blog/posts/save-money-phone-bill/) with strategies that work all year.
+Learn more about [how to save money on your phone bill](/blog/how-to-save-money-on-your-phone-bill-15-proven-tips/) with strategies that work all year.
 
 ## Frequently Asked Questions
 

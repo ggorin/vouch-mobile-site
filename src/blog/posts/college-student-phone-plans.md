@@ -29,10 +29,10 @@ When comparing options, prioritize these features:
 - **Unlimited data**: Streaming lectures, video calls, and social media add up fast. Unlimited plans prevent overage charges and usage anxiety.
 - **Reliable network coverage**: Your carrier should work on campus, in dorms, and in off-campus housing. Check coverage maps for your specific school location.
 - **No contract**: Month-to-month flexibility lets you pause service during summer, switch plans as needs change, or cancel without penalties.
-- **No credit check**: Most students have limited credit history. [Prepaid plans](/blog/posts/no-credit-check-plans/) approve everyone instantly.
+- **No credit check**: Most students have limited credit history. [Prepaid plans](/blog/no-credit-check-phone-plans-your-complete-guide/) approve everyone instantly.
 - **Affordable pricing**: Look for plans under $35/month that include all taxes and fees.
 - **Hotspot included**: Tethering your laptop to your phone saves money on separate internet plans for off-campus apartments.
-- **[eSIM support](/blog/posts/esim-vs-sim/)**: Instant activation means you can sign up and start using service immediately.
+- **[eSIM support](/blog/esim-vs-physical-sim-which-is-right-for-you/)**: Instant activation means you can sign up and start using service immediately.
 
 ## Top Phone Plan Options for College Students
 
@@ -109,7 +109,7 @@ Carrier insurance plans cost $10-15/month and have high deductibles. Instead, us
 
 ### Keep Your Current Phone
 
-You do not need the latest flagship phone for college. A phone from the last 3-4 years handles everything students need. Check if your current phone is [unlocked](/blog/posts/check-phone-unlocked/) and compatible with your chosen carrier.
+You do not need the latest flagship phone for college. A phone from the last 3-4 years handles everything students need. Check if your current phone is [unlocked](/blog/how-to-check-if-your-phone-is-unlocked/) and compatible with your chosen carrier.
 
 ### Consider Leaving the Family Plan
 
@@ -123,7 +123,7 @@ Focus on understanding your data usage patterns. Most carriers show usage in the
 
 ### Study Abroad
 
-If you plan to study abroad, [prepaid plans](/blog/posts/prepaid-vs-postpaid/) offer flexibility that postpaid plans do not. You can pause service, switch to a local SIM in your destination country, and reactivate your US number when you return.
+If you plan to study abroad, [prepaid plans](/blog/prepaid-vs-postpaid-plans-which-is-better-in-2026/) offer flexibility that postpaid plans do not. You can pause service, switch to a local SIM in your destination country, and reactivate your US number when you return.
 
 ### Summer Breaks
 
@@ -141,7 +141,7 @@ Vouch Mobile offers unlimited everything for $25/month when paid annually on AT&
 
 ### Do college students get phone plan discounts?
 
-Some carriers offer student discounts, but these often require verification, have limited availability, or still cost more than prepaid alternatives. [MVNOs like Vouch Mobile](/blog/posts/what-is-mvno/) offer everyday low prices that beat most student discounts.
+Some carriers offer student discounts, but these often require verification, have limited availability, or still cost more than prepaid alternatives. [MVNOs like Vouch Mobile](/blog/what-is-an-mvno-everything-you-need-to-know/) offer everyday low prices that beat most student discounts.
 
 ### Should college students stay on their parents' phone plan?
 

@@ -71,7 +71,7 @@ To find your IMEI number:
 - Dial `*#06#` on your phone
 - Or check Settings > About Phone > IMEI
 
-Enter this IMEI on your new carrier's website to confirm compatibility. If your phone is [carrier locked](/blog/posts/unlock-phone/), you'll need to unlock it first.
+Enter this IMEI on your new carrier's website to confirm compatibility. If your phone is [carrier locked](/blog/how-to-unlock-your-phone-carrier-unlock-guide-2026/), you'll need to unlock it first.
 
 ### Step 3: Verify Your Number is Portable
 
@@ -108,7 +108,7 @@ During the transfer, you may experience a brief service interruption. This is no
 
 ### Step 6: Activate Your New Service
 
-Once the port completes, activate your new SIM card or [eSIM](/blog/posts/esim-vs-sim/) following your new carrier's instructions. Test by making a call and sending a text to confirm everything works.
+Once the port completes, activate your new SIM card or [eSIM](/blog/esim-vs-physical-sim-which-is-right-for-you/) following your new carrier's instructions. Test by making a call and sending a text to confirm everything works.
 
 ## Common Porting Issues and How to Fix Them
 

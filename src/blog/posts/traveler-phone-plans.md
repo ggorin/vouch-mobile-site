@@ -39,7 +39,7 @@ When evaluating plans for travel, prioritize these features:
 - **[WiFi calling](/learn/wifi-calling/)**: When cellular signal is weak, WiFi calling lets you use hotel, restaurant, or campground WiFi for calls and texts.
 - **[Mobile hotspot](/learn/hotspot/)**: Tethering lets you work from your laptop at campsites, hotels with weak WiFi, or anywhere with cellular service.
 - **No contract**: Travel plans change. Month-to-month flexibility lets you adjust service as needed without penalties.
-- **[eSIM support](/blog/posts/esim-vs-sim/)**: Digital SIM activation means you can add or switch service instantly without finding a store.
+- **[eSIM support](/blog/esim-vs-physical-sim-which-is-right-for-you/)**: Digital SIM activation means you can add or switch service instantly without finding a store.
 - **Pause options**: Some travelers only travel seasonally. Plans that can be paused save money during stationary periods.
 
 ## Top Phone Plan Options for Travelers
@@ -117,7 +117,7 @@ Google Maps and Apple Maps both offer [offline map downloads](https://support.go
 
 ### Consider a Secondary eSIM for Gaps
 
-If your primary carrier has known dead zones on routes you travel frequently, consider adding a secondary [eSIM](/blog/posts/esim-vs-sim/) from another carrier for backup. Many phones support multiple SIMs, and prepaid eSIM plans can be activated only when needed.
+If your primary carrier has known dead zones on routes you travel frequently, consider adding a secondary [eSIM](/blog/esim-vs-physical-sim-which-is-right-for-you/) from another carrier for backup. Many phones support multiple SIMs, and prepaid eSIM plans can be activated only when needed.
 
 ### Pay Annually If Your Travel Is Predictable
 
@@ -169,7 +169,7 @@ When cellular signal is unavailable, WiFi calling lets you make calls and send t
 
 ### Can I pause my phone plan when not traveling?
 
-Most [prepaid carriers](/blog/posts/prepaid-vs-postpaid/) allow you to cancel and reactivate without penalties since there is no contract. You can stop service when stationary for extended periods and reactivate when you resume traveling. Your phone number can typically be ported back.
+Most [prepaid carriers](/blog/prepaid-vs-postpaid-plans-which-is-better-in-2026/) allow you to cancel and reactivate without penalties since there is no contract. You can stop service when stationary for extended periods and reactivate when you resume traveling. Your phone number can typically be ported back.
 
 ### Which carrier has the best rural coverage?
 
@@ -181,4 +181,4 @@ Your phone plan should enable your adventures, not limit them. Vouch Mobile deli
 
 With unlimited data on AT&T's industry-leading network, 5GB of hotspot for working on the road, WiFi calling for challenging signal areas, and no contract locking you down, Vouch Mobile is built for the way travelers actually use their phones.
 
-At just $25/month when paid annually, with no credit check and instant [eSIM activation](/blog/posts/esim-vs-sim/) available, getting connected takes minutes. Visit our [plans page](/plans/) to start your next adventure with the coverage it deserves.
+At just $25/month when paid annually, with no credit check and instant [eSIM activation](/blog/esim-vs-physical-sim-which-is-right-for-you/) available, getting connected takes minutes. Visit our [plans page](/plans/) to start your next adventure with the coverage it deserves.

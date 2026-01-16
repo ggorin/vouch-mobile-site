@@ -61,7 +61,7 @@ This is the biggest advantage for many people. Prepaid plans don't require a cre
 - Recovering from financial difficulties
 - Simply prefer not to have your credit pulled
 
-Prepaid plans welcome you without judgment. Learn more about [no credit check phone plans](/blog/posts/no-credit-check-plans/).
+Prepaid plans welcome you without judgment. Learn more about [no credit check phone plans](/blog/no-credit-check-phone-plans-your-complete-guide/).
 
 ### 2. Lower Monthly Costs
 
@@ -82,7 +82,7 @@ Prepaid plans operate month-to-month. You can:
 - Switch carriers anytime
 - Cancel without penalties
 - Change plans freely
-- [Port your number](/blog/posts/port-phone-number/) when you want
+- [Port your number](/blog/how-to-port-your-phone-number-complete-guide-2026/) when you want
 
 This flexibility is valuable in a fast-changing wireless market.
 
@@ -209,7 +209,7 @@ Ready to make the switch? Here's the process:
 4. **Port your number** - Transfer your existing number to the new carrier
 5. **Activate service** - Insert your new SIM or eSIM
 
-The entire process can be completed in a day. See our full guide on [how to switch phone carriers](/blog/posts/switch-carriers/).
+The entire process can be completed in a day. See our full guide on [how to switch phone carriers](/blog/how-to-switch-phone-carriers-without-losing-your-number/).
 
 ## Frequently Asked Questions
 

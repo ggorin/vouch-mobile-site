@@ -28,7 +28,7 @@ For new Americans, this creates a frustrating paradox:
 
 These barriers leave many new Americans without reliable phone service exactly when they need it most, for job searches, apartment hunting, school communication, and staying connected with family.
 
-The solution is [prepaid phone plans](/blog/posts/prepaid-vs-postpaid/) that skip the credit check entirely and accept anyone regardless of their documentation status.
+The solution is [prepaid phone plans](/blog/prepaid-vs-postpaid-plans-which-is-better-in-2026/) that skip the credit check entirely and accept anyone regardless of their documentation status.
 
 ## What to Look For in a No-SSN Phone Plan
 
@@ -41,7 +41,7 @@ When searching for a phone plan without SSN or credit requirements, prioritize t
 - **International calling options**: Many new Americans need to call family in their home country.
 - **Reliable network coverage**: Quality service matters regardless of your documentation status.
 - **Month-to-month flexibility**: No contracts that complicate future changes.
-- **[eSIM support](/blog/posts/esim-vs-sim/)**: Instant activation without waiting for mail delivery.
+- **[eSIM support](/blog/esim-vs-physical-sim-which-is-right-for-you/)**: Instant activation without waiting for mail delivery.
 
 ## Top Phone Plans for New Americans
 
@@ -110,7 +110,7 @@ Lycamobile specializes in serving immigrant communities.
 
 You have several options for getting a phone:
 
-**Bring your current phone**: If you have an [unlocked phone](/blog/posts/check-phone-unlocked/) from your home country, it may work in the US. Check that it supports US network bands (most modern smartphones do).
+**Bring your current phone**: If you have an [unlocked phone](/blog/how-to-check-if-your-phone-is-unlocked/) from your home country, it may work in the US. Check that it supports US network bands (most modern smartphones do).
 
 **Buy an unlocked phone**: Purchase an unlocked phone from retailers like Amazon, Best Buy, or Apple. Unlocked phones work with any carrier.
 
@@ -124,7 +124,7 @@ For most prepaid carriers including Vouch Mobile:
 2. Choose your plan
 3. Enter your email address
 4. Enter payment information (debit card, credit card, or prepaid card)
-5. Choose physical SIM or [eSIM](/blog/posts/esim-vs-sim/)
+5. Choose physical SIM or [eSIM](/blog/esim-vs-physical-sim-which-is-right-for-you/)
 
 You will not be asked for:
 - Social Security Number
@@ -193,7 +193,7 @@ Vouch Mobile offers the best value for immigrants at $25-30/month with unlimited
 
 ### Can I use an ITIN instead of SSN for a phone plan?
 
-For [prepaid plans](/blog/posts/no-credit-check-plans/), you typically do not need to provide any tax identification number at all. ITIN, SSN, and other documentation are simply not required since there is no credit check.
+For [prepaid plans](/blog/no-credit-check-phone-plans-your-complete-guide/), you typically do not need to provide any tax identification number at all. ITIN, SSN, and other documentation are simply not required since there is no credit check.
 
 ### Do I need a US address for a phone plan?
 
@@ -207,6 +207,6 @@ Yes, international students can easily get prepaid phone plans without SSN or cr
 
 Getting phone service should not be a barrier to starting your new life in the United States. Vouch Mobile makes it simple: no SSN, no credit check, no complicated documentation. Just reliable unlimited service on AT&T's network at an affordable price.
 
-At $25-30/month with instant [eSIM activation](/blog/posts/esim-vs-sim/), you can have a US phone number working within minutes of signing up. No waiting for mail, no store visits, no paperwork.
+At $25-30/month with instant [eSIM activation](/blog/esim-vs-physical-sim-which-is-right-for-you/), you can have a US phone number working within minutes of signing up. No waiting for mail, no store visits, no paperwork.
 
 Visit our [plans page](/plans/) to get connected today. Welcome to America. Let us help you stay in touch.

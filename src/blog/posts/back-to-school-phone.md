@@ -129,7 +129,7 @@ Prepaid carriers offer lower everyday prices without verification hassles:
 
 **Savings comparison:** A student paying $30/month prepaid vs. $65/month with a carrier student discount saves $420/year. Over four years of college, that's $1,680.
 
-Prepaid plans use the same networks as major carriers. Learn more about [how MVNOs offer lower prices](/blog/posts/what-is-mvno/).
+Prepaid plans use the same networks as major carriers. Learn more about [how MVNOs offer lower prices](/blog/what-is-an-mvno-everything-you-need-to-know/).
 
 ## Setting Up a Student's First Phone Plan
 
@@ -141,7 +141,7 @@ For students, consider:
 - **Previous-generation flagships ($400-600):** Good value, premium features
 - **Current flagships ($800+):** Often unnecessary for students
 
-Buy unlocked phones to maintain flexibility. Check our guide on [the best phones for prepaid plans](/blog/posts/best-phones-prepaid/).
+Buy unlocked phones to maintain flexibility. Check our guide on [the best phones for prepaid plans](/blog/best-phones-for-prepaid-plans-2026-top-10-unlocked-phones/).
 
 ### Step 2: Select a Plan Based on Actual Needs
 
@@ -190,7 +190,7 @@ Back to school phone deals on devices often beat carrier promotions:
 - **Back to School sales** (August): Retailer promotions
 - **Black Friday** (November): Biggest discounts of the year
 
-Buy unlocked, then activate on any carrier. See our [Black Friday phone deals guide](/blog/posts/black-friday-phone-deals/) for strategies.
+Buy unlocked, then activate on any carrier. See our [Black Friday phone deals guide](/blog/black-friday-phone-plan-deals-2026-best-carrier-discounts/) for strategies.
 
 ### Tip 2: Pay Annually
 
@@ -239,7 +239,7 @@ Family plans can make sense, but consider the trade-offs:
 
 **Alternative approach:** Individual prepaid plans for each family member. Everyone manages their own account, pays their own bill, and learns financial responsibility. Total cost is often similar to family plans.
 
-See our analysis of [family plan alternatives](/blog/posts/family-plan-alternatives/) for detailed comparisons.
+See our analysis of [family plan alternatives](/blog/family-phone-plan-alternatives-save-without-the-big-carrier/) for detailed comparisons.
 
 ## College Students: Managing Your Own Plan
 
@@ -251,7 +251,7 @@ College students often have limited or no credit history. Prepaid carriers don't
 
 Postpaid carriers require deposits or co-signers for customers without established credit. Why deal with that hassle when prepaid works just as well?
 
-Read more about [phone plans with no credit check](/blog/posts/no-credit-check-plans/).
+Read more about [phone plans with no credit check](/blog/no-credit-check-phone-plans-your-complete-guide/).
 
 ### Porting Your Number
 
@@ -262,7 +262,7 @@ If you're leaving a family plan, you can take your phone number with you. The pr
 3. Request to port your number during signup
 4. Your number transfers, usually within hours
 
-Detailed instructions: [How to port your phone number](/blog/posts/port-phone-number/).
+Detailed instructions: [How to port your phone number](/blog/how-to-port-your-phone-number-complete-guide-2026/).
 
 ### Budgeting for Phone Service
 

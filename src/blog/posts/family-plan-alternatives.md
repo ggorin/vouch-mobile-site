@@ -57,7 +57,7 @@ Rather than one family plan, consider putting each family member on their own pr
 
 **Flexibility**: Each person chooses the plan that fits their needs. Heavy data users can get unlimited while light users save with smaller plans.
 
-**No credit checks**: [No credit check carriers](/blog/posts/no-credit-check-plans/) approve everyone instantly without affecting credit scores.
+**No credit checks**: [No credit check carriers](/blog/no-credit-check-phone-plans-your-complete-guide/) approve everyone instantly without affecting credit scores.
 
 **No contracts**: Cancel any line anytime without affecting others.
 
@@ -82,7 +82,7 @@ Families with varying needs can mix carriers and plans:
 - **Heavy users**: Unlimited plans from Vouch Mobile or [Visible](/compare/vouch-vs-visible/)
 - **Light users**: Limited data plans from budget carriers
 - **Kids with restrictions**: Basic prepaid plans with parental controls
-- **Seniors**: [Simple plans designed for seniors](/blog/posts/phone-plans-seniors/)
+- **Seniors**: [Simple plans designed for seniors](/blog/best-phone-plans-for-seniors-2026-simple-and-affordable-options/)
 
 This customization often saves more than forcing everyone onto the same family plan tier.
 

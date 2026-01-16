@@ -23,7 +23,7 @@ This single change can save you 50% or more on your monthly bill. MVNOs (Mobile 
 
 MVNOs use the same towers as AT&T, Verizon, and T-Mobile. Vouch Mobile, for example, runs on AT&T's network, giving you identical [coverage](/coverage/) at a fraction of the price.
 
-To learn more about how this works, read our guide on [what is an MVNO](/blog/posts/what-is-mvno/).
+To learn more about how this works, read our guide on [what is an MVNO](/blog/what-is-an-mvno-everything-you-need-to-know/).
 
 ## 2. Pay Annually Instead of Monthly
 
@@ -40,7 +40,7 @@ Are you paying for data you don't use? Check your actual usage:
 
 If you consistently use less than your plan allows, downgrade. If you frequently connect to Wi-Fi, you might need less mobile data than you think.
 
-See our guide on [how much data you actually need](/blog/posts/phone-plan-data-explained/).
+See our guide on [how much data you actually need](/blog/how-much-data-do-i-need-phone-plan-data-guide/).
 
 ## 4. Enable Wi-Fi Calling
 
@@ -163,7 +163,7 @@ Do the math for your situation. If your phone is older or you rarely break phone
 
 Traveling internationally? Avoid carrier roaming charges:
 
-- Buy local SIM cards at your destination (requires [unlocked phone](/blog/posts/unlock-phone/))
+- Buy local SIM cards at your destination (requires [unlocked phone](/blog/how-to-unlock-your-phone-carrier-unlock-guide-2026/))
 - Use Wi-Fi for calls and messages
 - Get an international eSIM (like Airalo or Holafly)
 - Use your carrier's international day pass only when needed
@@ -172,7 +172,7 @@ International roaming can cost $10/day or more. A local SIM might cost $10-20 to
 
 ## 15. Switch to Prepaid
 
-This is the most impactful change for most people. [Prepaid plans](/blog/posts/prepaid-vs-postpaid/) offer:
+This is the most impactful change for most people. [Prepaid plans](/blog/prepaid-vs-postpaid-plans-which-is-better-in-2026/) offer:
 
 - No credit checks
 - Lower monthly costs

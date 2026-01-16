@@ -96,7 +96,7 @@ You don't need the newest flagship. Consider these value options:
 
 A $400 unlocked phone paired with a $300 annual prepaid plan costs $700 total. Compare that to a "free phone" deal requiring an $85/month plan ($1,020/year just for service).
 
-For specific recommendations, check our guide on [the best phones for prepaid plans](/blog/posts/best-phones-prepaid/).
+For specific recommendations, check our guide on [the best phones for prepaid plans](/blog/best-phones-for-prepaid-plans-2026-top-10-unlocked-phones/).
 
 ### Where to Buy Unlocked Phones
 
@@ -149,7 +149,7 @@ In this example, paying $400 to escape saves $50/month going forward. After 8 mo
 4. **Request unlock** (usually processed within 48 hours)
 5. **Switch to prepaid** and start saving immediately
 
-Need help with unlocking? Read our guide on [how to unlock your phone](/blog/posts/unlock-phone/).
+Need help with unlocking? Read our guide on [how to unlock your phone](/blog/how-to-unlock-your-phone-carrier-unlock-guide-2026/).
 
 ## Strategy 4: Create a Phone Emergency Fund
 

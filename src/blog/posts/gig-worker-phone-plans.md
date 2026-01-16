@@ -37,7 +37,7 @@ When evaluating phone plans for gig work, prioritize these features:
 - **Strong highway coverage**: Many gig workers cover suburban and highway routes where some networks struggle.
 - **[Mobile hotspot](/learn/hotspot/)**: Tethering lets you use a tablet or second device for better navigation displays.
 - **No contract**: Gig income varies. Month-to-month flexibility lets you adjust if work slows down.
-- **[No credit check](/blog/posts/no-credit-check-plans/)**: Many gig workers are building credit or prefer to avoid hard inquiries.
+- **[No credit check](/blog/no-credit-check-phone-plans-your-complete-guide/)**: Many gig workers are building credit or prefer to avoid hard inquiries.
 - **Affordable pricing**: Every dollar spent on phone service is a dollar not earned. Keep costs reasonable.
 
 ## Top Phone Plan Options for Gig Workers
@@ -133,7 +133,7 @@ If you use a budget or older phone for gig work, carrier insurance rarely makes 
 
 ### Dual SIM Strategy
 
-Many modern phones support [dual SIM or eSIM](/blog/posts/esim-vs-sim/) configurations. Some gig workers use two carriers simultaneously for redundancy. If one network has a dead zone in your area, the other may have coverage. This is especially useful for workers in areas with known coverage gaps.
+Many modern phones support [dual SIM or eSIM](/blog/esim-vs-physical-sim-which-is-right-for-you/) configurations. Some gig workers use two carriers simultaneously for redundancy. If one network has a dead zone in your area, the other may have coverage. This is especially useful for workers in areas with known coverage gaps.
 
 ### Battery Management
 
@@ -186,4 +186,4 @@ For gig workers, reliable phone service is not optional, it is essential to your
 
 At just $25/month when paid annually (and potentially tax-deductible as a business expense), Vouch Mobile keeps your costs low while ensuring you stay connected to customers, platforms, and navigation exactly when you need it.
 
-Visit our [plans page](/plans/) to get started. No credit check means instant approval, and [eSIM activation](/blog/posts/esim-vs-sim/) gets you connected in minutes. Your next ride or delivery is waiting.
+Visit our [plans page](/plans/) to get started. No credit check means instant approval, and [eSIM activation](/blog/esim-vs-physical-sim-which-is-right-for-you/) gets you connected in minutes. Your next ride or delivery is waiting.

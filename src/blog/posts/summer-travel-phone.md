@@ -219,7 +219,7 @@ If your summer vacation includes international destinations, planning becomes mo
 
 **Local SIM cards:**
 - Often the cheapest option for longer trips
-- Requires unlocked phone (see our [unlock guide](/blog/posts/unlock-phone/))
+- Requires unlocked phone (see our [unlock guide](/blog/how-to-unlock-your-phone-carrier-unlock-guide-2026/))
 - Buy at airport or local shops upon arrival
 
 **Carrier international plans:**
@@ -266,4 +266,4 @@ Vouch Mobile offers unlimited talk, text, and data on AT&T's nationwide network,
 
 Before your next adventure, make sure your phone plan is ready. [Check out our plans](/plans/) and coverage to ensure your summer travels stay connected.
 
-For more tips on getting the most from your phone service, explore our guides on [saving money on your phone bill](/blog/posts/save-money-phone-bill/) and [understanding your data needs](/blog/posts/phone-plan-data-explained/).
+For more tips on getting the most from your phone service, explore our guides on [saving money on your phone bill](/blog/how-to-save-money-on-your-phone-bill-15-proven-tips/) and [understanding your data needs](/blog/how-much-data-do-i-need-phone-plan-data-guide/).

@@ -35,7 +35,7 @@ When evaluating phone plans for children, consider these factors:
 - **Affordable per-line pricing**: Each child's line should cost $25-35/month maximum for unlimited service.
 - **Reliable coverage**: Your child's phone needs to work at school, activities, friends' houses, and everywhere they go.
 - **Simple management**: Adding, removing, or adjusting kids' lines should be straightforward.
-- **[No contract](/blog/posts/prepaid-vs-postpaid/)**: Month-to-month flexibility lets you adjust as circumstances change.
+- **[No contract](/blog/prepaid-vs-postpaid-plans-which-is-better-in-2026/)**: Month-to-month flexibility lets you adjust as circumstances change.
 - **Compatible with parental controls**: The plan should work with your chosen parental control solution.
 - **Data management options**: Ability to limit data or have unlimited without worry.
 - **[WiFi calling](/learn/wifi-calling/)**: Ensures connectivity in buildings where cellular signal is weak.
@@ -153,7 +153,7 @@ Traditional wisdom says family plans save money, but prepaid carriers like Vouch
 
 ### Hand Down Phones
 
-When parents upgrade, previous phones make excellent first phones for kids. Check that the phone is [unlocked](/blog/posts/check-phone-unlocked/) and compatible with your carrier.
+When parents upgrade, previous phones make excellent first phones for kids. Check that the phone is [unlocked](/blog/how-to-check-if-your-phone-is-unlocked/) and compatible with your carrier.
 
 ### Start with Limited Plans for Young Kids
 
@@ -199,7 +199,7 @@ Increasing trust and responsibility:
 ### College Transition
 
 - Consider moving to their own plan
-- [Individual prepaid plans](/blog/posts/college-student-phone-plans/) are often cheaper than staying on family plan
+- [Individual prepaid plans](/blog/best-phone-plans-for-college-students-2026/) are often cheaper than staying on family plan
 - Opportunity to build financial independence
 
 ## Frequently Asked Questions
@@ -218,7 +218,7 @@ There is no universal right age. Consider your child's maturity, your family's s
 
 ### Do family plans save money over individual lines?
 
-Not always. Calculate your actual per-line cost on your current family plan and compare to prepaid options. Many families find that individual [prepaid lines](/blog/posts/prepaid-vs-postpaid/) from carriers like Vouch Mobile cost less than their family plan.
+Not always. Calculate your actual per-line cost on your current family plan and compare to prepaid options. Many families find that individual [prepaid lines](/blog/prepaid-vs-postpaid-plans-which-is-better-in-2026/) from carriers like Vouch Mobile cost less than their family plan.
 
 ### How do I monitor my child's phone usage?
 
