@@ -63,50 +63,108 @@ layout: base.njk
 </script>
 {% endblock %}
 
-<article class="article">
-  <header class="article-header">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a> &rsaquo;
-      <a href="/blog/">Blog</a> &rsaquo;
-      <span>{{ title }}</span>
-    </nav>
-    <h1>{{ title }}</h1>
-    <div class="article-meta">{{ date | readableDate }} &bull; {{ readTime }} min read</div>
-    {% if image %}
-    <div class="article-image mt-8 mb-8">
-      {% image image, title, [400, 800, 1000], "(min-width: 768px) 80vw, 100vw", { style: "width: 100%; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);", loading: "eager" } %}
+<article class="article-v2">
+  {# Editorial Hero Header #}
+  <header class="article-hero">
+    <div class="article-hero-inner">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        <a href="/blog/">Blog</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        <span>{{ title }}</span>
+      </nav>
+
+      <h1 class="article-title">{{ title }}</h1>
+
+      <div class="article-meta-bar">
+        <div class="article-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          <span>{{ date | readableDate }}</span>
+        </div>
+        <div class="article-meta-divider"></div>
+        <div class="article-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>{{ readTime }} min read</span>
+        </div>
+      </div>
     </div>
-    {% endif %}
   </header>
 
-  <div class="article-content">
-    {{ content | safe }}
+  {# Hero Image #}
+  {% if image %}
+  <div class="article-hero-image">
+    <div class="article-hero-image-inner">
+      {% image image, title, [600, 1000, 1400], "(min-width: 1024px) 900px, (min-width: 768px) 80vw, 100vw", { class: "article-featured-img", loading: "eager" } %}
+    </div>
+  </div>
+  {% endif %}
+
+  {# Main Content Area with Sidebar #}
+  <div class="article-layout">
+    {# Table of Contents Sidebar #}
+    <aside class="article-sidebar" id="article-toc">
+      <div class="toc-container">
+        <div class="toc-header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+          <span>In This Article</span>
+        </div>
+        <nav class="toc-nav" id="toc-nav">
+          {# TOC is populated via JavaScript #}
+        </nav>
+      </div>
+    </aside>
+
+    {# Article Content #}
+    <div class="article-main">
+      <div class="article-content-v2">
+        {{ content | safe }}
+      </div>
+
+      {# Author Card #}
+      <div class="article-author-card">
+        <div class="author-avatar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </div>
+        <div class="author-info">
+          <div class="author-name">Vouch Mobile Team</div>
+          <div class="author-bio">Helping you find the best wireless plans without the carrier confusion.</div>
+        </div>
+      </div>
+    </div>
   </div>
 </article>
 
-<section class="section section-alt">
+{# Related Articles Section #}
+<section class="related-articles-section">
   <div class="container">
-    <h2 class="text-2xl mb-8">More Articles</h2>
-    <div class="blog-grid">
+    <div class="related-header">
+      <h2 class="related-title">Continue Reading</h2>
+      <p class="related-subtitle">More guides to help you make the switch</p>
+    </div>
+    <div class="related-grid">
       {% set posts = collections.posts | reverse %}
       {% set count = 0 %}
       {% for post in posts %}
       {% if post.url != page.url and count < 3 %}
       {% set count = count + 1 %}
-      <article class="blog-card">
-        <a href="{{ post.url }}" class="blog-card-image-link" aria-label="Read {{ post.data.title }}">
-          <div class="blog-card-image">
-             {% if post.data.image %}
-            {% image post.data.image, post.data.title, [300, 600], "(min-width: 768px) 30vw, 100vw", { style: "width: 100%; height: 100%; object-fit: cover;" } %}
+      <article class="related-card">
+        <a href="{{ post.url }}" class="related-card-link" aria-label="Read {{ post.data.title }}">
+          <div class="related-card-image">
+            {% if post.data.image %}
+            {% image post.data.image, post.data.title, [300, 600], "(min-width: 768px) 30vw, 100vw", { class: "related-img" } %}
             {% endif %}
+            <div class="related-card-overlay"></div>
+          </div>
+          <div class="related-card-content">
+            <h3 class="related-card-title">{{ post.data.title }}</h3>
+            <p class="related-card-excerpt">{{ post.data.excerpt }}</p>
+            <span class="related-card-readmore">
+              Read article
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
           </div>
         </a>
-        <div class="blog-card-content">
-          <h3 class="blog-card-title">
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-          </h3>
-          <p class="blog-card-excerpt">{{ post.data.excerpt }}</p>
-        </div>
       </article>
       {% endif %}
       {% endfor %}
@@ -114,12 +172,88 @@ layout: base.njk
   </div>
 </section>
 
-<section class="cta-section section">
+{# CTA Section #}
+<section class="article-cta-section">
   <div class="container">
-    <div class="cta-content">
-      <h2>Ready to Switch?</h2>
-      <p>Get unlimited talk, text, and data for just $30/month. No credit check required.</p>
-      <a href="https://vouchmobile.com" class="btn btn-primary btn-large">Get Started Today</a>
+    <div class="article-cta-card">
+      <div class="article-cta-content">
+        <h2 class="article-cta-title">Ready to Switch?</h2>
+        <p class="article-cta-text">Get unlimited talk, text, and data for just $30/month on AT&T's network. No credit check. No contracts. No surprises.</p>
+        <a href="https://vouchmobile.com" class="btn btn-primary btn-large article-cta-btn">
+          Get Started Today
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+      <div class="article-cta-decoration">
+        <div class="cta-circle cta-circle-1"></div>
+        <div class="cta-circle cta-circle-2"></div>
+        <div class="cta-circle cta-circle-3"></div>
+      </div>
     </div>
   </div>
 </section>
+
+{# Table of Contents Script - Safe DOM manipulation #}
+<script>
+(function() {
+  var tocNav = document.getElementById('toc-nav');
+  var articleContent = document.querySelector('.article-content-v2');
+
+  if (!tocNav || !articleContent) return;
+
+  var headings = articleContent.querySelectorAll('h2, h3');
+  if (headings.length < 2) {
+    document.getElementById('article-toc').style.display = 'none';
+    return;
+  }
+
+  var tocList = document.createElement('ul');
+  tocList.className = 'toc-list';
+
+  headings.forEach(function(heading, index) {
+    var id = heading.id || 'section-' + index;
+    heading.id = id;
+    var level = heading.tagName === 'H2' ? 'toc-h2' : 'toc-h3';
+
+    var li = document.createElement('li');
+    li.className = 'toc-item ' + level;
+
+    var a = document.createElement('a');
+    a.href = '#' + id;
+    a.className = 'toc-link';
+    a.textContent = heading.textContent;
+
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
+
+  tocNav.appendChild(tocList);
+
+  var tocLinks = tocNav.querySelectorAll('.toc-link');
+  tocLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var targetId = link.getAttribute('href').slice(1);
+      var target = document.getElementById(targetId);
+      if (target) {
+        var offset = 100;
+        var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      }
+    });
+  });
+
+  var observerOptions = { rootMargin: '-100px 0px -70% 0px' };
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(function(link) { link.classList.remove('active'); });
+        var activeLink = tocNav.querySelector('a[href="#' + entry.target.id + '"]');
+        if (activeLink) activeLink.classList.add('active');
+      }
+    });
+  }, observerOptions);
+
+  headings.forEach(function(heading) { observer.observe(heading); });
+})();
+</script>
