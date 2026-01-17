@@ -27,7 +27,7 @@ const colors = {
 
 const CONFIG = {
   title: {
-    maxLength: 60,
+    maxLength: 70,
     minLength: 30,
   },
   description: {

@@ -27,7 +27,7 @@
 
       <nav class="footer-nav" aria-label="Footer navigation">
         <div class="footer-links">
-          <h4>Company</h4>
+          <h3>Company</h3>
           <ul>
             <li><a href="/about/">About Us</a></li>
             <li><a href="/blog/">Blog</a></li>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="footer-links">
-          <h4>Support</h4>
+          <h3>Support</h3>
           <ul>
             <li><a href="/faq/">FAQ</a></li>
             <li><a href="/coverage/">Coverage</a></li>
@@ -45,7 +45,7 @@
         </div>
 
         <div class="footer-links">
-          <h4>Compare</h4>
+          <h3>Compare</h3>
           <ul>
             {% for competitor in competitors | slice(0, 5) %}
             <li><a href="/compare/vouch-vs-{{ competitor.slug }}/">vs {{ competitor.shortName }}</a></li>
@@ -54,7 +54,7 @@
         </div>
 
         <div class="footer-links">
-          <h4>Legal</h4>
+          <h3>Legal</h3>
           <ul>
             <li><a href="https://vouchmobile.com/terms">Terms</a></li>
             <li><a href="https://vouchmobile.com/privacy">Privacy</a></li>
