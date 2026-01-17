@@ -14,7 +14,11 @@
     "check:links": "linkinator _site --recurse --skip 'vouchmobile.com|kinsta|external' --format json --verbosity error",
     "build:validate": "npm run build && npm run validate:schema",
     "build:check": "npm run build && npm run check:links",
-    "check:mobile": "node scripts/check-mobile-overflow.js"
+    "check:mobile": "node scripts/check-mobile-overflow.js",
+    "check:images": "node scripts/check-images.js",
+    "check:a11y": "node scripts/check-accessibility.js",
+    "check:seo": "node scripts/check-seo.js",
+    "check:all": "npm run check:mobile && npm run check:images && npm run check:a11y && npm run check:seo"
   },
   "repository": {
     "type": "git",
