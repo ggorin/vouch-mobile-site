@@ -13,7 +13,8 @@
     "validate:schema": "node scripts/validate-schema.js",
     "check:links": "linkinator _site --recurse --skip 'vouchmobile.com|kinsta|external' --format json --verbosity error",
     "build:validate": "npm run build && npm run validate:schema",
-    "build:check": "npm run build && npm run check:links"
+    "build:check": "npm run build && npm run check:links",
+    "check:mobile": "node scripts/check-mobile-overflow.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "html-minifier-terser": "^7.2.0",
     "inflight": "^1.0.6",
     "linkinator": "^7.5.3",
+    "md-to-pdf": "^5.2.5",
     "rimraf": "^6.1.2"
   },
   "engines": {

@@ -141,6 +141,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -1598,6 +1599,7 @@ h6 {
 
 /* Split Hero with Image */
 .hero-split {
+  position: relative;
   min-height: 85vh;
   display: flex;
   align-items: center;
