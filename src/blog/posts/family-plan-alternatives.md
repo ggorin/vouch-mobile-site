@@ -1,5 +1,5 @@
 ---
-title: "Family Phone Plan Alternatives: Save Without the Big Carrier"
+title: "Family Phone Plan Alternatives: Save More"
 description: "Discover family phone plan alternatives that save money without sacrificing quality. Compare MVNO family options vs big carrier plans."
 date: 2026-01-17
 readTime: 10

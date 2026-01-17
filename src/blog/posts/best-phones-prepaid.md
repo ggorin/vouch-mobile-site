@@ -1,5 +1,5 @@
 ---
-title: "Best Phones for Prepaid Plans 2026: Top 10 Unlocked Phones"
+title: "Top 10 Unlocked Phones for Prepaid Plans 2026"
 description: "Find the best prepaid phones and unlocked phones for any budget. Our 2026 guide covers top picks from budget to premium."
 date: 2026-01-17
 readTime: 10

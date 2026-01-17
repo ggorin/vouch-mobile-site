@@ -1,5 +1,5 @@
 ---
-title: "Black Friday Phone Plan Deals 2026: Best Carrier Discounts"
+title: "Black Friday Phone Deals 2026: Best Offers"
 description: "Find the best Black Friday phone plan deals in 2026. Compare carrier discounts, learn what to look for, and discover why prepaid plans win."
 excerpt: "Score major savings on phone plans this Black Friday. We break down the best carrier deals, what to watch for, and why prepaid plans often beat the doorbusters."
 date: 2026-01-17

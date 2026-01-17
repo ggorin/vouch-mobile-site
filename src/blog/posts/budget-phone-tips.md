@@ -1,5 +1,5 @@
 ---
-title: "25 Budget Phone Tips: Save Money Without Sacrificing Quality"
+title: "25 Budget Phone Tips to Save Money"
 description: "Discover 25 proven tips to save money on your phone bill without sacrificing quality. Practical advice for cutting costs today."
 date: 2026-01-17
 readTime: 12

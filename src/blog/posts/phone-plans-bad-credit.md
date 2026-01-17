@@ -1,5 +1,5 @@
 ---
-title: "Phone Plans for Bad Credit: No Credit Check Options 2026"
+title: "Phone Plans for Bad Credit: No Credit Check 2026"
 description: "Get a phone plan with bad credit. Discover no credit check carriers, prepaid options, and how to get unlimited service without a credit check."
 date: 2026-01-17
 readTime: 9

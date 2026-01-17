@@ -1,5 +1,5 @@
 ---
-title: "Best Phone Plans for Seniors 2026: Simple & Affordable Options"
+title: "Best Phone Plans for Seniors 2026"
 description: "Find the best phone plans for seniors in 2026. Compare simple, affordable options with no contracts and easy-to-use features."
 date: 2026-01-17
 readTime: 9

@@ -1,5 +1,5 @@
 ---
-title: "Phone Plans for New Americans: No SSN or Credit Required"
+title: "Phone Plans for New Americans: No SSN Needed"
 description: "Find phone plans that work without SSN or credit history. Options for immigrants, international students, and new US residents."
 date: 2026-01-17
 readTime: 10
