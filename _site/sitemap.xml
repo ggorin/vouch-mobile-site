@@ -37,10 +37,40 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://vouchmobile.com/compare/</loc>
+    <lastmod>2026-01-14T02:25:36.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vouchmobile.com/compare/vouch-vs-mint-mobile/</loc>
+    <lastmod>2026-01-14T02:25:36.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vouchmobile.com/blog/</loc>
+    <lastmod>2026-01-14T02:27:47.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://vouchmobile.com/plans/</loc>
     <lastmod>2026-01-16T03:20:27.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vouchmobile.com/compare/att-alternatives/</loc>
+    <lastmod>2026-01-16T03:45:26.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vouchmobile.com/learn/5g/</loc>
+    <lastmod>2026-01-16T03:48:24.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://vouchmobile.com/learn/</loc>
@@ -73,20 +103,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://vouchmobile.com/</loc>
-    <lastmod>2026-01-16T14:37:10.790Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://vouchmobile.com/coverage/</loc>
     <lastmod>2026-01-16T14:37:11.036Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vouchmobile.com/compare/</loc>
-    <lastmod>2026-01-16T20:46:32.498Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -259,27 +277,9 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://vouchmobile.com/blog/</loc>
-    <lastmod>2026-01-17T18:27:16.588Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vouchmobile.com/compare/vouch-vs-mint-mobile/</loc>
-    <lastmod>2026-01-17T18:28:45.541Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vouchmobile.com/compare/att-alternatives/</loc>
-    <lastmod>2026-01-17T18:28:46.946Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vouchmobile.com/learn/5g/</loc>
-    <lastmod>2026-01-17T18:33:13.449Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://vouchmobile.com/</loc>
+    <lastmod>2026-01-18T16:49:25.373Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
