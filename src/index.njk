@@ -104,81 +104,75 @@ eleventyNavigation:
 <section class="home-hero">
   <div class="home-hero__bg">
     <div class="home-hero__grid"></div>
-    <div class="home-hero__glow home-hero__glow--1"></div>
-    <div class="home-hero__glow home-hero__glow--2"></div>
-    <div class="home-hero__glow home-hero__glow--3"></div>
-    <div class="home-hero__particles">
-      {% for i in range(0, 12) %}
-      <div class="home-hero__particle"></div>
-      {% endfor %}
-    </div>
-    <!-- Signal rings animation -->
-    <div class="home-hero__signal">
-      <div class="home-hero__signal-ring"></div>
-      <div class="home-hero__signal-ring"></div>
-      <div class="home-hero__signal-ring"></div>
-    </div>
   </div>
 
   <div class="container">
-    <div class="home-hero__content">
-      <div class="home-hero__badges">
-        <span class="home-hero__badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
-          No Credit Check
-        </span>
-        <span class="home-hero__badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
-          </svg>
-          AT&T 5G Network
-        </span>
-        <span class="home-hero__badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-          </svg>
-          No Contracts
-        </span>
+    <div class="home-hero__grid">
+      <div class="home-hero__content">
+        <div class="home-hero__badges">
+          <span class="home-hero__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            No Credit Check
+          </span>
+          <span class="home-hero__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+            </svg>
+            AT&T 5G Network
+          </span>
+          <span class="home-hero__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+            No Contracts
+          </span>
+        </div>
+
+        <h1 class="home-hero__title">
+          <span class="home-hero__title-line">Unlimited Wireless</span>
+          <span class="home-hero__title-accent">Starting at $25/mo</span>
+        </h1>
+
+        <p class="home-hero__subtitle">
+          Premium 5G coverage on AT&T's nationwide network.<br>
+          No credit check. No surprises. Just savings.
+        </p>
+
+        <div class="home-hero__cta">
+          <a href="/plans/" class="btn btn-primary btn-lg">
+            See Plans & Pricing
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="/coverage/" class="btn btn-outline btn-lg">
+            Check Coverage
+          </a>
+        </div>
+
+        <div class="home-hero__stats">
+          <div class="home-hero__stat">
+            <span class="home-hero__stat-value">$480+</span>
+            <span class="home-hero__stat-label">Avg. yearly savings</span>
+          </div>
+          <div class="home-hero__stat-divider"></div>
+          <div class="home-hero__stat">
+            <span class="home-hero__stat-value">97%</span>
+            <span class="home-hero__stat-label">US coverage</span>
+          </div>
+          <div class="home-hero__stat-divider"></div>
+          <div class="home-hero__stat">
+            <span class="home-hero__stat-value">5min</span>
+            <span class="home-hero__stat-label">Setup time</span>
+          </div>
+        </div>
       </div>
 
-      <h1 class="home-hero__title">
-        <span class="home-hero__title-line">Unlimited Wireless</span>
-        <span class="home-hero__title-accent">Starting at $25/mo</span>
-      </h1>
-
-      <p class="home-hero__subtitle">
-        Premium 5G coverage on AT&T's nationwide network.<br>
-        No credit check. No surprises. Just savings.
-      </p>
-
-      <div class="home-hero__cta">
-        <a href="/plans/" class="home-hero__btn home-hero__btn--primary">
-          See Plans & Pricing
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
-        <a href="/coverage/" class="home-hero__btn home-hero__btn--secondary">
-          Check Coverage
-        </a>
-      </div>
-
-      <div class="home-hero__stats">
-        <div class="home-hero__stat">
-          <span class="home-hero__stat-value">$480+</span>
-          <span class="home-hero__stat-label">Avg. yearly savings</span>
-        </div>
-        <div class="home-hero__stat-divider"></div>
-        <div class="home-hero__stat">
-          <span class="home-hero__stat-value">97%</span>
-          <span class="home-hero__stat-label">US coverage</span>
-        </div>
-        <div class="home-hero__stat-divider"></div>
-        <div class="home-hero__stat">
-          <span class="home-hero__stat-value">5min</span>
-          <span class="home-hero__stat-label">Setup time</span>
+      <div class="home-hero__image">
+        <div class="home-hero__image-frame">
+          {% image "/images/hero-lifestyle.jpg", "Woman enjoying wireless freedom at a cafe with Vouch Mobile", [400, 600, 800], "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px", {class: "home-hero__image-img"} %}
         </div>
       </div>
     </div>
@@ -332,7 +326,7 @@ eleventyNavigation:
     </div>
 
     <div class="home-steps__cta">
-      <a href="/plans/" class="home-steps__btn">
+      <a href="/plans/" class="btn btn-primary">
         Get Started Now
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -417,7 +411,7 @@ eleventyNavigation:
           </div>
         </div>
 
-        <a href="/coverage/" class="home-coverage__btn">
+        <a href="/coverage/" class="btn btn-primary">
           Check Your Coverage
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -517,13 +511,13 @@ eleventyNavigation:
       </p>
 
       <div class="home-cta__buttons">
-        <a href="/plans/" class="home-cta__btn home-cta__btn--primary">
+        <a href="/plans/" class="btn btn-white btn-lg">
           Get Started
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
         </a>
-        <a href="/coverage/" class="home-cta__btn home-cta__btn--secondary">
+        <a href="/coverage/" class="btn btn-outline-light btn-lg">
           Check Coverage
         </a>
       </div>

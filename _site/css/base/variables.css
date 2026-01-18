@@ -1,0 +1,123 @@
+/* --------------------------------------------------------------------------
+   CSS Variables
+   -------------------------------------------------------------------------- */
+:root {
+    /* Colors - Clean & Professional Light Theme */
+    --color-primary: #00B5A0;
+    --color-primary-hover: #009D8B;
+    --color-primary-glow: rgba(0, 181, 160, 0.3);
+    --color-primary-light: rgba(0, 181, 160, 0.08);
+
+    --color-accent: #FF6B4A;
+    --color-accent-light: rgba(255, 107, 74, 0.1);
+    --color-accent-glow: rgba(255, 107, 74, 0.2);
+
+    --color-dark: #1F2937;
+    --color-dark-light: #F8FAFC;
+    --color-dark-lighter: #F1F5F9;
+
+    --color-text: #1F2937;
+    --color-text-light: #64748B;
+    --color-text-muted: #94A3B8;
+    --color-text-secondary: #64748B;
+
+    --color-white: #FFFFFF;
+    --color-off-white: #F8FAFC;
+
+    --color-bg: #FFFFFF;
+    --color-bg-alt: #F8FAFC;
+    --color-bg-dark: #1F2937;
+    --color-surface: #F8FAFC;
+
+    --color-border: #E2E8F0;
+    --color-border-dark: rgba(0, 0, 0, 0.08);
+
+    --color-success: #10B981;
+    --color-danger: #EF4444;
+
+    /* Glassmorphism - Light Theme */
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(0, 0, 0, 0.08);
+    --glass-dark-bg: rgba(255, 255, 255, 0.95);
+    --glass-dark-border: rgba(0, 0, 0, 0.08);
+
+    /* Typography */
+    --font-display: 'Clash Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-body: 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+    --font-size-5xl: 3.5rem;
+    --font-size-6xl: 4.5rem;
+    --font-size-7xl: 6rem;
+
+    /* Spacing */
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-8: 2rem;
+    --spacing-10: 2.5rem;
+    --spacing-12: 3rem;
+    --spacing-16: 4rem;
+    --spacing-20: 5rem;
+    --spacing-24: 6rem;
+    --spacing-32: 8rem;
+
+    /* Layout */
+    --container-max: 1280px;
+    --container-padding: 2rem;
+    --header-height: 80px;
+
+    /* Effects */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --shadow-glow: 0 0 20px var(--color-primary-glow);
+    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-3xl: 2rem;
+    --radius-full: 9999px;
+
+    --transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Dark Theme Variables */
+.dark {
+    --color-bg: #0F172A;
+    --color-bg-alt: #1E293B;
+    --color-bg-dark: #020617;
+
+    --color-text: #F8FAFC;
+    --color-text-light: #CBD5E1;
+    --color-text-muted: #64748B;
+
+    --color-border: #334155;
+    --color-border-dark: rgba(255, 255, 255, 0.1);
+
+    --color-primary: #2DD4BF;
+    --color-primary-hover: #14B8A6;
+    --color-primary-glow: rgba(45, 212, 191, 0.4);
+    --color-primary-light: rgba(45, 212, 191, 0.1);
+
+    --glass-bg: rgba(15, 23, 42, 0.9);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-dark-bg: rgba(15, 23, 42, 0.95);
+}

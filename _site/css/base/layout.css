@@ -1,0 +1,18 @@
+/* --------------------------------------------------------------------------
+   Layout
+   -------------------------------------------------------------------------- */
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.section {
+    padding: var(--spacing-20) 0;
+    position: relative;
+}
+
+.section-lg {
+    padding: var(--spacing-32) 0;
+}
